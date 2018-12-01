@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMaker", "ProjectMaker\ProjectMaker.csproj", "{80BF3B0D-12AA-4533-91B8-92C36CE8AE66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80BF3B0D-12AA-4533-91B8-92C36CE8AE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80BF3B0D-12AA-4533-91B8-92C36CE8AE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80BF3B0D-12AA-4533-91B8-92C36CE8AE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80BF3B0D-12AA-4533-91B8-92C36CE8AE66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81B4B947-1773-41E3-BC73-43ED04A92604}
+	EndGlobalSection
+EndGlobal
