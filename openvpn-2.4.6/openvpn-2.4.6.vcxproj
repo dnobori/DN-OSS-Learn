@@ -40,6 +40,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +146,6 @@
     <ClInclude Include="src\openvpnserv\validate.h" />
     <ClInclude Include="src\plugins\auth-pam\pamdl.h" />
     <ClInclude Include="src\plugins\auth-pam\utils.h" />
-
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sample\sample-plugins\defer\simple.c" />
@@ -253,7 +253,6 @@
     <ClCompile Include="tests\unit_tests\openvpn\test_packet_id.c" />
     <ClCompile Include="tests\unit_tests\openvpn\test_tls_crypt.c" />
     <ClCompile Include="tests\unit_tests\plugins\auth-pam\test_search_and_replace.c" />
-
   </ItemGroup>
   <ItemGroup>
     <None Include="build\msvc\msvc-generate\Makefile.am" />
@@ -412,7 +411,6 @@
     <None Include="tests\update_t_client_ips.sh" />
     <None Include="vendor\Makefile.am" />
     <None Include="vendor\Makefile.in" />
-
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

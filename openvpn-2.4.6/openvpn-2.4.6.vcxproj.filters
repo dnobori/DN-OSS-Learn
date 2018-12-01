@@ -52,18 +52,6 @@
     <Filter Include="sample\sample-keys">
       <UniqueIdentifier>{8CBE5CDA-BFB2-4716-86B2-F1F092F4C6DB}</UniqueIdentifier>
     </Filter>
-    <Filter Include="sample\sample-plugins\defer">
-      <UniqueIdentifier>{18502FA2-DDA0-40A0-8EA9-D4537467CDD3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="sample\sample-plugins\keying-material-exporter-demo">
-      <UniqueIdentifier>{FDE29E29-0AE7-45B3-BEE0-6D3733192F17}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="sample\sample-plugins\log">
-      <UniqueIdentifier>{AE05999B-7E69-4876-9B6D-6F7906F17063}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="sample\sample-plugins\simple">
-      <UniqueIdentifier>{45461BC1-8B57-4759-8650-3146D06F5206}</UniqueIdentifier>
-    </Filter>
     <Filter Include="sample\sample-scripts">
       <UniqueIdentifier>{67F072E2-88CB-4021-8FD1-1BB17FE703B9}</UniqueIdentifier>
     </Filter>
@@ -112,7 +100,6 @@
     <Filter Include="vendor">
       <UniqueIdentifier>{602014DC-10D8-40B4-81F2-212375112032}</UniqueIdentifier>
     </Filter>
-
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\openvpn-msg.h">
@@ -409,24 +396,8 @@
     <ClInclude Include="src\plugins\auth-pam\utils.h">
       <Filter>src\plugins\auth-pam</Filter>
     </ClInclude>
-
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sample\sample-plugins\defer\simple.c">
-      <Filter>sample\sample-plugins\defer</Filter>
-    </ClCompile>
-    <ClCompile Include="sample\sample-plugins\keying-material-exporter-demo\keyingmaterialexporter.c">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </ClCompile>
-    <ClCompile Include="sample\sample-plugins\log\log.c">
-      <Filter>sample\sample-plugins\log</Filter>
-    </ClCompile>
-    <ClCompile Include="sample\sample-plugins\log\log_v3.c">
-      <Filter>sample\sample-plugins\log</Filter>
-    </ClCompile>
-    <ClCompile Include="sample\sample-plugins\simple\simple.c">
-      <Filter>sample\sample-plugins\simple</Filter>
-    </ClCompile>
     <ClCompile Include="src\compat\compat-basename.c">
       <Filter>src\compat</Filter>
     </ClCompile>
@@ -727,7 +698,11 @@
     <ClCompile Include="tests\unit_tests\plugins\auth-pam\test_search_and_replace.c">
       <Filter>tests\unit_tests\plugins\auth-pam</Filter>
     </ClCompile>
-
+    <ClCompile Include="sample\sample-plugins\defer\simple.c" />
+    <ClCompile Include="sample\sample-plugins\keying-material-exporter-demo\keyingmaterialexporter.c" />
+    <ClCompile Include="sample\sample-plugins\log\log.c" />
+    <ClCompile Include="sample\sample-plugins\log\log_v3.c" />
+    <ClCompile Include="sample\sample-plugins\simple\simple.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="build\msvc\msvc-generate\Makefile.am">
@@ -985,54 +960,6 @@
     <None Include="sample\sample-keys\ta.key">
       <Filter>sample\sample-keys</Filter>
     </None>
-    <None Include="sample\sample-plugins\defer\build">
-      <Filter>sample\sample-plugins\defer</Filter>
-    </None>
-    <None Include="sample\sample-plugins\defer\README">
-      <Filter>sample\sample-plugins\defer</Filter>
-    </None>
-    <None Include="sample\sample-plugins\defer\simple.def">
-      <Filter>sample\sample-plugins\defer</Filter>
-    </None>
-    <None Include="sample\sample-plugins\defer\winbuild">
-      <Filter>sample\sample-plugins\defer</Filter>
-    </None>
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\build">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </None>
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\client.ovpn">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </None>
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-client.py">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </None>
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-server.py">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </None>
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\README">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </None>
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\server.ovpn">
-      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
-    </None>
-    <None Include="sample\sample-plugins\log\build">
-      <Filter>sample\sample-plugins\log</Filter>
-    </None>
-    <None Include="sample\sample-plugins\log\winbuild">
-      <Filter>sample\sample-plugins\log</Filter>
-    </None>
-    <None Include="sample\sample-plugins\simple\build">
-      <Filter>sample\sample-plugins\simple</Filter>
-    </None>
-    <None Include="sample\sample-plugins\simple\README">
-      <Filter>sample\sample-plugins\simple</Filter>
-    </None>
-    <None Include="sample\sample-plugins\simple\simple.def">
-      <Filter>sample\sample-plugins\simple</Filter>
-    </None>
-    <None Include="sample\sample-plugins\simple\winbuild">
-      <Filter>sample\sample-plugins\simple</Filter>
-    </None>
     <None Include="sample\sample-scripts\auth-pam.pl">
       <Filter>sample\sample-scripts</Filter>
     </None>
@@ -1198,6 +1125,21 @@
     <None Include="vendor\Makefile.in">
       <Filter>vendor</Filter>
     </None>
-
+    <None Include="sample\sample-plugins\defer\build" />
+    <None Include="sample\sample-plugins\defer\README" />
+    <None Include="sample\sample-plugins\defer\simple.def" />
+    <None Include="sample\sample-plugins\defer\winbuild" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\build" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\client.ovpn" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-client.py" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-server.py" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\README" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\server.ovpn" />
+    <None Include="sample\sample-plugins\log\build" />
+    <None Include="sample\sample-plugins\log\winbuild" />
+    <None Include="sample\sample-plugins\simple\build" />
+    <None Include="sample\sample-plugins\simple\README" />
+    <None Include="sample\sample-plugins\simple\simple.def" />
+    <None Include="sample\sample-plugins\simple\winbuild" />
   </ItemGroup>
 </Project>
