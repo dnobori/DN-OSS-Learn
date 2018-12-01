@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AB84C7F0-B0F1-4D08-9340-2E1FA09504D9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>openvpn-2.4.6</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openvpn-msg.h" />
+    <ClInclude Include="include\openvpn-plugin.h" />
+    <ClInclude Include="src\compat\compat.h" />
+    <ClInclude Include="src\compat\compat-lz4.h" />
+    <ClInclude Include="src\compat\compat-versionhelpers.h" />
+    <ClInclude Include="src\openvpn\argv.h" />
+    <ClInclude Include="src\openvpn\base64.h" />
+    <ClInclude Include="src\openvpn\basic.h" />
+    <ClInclude Include="src\openvpn\block_dns.h" />
+    <ClInclude Include="src\openvpn\buffer.h" />
+    <ClInclude Include="src\openvpn\circ_list.h" />
+    <ClInclude Include="src\openvpn\clinat.h" />
+    <ClInclude Include="src\openvpn\common.h" />
+    <ClInclude Include="src\openvpn\comp.h" />
+    <ClInclude Include="src\openvpn\comp-lz4.h" />
+    <ClInclude Include="src\openvpn\console.h" />
+    <ClInclude Include="src\openvpn\crypto.h" />
+    <ClInclude Include="src\openvpn\crypto_backend.h" />
+    <ClInclude Include="src\openvpn\crypto_mbedtls.h" />
+    <ClInclude Include="src\openvpn\crypto_openssl.h" />
+    <ClInclude Include="src\openvpn\cryptoapi.h" />
+    <ClInclude Include="src\openvpn\dhcp.h" />
+    <ClInclude Include="src\openvpn\errlevel.h" />
+    <ClInclude Include="src\openvpn\error.h" />
+    <ClInclude Include="src\openvpn\event.h" />
+    <ClInclude Include="src\openvpn\fdmisc.h" />
+    <ClInclude Include="src\openvpn\forward.h" />
+    <ClInclude Include="src\openvpn\forward-inline.h" />
+    <ClInclude Include="src\openvpn\fragment.h" />
+    <ClInclude Include="src\openvpn\gremlin.h" />
+    <ClInclude Include="src\openvpn\helper.h" />
+    <ClInclude Include="src\openvpn\httpdigest.h" />
+    <ClInclude Include="src\openvpn\init.h" />
+    <ClInclude Include="src\openvpn\integer.h" />
+    <ClInclude Include="src\openvpn\interval.h" />
+    <ClInclude Include="src\openvpn\list.h" />
+    <ClInclude Include="src\openvpn\lladdr.h" />
+    <ClInclude Include="src\openvpn\lzo.h" />
+    <ClInclude Include="src\openvpn\manage.h" />
+    <ClInclude Include="src\openvpn\mbuf.h" />
+    <ClInclude Include="src\openvpn\memdbg.h" />
+    <ClInclude Include="src\openvpn\misc.h" />
+    <ClInclude Include="src\openvpn\mroute.h" />
+    <ClInclude Include="src\openvpn\mss.h" />
+    <ClInclude Include="src\openvpn\mstats.h" />
+    <ClInclude Include="src\openvpn\mtcp.h" />
+    <ClInclude Include="src\openvpn\mtu.h" />
+    <ClInclude Include="src\openvpn\mudp.h" />
+    <ClInclude Include="src\openvpn\multi.h" />
+    <ClInclude Include="src\openvpn\ntlm.h" />
+    <ClInclude Include="src\openvpn\occ.h" />
+    <ClInclude Include="src\openvpn\occ-inline.h" />
+    <ClInclude Include="src\openvpn\openssl_compat.h" />
+    <ClInclude Include="src\openvpn\openvpn.h" />
+    <ClInclude Include="src\openvpn\options.h" />
+    <ClInclude Include="src\openvpn\otime.h" />
+    <ClInclude Include="src\openvpn\packet_id.h" />
+    <ClInclude Include="src\openvpn\perf.h" />
+    <ClInclude Include="src\openvpn\pf.h" />
+    <ClInclude Include="src\openvpn\pf-inline.h" />
+    <ClInclude Include="src\openvpn\ping.h" />
+    <ClInclude Include="src\openvpn\ping-inline.h" />
+    <ClInclude Include="src\openvpn\pkcs11.h" />
+    <ClInclude Include="src\openvpn\pkcs11_backend.h" />
+    <ClInclude Include="src\openvpn\platform.h" />
+    <ClInclude Include="src\openvpn\plugin.h" />
+    <ClInclude Include="src\openvpn\pool.h" />
+    <ClInclude Include="src\openvpn\proto.h" />
+    <ClInclude Include="src\openvpn\proxy.h" />
+    <ClInclude Include="src\openvpn\ps.h" />
+    <ClInclude Include="src\openvpn\push.h" />
+    <ClInclude Include="src\openvpn\pushlist.h" />
+    <ClInclude Include="src\openvpn\reliable.h" />
+    <ClInclude Include="src\openvpn\route.h" />
+    <ClInclude Include="src\openvpn\schedule.h" />
+    <ClInclude Include="src\openvpn\session_id.h" />
+    <ClInclude Include="src\openvpn\shaper.h" />
+    <ClInclude Include="src\openvpn\sig.h" />
+    <ClInclude Include="src\openvpn\socket.h" />
+    <ClInclude Include="src\openvpn\socks.h" />
+    <ClInclude Include="src\openvpn\ssl.h" />
+    <ClInclude Include="src\openvpn\ssl_backend.h" />
+    <ClInclude Include="src\openvpn\ssl_common.h" />
+    <ClInclude Include="src\openvpn\ssl_mbedtls.h" />
+    <ClInclude Include="src\openvpn\ssl_openssl.h" />
+    <ClInclude Include="src\openvpn\ssl_verify.h" />
+    <ClInclude Include="src\openvpn\ssl_verify_backend.h" />
+    <ClInclude Include="src\openvpn\ssl_verify_mbedtls.h" />
+    <ClInclude Include="src\openvpn\ssl_verify_openssl.h" />
+    <ClInclude Include="src\openvpn\status.h" />
+    <ClInclude Include="src\openvpn\syshead.h" />
+    <ClInclude Include="src\openvpn\tls_crypt.h" />
+    <ClInclude Include="src\openvpn\tun.h" />
+    <ClInclude Include="src\openvpn\win32.h" />
+    <ClInclude Include="src\openvpnserv\service.h" />
+    <ClInclude Include="src\openvpnserv\validate.h" />
+    <ClInclude Include="src\plugins\auth-pam\pamdl.h" />
+    <ClInclude Include="src\plugins\auth-pam\utils.h" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sample\sample-plugins\defer\simple.c" />
+    <ClCompile Include="sample\sample-plugins\keying-material-exporter-demo\keyingmaterialexporter.c" />
+    <ClCompile Include="sample\sample-plugins\log\log.c" />
+    <ClCompile Include="sample\sample-plugins\log\log_v3.c" />
+    <ClCompile Include="sample\sample-plugins\simple\simple.c" />
+    <ClCompile Include="src\compat\compat-basename.c" />
+    <ClCompile Include="src\compat\compat-daemon.c" />
+    <ClCompile Include="src\compat\compat-dirname.c" />
+    <ClCompile Include="src\compat\compat-gettimeofday.c" />
+    <ClCompile Include="src\compat\compat-inet_ntop.c" />
+    <ClCompile Include="src\compat\compat-inet_pton.c" />
+    <ClCompile Include="src\compat\compat-lz4.c" />
+    <ClCompile Include="src\openvpn\argv.c" />
+    <ClCompile Include="src\openvpn\base64.c" />
+    <ClCompile Include="src\openvpn\block_dns.c" />
+    <ClCompile Include="src\openvpn\buffer.c" />
+    <ClCompile Include="src\openvpn\clinat.c" />
+    <ClCompile Include="src\openvpn\comp.c" />
+    <ClCompile Include="src\openvpn\comp-lz4.c" />
+    <ClCompile Include="src\openvpn\compstub.c" />
+    <ClCompile Include="src\openvpn\console.c" />
+    <ClCompile Include="src\openvpn\console_builtin.c" />
+    <ClCompile Include="src\openvpn\console_systemd.c" />
+    <ClCompile Include="src\openvpn\crypto.c" />
+    <ClCompile Include="src\openvpn\crypto_mbedtls.c" />
+    <ClCompile Include="src\openvpn\crypto_openssl.c" />
+    <ClCompile Include="src\openvpn\cryptoapi.c" />
+    <ClCompile Include="src\openvpn\dhcp.c" />
+    <ClCompile Include="src\openvpn\error.c" />
+    <ClCompile Include="src\openvpn\event.c" />
+    <ClCompile Include="src\openvpn\fdmisc.c" />
+    <ClCompile Include="src\openvpn\forward.c" />
+    <ClCompile Include="src\openvpn\fragment.c" />
+    <ClCompile Include="src\openvpn\gremlin.c" />
+    <ClCompile Include="src\openvpn\helper.c" />
+    <ClCompile Include="src\openvpn\httpdigest.c" />
+    <ClCompile Include="src\openvpn\init.c" />
+    <ClCompile Include="src\openvpn\interval.c" />
+    <ClCompile Include="src\openvpn\list.c" />
+    <ClCompile Include="src\openvpn\lladdr.c" />
+    <ClCompile Include="src\openvpn\lzo.c" />
+    <ClCompile Include="src\openvpn\manage.c" />
+    <ClCompile Include="src\openvpn\mbuf.c" />
+    <ClCompile Include="src\openvpn\misc.c" />
+    <ClCompile Include="src\openvpn\mroute.c" />
+    <ClCompile Include="src\openvpn\mss.c" />
+    <ClCompile Include="src\openvpn\mstats.c" />
+    <ClCompile Include="src\openvpn\mtcp.c" />
+    <ClCompile Include="src\openvpn\mtu.c" />
+    <ClCompile Include="src\openvpn\mudp.c" />
+    <ClCompile Include="src\openvpn\multi.c" />
+    <ClCompile Include="src\openvpn\ntlm.c" />
+    <ClCompile Include="src\openvpn\occ.c" />
+    <ClCompile Include="src\openvpn\openvpn.c" />
+    <ClCompile Include="src\openvpn\options.c" />
+    <ClCompile Include="src\openvpn\otime.c" />
+    <ClCompile Include="src\openvpn\packet_id.c" />
+    <ClCompile Include="src\openvpn\perf.c" />
+    <ClCompile Include="src\openvpn\pf.c" />
+    <ClCompile Include="src\openvpn\ping.c" />
+    <ClCompile Include="src\openvpn\pkcs11.c" />
+    <ClCompile Include="src\openvpn\pkcs11_mbedtls.c" />
+    <ClCompile Include="src\openvpn\pkcs11_openssl.c" />
+    <ClCompile Include="src\openvpn\platform.c" />
+    <ClCompile Include="src\openvpn\plugin.c" />
+    <ClCompile Include="src\openvpn\pool.c" />
+    <ClCompile Include="src\openvpn\proto.c" />
+    <ClCompile Include="src\openvpn\proxy.c" />
+    <ClCompile Include="src\openvpn\ps.c" />
+    <ClCompile Include="src\openvpn\push.c" />
+    <ClCompile Include="src\openvpn\reliable.c" />
+    <ClCompile Include="src\openvpn\route.c" />
+    <ClCompile Include="src\openvpn\schedule.c" />
+    <ClCompile Include="src\openvpn\session_id.c" />
+    <ClCompile Include="src\openvpn\shaper.c" />
+    <ClCompile Include="src\openvpn\sig.c" />
+    <ClCompile Include="src\openvpn\socket.c" />
+    <ClCompile Include="src\openvpn\socks.c" />
+    <ClCompile Include="src\openvpn\ssl.c" />
+    <ClCompile Include="src\openvpn\ssl_mbedtls.c" />
+    <ClCompile Include="src\openvpn\ssl_openssl.c" />
+    <ClCompile Include="src\openvpn\ssl_verify.c" />
+    <ClCompile Include="src\openvpn\ssl_verify_mbedtls.c" />
+    <ClCompile Include="src\openvpn\ssl_verify_openssl.c" />
+    <ClCompile Include="src\openvpn\status.c" />
+    <ClCompile Include="src\openvpn\tls_crypt.c" />
+    <ClCompile Include="src\openvpn\tun.c" />
+    <ClCompile Include="src\openvpn\win32.c" />
+    <ClCompile Include="src\openvpnserv\automatic.c" />
+    <ClCompile Include="src\openvpnserv\common.c" />
+    <ClCompile Include="src\openvpnserv\interactive.c" />
+    <ClCompile Include="src\openvpnserv\service.c" />
+    <ClCompile Include="src\openvpnserv\validate.c" />
+    <ClCompile Include="src\plugins\auth-pam\auth-pam.c" />
+    <ClCompile Include="src\plugins\auth-pam\pamdl.c" />
+    <ClCompile Include="src\plugins\auth-pam\utils.c" />
+    <ClCompile Include="src\plugins\down-root\down-root.c" />
+    <ClCompile Include="tests\unit_tests\example_test\test.c" />
+    <ClCompile Include="tests\unit_tests\example_test\test2.c" />
+    <ClCompile Include="tests\unit_tests\openvpn\mock_msg.c" />
+    <ClCompile Include="tests\unit_tests\openvpn\test_argv.c" />
+    <ClCompile Include="tests\unit_tests\openvpn\test_buffer.c" />
+    <ClCompile Include="tests\unit_tests\openvpn\test_packet_id.c" />
+    <ClCompile Include="tests\unit_tests\openvpn\test_tls_crypt.c" />
+    <ClCompile Include="tests\unit_tests\plugins\auth-pam\test_search_and_replace.c" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\msvc\msvc-generate\Makefile.am" />
+    <None Include="build\msvc\msvc-generate\Makefile.in" />
+    <None Include="build\msvc\msvc-generate\Makefile.mak" />
+    <None Include="build\msvc\msvc-generate\msvc-generate.js" />
+    <None Include="build\msvc\msvc-generate\msvc-generate.vcxproj" />
+    <None Include="build\msvc\Makefile.am" />
+    <None Include="build\msvc\Makefile.in" />
+    <None Include="build\ltrc.inc" />
+    <None Include="build\Makefile.am" />
+    <None Include="build\Makefile.in" />
+    <None Include="contrib\OCSP_check\OCSP_check.sh" />
+    <None Include="contrib\openvpn-fwmarkroute-1.00\fwmarkroute.down" />
+    <None Include="contrib\openvpn-fwmarkroute-1.00\fwmarkroute.up" />
+    <None Include="contrib\openvpn-fwmarkroute-1.00\README" />
+    <None Include="contrib\pull-resolv-conf\client.down" />
+    <None Include="contrib\pull-resolv-conf\client.up" />
+    <None Include="contrib\multilevel-init.patch" />
+    <None Include="contrib\README" />
+    <None Include="debug\doval" />
+    <None Include="debug\dovalns" />
+    <None Include="debug\valgrind-suppress" />
+    <None Include="distro\rpm\Makefile.am" />
+    <None Include="distro\rpm\Makefile.in" />
+    <None Include="distro\rpm\openvpn.init.d.rhel" />
+    <None Include="distro\rpm\openvpn.init.d.suse" />
+    <None Include="distro\rpm\openvpn.spec" />
+    <None Include="distro\rpm\openvpn.spec.in" />
+    <None Include="distro\systemd\Makefile.am" />
+    <None Include="distro\systemd\Makefile.in" />
+    <None Include="distro\systemd\openvpn-client@.service.in" />
+    <None Include="distro\systemd\openvpn-server@.service.in" />
+    <None Include="distro\systemd\README.systemd" />
+    <None Include="distro\systemd\tmpfiles-openvpn.conf" />
+    <None Include="distro\Makefile.am" />
+    <None Include="distro\Makefile.in" />
+    <None Include="doc\Makefile.am" />
+    <None Include="doc\Makefile.in" />
+    <None Include="doc\management-notes.txt" />
+    <None Include="doc\openvpn.8" />
+    <None Include="doc\README.plugins" />
+    <None Include="include\Makefile.am" />
+    <None Include="include\Makefile.in" />
+    <None Include="include\openvpn-plugin.h.in" />
+    <None Include="m4\ax_emptyarray.m4" />
+    <None Include="m4\ax_socklen_t.m4" />
+    <None Include="m4\ax_varargs.m4" />
+    <None Include="m4\libtool.m4" />
+    <None Include="m4\lt~obsolete.m4" />
+    <None Include="m4\ltoptions.m4" />
+    <None Include="m4\ltsugar.m4" />
+    <None Include="m4\ltversion.m4" />
+    <None Include="m4\pkg.m4" />
+    <None Include="sample\sample-config-files\client.conf" />
+    <None Include="sample\sample-config-files\firewall.sh" />
+    <None Include="sample\sample-config-files\home.up" />
+    <None Include="sample\sample-config-files\loopback-client" />
+    <None Include="sample\sample-config-files\loopback-server" />
+    <None Include="sample\sample-config-files\office.up" />
+    <None Include="sample\sample-config-files\openvpn-shutdown.sh" />
+    <None Include="sample\sample-config-files\openvpn-startup.sh" />
+    <None Include="sample\sample-config-files\README" />
+    <None Include="sample\sample-config-files\server.conf" />
+    <None Include="sample\sample-config-files\static-home.conf" />
+    <None Include="sample\sample-config-files\static-office.conf" />
+    <None Include="sample\sample-config-files\tls-home.conf" />
+    <None Include="sample\sample-config-files\tls-office.conf" />
+    <None Include="sample\sample-config-files\xinetd-client-config" />
+    <None Include="sample\sample-config-files\xinetd-server-config" />
+    <None Include="sample\sample-keys\ca.crt" />
+    <None Include="sample\sample-keys\ca.key" />
+    <None Include="sample\sample-keys\client.crt" />
+    <None Include="sample\sample-keys\client.key" />
+    <None Include="sample\sample-keys\client.p12" />
+    <None Include="sample\sample-keys\client-ec.crt" />
+    <None Include="sample\sample-keys\client-ec.key" />
+    <None Include="sample\sample-keys\client-pass.key" />
+    <None Include="sample\sample-keys\dh2048.pem" />
+    <None Include="sample\sample-keys\gen-sample-keys.sh" />
+    <None Include="sample\sample-keys\openssl.cnf" />
+    <None Include="sample\sample-keys\README" />
+    <None Include="sample\sample-keys\server.crt" />
+    <None Include="sample\sample-keys\server.key" />
+    <None Include="sample\sample-keys\server-ec.crt" />
+    <None Include="sample\sample-keys\server-ec.key" />
+    <None Include="sample\sample-keys\ta.key" />
+    <None Include="sample\sample-plugins\defer\build" />
+    <None Include="sample\sample-plugins\defer\README" />
+    <None Include="sample\sample-plugins\defer\simple.def" />
+    <None Include="sample\sample-plugins\defer\winbuild" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\build" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\client.ovpn" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-client.py" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-server.py" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\README" />
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\server.ovpn" />
+    <None Include="sample\sample-plugins\log\build" />
+    <None Include="sample\sample-plugins\log\winbuild" />
+    <None Include="sample\sample-plugins\simple\build" />
+    <None Include="sample\sample-plugins\simple\README" />
+    <None Include="sample\sample-plugins\simple\simple.def" />
+    <None Include="sample\sample-plugins\simple\winbuild" />
+    <None Include="sample\sample-scripts\auth-pam.pl" />
+    <None Include="sample\sample-scripts\bridge-start" />
+    <None Include="sample\sample-scripts\bridge-stop" />
+    <None Include="sample\sample-scripts\ucn.pl" />
+    <None Include="sample\sample-scripts\verify-cn" />
+    <None Include="sample\sample-windows\sample.ovpn" />
+    <None Include="sample\Makefile.am" />
+    <None Include="sample\Makefile.in" />
+    <None Include="src\compat\compat.vcxproj" />
+    <None Include="src\compat\compat.vcxproj.filters" />
+    <None Include="src\compat\Makefile.am" />
+    <None Include="src\compat\Makefile.in" />
+    <None Include="src\openvpn\Makefile.am" />
+    <None Include="src\openvpn\Makefile.in" />
+    <None Include="src\openvpn\openvpn.vcxproj" />
+    <None Include="src\openvpn\openvpn.vcxproj.filters" />
+    <None Include="src\openvpn\openvpn_win32_resources.rc" />
+    <None Include="src\openvpnserv\Makefile.am" />
+    <None Include="src\openvpnserv\Makefile.in" />
+    <None Include="src\openvpnserv\openvpnserv.vcxproj" />
+    <None Include="src\openvpnserv\openvpnserv.vcxproj.filters" />
+    <None Include="src\openvpnserv\openvpnserv_resources.rc" />
+    <None Include="src\plugins\auth-pam\auth-pam.exports" />
+    <None Include="src\plugins\auth-pam\Makefile.am" />
+    <None Include="src\plugins\auth-pam\Makefile.in" />
+    <None Include="src\plugins\auth-pam\README.auth-pam" />
+    <None Include="src\plugins\down-root\down-root.exports" />
+    <None Include="src\plugins\down-root\Makefile.am" />
+    <None Include="src\plugins\down-root\Makefile.in" />
+    <None Include="src\plugins\down-root\README.down-root" />
+    <None Include="src\plugins\Makefile.am" />
+    <None Include="src\plugins\Makefile.in" />
+    <None Include="src\Makefile.am" />
+    <None Include="src\Makefile.in" />
+    <None Include="tests\unit_tests\example_test\Makefile.am" />
+    <None Include="tests\unit_tests\example_test\Makefile.in" />
+    <None Include="tests\unit_tests\openvpn\Makefile.am" />
+    <None Include="tests\unit_tests\openvpn\Makefile.in" />
+    <None Include="tests\unit_tests\plugins\auth-pam\Makefile.am" />
+    <None Include="tests\unit_tests\plugins\auth-pam\Makefile.in" />
+    <None Include="tests\unit_tests\plugins\Makefile.am" />
+    <None Include="tests\unit_tests\plugins\Makefile.in" />
+    <None Include="tests\unit_tests\Makefile.am" />
+    <None Include="tests\unit_tests\Makefile.in" />
+    <None Include="tests\Makefile.am" />
+    <None Include="tests\Makefile.in" />
+    <None Include="tests\t_client.rc-sample" />
+    <None Include="tests\t_client.sh" />
+    <None Include="tests\t_client.sh.in" />
+    <None Include="tests\t_cltsrv.sh" />
+    <None Include="tests\t_cltsrv-down.sh" />
+    <None Include="tests\t_lpback.sh" />
+    <None Include="tests\update_t_client_ips.sh" />
+    <None Include="vendor\Makefile.am" />
+    <None Include="vendor\Makefile.in" />
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
