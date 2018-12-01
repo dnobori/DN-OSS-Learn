@@ -56,6 +56,8 @@ using YamlDotNet.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Routing;
 
+using ProjectMaker;
+
 #pragma warning disable 162
 
 namespace DotNetCoreUtilTestApp

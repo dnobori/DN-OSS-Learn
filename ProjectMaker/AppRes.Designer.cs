@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DotNetCoreUtilTestApp {
+namespace ProjectMaker {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace DotNetCoreUtilTestApp {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DotNetCoreUtilTestApp.AppRes", typeof(AppRes).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ProjectMaker.AppRes", typeof(AppRes).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -47,7 +47,7 @@ namespace DotNetCoreUtilTestApp {
         }
         
         /// <summary>
-        ///   厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+        ///   すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
         ///   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -116,7 +116,8 @@ namespace DotNetCoreUtilTestApp {
         ///  &lt;/ItemGroup&gt;
         ///  &lt;PropertyGroup Label=&quot;Globals&quot;&gt;
         ///    &lt;VCProjectVersion&gt;15.0&lt;/VCProjectVersion&gt;
-        ///    &lt;ProjectGuid&gt;{2D4F7C2B-9081-473B-A1B5-47CBB7CC59D0}&lt;/P [残りの文字列は切り詰められました]&quot;; に類似しているローカライズされた文字列を検索します。
+        ///    &lt;ProjectGuid&gt;__PROJ_GUID__&lt;/ProjectGuid&gt;
+        ///    &lt;Keyword [残りの文字列は切り詰められました]&quot;; に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string vcxproj {
             get {
