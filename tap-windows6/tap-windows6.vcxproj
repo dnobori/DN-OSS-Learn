@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3FC87B5E-8089-4A39-B080-63B1219B0290}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tap-windows6</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\adapter.h" />
+    <ClInclude Include="src\constants.h" />
+    <ClInclude Include="src\device.h" />
+    <ClInclude Include="src\dhcp.h" />
+    <ClInclude Include="src\endian.h" />
+    <ClInclude Include="src\error.h" />
+    <ClInclude Include="src\hexdump.h" />
+    <ClInclude Include="src\lock.h" />
+    <ClInclude Include="src\macinfo.h" />
+    <ClInclude Include="src\mem.h" />
+    <ClInclude Include="src\proto.h" />
+    <ClInclude Include="src\prototypes.h" />
+    <ClInclude Include="src\tap.h" />
+    <ClInclude Include="src\tap-windows.h" />
+    <ClInclude Include="src\types.h" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adapter.c" />
+    <ClCompile Include="src\device.c" />
+    <ClCompile Include="src\dhcp.c" />
+    <ClCompile Include="src\error.c" />
+    <ClCompile Include="src\macinfo.c" />
+    <ClCompile Include="src\mem.c" />
+    <ClCompile Include="src\oidrequest.c" />
+    <ClCompile Include="src\rxpath.c" />
+    <ClCompile Include="src\tapdrvr.c" />
+    <ClCompile Include="src\txpath.c" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="installer\icon.ico" />
+    <None Include="installer\install-whirl.bmp" />
+    <None Include="installer\ShellLink.dll" />
+    <None Include="installer\tap-windows6.nsi" />
+    <None Include="src\config.h.in" />
+    <None Include="src\OemVista.inf.in" />
+    <None Include="src\resource.rc" />
+    <None Include="src\tap-windows6.vcxproj.filters" />
+    <None Include="src\tap-windows6.vcxproj.in" />
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

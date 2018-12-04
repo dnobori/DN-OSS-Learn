@@ -1,0 +1,18 @@
+
+# Packaging and distribution outputs
+dist/**
+*.pyc
+*.tar.gz
+tap-windows-*.exe
+
+# builttap.py-generated files
+src/config.h
+src/tap-windows6.vcxproj
+src/OemVista.inf
+
+# Visual Studio and MSBuild files
+src/tap-windows6.sln
+src/Release
+src/Debug
+src/x64
+.vs

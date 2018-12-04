@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="installer">
+      <UniqueIdentifier>{BD99FC0A-A6F8-4C5E-8F83-5D2F253CB030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0ACC7961-B93F-408D-97BD-D5B9D4D34246}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\adapter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\constants.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dhcp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\endian.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\error.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hexdump.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\macinfo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mem.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\prototypes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tap-windows.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adapter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\macinfo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oidrequest.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rxpath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tapdrvr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txpath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="installer\icon.ico">
+      <Filter>installer</Filter>
+    </None>
+    <None Include="installer\install-whirl.bmp">
+      <Filter>installer</Filter>
+    </None>
+    <None Include="installer\ShellLink.dll">
+      <Filter>installer</Filter>
+    </None>
+    <None Include="installer\tap-windows6.nsi">
+      <Filter>installer</Filter>
+    </None>
+    <None Include="src\config.h.in">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\OemVista.inf.in">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\resource.rc">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\tap-windows6.vcxproj.filters">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\tap-windows6.vcxproj.in">
+      <Filter>src</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>
