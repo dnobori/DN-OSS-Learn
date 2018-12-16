@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{E4BC1A16-AD0A-4F70-BD2E-3346A4D9BC2B}</ProjectGuid>
+    <Configurations>netstandard-Debug;netstandard-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="XmlSystemPathResolverTests.cs" />
+    <SupplementalTestData Include="..\TestFiles\**\*.*">
+      <Link>TestFiles\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <DestinationDir>TestFiles\%(RecursiveDir)</DestinationDir>
+    </SupplementalTestData>
+  </ItemGroup>
+</Project>

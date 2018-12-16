@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "corefx-181216", "corefx-181216\corefx-181216.vcxproj", "{99AA4F55-E7C6-4AB6-8384-6B3EC2EE637A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99AA4F55-E7C6-4AB6-8384-6B3EC2EE637A}.Debug|x86.ActiveCfg = Debug|Win32
+		{99AA4F55-E7C6-4AB6-8384-6B3EC2EE637A}.Debug|x86.Build.0 = Debug|Win32
+		{99AA4F55-E7C6-4AB6-8384-6B3EC2EE637A}.Debug|x86.Deploy.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {452C0D45-FA59-4EF1-A41A-0D56369FBBC7}
+	EndGlobalSection
+EndGlobal

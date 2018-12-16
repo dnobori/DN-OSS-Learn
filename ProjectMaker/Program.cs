@@ -1087,11 +1087,11 @@ namespace DotNetCoreUtilTestApp
                     {
                         dir_list.Add(relative_dir);
 
-                        if (file.FileName.IsExtensionMatch(".c .cpp .s .asm"))
+                        if (file.FileName.IsExtensionMatch(".c .cpp .s .asm .inl"))
                         {
                             compile_list.Add(file);
                         }
-                        else if (file.FileName.IsExtensionMatch(".h"))
+                        else if (file.FileName.IsExtensionMatch(".h .hpp"))
                         {
                             include_list.Add(file);
                         }
