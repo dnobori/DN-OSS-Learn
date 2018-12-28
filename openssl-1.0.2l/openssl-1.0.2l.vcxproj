@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0F919F1E-FB60-440C-B6FD-0E5F828AAE4E}</ProjectGuid>
+    <ProjectGuid>{A65CF734-5C8A-4638-A5CB-478E5F1BC995}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>openssl-1.0.2l</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -218,6 +218,8 @@
     <ClInclude Include="engines\e_nuron_err.h" />
     <ClInclude Include="engines\e_sureware_err.h" />
     <ClInclude Include="engines\e_ubsec_err.h" />
+    <ClInclude Include="MacOS\GetHTTPS.src\CPStringUtils.hpp" />
+    <ClInclude Include="MacOS\GetHTTPS.src\ErrorHandling.hpp" />
     <ClInclude Include="MacOS\GetHTTPS.src\MacSocket.h" />
     <ClInclude Include="MacOS\_MWERKS_GUSI_prefix.h" />
     <ClInclude Include="MacOS\_MWERKS_prefix.h" />
@@ -1988,8 +1990,6 @@
     <None Include="engines\makeengines.com" />
     <None Include="engines\Makefile" />
     <None Include="engines\vax.opt" />
-    <None Include="MacOS\GetHTTPS.src\CPStringUtils.hpp" />
-    <None Include="MacOS\GetHTTPS.src\ErrorHandling.hpp" />
     <None Include="MacOS\mklinks.as.hqx" />
     <None Include="MacOS\OpenSSL.mcp.hqx" />
     <None Include="MacOS\TODO" />

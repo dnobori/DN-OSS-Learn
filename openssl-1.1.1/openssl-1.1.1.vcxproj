@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EC95771D-B0BE-42E1-8914-6023096A656F}</ProjectGuid>
+    <ProjectGuid>{D3706F17-DF4E-45EA-92B9-E6F539CDF143}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>openssl-1.1.1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>

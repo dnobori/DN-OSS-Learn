@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="installer">
-      <UniqueIdentifier>{BD99FC0A-A6F8-4C5E-8F83-5D2F253CB030}</UniqueIdentifier>
+      <UniqueIdentifier>{1AAF6934-C614-4429-8072-46D895B8EEBC}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{0ACC7961-B93F-408D-97BD-D5B9D4D34246}</UniqueIdentifier>
+      <UniqueIdentifier>{853E286A-6348-472C-8F22-3D64A3C59F3B}</UniqueIdentifier>
     </Filter>
 
   </ItemGroup>

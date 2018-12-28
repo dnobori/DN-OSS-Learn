@@ -1085,19 +1085,22 @@ namespace DotNetCoreUtilTestApp
                     string relative_dir = file.RelativePath.GetDirectoryName();
                     if (relative_dir.IsFilled())
                     {
-                        dir_list.Add(relative_dir);
+                        if (Str.SearchStrMulti("\\" + relative_dir + "\\", 0, false, out _, out _, @"\.vs\", @"\.git\") == -1)
+                        {
+                            dir_list.Add(relative_dir);
 
-                        if (file.FileName.IsExtensionMatch(".c .cpp .s .asm .inl"))
-                        {
-                            compile_list.Add(file);
-                        }
-                        else if (file.FileName.IsExtensionMatch(".h .hpp"))
-                        {
-                            include_list.Add(file);
-                        }
-                        else
-                        {
-                            none_list.Add(file);
+                            if (file.FileName.IsExtensionMatch(".c .cpp .s .asm .inl"))
+                            {
+                                compile_list.Add(file);
+                            }
+                            else if (file.FileName.IsExtensionMatch(".h .hpp"))
+                            {
+                                include_list.Add(file);
+                            }
+                            else
+                            {
+                                none_list.Add(file);
+                            }
                         }
                     }
                 }
@@ -1136,7 +1139,25 @@ namespace DotNetCoreUtilTestApp
                 r.__NONE_LIST__.WriteLine($"    </None>");
             }
 
+            SortedSet<string> dir_list2 = new SortedSet<string>();
+
             foreach (var dir in dir_list)
+            {
+                string[] tokens = dir.Split('\\', StringSplitOptions.RemoveEmptyEntries);
+                List<string> o = new List<string>();
+                for (int i = 0; i < tokens.Length; i++)
+                {
+                    string tmp = Str.CombineStringArray2("\\", tokens.AsSpan(0, i + 1).ToArray());
+                    o.Add(tmp);
+                }
+
+                foreach (string tmp in o)
+                {
+                    dir_list2.Add(tmp);
+                }
+            }
+
+            foreach (var dir in dir_list2)
             {
                 r.__FILTER_LIST__.WriteLine($"    <Filter Include=\"{dir}\">");
                 r.__FILTER_LIST__.WriteLine($"      <UniqueIdentifier>{Str.NewGuid(true)}</UniqueIdentifier>");

@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{99AA4F55-E7C6-4AB6-8384-6B3EC2EE637A}</ProjectGuid>
+    <ProjectGuid>{4679A4FF-6263-4162-B2A8-99CE81E4086B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>corefx-181216</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -678,12 +678,6 @@
     <None Include="pkg\Directory.Build.targets" />
     <None Include="pkg\frameworkPackage.targets" />
     <None Include="pkg\useSharedDesignerContext.txt" />
-    <None Include="src\Common\.vs\Common.Tests\DesignTimeBuild\.dtbcache" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\db.lock" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\storage.ide" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\storage.ide-shm" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\storage.ide-wal" />
-    <None Include="src\Common\.vs\Common.Tests\v15\.suo" />
     <None Include="src\Common\src\CoreLib\Internal\IO\File.cs" />
     <None Include="src\Common\src\CoreLib\Internal\IO\File.Unix.cs" />
     <None Include="src\Common\src\CoreLib\Internal\IO\File.Windows.cs" />
@@ -3117,7 +3111,6 @@
     <None Include="src\Common\tests\Common.Tests.csproj" />
     <None Include="src\Common\tests\Configurations.props" />
     <None Include="src\Common\tests\Tests.props" />
-    <None Include="src\Common\Common.Tests.sln" />
     <None Include="src\CoreFx.Private.TestUtilities\pkg\CoreFx.Private.TestUtilities.pkgproj" />
     <None Include="src\CoreFx.Private.TestUtilities\ref\Configurations.props" />
     <None Include="src\CoreFx.Private.TestUtilities\ref\CoreFx.Private.TestUtilities.cs" />
@@ -8487,12 +8480,6 @@
     <None Include="src\System.Globalization.Extensions\tests\System.Globalization.Extensions.Tests.csproj" />
     <None Include="src\System.Globalization.Extensions\Directory.Build.props" />
     <None Include="src\System.Globalization.Extensions\System.Globalization.Extensions.sln" />
-    <None Include="src\System.IO\.vs\System.IO\DesignTimeBuild\.dtbcache" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\db.lock" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\storage.ide" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\storage.ide-shm" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\storage.ide-wal" />
-    <None Include="src\System.IO\.vs\System.IO\v15\.suo" />
     <None Include="src\System.IO\ref\Configurations.props" />
     <None Include="src\System.IO\ref\System.IO.csproj" />
     <None Include="src\System.IO\ref\System.IO.Manual.cs" />
@@ -16076,12 +16063,6 @@
     <None Include="src\System.Resources.Writer\tests\System.Resources.Writer.Tests.csproj" />
     <None Include="src\System.Resources.Writer\Directory.Build.props" />
     <None Include="src\System.Resources.Writer\System.Resources.Writer.sln" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\DesignTimeBuild\.dtbcache" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\db.lock" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\storage.ide" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\storage.ide-shm" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\storage.ide-wal" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\.suo" />
     <None Include="src\System.Runtime\ref\Configurations.props" />
     <None Include="src\System.Runtime\ref\System.Runtime.cs" />
     <None Include="src\System.Runtime\ref\System.Runtime.csproj" />

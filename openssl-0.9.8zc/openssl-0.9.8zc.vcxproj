@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{A85FD06D-3AF7-461E-9E60-F5E7F1AFE161}</ProjectGuid>
+    <ProjectGuid>{0AD9665F-9884-4EA0-A5B7-F0A9FF0A146B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>openssl-0.9.8zc</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -195,6 +195,8 @@
     <ClInclude Include="fips\fips.h" />
     <ClInclude Include="fips\fips_locl.h" />
     <ClInclude Include="fips\fips_utl.h" />
+    <ClInclude Include="MacOS\GetHTTPS.src\CPStringUtils.hpp" />
+    <ClInclude Include="MacOS\GetHTTPS.src\ErrorHandling.hpp" />
     <ClInclude Include="MacOS\GetHTTPS.src\MacSocket.h" />
     <ClInclude Include="MacOS\_MWERKS_GUSI_prefix.h" />
     <ClInclude Include="MacOS\_MWERKS_prefix.h" />
@@ -1688,8 +1690,6 @@
     <None Include="fips\Makefile" />
     <None Include="fips\mkfipsscr.pl" />
     <None Include="fips\openssl_fips_fingerprint" />
-    <None Include="MacOS\GetHTTPS.src\CPStringUtils.hpp" />
-    <None Include="MacOS\GetHTTPS.src\ErrorHandling.hpp" />
     <None Include="MacOS\mklinks.as.hqx" />
     <None Include="MacOS\OpenSSL.mcp.hqx" />
     <None Include="MacOS\TODO" />
