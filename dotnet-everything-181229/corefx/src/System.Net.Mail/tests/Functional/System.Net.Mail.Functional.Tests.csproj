@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{A26D88B7-6EF6-4C8C-828B-7B57732CCE38}</ProjectGuid>
+    <Configurations>netstandard-Debug;netstandard-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AlternateViewCollectionTest.cs" />
+    <Compile Include="AlternateViewTest.cs" />
+    <Compile Include="AttachmentCollectionTest.cs" />
+    <Compile Include="AttachmentTest.cs" />
+    <Compile Include="ContentDispositionTest.cs" />
+    <Compile Include="ContentTypeTest.cs" />
+    <Compile Include="HeaderCollectionTest.cs" />
+    <Compile Include="LinkedResourceCollectionTest.cs" />
+    <Compile Include="LinkedResourceTest.cs" />
+    <Compile Include="LoggingTest.cs" />
+    <Compile Include="MailAddressCollectionTest.cs" />
+    <Compile Include="MailAddressTest.cs" />
+    <Compile Include="MailMessageTest.cs" />
+    <Compile Include="SmtpClientTest.cs" />
+    <Compile Include="SmtpExceptionTest.cs" />
+    <Compile Include="SmtpServer.cs" />
+    <Compile Include="$(CommonTestPath)\System\Diagnostics\Tracing\TestEventListener.cs">
+      <Link>Common\System\Diagnostics\Tracing\TestEventListener.cs</Link>
+    </Compile>
+    <Compile Include="$(CommonTestPath)\System\IO\TempFile.cs">
+      <Link>Common\System\IO\TempFile.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.NetworkInformation" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(CommonTestPath)\System\Diagnostics\RemoteExecutorConsoleApp\RemoteExecutorConsoleApp.csproj">
+      <Project>{69e46a6f-9966-45a5-8945-2559fe337827}</Project>
+      <Name>RemoteExecutorConsoleApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

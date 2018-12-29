@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{9E984EB2-827E-4029-9647-FB5F8B67C553}</ProjectGuid>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Configurations>netcoreapp-Debug;netcoreapp-Release;netstandard-Debug;netstandard-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetGroup)' != 'netstandard'">
+    <!-- Some internal types are needed, so we reference the implementation assembly, rather than the reference assembly. -->
+    <DefaultReferenceExclusions Include="System.IO.Pipelines" />
+    <ReferenceFromRuntime Include="System.IO.Pipelines" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackpressureTests.cs" />
+    <Compile Include="FlushAsyncCancellationTests.cs" />
+    <Compile Include="FlushAsyncCompletionTests.cs" />
+    <Compile Include="FlushAsyncTests.cs" />
+    <Compile Include="FlushResultTests.cs" />
+    <Compile Include="PipeCompletionCallbacksTests.cs" />
+    <Compile Include="PipeOptionsTests.cs" />
+    <Compile Include="PipeReaderWriterFacts.cs" />
+    <Compile Include="PipePoolTests.cs" />
+    <Compile Include="PipeResetTests.cs" />
+    <Compile Include="PipeTest.cs" />
+    <Compile Include="PipeWriterTests.cs" />
+    <Compile Include="ReadAsyncCancellationTests.cs" />
+    <Compile Include="ReadAsyncCompletionTests.cs" />
+    <Compile Include="ReadResultTests.cs" />
+    <Compile Include="SchedulerFacts.cs" />
+    <Compile Include="TestMemoryPool.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetGroup)' != 'netstandard'">
+    <Compile Include="PipeLengthTests.cs" />
+    <Compile Include="PipeReaderWriterFacts.nonnetstandard.cs" />
+    <Compile Include="PipeResetTests.nonnetstandard.cs" />
+  </ItemGroup>
+</Project>

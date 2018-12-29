@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F59F13CA-829A-4D02-9A1D-E40E61257177}</ProjectGuid>
+    <Configurations>netcoreapp-Debug;netcoreapp-Release;uap-Debug;uap-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System.Threading.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Runtime\ref\System.Runtime.csproj" />
+  </ItemGroup>
+</Project>

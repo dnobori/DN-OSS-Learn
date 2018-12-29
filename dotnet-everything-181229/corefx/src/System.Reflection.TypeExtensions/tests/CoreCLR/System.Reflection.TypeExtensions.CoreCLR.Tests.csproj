@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{BED9F8D5-7420-404E-9EAD-D9148C16EAC1}</ProjectGuid>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Common\tests\Data\TinyAssembly.dll">
+      <Link>TinyAssembly.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MemberInfoTests.CoreCLR.cs" />
+    <Compile Include="ModuleTests.CoreCLR.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\$(AssemblyName).rd.xml" />
+  </ItemGroup>
+</Project>

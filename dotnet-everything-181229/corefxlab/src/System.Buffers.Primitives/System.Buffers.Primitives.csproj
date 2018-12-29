@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\tools\common.props" />
+  <PropertyGroup>
+    <Description>Slices of arrays and buffers</Description>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageTags>Slice Span Slices Spans</PackageTags>
+    <RootNamespace></RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="$(SystemMemoryVersion)" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="$(SystemCompilerServicesUnsafeVersion)" />
+  </ItemGroup>
+</Project>

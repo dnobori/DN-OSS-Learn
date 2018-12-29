@@ -1,0 +1,49 @@
+parameters:
+
+  # Needed because agent pool can't be read from a user-defined variable (Azure DevOps limitation)
+  # Defaults to dotnet-external-temp
+  agentPool: dotnet-external-temp
+
+  # Needed because runAsPublic is used in template expressions, which can't read from user-defined variables
+  # Defaults to true
+  runAsPublic: true
+
+# Call build.yml, which runs common build tasks
+phases:
+- template: /eng/build.yml
+  parameters:
+    name: Windows_NT
+    runAsPublic: ${{ parameters.runAsPublic }}
+    queue:
+      name: ${{ parameters.agentPool }}
+      parallel: 99
+      matrix:
+        Build_Debug_x86:
+          _BuildConfig: Debug
+          # overwrite some values when building debug
+          _PublishType: none
+          _SignType: test
+          _DotNetPublishToBlobFeed : false
+          _Platform: x86
+        Build_Debug_x64:
+          _BuildConfig: Debug
+          # overwrite some values when building debug
+          _PublishType: none
+          _SignType: test
+          _DotNetPublishToBlobFeed : false
+          _Platform: x64
+        Build_Release_x86:
+          _BuildConfig: Release
+          _Platform: x86
+        Build_Release_x64:
+          _BuildConfig: Release
+          _Platform: x64
+
+# only publish build assets if we're running internally
+- ${{ if eq(parameters.runAsPublic, 'false') }}:
+  - template: /eng/common/templates/phases/publish-build-assets.yml
+    parameters:
+      dependsOn: Windows_NT
+      queue:
+        name: Hosted VS2017
+      configuration: Debug

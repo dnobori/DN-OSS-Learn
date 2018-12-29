@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{3B6042E6-9765-4A03-9089-92050100C85E}</ProjectGuid>
+    <Configurations>netstandard-Debug;netstandard-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CompositionFailedExceptionTests.cs" />
+    <Compile Include="CompositionContextTests.cs" />
+    <Compile Include="CompositionContractTests.cs" />
+    <Compile Include="ExportFactoryTMetadataTests.cs" />
+    <Compile Include="ExportFactoryTests.cs" />
+    <Compile Include="ExportTests.cs" />
+  </ItemGroup>
+</Project>

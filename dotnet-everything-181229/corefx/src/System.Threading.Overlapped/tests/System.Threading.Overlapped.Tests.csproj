@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{861A3318-35AD-46ac-8257-8D5D2479BAD9}</ProjectGuid>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Configurations>netstandard-Debug;netstandard-Release;uap-Windows_NT-Debug;uap-Windows_NT-Release</Configurations>
+    <TestRuntime>true</TestRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DllImport.cs" />
+    <Compile Include="ThreadPoolBoundHandle_PreAllocatedOverlappedTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_IntegrationTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_Helpers.cs" />
+    <Compile Include="AsyncResult.cs" />
+    <Compile Include="Win32Handle.cs" />
+    <Compile Include="HandleFactory.cs" />
+    <Compile Include="ThreadPoolBoundHandle_HandleTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_GetNativeOverlappedStateTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_FreeNativeOverlappedTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_AllocateNativeOverlappedTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_DisposeTests.cs" />
+    <Compile Include="ThreadPoolBoundHandle_BindHandleTests.cs" />
+    <Compile Include="OverlappedTests.cs" />
+  </ItemGroup>
+</Project>

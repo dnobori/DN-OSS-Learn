@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>ASP.NET Core hosting infrastructure and startup logic for web applications running within a Windows service.</Description>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>aspnetcore;hosting</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Hosting" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ServiceProcess.ServiceController" />
+  </ItemGroup>
+
+</Project>

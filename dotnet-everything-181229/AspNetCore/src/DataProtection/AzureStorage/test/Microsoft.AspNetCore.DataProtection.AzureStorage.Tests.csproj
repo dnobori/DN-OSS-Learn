@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.DataProtection" />
+    <Reference Include="Microsoft.AspNetCore.DataProtection.AzureStorage" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection" />
+  </ItemGroup>
+
+</Project>

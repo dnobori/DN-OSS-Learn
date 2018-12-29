@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!--  Workaround https://github.com/dotnet/core-setup/issues/3726 -->
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+
+    <_EnableAllInclusiveRazorSdk>true</_EnableAllInclusiveRazorSdk>
+    <IsTestAssetProject>true</IsTestAssetProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Mvc" />
+  </ItemGroup>
+
+</Project>

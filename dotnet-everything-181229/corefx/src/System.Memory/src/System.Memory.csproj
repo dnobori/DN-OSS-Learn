@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{4BBC8F69-D03E-4432-AA8A-D458FA5B235A}</ProjectGuid>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPartialFacadeAssembly>true</IsPartialFacadeAssembly>
+    <ILLinkClearInitLocals>true</ILLinkClearInitLocals>
+    <Configurations>netcoreapp-Unix-Debug;netcoreapp-Unix-Release;netcoreapp-Windows_NT-Debug;netcoreapp-Windows_NT-Release;netcoreappaot-Windows_NT-Debug;netcoreappaot-Windows_NT-Release;uap-Windows_NT-Debug;uap-Windows_NT-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System\SequencePosition.cs" />
+    <Compile Include="System\ThrowHelper.cs" />
+    <Compile Include="System\Buffers\ArrayMemoryPool.cs" />
+    <Compile Include="System\Buffers\ArrayMemoryPool.ArrayMemoryPoolBuffer.cs" />
+    <Compile Include="System\Buffers\BuffersExtensions.cs" />
+    <Compile Include="System\Buffers\IBufferWriter.cs" />
+    <Compile Include="System\Buffers\MemoryPool.cs" />
+    <Compile Include="System\Buffers\OperationStatus.cs" />
+    <Compile Include="System\Buffers\ReadOnlySequence.cs" />
+    <Compile Include="System\Buffers\ReadOnlySequenceDebugView.cs" />
+    <Compile Include="System\Buffers\ReadOnlySequenceSegment.cs" />
+    <Compile Include="System\Buffers\ReadOnlySequence.Helpers.cs" />
+    <Compile Include="System\Buffers\SequenceReader.cs" />
+    <Compile Include="System\Buffers\SequenceReader.Search.cs" />
+    <Compile Include="System\Buffers\SequenceReaderExtensions.Binary.cs" />
+    <Compile Include="System\Buffers\Text\Base64Decoder.cs" />
+    <Compile Include="System\Buffers\Text\Base64Encoder.cs" />
+    <Compile Include="System\Runtime\InteropServices\SequenceMarshal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Common or Common-branched source files -->
+    <Compile Include="$(CommonPath)\CoreLib\System\Numerics\Hashing\HashHelpers.cs">
+      <Link>Common\System\Collections\HashHelpers.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ReferenceFromRuntime Include="System.Private.CoreLib" />
+  </ItemGroup>
+</Project>

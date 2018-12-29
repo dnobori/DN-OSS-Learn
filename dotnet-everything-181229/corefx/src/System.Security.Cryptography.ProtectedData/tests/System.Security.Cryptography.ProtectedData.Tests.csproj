@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{749ED7AD-E3C1-4611-99BD-C5D4B3934B3A}</ProjectGuid>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Configurations>netstandard-Windows_NT-Debug;netstandard-Windows_NT-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ProtectedDataTests.cs" />
+    <Compile Include="$(CommonTestPath)\System\Security\Cryptography\ByteUtils.cs">
+      <Link>CommonTest\System\Security\Cryptography\ByteUtils.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

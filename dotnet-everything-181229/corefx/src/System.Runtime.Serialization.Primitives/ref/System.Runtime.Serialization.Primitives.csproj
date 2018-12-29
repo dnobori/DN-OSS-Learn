@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{7E73C175-98C7-471B-B1A4-998C20F58854}</ProjectGuid>
+    <Configurations>netcoreapp-Debug;netcoreapp-Release;uap-Debug;uap-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System.Runtime.Serialization.Primitives.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Runtime\ref\System.Runtime.csproj" />
+  </ItemGroup>
+</Project>

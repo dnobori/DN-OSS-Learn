@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{99A66A70-7055-48FC-9BE1-36ED2B392E0D}</ProjectGuid>
+    <Configurations>netcoreapp-Debug;netcoreapp-Release;uap-Debug;uap-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System.Resources.Reader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Resources.ResourceManager\ref\System.Resources.ResourceManager.csproj" />
+    <ProjectReference Include="..\..\System.Runtime\ref\System.Runtime.csproj" />
+    <ProjectReference Include="..\..\System.IO\ref\System.IO.csproj" />
+  </ItemGroup>
+</Project>
