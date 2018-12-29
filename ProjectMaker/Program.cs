@@ -1065,6 +1065,8 @@ namespace DotNetCoreUtilTestApp
             public StringWriter __INCLUDE_LIST__ = new StringWriter();
             public StringWriter __COMPILE_LIST__ = new StringWriter();
             public StringWriter __NONE_LIST__ = new StringWriter();
+
+            public StringWriter __INCLUDE_DIRS__ = new StringWriter();
         }
 
         public static void vc_project_maker(string base_dir)
@@ -1089,11 +1091,11 @@ namespace DotNetCoreUtilTestApp
                         {
                             dir_list.Add(relative_dir);
 
-                            if (file.FileName.IsExtensionMatch(".c .cpp .s .asm .inl"))
+                            if (file.FileName.IsExtensionMatch(".c .cpp .cxx .s .asm .inl"))
                             {
                                 compile_list.Add(file);
                             }
-                            else if (file.FileName.IsExtensionMatch(".h .hpp"))
+                            else if (file.FileName.IsExtensionMatch(".h .hpp .hxx .tcc"))
                             {
                                 include_list.Add(file);
                             }
@@ -1112,6 +1114,8 @@ namespace DotNetCoreUtilTestApp
                 __APPNAME__ = base_dir.RemoteLastEnMark().GetFileName(),
             };
 
+            SortedSet<string> include_dir_list = new SortedSet<string>();
+
             foreach (var e in include_list)
             {
                 r.__INCLUDE_FILE_LIST__.WriteLine($"    <ClInclude Include=\"{e.RelativePath}\" />");
@@ -1119,6 +1123,8 @@ namespace DotNetCoreUtilTestApp
                 r.__INCLUDE_LIST__.WriteLine($"    <ClInclude Include=\"{e.RelativePath}\">");
                 r.__INCLUDE_LIST__.WriteLine($"      <Filter>{e.RelativePath.GetDirectoryName()}</Filter>");
                 r.__INCLUDE_LIST__.WriteLine($"    </ClInclude>");
+
+                include_dir_list.Add(e.RelativePath.GetDirectoryName());
             }
 
             foreach (var e in compile_list)
@@ -1137,6 +1143,11 @@ namespace DotNetCoreUtilTestApp
                 r.__NONE_LIST__.WriteLine($"    <None Include=\"{e.RelativePath}\">");
                 r.__NONE_LIST__.WriteLine($"      <Filter>{e.RelativePath.GetDirectoryName()}</Filter>");
                 r.__NONE_LIST__.WriteLine($"    </None>");
+            }
+
+            foreach (string dir in include_dir_list)
+            {
+                r.__INCLUDE_DIRS__.Write("$(ProjectDir)/" + dir.ReplaceStr("\\", "/") + ";");
             }
 
             SortedSet<string> dir_list2 = new SortedSet<string>();

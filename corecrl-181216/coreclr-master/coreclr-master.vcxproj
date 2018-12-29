@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8E2F0650-29F2-4E45-8A94-BF3AF5C58070}</ProjectGuid>
+    <ProjectGuid>{E1B64CE2-54EE-4BDC-BF98-7B0A0BF723C1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>coreclr-master</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -34,13 +34,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>./src/vm/;./src/inc/</AdditionalIncludeDirectories>
+	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/src/binder/inc;$(ProjectDir)/src/classlibnative/bcltype;$(ProjectDir)/src/classlibnative/inc;$(ProjectDir)/src/coreclr/hosts/coreconsole;$(ProjectDir)/src/coreclr/hosts/corerun;$(ProjectDir)/src/coreclr/hosts/coreshim;$(ProjectDir)/src/coreclr/hosts/inc;$(ProjectDir)/src/coreclr/hosts/unixcoreruncommon;$(ProjectDir)/src/corefx/System.Globalization.Native;$(ProjectDir)/src/debug/createdump;$(ProjectDir)/src/debug/daccess;$(ProjectDir)/src/debug/di;$(ProjectDir)/src/debug/ee;$(ProjectDir)/src/debug/ildbsymlib;$(ProjectDir)/src/debug/inc;$(ProjectDir)/src/debug/inc/amd64;$(ProjectDir)/src/debug/inc/arm;$(ProjectDir)/src/debug/inc/arm64;$(ProjectDir)/src/debug/inc/dump;$(ProjectDir)/src/debug/inc/i386;$(ProjectDir)/src/debug/shim;$(ProjectDir)/src/dlls/dbgshim;$(ProjectDir)/src/dlls/mscordbi;$(ProjectDir)/src/dlls/mscoree;$(ProjectDir)/src/dlls/mscorpe;$(ProjectDir)/src/dlls/mscorrc;$(ProjectDir)/src/gc;$(ProjectDir)/src/gc/env;$(ProjectDir)/src/gc/sample;$(ProjectDir)/src/gc/unix;$(ProjectDir)/src/ilasm;$(ProjectDir)/src/ildasm;$(ProjectDir)/src/ildasm/unixcoreclrloader;$(ProjectDir)/src/inc;$(ProjectDir)/src/inc/clr;$(ProjectDir)/src/inc/clr/fs;$(ProjectDir)/src/inc/llvm;$(ProjectDir)/src/inc/shim;$(ProjectDir)/src/inc/winrt;$(ProjectDir)/src/jit;$(ProjectDir)/src/jit/jitstd;$(ProjectDir)/src/md;$(ProjectDir)/src/md/ceefilegen;$(ProjectDir)/src/md/compiler;$(ProjectDir)/src/md/datasource;$(ProjectDir)/src/md/enc;$(ProjectDir)/src/md/heaps;$(ProjectDir)/src/md/hotdata;$(ProjectDir)/src/md/inc;$(ProjectDir)/src/md/runtime;$(ProjectDir)/src/md/tables;$(ProjectDir)/src/md/winmd;$(ProjectDir)/src/md/winmd/inc;$(ProjectDir)/src/nativeresources;$(ProjectDir)/src/pal/inc;$(ProjectDir)/src/pal/inc/rt;$(ProjectDir)/src/pal/inc/rt/cpp;$(ProjectDir)/src/pal/prebuilt/inc;$(ProjectDir)/src/pal/src/arch/amd64;$(ProjectDir)/src/pal/src/arch/arm;$(ProjectDir)/src/pal/src/arch/arm64;$(ProjectDir)/src/pal/src/arch/i386;$(ProjectDir)/src/pal/src/exception;$(ProjectDir)/src/pal/src/include/pal;$(ProjectDir)/src/pal/src/libunwind/include;$(ProjectDir)/src/pal/src/libunwind/include/tdep;$(ProjectDir)/src/pal/src/libunwind/include/tdep-aarch64;$(ProjectDir)/src/pal/src/libunwind/include/tdep-arm;$(ProjectDir)/src/pal/src/libunwind/include/tdep-hppa;$(ProjectDir)/src/pal/src/libunwind/include/tdep-ia64;$(ProjectDir)/src/pal/src/libunwind/include/tdep-mips;$(ProjectDir)/src/pal/src/libunwind/include/tdep-ppc32;$(ProjectDir)/src/pal/src/libunwind/include/tdep-ppc64;$(ProjectDir)/src/pal/src/libunwind/include/tdep-sh;$(ProjectDir)/src/pal/src/libunwind/include/tdep-tilegx;$(ProjectDir)/src/pal/src/libunwind/include/tdep-x86;$(ProjectDir)/src/pal/src/libunwind/include/tdep-x86_64;$(ProjectDir)/src/pal/src/libunwind/include/x86;$(ProjectDir)/src/pal/src/libunwind/src;$(ProjectDir)/src/pal/src/libunwind/src/aarch64;$(ProjectDir)/src/pal/src/libunwind/src/arm;$(ProjectDir)/src/pal/src/libunwind/src/coredump;$(ProjectDir)/src/pal/src/libunwind/src/hppa;$(ProjectDir)/src/pal/src/libunwind/src/ia64;$(ProjectDir)/src/pal/src/libunwind/src/mips;$(ProjectDir)/src/pal/src/libunwind/src/ppc32;$(ProjectDir)/src/pal/src/libunwind/src/ppc64;$(ProjectDir)/src/pal/src/libunwind/src/ptrace;$(ProjectDir)/src/pal/src/libunwind/src/setjmp;$(ProjectDir)/src/pal/src/libunwind/src/sh;$(ProjectDir)/src/pal/src/libunwind/src/tilegx;$(ProjectDir)/src/pal/src/libunwind/src/unwind;$(ProjectDir)/src/pal/src/libunwind/src/x86;$(ProjectDir)/src/pal/src/libunwind/src/x86_64;$(ProjectDir)/src/pal/src/libunwind/tests;$(ProjectDir)/src/pal/src/map;$(ProjectDir)/src/pal/src/misc;$(ProjectDir)/src/pal/src/numa;$(ProjectDir)/src/pal/src/objmgr;$(ProjectDir)/src/pal/src/safecrt;$(ProjectDir)/src/pal/src/synchmgr;$(ProjectDir)/src/pal/src/thread;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/_snprintf_s;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/_snwprintf_s;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/_vsnprintf_s;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/_vsnwprintf_s;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/fprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/fwprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/printf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/sprintf_s;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/sscanf_s;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/swprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/swscanf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/vfprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/vprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/vsprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/vswprintf;$(ProjectDir)/src/pal/tests/palsuite/c_runtime/wprintf;$(ProjectDir)/src/pal/tests/palsuite/common;$(ProjectDir)/src/pal/tests/palsuite/composite/synchronization/nativecriticalsection;$(ProjectDir)/src/pal/tests/palsuite/composite/synchronization/nativecs_interlocked;$(ProjectDir)/src/pal/tests/palsuite/debug_api/WriteProcessMemory/test1;$(ProjectDir)/src/pal/tests/palsuite/debug_api/WriteProcessMemory/test3;$(ProjectDir)/src/pal/tests/palsuite/pal_specific/pal_entrypoint/test1;$(ProjectDir)/src/pal/tests/palsuite/threading/CreateProcessA/test2;$(ProjectDir)/src/pal/tests/palsuite/threading/CreateProcessW/test2;$(ProjectDir)/src/pal/tests/palsuite/threading/DuplicateHandle/test11;$(ProjectDir)/src/pal/tests/palsuite/threading/ExitThread/test2;$(ProjectDir)/src/pal/tests/palsuite/threading/GetExitCodeProcess/test1;$(ProjectDir)/src/pal/tests/palsuite/threading/OpenProcess/test1;$(ProjectDir)/src/pal/tests/palsuite/threading/WaitForMultipleObjectsEx/test5;$(ProjectDir)/src/palrt;$(ProjectDir)/src/strongname/api;$(ProjectDir)/src/strongname/inc;$(ProjectDir)/src/ToolBox/SOS/lldbplugin;$(ProjectDir)/src/ToolBox/SOS/lldbplugin/inc;$(ProjectDir)/src/ToolBox/SOS/Strike;$(ProjectDir)/src/ToolBox/SOS/Strike/inc;$(ProjectDir)/src/ToolBox/SOS/Strike/xplat;$(ProjectDir)/src/ToolBox/superpmi/mcs;$(ProjectDir)/src/ToolBox/superpmi/superpmi;$(ProjectDir)/src/ToolBox/superpmi/superpmi-shared;$(ProjectDir)/src/ToolBox/superpmi/superpmi-shim-collector;$(ProjectDir)/src/ToolBox/superpmi/superpmi-shim-counter;$(ProjectDir)/src/ToolBox/superpmi/superpmi-shim-simple;$(ProjectDir)/src/tools/metainfo;$(ProjectDir)/src/tools/util;$(ProjectDir)/src/unwinder;$(ProjectDir)/src/unwinder/amd64;$(ProjectDir)/src/unwinder/arm;$(ProjectDir)/src/unwinder/arm64;$(ProjectDir)/src/unwinder/i386;$(ProjectDir)/src/utilcode;$(ProjectDir)/src/vm;$(ProjectDir)/src/vm/amd64;$(ProjectDir)/src/vm/arm;$(ProjectDir)/src/vm/arm64;$(ProjectDir)/src/vm/coreclr;$(ProjectDir)/src/vm/i386;$(ProjectDir)/src/zap;$(ProjectDir)/tests/src/baseservices/exceptions/regressions/Dev11/147911;$(ProjectDir)/tests/src/baseservices/exceptions/regressions/V1/SEH/VJ;$(ProjectDir)/tests/src/Common/Platform;$(ProjectDir)/tests/src/Interop/COM/NativeClients/Primitives;$(ProjectDir)/tests/src/Interop/COM/NativeServer;$(ProjectDir)/tests/src/Interop/COM/ServerContracts;$(ProjectDir)/tests/src/Interop/common;$(ProjectDir)/tests/src/Interop/PInvoke/Array;$(ProjectDir)/tests/src/Interop/PInvoke/IEnumerator;$(ProjectDir)/tests/src/Interop/PInvoke/SafeHandles;$(ProjectDir)/tests/src/Interop/PInvoke/SizeParamIndex/PInvoke;$(ProjectDir)/tests/src/Interop/PInvoke/SizeParamIndex/ReversePInvoke;$(ProjectDir)/tests/src/Interop/StructMarshalling/PInvoke;$(ProjectDir)/tests/src/Interop/StructMarshalling/ReversePInvoke/MarshalExpStruct;$(ProjectDir)/tests/src/Interop/StructMarshalling/ReversePInvoke/MarshalSeqStruct;$(ProjectDir)/tests/src/JIT/jit64/hfa/main/dll;$(ProjectDir)/tests/src/JIT/jit64/mcc/interop;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -2458,6 +2458,7 @@
     <ClCompile Include="src\pal\src\libunwind\tests\Gtest-concurrent.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Gtest-dyn1.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Gtest-exc.c" />
+    <ClCompile Include="src\pal\src\libunwind\tests\Gtest-init.cxx" />
     <ClCompile Include="src\pal\src\libunwind\tests\Gtest-nomalloc.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Gtest-resume-sig.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Gtest-resume-sig-rt.c" />
@@ -2480,8 +2481,10 @@
     <ClCompile Include="src\pal\src\libunwind\tests\Lrs-race.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-bt.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-concurrent.c" />
+    <ClCompile Include="src\pal\src\libunwind\tests\Ltest-cxx-exceptions.cxx" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-dyn1.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-exc.c" />
+    <ClCompile Include="src\pal\src\libunwind\tests\Ltest-init.cxx" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-init-local-signal.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-init-local-signal-lib.c" />
     <ClCompile Include="src\pal\src\libunwind\tests\Ltest-mem-validate.c" />
@@ -4927,9 +4930,6 @@
     <None Include="src\pal\src\libunwind\src\libunwind-generic.pc.in" />
     <None Include="src\pal\src\libunwind\src\Makefile.am" />
     <None Include="src\pal\src\libunwind\tests\check-namespace.sh.in" />
-    <None Include="src\pal\src\libunwind\tests\Gtest-init.cxx" />
-    <None Include="src\pal\src\libunwind\tests\Ltest-cxx-exceptions.cxx" />
-    <None Include="src\pal\src\libunwind\tests\Ltest-init.cxx" />
     <None Include="src\pal\src\libunwind\tests\Makefile.am" />
     <None Include="src\pal\src\libunwind\tests\perf-startup" />
     <None Include="src\pal\src\libunwind\tests\run-check-namespace" />
