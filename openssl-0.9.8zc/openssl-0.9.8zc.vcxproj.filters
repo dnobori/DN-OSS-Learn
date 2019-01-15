@@ -2,376 +2,379 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="apps">
-      <UniqueIdentifier>{F0D6AF23-64AB-4FB9-B0EB-803C315F9579}</UniqueIdentifier>
+      <UniqueIdentifier>{2BD65A15-B8F2-4613-BCE5-F71342C20437}</UniqueIdentifier>
     </Filter>
     <Filter Include="apps\demoCA">
-      <UniqueIdentifier>{05D4DB04-421B-4553-8D9A-FB6578CD182C}</UniqueIdentifier>
+      <UniqueIdentifier>{5C6E34FA-1311-4A0E-A03F-BF3D2884AA8B}</UniqueIdentifier>
     </Filter>
     <Filter Include="apps\demoCA\private">
-      <UniqueIdentifier>{0B2C8F5F-FDEF-4F46-ADB8-942BED6B1404}</UniqueIdentifier>
+      <UniqueIdentifier>{A2BB0119-B6BD-4184-B92D-55A6B86C9BF2}</UniqueIdentifier>
     </Filter>
     <Filter Include="apps\set">
-      <UniqueIdentifier>{EBCDCF02-887C-4BD6-9D09-48EE2D81B02C}</UniqueIdentifier>
+      <UniqueIdentifier>{D210029F-B758-431D-BEA5-78D161F5DD47}</UniqueIdentifier>
     </Filter>
     <Filter Include="bugs">
-      <UniqueIdentifier>{856E09DF-9081-40CD-AFCD-5C0D50FD04D5}</UniqueIdentifier>
+      <UniqueIdentifier>{C7FA9A9E-275D-402E-930A-F79CB72F4915}</UniqueIdentifier>
     </Filter>
     <Filter Include="certs">
-      <UniqueIdentifier>{DC370BF2-E8C8-4C27-B8C3-0B77B40EB100}</UniqueIdentifier>
+      <UniqueIdentifier>{0EF394B1-B164-4442-8431-2B5E1222EDC4}</UniqueIdentifier>
     </Filter>
     <Filter Include="certs\demo">
-      <UniqueIdentifier>{A33C41BB-E1CB-464E-989A-AB481310FCA0}</UniqueIdentifier>
+      <UniqueIdentifier>{731418FE-DB3D-43CE-B640-F414634A071B}</UniqueIdentifier>
     </Filter>
     <Filter Include="certs\expired">
-      <UniqueIdentifier>{E2D19481-A075-4753-BE34-7449DFE1B7D8}</UniqueIdentifier>
+      <UniqueIdentifier>{A2EB407D-D135-479F-A6C0-00767D9DF643}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto">
-      <UniqueIdentifier>{9DDA4F36-02EB-422E-95BE-348533920129}</UniqueIdentifier>
+      <UniqueIdentifier>{A34A0F48-6ECD-4B0C-AE10-AEEFC08373C3}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\aes">
-      <UniqueIdentifier>{18EA02A2-5908-471A-B46F-391F44B76E88}</UniqueIdentifier>
+      <UniqueIdentifier>{6BE0B88B-9563-4531-9F51-2DA87EBD5AEF}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\aes\asm">
-      <UniqueIdentifier>{5B54035E-5735-4484-B9E4-45707F1C0C8A}</UniqueIdentifier>
+      <UniqueIdentifier>{3B32FD61-1735-4709-94A7-C1E10CFDFD24}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\asn1">
-      <UniqueIdentifier>{AB784F75-676B-44FB-B6EE-63AC6D4BCF7E}</UniqueIdentifier>
+      <UniqueIdentifier>{0DE4FE3E-FD91-4A94-8618-ABAB049A8ACB}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\bf">
-      <UniqueIdentifier>{C7CA6081-4636-4004-A1B1-7622955F5B90}</UniqueIdentifier>
+      <UniqueIdentifier>{781F8F53-8205-4484-B97B-5E9AC96BDE95}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\bf\asm">
-      <UniqueIdentifier>{CD99160F-C5A8-4C1D-8AFC-AB78C1B8B11A}</UniqueIdentifier>
+      <UniqueIdentifier>{8495A2C6-02DA-4508-BFD9-4EB0AEAFF589}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\bio">
-      <UniqueIdentifier>{E4424E7E-6E13-4949-B135-6302F7B9AB94}</UniqueIdentifier>
+      <UniqueIdentifier>{69E98669-AAE5-4297-A716-54DFA15C9CBC}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\bn">
-      <UniqueIdentifier>{CBBFF8F5-EF15-4A40-BE7A-E08371149465}</UniqueIdentifier>
+      <UniqueIdentifier>{135FB942-85B9-4F3C-88B2-8A6219573A92}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\bn\asm">
-      <UniqueIdentifier>{2C127FB5-6447-4B00-93A9-7C2C6941FCB1}</UniqueIdentifier>
+      <UniqueIdentifier>{5B96EDE9-2963-4A2E-902F-0F83DE34645F}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\bn\asm\x86">
-      <UniqueIdentifier>{FED5011D-1356-45F0-8A64-2A8426B7DA65}</UniqueIdentifier>
+      <UniqueIdentifier>{2C92B58D-92C8-4820-AFBA-F40805C5597D}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\buffer">
-      <UniqueIdentifier>{6E21437A-F034-4264-8491-462028257DC1}</UniqueIdentifier>
+      <UniqueIdentifier>{470287CD-5335-4058-AD41-B8624ECAB3FA}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\camellia">
-      <UniqueIdentifier>{127F61E7-34F4-4933-8C9E-FA81BE7C0489}</UniqueIdentifier>
+      <UniqueIdentifier>{F24878B0-B21C-4194-AD33-B83264F5AED8}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\cast">
-      <UniqueIdentifier>{C58D4F1F-C539-446C-B7DF-A9D82AB17A37}</UniqueIdentifier>
+      <UniqueIdentifier>{12CCC89B-B831-4CED-941F-A95C915C8CFD}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\cast\asm">
-      <UniqueIdentifier>{9B2F35EC-DE67-4AAE-BE83-BD15E3B70980}</UniqueIdentifier>
+      <UniqueIdentifier>{0C6DA604-0B28-477A-A4B6-05039C71D64E}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\cms">
-      <UniqueIdentifier>{E48DA64B-7663-4917-A747-E0F9495E3F93}</UniqueIdentifier>
+      <UniqueIdentifier>{8CD30253-A4D0-4E29-B4B8-E18F18B3C488}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\comp">
-      <UniqueIdentifier>{71F15AE4-99D4-41B0-B26C-87C35376F2BF}</UniqueIdentifier>
+      <UniqueIdentifier>{EE5CAFAA-E880-4B31-ADAA-657724DCD47E}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\conf">
-      <UniqueIdentifier>{1F35F4F5-0502-4BE5-8D60-274375A53B7B}</UniqueIdentifier>
+      <UniqueIdentifier>{6C37777D-CB17-426D-B2FC-4B4D054AE3E3}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\des">
-      <UniqueIdentifier>{AD9F1310-0B97-48ED-9623-28C932DCDB4C}</UniqueIdentifier>
+      <UniqueIdentifier>{8A3398F2-7872-482A-83C5-2E1BFB973521}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\des\asm">
-      <UniqueIdentifier>{8B9BC710-B6FF-4045-849C-420BE1C40612}</UniqueIdentifier>
+      <UniqueIdentifier>{1A9C9B7F-0FB6-44F5-A850-486ECA030BF2}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\des\t">
-      <UniqueIdentifier>{10767238-1368-49B2-9A2F-6A8CD4DF64B6}</UniqueIdentifier>
+      <UniqueIdentifier>{1A972E09-4C2B-4DED-927E-D38C14DEE30C}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\des\times">
-      <UniqueIdentifier>{9F3D831C-6792-4250-A3BD-FCDCC526437D}</UniqueIdentifier>
+      <UniqueIdentifier>{358D55D0-492B-4A1E-AB93-AB5C7D258CD2}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\dh">
-      <UniqueIdentifier>{07DCD256-2357-4F68-9CB4-1031F45E35D0}</UniqueIdentifier>
+      <UniqueIdentifier>{3FC26E47-D180-4150-97E1-4D1E5E2C5CAC}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\dsa">
-      <UniqueIdentifier>{B5E140D2-C25A-4DF0-9FD0-519E7737986B}</UniqueIdentifier>
+      <UniqueIdentifier>{8399752F-6D3B-4D11-A973-85C0EDB867D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\dso">
-      <UniqueIdentifier>{88EAAEE4-501D-4398-8F09-D376DBD4469F}</UniqueIdentifier>
+      <UniqueIdentifier>{748D051E-85DF-4894-924A-7D52DED408F3}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ec">
-      <UniqueIdentifier>{B1502BDD-901E-4988-8936-D5079894747E}</UniqueIdentifier>
+      <UniqueIdentifier>{C608623E-5E9F-4007-9784-BB00B3B0E634}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ecdh">
-      <UniqueIdentifier>{CA65177D-9F28-49F3-8B13-807E64BDE061}</UniqueIdentifier>
+      <UniqueIdentifier>{8DEAD443-D1DE-41E2-AD65-E3C37BC56C53}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ecdsa">
-      <UniqueIdentifier>{EFDB6F2F-25B9-4715-AE70-D8EC5641B954}</UniqueIdentifier>
+      <UniqueIdentifier>{D2B8F4F7-186A-4895-BB50-9F9402718831}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\engine">
-      <UniqueIdentifier>{B572990D-143C-4913-904F-320F4FC2543F}</UniqueIdentifier>
+      <UniqueIdentifier>{312FC5CB-3D77-4EB8-9099-5A8BFD6C3EDA}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\err">
-      <UniqueIdentifier>{0A1CD553-5DF1-4ACB-817C-459FCD95E825}</UniqueIdentifier>
+      <UniqueIdentifier>{FFECBA75-FC08-449D-A000-09D05CB10906}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\evp">
-      <UniqueIdentifier>{30753BC7-C0E6-42EE-B608-77B03D020431}</UniqueIdentifier>
+      <UniqueIdentifier>{F5034DD9-FC17-4E25-9823-906F5347D389}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\hmac">
-      <UniqueIdentifier>{BC0C5D87-F50D-48A3-9D53-10075ACDAEF7}</UniqueIdentifier>
+      <UniqueIdentifier>{4B605A0D-09C7-4B25-B78A-E32ECD93D3C7}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\idea">
-      <UniqueIdentifier>{4619F6B6-57BE-45AF-B506-56B5F6A8DB42}</UniqueIdentifier>
+      <UniqueIdentifier>{AC60EF96-430B-4251-B0B7-B2ECA9848D0F}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\jpake">
-      <UniqueIdentifier>{F5FDCE06-950D-4912-8A14-1D4EBB19B46C}</UniqueIdentifier>
+      <UniqueIdentifier>{EC6E8E74-6FBA-4B27-AD3F-3C5C3E3A624B}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\krb5">
-      <UniqueIdentifier>{86C2F05D-EF7F-45ED-AED5-EF205977B790}</UniqueIdentifier>
+      <UniqueIdentifier>{8C3FEDAB-CE94-4790-B23D-879C1D5681FE}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\lhash">
-      <UniqueIdentifier>{1EBF9411-8978-4A57-A80E-3C933FCB7434}</UniqueIdentifier>
+      <UniqueIdentifier>{CC248575-BDBA-4BF2-9164-8B31C5239A1A}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\md2">
-      <UniqueIdentifier>{0791C56E-7057-471C-B57D-DBED40942B75}</UniqueIdentifier>
+      <UniqueIdentifier>{85C181A0-021B-4428-95D4-5DAB3F1A471B}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\md4">
-      <UniqueIdentifier>{4425D910-7247-4BAF-B10D-18006B2784C5}</UniqueIdentifier>
+      <UniqueIdentifier>{FA29C4F6-C020-4A8B-A1BC-10B3CAD5C3EE}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\md5">
-      <UniqueIdentifier>{045B72A3-B6B5-4316-A2A6-3590C2B48DE6}</UniqueIdentifier>
+      <UniqueIdentifier>{2089AC87-C6BB-457B-B7AB-B9A8E8959BAD}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\md5\asm">
-      <UniqueIdentifier>{ECA44BA5-F5EC-472C-84AD-522FE1FA0342}</UniqueIdentifier>
+      <UniqueIdentifier>{3775C5D9-7DDD-41F6-B00E-5ABCAFD8D0B7}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\mdc2">
-      <UniqueIdentifier>{17B0EF00-5CDF-43C3-AC56-36F6BD0418FA}</UniqueIdentifier>
+      <UniqueIdentifier>{5F06BAC1-6B88-493D-BCFE-02F417E0E481}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\objects">
-      <UniqueIdentifier>{4310633D-2C11-4F7B-AED7-B08EAE74BD42}</UniqueIdentifier>
+      <UniqueIdentifier>{DEF8CD7A-2237-4443-93AA-4EE2C35ACB76}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ocsp">
-      <UniqueIdentifier>{9165CE12-97A6-4D67-8A15-B7B616A981C8}</UniqueIdentifier>
+      <UniqueIdentifier>{EE7BD9FF-2C51-43B0-A801-3F9B01F1D34B}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\pem">
-      <UniqueIdentifier>{BA0A023D-4388-48DE-80A5-C5913B64D90A}</UniqueIdentifier>
+      <UniqueIdentifier>{9DFFB2F4-D559-4266-AE69-D3AA25FB873E}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\perlasm">
-      <UniqueIdentifier>{03EF9AA5-6DF2-4D07-B470-0CD514B218AC}</UniqueIdentifier>
+      <UniqueIdentifier>{9DC85C6C-9AA0-4602-A13E-DE2073F7521F}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\pkcs12">
-      <UniqueIdentifier>{98B18B1C-36E2-4230-AE33-632EF228E675}</UniqueIdentifier>
+      <UniqueIdentifier>{4A070211-097D-4126-BF86-A4607AFBB084}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\pkcs7">
-      <UniqueIdentifier>{194B8161-4A61-4947-9FA9-0EFE553C062B}</UniqueIdentifier>
+      <UniqueIdentifier>{E61AB9F5-9A4A-43DC-8CF1-D0E31B1B7FFB}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\pqueue">
-      <UniqueIdentifier>{84A1E24F-261F-4EBF-A50D-C02A906CC20A}</UniqueIdentifier>
+      <UniqueIdentifier>{DF5715AA-F919-4D2A-8429-AB3B0A3265A5}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rand">
-      <UniqueIdentifier>{759B06C7-98D2-4D31-8007-2CCEC3FD24CC}</UniqueIdentifier>
+      <UniqueIdentifier>{CBF242BA-830C-4D33-A986-25A1AF4332A8}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rc2">
-      <UniqueIdentifier>{FCA0FE60-574A-4981-A956-824A2612DB8F}</UniqueIdentifier>
+      <UniqueIdentifier>{40F54320-49A3-4612-80C2-9EAFE1102A18}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rc4">
-      <UniqueIdentifier>{BEDC1D5C-AB2B-4CD8-B5B6-660B08FBE37A}</UniqueIdentifier>
+      <UniqueIdentifier>{F068B7BC-B826-413B-B570-8B5EF17A7EB9}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rc4\asm">
-      <UniqueIdentifier>{698A8747-C415-49FE-BDDC-9595F1C48C95}</UniqueIdentifier>
+      <UniqueIdentifier>{94512D35-B65E-42A8-B5BE-5BFC295E41A6}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rc5">
-      <UniqueIdentifier>{766D228B-EF02-4543-A6A9-E56F9BE2F38D}</UniqueIdentifier>
+      <UniqueIdentifier>{8B786986-F8D1-44D7-B9B2-2F40080B4FFC}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rc5\asm">
-      <UniqueIdentifier>{BB47C178-72F3-4CA8-A277-3D08C17D99E6}</UniqueIdentifier>
+      <UniqueIdentifier>{E55F6B04-9DE4-4F26-B898-6CBF697781C2}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ripemd">
-      <UniqueIdentifier>{3F7B8B6B-7F34-485A-8346-FBFA8A062A7F}</UniqueIdentifier>
+      <UniqueIdentifier>{1882D7FF-1784-451C-BB47-239F295661A6}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ripemd\asm">
-      <UniqueIdentifier>{A0F52094-8F8D-4730-BA7F-FCAB9E4C7EF3}</UniqueIdentifier>
+      <UniqueIdentifier>{24342AD1-7037-451F-972D-2D5F4D1904F7}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\rsa">
-      <UniqueIdentifier>{977E97FD-C04C-49C5-8343-1C52E11EF1AD}</UniqueIdentifier>
+      <UniqueIdentifier>{4FCB8A95-060E-4B7A-8A8F-4CB635F957D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\seed">
-      <UniqueIdentifier>{580800F0-FFC3-4773-898A-65973E6CA4EA}</UniqueIdentifier>
+      <UniqueIdentifier>{8975D233-1271-40A2-84BE-480FEDEEE9F3}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\sha">
-      <UniqueIdentifier>{540E3CB5-F8D8-4DD2-9A3D-38AE458C460A}</UniqueIdentifier>
+      <UniqueIdentifier>{55ECC4C4-5BAF-4215-AE4D-DEFA43FB7D7C}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\sha\asm">
-      <UniqueIdentifier>{9F9D1EEC-5B59-408A-86D2-DEE58EBB5D16}</UniqueIdentifier>
+      <UniqueIdentifier>{37C944EF-01BE-4742-884F-96104844CF2B}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\stack">
-      <UniqueIdentifier>{69920024-C512-4D80-89D3-F36D9E726CD6}</UniqueIdentifier>
+      <UniqueIdentifier>{0B84DCAA-0823-4204-AEF6-70FC0A5F048A}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\store">
-      <UniqueIdentifier>{8CBF6342-3253-43F5-B754-CAB103BE2822}</UniqueIdentifier>
+      <UniqueIdentifier>{7C1A9160-F6AA-4276-A29E-77ED966736DF}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\threads">
-      <UniqueIdentifier>{F9508A36-CE5A-47B6-B718-5B0E61EF84BD}</UniqueIdentifier>
+      <UniqueIdentifier>{405FAF40-392D-4A15-8EAF-E03867B5D30B}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\txt_db">
-      <UniqueIdentifier>{75CAD16A-EE1E-4D79-B522-AB4BB5113D3F}</UniqueIdentifier>
+      <UniqueIdentifier>{B98FCE47-E96B-4C0B-B8CB-31FD7273D068}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\ui">
-      <UniqueIdentifier>{B0B742C4-3982-4E76-9DB9-4DC71285FBEB}</UniqueIdentifier>
+      <UniqueIdentifier>{E51B4FEE-BDB0-485E-8EC4-81BF9DA6F6D6}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\x509">
-      <UniqueIdentifier>{9B9B742F-26A6-4142-854C-D6DF165083CD}</UniqueIdentifier>
+      <UniqueIdentifier>{7585E94F-ECB5-4DC7-A65F-7C4053AC8459}</UniqueIdentifier>
     </Filter>
     <Filter Include="crypto\x509v3">
-      <UniqueIdentifier>{3FCDA704-56D1-4B04-944A-03455F606B3F}</UniqueIdentifier>
+      <UniqueIdentifier>{6D162BE9-49A3-4C6D-AA42-3A090C97B2A7}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos">
-      <UniqueIdentifier>{2AA2F78B-4DC5-4D25-B1BA-B174230805FA}</UniqueIdentifier>
+      <UniqueIdentifier>{660428C7-5626-4731-A314-5C3EEEC56E42}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\asn1">
-      <UniqueIdentifier>{070BA33B-D697-4B45-894B-91E743DF8344}</UniqueIdentifier>
+      <UniqueIdentifier>{FE8509AC-541F-4437-8041-8EFD14F16E74}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\bio">
-      <UniqueIdentifier>{0A21C632-E1B7-47F1-8768-ED8A83043765}</UniqueIdentifier>
+      <UniqueIdentifier>{18D992F9-29E3-40C6-9D90-3E4E18D30F37}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\easy_tls">
-      <UniqueIdentifier>{BC366A62-3AAA-4DAC-A023-C6D9F7E7D1BB}</UniqueIdentifier>
+      <UniqueIdentifier>{C8FE95B6-9BCB-44DC-B23E-A0A6789CDD08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demos\engines">
+      <UniqueIdentifier>{9DC4B529-0048-4E33-B3C5-9D1106E960B1}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\engines\cluster_labs">
-      <UniqueIdentifier>{AB88828D-F5A7-46C0-A91F-BDD34AEA9697}</UniqueIdentifier>
+      <UniqueIdentifier>{54D443F2-E907-44D6-8394-A9DE2BEDD426}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\engines\ibmca">
-      <UniqueIdentifier>{FA6D9639-B501-45B2-BA16-590351602F44}</UniqueIdentifier>
+      <UniqueIdentifier>{4294671D-4AD2-4A7D-9768-BDD3652BFB78}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\engines\rsaref">
-      <UniqueIdentifier>{A89D64C2-3AA1-43FB-AD36-B4E9A8775562}</UniqueIdentifier>
+      <UniqueIdentifier>{8510C8E1-5008-41D6-9A93-8381C82BBCD7}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\engines\zencod">
-      <UniqueIdentifier>{E9F4BC0A-2098-4F67-8DE1-0CE144575199}</UniqueIdentifier>
+      <UniqueIdentifier>{B62E5634-614B-4208-AC00-654412F9EFBD}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\jpake">
-      <UniqueIdentifier>{A0A92F93-5E1A-459D-BA65-1C290324E41D}</UniqueIdentifier>
+      <UniqueIdentifier>{AB6973ED-D426-4995-90F0-31C1B21F4435}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\pkcs12">
-      <UniqueIdentifier>{91127BFE-B793-4607-851D-8007FF9CAA9B}</UniqueIdentifier>
+      <UniqueIdentifier>{5DF47A4A-00AF-4A68-B57E-895976595CD9}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\prime">
-      <UniqueIdentifier>{5957E528-E5EB-4F5A-913A-7D8D7D9C38CF}</UniqueIdentifier>
+      <UniqueIdentifier>{E4363DC6-951A-46DC-921E-0263D3DDE370}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\sign">
-      <UniqueIdentifier>{C01ED1F6-1A3D-4CFD-AAE0-68C4B5B06478}</UniqueIdentifier>
+      <UniqueIdentifier>{D24AF794-0D3C-447F-B705-FEB9BD8DAF11}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\ssl">
-      <UniqueIdentifier>{52077E44-0DD7-4447-9888-BAEF84789D77}</UniqueIdentifier>
+      <UniqueIdentifier>{E2351B66-502E-4C27-8E6F-3C403361785E}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\ssltest-ecc">
-      <UniqueIdentifier>{A2563D89-F101-48A3-AD86-3FAFD9C2AA53}</UniqueIdentifier>
+      <UniqueIdentifier>{43826E9E-0DBF-496B-95ED-4979CC7DA542}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\state_machine">
-      <UniqueIdentifier>{56345FA9-9714-4FBF-80B6-7CF248B414B8}</UniqueIdentifier>
+      <UniqueIdentifier>{DCAF90A9-8ECE-4AD2-A0AE-D33107A9D6D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\tunala">
-      <UniqueIdentifier>{8698B8EF-1250-4E47-B3BE-3D1ADD533263}</UniqueIdentifier>
+      <UniqueIdentifier>{1D778196-468C-4868-8F8B-00248904BEBE}</UniqueIdentifier>
     </Filter>
     <Filter Include="demos\x509">
-      <UniqueIdentifier>{7A8F4B33-98A9-4899-9822-FA169297B6B6}</UniqueIdentifier>
+      <UniqueIdentifier>{2DB64714-01D8-4644-862C-FF794CD3415A}</UniqueIdentifier>
     </Filter>
     <Filter Include="doc">
-      <UniqueIdentifier>{43A76D86-36C4-47EB-8B2E-63AB9D02BCB7}</UniqueIdentifier>
+      <UniqueIdentifier>{465F7857-0966-4A4B-B55F-112682142E34}</UniqueIdentifier>
     </Filter>
     <Filter Include="doc\apps">
-      <UniqueIdentifier>{FE175D61-8736-4F02-9887-9C0B116D55D4}</UniqueIdentifier>
+      <UniqueIdentifier>{B50012AD-7C0A-4031-ACBA-9372A799E48D}</UniqueIdentifier>
     </Filter>
     <Filter Include="doc\crypto">
-      <UniqueIdentifier>{9F06F960-45D8-4DB6-A253-66C9A0E967F3}</UniqueIdentifier>
+      <UniqueIdentifier>{C513C9AF-08E9-45B4-8183-0510910EB5FA}</UniqueIdentifier>
     </Filter>
     <Filter Include="doc\HOWTO">
-      <UniqueIdentifier>{65B0F092-6B0D-4310-AD6E-48D261241D05}</UniqueIdentifier>
+      <UniqueIdentifier>{300B19FC-482B-4F3E-BF66-69FD2F8E9A2F}</UniqueIdentifier>
     </Filter>
     <Filter Include="doc\ssl">
-      <UniqueIdentifier>{420809F1-0E1B-48FE-90CD-57671123E45D}</UniqueIdentifier>
+      <UniqueIdentifier>{35B46085-6EEA-4D77-841D-2801285E4488}</UniqueIdentifier>
     </Filter>
     <Filter Include="engines">
-      <UniqueIdentifier>{B241BBA0-ACE4-4AA9-B9E2-F221164140E7}</UniqueIdentifier>
+      <UniqueIdentifier>{86FE74F6-8619-4917-BC3B-D49CB997E0B3}</UniqueIdentifier>
     </Filter>
     <Filter Include="engines\vendor_defns">
-      <UniqueIdentifier>{1D3E39EC-6E70-4859-BDFE-BEC6D3C7D6E5}</UniqueIdentifier>
+      <UniqueIdentifier>{8EC34666-6D70-4FDF-87F8-7527C12C5177}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips">
-      <UniqueIdentifier>{7467481E-0E82-43E3-BFCE-50DD057E956C}</UniqueIdentifier>
+      <UniqueIdentifier>{31B3D61F-53CE-46BF-AB30-0782E3489B36}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\aes">
-      <UniqueIdentifier>{08C17807-4D45-4101-A6C9-9B62604432BB}</UniqueIdentifier>
+      <UniqueIdentifier>{AC014C51-70A4-4D8F-8289-A817228D236C}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\des">
-      <UniqueIdentifier>{8EF1ED04-DDB9-4CD5-841A-147F3255C4BE}</UniqueIdentifier>
+      <UniqueIdentifier>{07978B9E-200F-453B-B57F-786215DF7CE0}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\dh">
-      <UniqueIdentifier>{6FA6CDAC-D704-46D4-A95F-C6723119D30A}</UniqueIdentifier>
+      <UniqueIdentifier>{5D898900-0DA7-412B-9178-58F85CC05F2A}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\dsa">
-      <UniqueIdentifier>{53F672FE-8811-45F3-B950-B772EA045528}</UniqueIdentifier>
+      <UniqueIdentifier>{CD399E1A-267B-45F7-AD8A-2A1486A39108}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\hmac">
-      <UniqueIdentifier>{6E47B557-49BC-49BE-B983-01E1B8F81574}</UniqueIdentifier>
+      <UniqueIdentifier>{6557E38F-4A88-469B-9A64-7EE4DD982FBF}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\rand">
-      <UniqueIdentifier>{4F679F58-8743-41A9-9C46-24A4EBFCC4FB}</UniqueIdentifier>
+      <UniqueIdentifier>{ED0A43DF-476E-497D-AD92-A31968C88A5E}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\rsa">
-      <UniqueIdentifier>{40F05EB3-FD7C-4C96-A618-F823F0605EA4}</UniqueIdentifier>
+      <UniqueIdentifier>{E8D137B0-3B6A-4237-A531-0E09045FC3E6}</UniqueIdentifier>
     </Filter>
     <Filter Include="fips\sha">
-      <UniqueIdentifier>{F9636BD7-4B1D-4368-9B03-FDFD42971CF0}</UniqueIdentifier>
+      <UniqueIdentifier>{89D4D917-3715-4A80-9F25-BE7F49DFF66E}</UniqueIdentifier>
     </Filter>
     <Filter Include="MacOS">
-      <UniqueIdentifier>{FDA4C754-E8FA-4C9C-BC3E-7DB0E2B88F1F}</UniqueIdentifier>
+      <UniqueIdentifier>{808AC74E-AE22-41BB-B8D0-24D829648EC2}</UniqueIdentifier>
     </Filter>
     <Filter Include="MacOS\GetHTTPS.src">
-      <UniqueIdentifier>{2DFA1129-ACE7-4E3E-95ED-E3DE149B7CE6}</UniqueIdentifier>
+      <UniqueIdentifier>{B804F996-ED16-4E76-8B17-71E7C4F84DF6}</UniqueIdentifier>
     </Filter>
     <Filter Include="ms">
-      <UniqueIdentifier>{CBEFBFD9-6630-437D-B945-7958461305A5}</UniqueIdentifier>
+      <UniqueIdentifier>{B58A19FA-2E61-40C2-BCB4-5A01A3B0E9EE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Netware">
-      <UniqueIdentifier>{473D185A-03CB-4C52-AAB8-7AA424C3430E}</UniqueIdentifier>
+      <UniqueIdentifier>{E822C2D4-6D3C-48EE-8008-0EB97FAA9DF3}</UniqueIdentifier>
     </Filter>
     <Filter Include="os2">
-      <UniqueIdentifier>{B6B7450F-D1E5-42A7-BA0D-70199D471E01}</UniqueIdentifier>
+      <UniqueIdentifier>{8FEB6A93-9784-42D3-8897-14184287B6EF}</UniqueIdentifier>
     </Filter>
     <Filter Include="shlib">
-      <UniqueIdentifier>{725FBE7E-350C-442C-A795-71E2BA09C012}</UniqueIdentifier>
+      <UniqueIdentifier>{7CEA8D97-4A0B-4F2D-A3B6-06A15688A144}</UniqueIdentifier>
     </Filter>
     <Filter Include="ssl">
-      <UniqueIdentifier>{EE50B728-2B93-4607-9C06-9939C642520D}</UniqueIdentifier>
+      <UniqueIdentifier>{31B5C4A3-7225-4F8E-A9B3-C0B4835A4EF2}</UniqueIdentifier>
     </Filter>
     <Filter Include="test">
-      <UniqueIdentifier>{72AA1CAF-04FB-4AE7-AD11-385518D68314}</UniqueIdentifier>
+      <UniqueIdentifier>{F9FD5112-40DA-47B9-8085-8A6E6B9897DF}</UniqueIdentifier>
     </Filter>
     <Filter Include="test\smime-certs">
-      <UniqueIdentifier>{162CDA5A-540D-4976-9A66-D53EA184F3C4}</UniqueIdentifier>
+      <UniqueIdentifier>{9945205A-7761-4DE3-A578-2A6256A2CEE9}</UniqueIdentifier>
     </Filter>
     <Filter Include="times">
-      <UniqueIdentifier>{E088CEAE-0335-4B41-A176-794602E63C7C}</UniqueIdentifier>
+      <UniqueIdentifier>{8A14C1FB-0BEB-482F-A924-F29A35899960}</UniqueIdentifier>
     </Filter>
     <Filter Include="times\090">
-      <UniqueIdentifier>{1C20896A-0C5E-4FAD-B8CA-E04EB02646C7}</UniqueIdentifier>
+      <UniqueIdentifier>{849D4C4A-B2B8-4F66-BEE1-46F1BB19E178}</UniqueIdentifier>
     </Filter>
     <Filter Include="times\091">
-      <UniqueIdentifier>{5303BB0E-0D23-4D5D-BF4D-D33D531BB6FB}</UniqueIdentifier>
+      <UniqueIdentifier>{06A8D8C0-7859-444A-8066-1E25B31118F8}</UniqueIdentifier>
     </Filter>
     <Filter Include="times\x86">
-      <UniqueIdentifier>{3C9EF43B-E501-4E17-A4A3-09F7348632E4}</UniqueIdentifier>
+      <UniqueIdentifier>{32F81685-F609-456D-89FE-8DF0687A6754}</UniqueIdentifier>
     </Filter>
     <Filter Include="tools">
-      <UniqueIdentifier>{490E9A0C-E880-4C14-B4C7-0FFBED998896}</UniqueIdentifier>
+      <UniqueIdentifier>{B3228125-AD63-4A18-8E4F-8C09D89BBB73}</UniqueIdentifier>
     </Filter>
     <Filter Include="util">
-      <UniqueIdentifier>{51EB6E44-DCB9-4A74-B901-1417EF95F730}</UniqueIdentifier>
+      <UniqueIdentifier>{388C20F9-9ADB-42E1-90B2-030E6CC362A2}</UniqueIdentifier>
     </Filter>
     <Filter Include="util\pl">
-      <UniqueIdentifier>{467B0D22-1C83-4C62-B6A0-41C4B5A1E7AC}</UniqueIdentifier>
+      <UniqueIdentifier>{5B5CD57C-15F8-4B54-86AD-EBE7DE5A083A}</UniqueIdentifier>
     </Filter>
     <Filter Include="VMS">
-      <UniqueIdentifier>{D6F50310-1C87-44CC-B1A2-007868EA51E6}</UniqueIdentifier>
+      <UniqueIdentifier>{22C62894-205E-4247-A486-538F01967D99}</UniqueIdentifier>
     </Filter>
 
   </ItemGroup>
@@ -819,6 +822,12 @@
     </ClInclude>
     <ClInclude Include="fips\fips_utl.h">
       <Filter>fips</Filter>
+    </ClInclude>
+    <ClInclude Include="MacOS\GetHTTPS.src\CPStringUtils.hpp">
+      <Filter>MacOS\GetHTTPS.src</Filter>
+    </ClInclude>
+    <ClInclude Include="MacOS\GetHTTPS.src\ErrorHandling.hpp">
+      <Filter>MacOS\GetHTTPS.src</Filter>
     </ClInclude>
     <ClInclude Include="MacOS\GetHTTPS.src\MacSocket.h">
       <Filter>MacOS\GetHTTPS.src</Filter>
@@ -5286,12 +5295,6 @@
     </None>
     <None Include="fips\openssl_fips_fingerprint">
       <Filter>fips</Filter>
-    </None>
-    <None Include="MacOS\GetHTTPS.src\CPStringUtils.hpp">
-      <Filter>MacOS\GetHTTPS.src</Filter>
-    </None>
-    <None Include="MacOS\GetHTTPS.src\ErrorHandling.hpp">
-      <Filter>MacOS\GetHTTPS.src</Filter>
     </None>
     <None Include="MacOS\mklinks.as.hqx">
       <Filter>MacOS</Filter>

@@ -1,0 +1,114 @@
+parameters:
+
+  # Needed because agent pool can't be read from a user-defined variable (Azure DevOps limitation)
+  agentPool: dotnet-external-temp
+
+  # Needed because runAsPublic is used in template expressions, which can't read from user-defined variables
+  runAsPublic: true
+
+jobs:
+- template: /eng/common/templates/jobs/jobs.yml
+  parameters:
+    runAsPublic: ${{ parameters.runAsPublic }}
+    enableMicrobuild: true
+    enablePublishBuildArtifacts: true
+    enablePublishTestResults: true
+    enablePublishBuildAssets: true
+    enableTelemetry: true
+    helixRepo: dotnet/winforms
+
+    jobs:
+    - job: Windows_NT
+      pool: ${{ parameters.agentPool }}
+
+      variables:
+
+        # needed for signing
+        - name: _TeamName
+          value: DotNetCore
+        - name: _SignType
+          value: test
+        - name: _SignArgs
+          value: ''
+        - name: _Sign
+          value: true
+
+        # needed for darc (dependency flow) publishing
+        - name: _PublishType
+          value: none
+        - name: _DotNetPublishToBlobFeed
+          value: false
+        - name: _PublishArgs
+          value: ''
+        - name: _OfficialBuildIdArgs
+          value: ''
+
+        # Override some values if we're building internally
+        - ${{ if eq(parameters.runAsPublic, 'false') }}:
+
+          # note: You have to use list syntax here (-name: value) or you will get errors about declaring the same variable multiple times
+          - name: _PublishType
+            value: blob
+          - name: _SignType
+            value: real
+          - name: _DotNetPublishToBlobFeed
+            value: true
+          - group: DotNet-Blob-Feed
+          - group: DotNet-Symbol-Server-Pats
+          - name: _PublishBlobFeedUrl
+            value: https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json
+
+          # note: Even though they are referenced here, user defined variables (like $(_SignType)) are not resolved 
+          # until the agent is running on the machine. They can be overridden any time before they are resolved,
+          # like in the job matrix below (see Build_Debug)
+          - name: _SignArgs
+            value: /p:DotNetSignType=$(_SignType) /p:TeamName=$(_TeamName) /p:Sign=$(_Sign)
+          - name: _PublishArgs
+            value: /p:DotNetPublishBlobFeedKey=$(dotnetfeed-storage-access-key-1)
+              /p:DotNetPublishBlobFeedUrl=$(_PublishBlobFeedUrl)
+              /p:DotNetPublishToBlobFeed=$(_DotNetPublishToBlobFeed)
+              /p:DotNetSymbolServerTokenMsdl=$(microsoft-symbol-server-pat)
+              /p:DotNetSymbolServerTokenSymWeb=$(symweb-symbol-server-pat)
+          - name: _OfficialBuildIdArgs
+            value: /p:OfficialBuildId=$(BUILD.BUILDNUMBER)
+
+      strategy:
+        matrix:
+          Build_Debug:
+            _BuildConfig: Debug
+            # override some variables for debug
+            _PublishType: none
+
+            # Test signing is running into sporadic failures on build machines, so disable it for now
+            # TODO: revert this once https://github.com/dotnet/core-eng/issues/4734 is resolved
+            #_SignType: test
+            _SignType: ''
+            _Sign: false
+
+            _DotNetPublishToBlobFeed : false
+          Build_Release:
+            _BuildConfig: Release
+
+      steps:
+      - checkout: self
+        clean: true
+
+      # Build, test, pack, and sign
+      - script: eng\common\cibuild.cmd
+          -configuration $(_BuildConfig) 
+          -prepareMachine
+          $(_PublishArgs)
+          $(_SignArgs)
+          $(_OfficialBuildIdArgs)
+        displayName: Windows Build / Publish
+
+      # Publish the nuget package as a build artifact
+      # Only do this if the build is internal AND the config is released (this ensures package contents are real signed)
+      - ${{ if eq(parameters.runAsPublic, 'false') }}:
+        - task: PublishPipelineArtifact@0
+          inputs:
+            artifactName: 'Package'
+            targetPath: '$(Build.SourcesDirectory)/artifacts/packages/$(_BuildConfig)/Shipping'
+          displayName: Publish package to build artifacts
+          continueOnError: true
+          condition: and(succeeded(), eq(variables['_BuildConfig'], 'Release'))

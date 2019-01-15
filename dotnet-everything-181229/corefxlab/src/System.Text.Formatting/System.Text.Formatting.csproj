@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\tools\common.props" />
+  <PropertyGroup>
+    <Description>Non-allocating formatting library</Description>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageTags>.NET formatting corefxlab</PackageTags>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System\**\*.cs;Properties\**\*.cs" Exclude="GenerateCompatibilityTests\**\*.cs;bin\**;obj\**;**\*.xproj;packages\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Buffers.Experimental\System.Buffers.Experimental.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Buffers" Version="$(SystemBuffersVersion)" />
+  </ItemGroup>
+</Project>

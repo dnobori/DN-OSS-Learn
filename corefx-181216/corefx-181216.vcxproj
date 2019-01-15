@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{99AA4F55-E7C6-4AB6-8384-6B3EC2EE637A}</ProjectGuid>
+    <ProjectGuid>{A639F288-AD87-42A9-8274-46EF5B962042}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>corefx-181216</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -34,12 +34,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/src/Native/AnyOS/brotli/common;$(ProjectDir)/src/Native/AnyOS/brotli/dec;$(ProjectDir)/src/Native/AnyOS/brotli/enc;$(ProjectDir)/src/Native/AnyOS/brotli/include/brotli;$(ProjectDir)/src/Native/AnyOS/zlib;$(ProjectDir)/src/Native/Unix/Common;$(ProjectDir)/src/Native/Unix/Common/safemath;$(ProjectDir)/src/Native/Unix/System.IO.Ports.Native;$(ProjectDir)/src/Native/Unix/System.Native;$(ProjectDir)/src/Native/Unix/System.Net.Http.Native;$(ProjectDir)/src/Native/Unix/System.Net.Security.Native;$(ProjectDir)/src/Native/Unix/System.Security.Cryptography.Native;$(ProjectDir)/src/Native/Unix/System.Security.Cryptography.Native.Apple;$(ProjectDir)/src/Native/Windows/clrcompression/zlib;$(ProjectDir)/src/Native/Windows/clrcompression/zlib-intel;$(ProjectDir)/src/System.Reflection.Metadata/tests/Resources/Misc;$(ProjectDir)/src/System.Runtime.CompilerServices.Unsafe/src/include/netcoreapp;$(ProjectDir)/src/System.Runtime.CompilerServices.Unsafe/src/include/netstandard;$(ProjectDir)/src/System.Runtime.CompilerServices.Unsafe/src/include/netstandard1.0;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -344,6 +345,9 @@
     <ClCompile Include="src\System.Diagnostics.FileVersionInfo\tests\NativeConsoleApp\NativeConsoleApp.cpp" />
     <ClCompile Include="src\System.Diagnostics.FileVersionInfo\tests\NativeLibrary\dllmain.cpp" />
     <ClCompile Include="src\System.Diagnostics.FileVersionInfo\tests\SecondNativeLibrary\dllmain.cpp" />
+    <ClCompile Include="src\System.Private.Xml\src\System\Xml\Core\HtmlRawTextWriterGenerator.cxx" />
+    <ClCompile Include="src\System.Private.Xml\src\System\Xml\Core\TextRawTextWriterGenerator.cxx" />
+    <ClCompile Include="src\System.Private.Xml\src\System\Xml\Core\XmlRawTextWriterGenerator.cxx" />
 
   </ItemGroup>
   <ItemGroup>
@@ -678,12 +682,6 @@
     <None Include="pkg\Directory.Build.targets" />
     <None Include="pkg\frameworkPackage.targets" />
     <None Include="pkg\useSharedDesignerContext.txt" />
-    <None Include="src\Common\.vs\Common.Tests\DesignTimeBuild\.dtbcache" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\db.lock" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\storage.ide" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\storage.ide-shm" />
-    <None Include="src\Common\.vs\Common.Tests\v15\Server\sqlite3\storage.ide-wal" />
-    <None Include="src\Common\.vs\Common.Tests\v15\.suo" />
     <None Include="src\Common\src\CoreLib\Internal\IO\File.cs" />
     <None Include="src\Common\src\CoreLib\Internal\IO\File.Unix.cs" />
     <None Include="src\Common\src\CoreLib\Internal\IO\File.Windows.cs" />
@@ -8487,12 +8485,6 @@
     <None Include="src\System.Globalization.Extensions\tests\System.Globalization.Extensions.Tests.csproj" />
     <None Include="src\System.Globalization.Extensions\Directory.Build.props" />
     <None Include="src\System.Globalization.Extensions\System.Globalization.Extensions.sln" />
-    <None Include="src\System.IO\.vs\System.IO\DesignTimeBuild\.dtbcache" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\db.lock" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\storage.ide" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\storage.ide-shm" />
-    <None Include="src\System.IO\.vs\System.IO\v15\Server\sqlite3\storage.ide-wal" />
-    <None Include="src\System.IO\.vs\System.IO\v15\.suo" />
     <None Include="src\System.IO\ref\Configurations.props" />
     <None Include="src\System.IO\ref\System.IO.csproj" />
     <None Include="src\System.IO\ref\System.IO.Manual.cs" />
@@ -12306,7 +12298,6 @@
     <None Include="src\System.Private.Xml\src\System\Xml\Core\GenerateWriters_sd.bat" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\GenerateWriters_tfs.bat" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\HtmlEncodedRawTextWriter.cs" />
-    <None Include="src\System.Private.Xml\src\System\Xml\Core\HtmlRawTextWriterGenerator.cxx" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\HtmlTernaryTree.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\HtmlUtf8RawTextWriter.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\IDtdInfo.cs" />
@@ -12328,7 +12319,6 @@
     <None Include="src\System.Private.Xml\src\System\Xml\Core\ReadState.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\SecureStringHasher.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\TextEncodedRawTextWriter.cs" />
-    <None Include="src\System.Private.Xml\src\System\Xml\Core\TextRawTextWriterGenerator.cxx" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\TextUtf8RawTextWriter.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\ValidatingReaderNodeData.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\ValidationType.cs" />
@@ -12344,7 +12334,6 @@
     <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlEncodedRawTextWriterAsync.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlEventCache.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlParserContext.cs" />
-    <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlRawTextWriterGenerator.cxx" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlRawWriter.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlRawWriterAsync.cs" />
     <None Include="src\System.Private.Xml\src\System\Xml\Core\XmlReader.cs" />
@@ -16076,12 +16065,6 @@
     <None Include="src\System.Resources.Writer\tests\System.Resources.Writer.Tests.csproj" />
     <None Include="src\System.Resources.Writer\Directory.Build.props" />
     <None Include="src\System.Resources.Writer\System.Resources.Writer.sln" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\DesignTimeBuild\.dtbcache" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\db.lock" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\storage.ide" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\storage.ide-shm" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\Server\sqlite3\storage.ide-wal" />
-    <None Include="src\System.Runtime\.vs\System.Runtime\v15\.suo" />
     <None Include="src\System.Runtime\ref\Configurations.props" />
     <None Include="src\System.Runtime\ref\System.Runtime.cs" />
     <None Include="src\System.Runtime\ref\System.Runtime.csproj" />

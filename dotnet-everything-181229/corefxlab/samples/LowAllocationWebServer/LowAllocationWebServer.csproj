@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\tools\common.props" />
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="LowAllocationWebServerCore\obj\**" />
+    <Compile Remove="LowAllocationWebServerLibrary\obj\**" />
+    <EmbeddedResource Remove="LowAllocationWebServerCore\obj\**" />
+    <EmbeddedResource Remove="LowAllocationWebServerLibrary\obj\**" />
+    <None Remove="LowAllocationWebServerCore\obj\**" />
+    <None Remove="LowAllocationWebServerLibrary\obj\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\System.Text.Http\System.Text.Http.csproj" />
+    <ProjectReference Include="..\..\src\System.Text.Formatting\System.Text.Formatting.csproj" />
+    <ProjectReference Include="..\..\src\System.Text.JsonLab\System.Text.JsonLab.csproj" />
+    <ProjectReference Include="..\..\src\System.Text.Primitives\System.Text.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\System.Buffers.Primitives\System.Buffers.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\System.Buffers.Experimental\System.Buffers.Experimental.csproj" />
+    <ProjectReference Include="..\..\src\System.Collections.Sequences\System.Collections.Sequences.csproj" />
+  </ItemGroup>
+</Project>

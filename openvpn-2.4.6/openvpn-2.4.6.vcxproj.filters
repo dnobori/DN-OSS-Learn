@@ -2,104 +2,120 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="build">
-      <UniqueIdentifier>{9ED2E636-19A6-48D1-9356-B66C74D5681F}</UniqueIdentifier>
+      <UniqueIdentifier>{0B41D06A-DF85-4524-87E6-6D221BBE2EBD}</UniqueIdentifier>
     </Filter>
     <Filter Include="build\msvc">
-      <UniqueIdentifier>{508D2FD1-6041-4FA0-8767-FAF15C1E7F13}</UniqueIdentifier>
+      <UniqueIdentifier>{2AC68A84-8E82-44C0-9FCE-13D5B3B45A84}</UniqueIdentifier>
     </Filter>
     <Filter Include="build\msvc\msvc-generate">
-      <UniqueIdentifier>{2844EB5E-5684-4EAF-99E5-772545BE6F3C}</UniqueIdentifier>
+      <UniqueIdentifier>{25E4274C-BA20-4B90-8A2A-1F0572B31E48}</UniqueIdentifier>
     </Filter>
     <Filter Include="contrib">
-      <UniqueIdentifier>{4DA31ADB-44B4-4AA8-A2B0-9DC7FFFA9316}</UniqueIdentifier>
+      <UniqueIdentifier>{3DDE3165-B2F1-4CD6-8E36-35C162DC8CC8}</UniqueIdentifier>
     </Filter>
     <Filter Include="contrib\OCSP_check">
-      <UniqueIdentifier>{B20CA2B4-A818-42F4-884E-C381E62C547A}</UniqueIdentifier>
+      <UniqueIdentifier>{083EA3D1-93F3-45B5-93AC-1E0294241371}</UniqueIdentifier>
     </Filter>
     <Filter Include="contrib\openvpn-fwmarkroute-1.00">
-      <UniqueIdentifier>{85174F3C-674D-43A4-9F69-EFFD16F20EB7}</UniqueIdentifier>
+      <UniqueIdentifier>{1F6172E1-B16C-4173-9C2B-25F1A039FE22}</UniqueIdentifier>
     </Filter>
     <Filter Include="contrib\pull-resolv-conf">
-      <UniqueIdentifier>{D25BF883-D335-40D1-8DF6-5D1E9024064B}</UniqueIdentifier>
+      <UniqueIdentifier>{7266F08E-07A8-467D-A1A0-C34AFE1A5634}</UniqueIdentifier>
     </Filter>
     <Filter Include="debug">
-      <UniqueIdentifier>{C4CD6F49-A20C-4D8A-B262-CB1E03D3849F}</UniqueIdentifier>
+      <UniqueIdentifier>{28BBA6FF-61F4-4E00-9686-E81589025820}</UniqueIdentifier>
     </Filter>
     <Filter Include="distro">
-      <UniqueIdentifier>{0461DB20-28CF-4DB2-912B-ADC6FFCE0627}</UniqueIdentifier>
+      <UniqueIdentifier>{F4630DF1-3243-4D3A-B9C7-D1FDE36ABD8F}</UniqueIdentifier>
     </Filter>
     <Filter Include="distro\rpm">
-      <UniqueIdentifier>{4392365D-EE89-47FA-A0BE-C8CC380E4C81}</UniqueIdentifier>
+      <UniqueIdentifier>{7E3E0A0F-1313-4F5E-BF41-AA45184B329D}</UniqueIdentifier>
     </Filter>
     <Filter Include="distro\systemd">
-      <UniqueIdentifier>{BBE7BD4C-A3A7-44F0-9894-399A91AA57D2}</UniqueIdentifier>
+      <UniqueIdentifier>{7ADD0015-E996-4BB4-9E2F-B48D9FADB87B}</UniqueIdentifier>
     </Filter>
     <Filter Include="doc">
-      <UniqueIdentifier>{B1427853-412C-4008-94ED-76B61A716F0E}</UniqueIdentifier>
+      <UniqueIdentifier>{C13EEA80-C5E7-4626-91C7-0B10C54B61A4}</UniqueIdentifier>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{B4702EAC-75F1-4D71-B548-6329E08DB800}</UniqueIdentifier>
+      <UniqueIdentifier>{21FCF718-6AEA-446B-AD36-B9F218FF9361}</UniqueIdentifier>
     </Filter>
     <Filter Include="m4">
-      <UniqueIdentifier>{A1BD7EC2-5D84-4928-A8CD-5A746A8B4CBF}</UniqueIdentifier>
+      <UniqueIdentifier>{7E93853E-7748-4652-B5EF-88BDDFDCA385}</UniqueIdentifier>
     </Filter>
     <Filter Include="sample">
-      <UniqueIdentifier>{01B200E0-4B5B-4835-A8F5-EE94095DA558}</UniqueIdentifier>
+      <UniqueIdentifier>{AF19186A-0AE0-4B6B-BE34-E91547A345DD}</UniqueIdentifier>
     </Filter>
     <Filter Include="sample\sample-config-files">
-      <UniqueIdentifier>{8DE46B52-EB79-4B39-8B10-4D9FFE1F9F8D}</UniqueIdentifier>
+      <UniqueIdentifier>{2A6C6A54-DEF5-488B-ABBE-4544C50F993C}</UniqueIdentifier>
     </Filter>
     <Filter Include="sample\sample-keys">
-      <UniqueIdentifier>{8CBE5CDA-BFB2-4716-86B2-F1F092F4C6DB}</UniqueIdentifier>
+      <UniqueIdentifier>{A6FF2B55-30F9-4A55-813C-3CE6341B9600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample\sample-plugins">
+      <UniqueIdentifier>{5F0DA06E-B0DA-4B05-A471-BC9C04846D1B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample\sample-plugins\defer">
+      <UniqueIdentifier>{E62D2407-F3B6-40B1-90B5-DB171A81156D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample\sample-plugins\keying-material-exporter-demo">
+      <UniqueIdentifier>{0780EAE6-3F0A-4BCF-BE7C-5F13143DFFB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample\sample-plugins\log">
+      <UniqueIdentifier>{684EEF2D-680B-451D-8F76-B3B5A698E018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample\sample-plugins\simple">
+      <UniqueIdentifier>{8456720D-6467-47FB-A60C-A9F750FFD8A6}</UniqueIdentifier>
     </Filter>
     <Filter Include="sample\sample-scripts">
-      <UniqueIdentifier>{67F072E2-88CB-4021-8FD1-1BB17FE703B9}</UniqueIdentifier>
+      <UniqueIdentifier>{494F8398-AFC2-40DD-B3BF-CC57BEECEE01}</UniqueIdentifier>
     </Filter>
     <Filter Include="sample\sample-windows">
-      <UniqueIdentifier>{7B0139CA-5A05-45FC-ADC5-8441AAA8E09C}</UniqueIdentifier>
+      <UniqueIdentifier>{F013A28B-3BAE-4644-AF57-17970898D73D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{3122A137-1F6B-4544-99FB-EB2B9A53E47F}</UniqueIdentifier>
+      <UniqueIdentifier>{DBDECBC7-3B4C-430C-8126-FA3941F24165}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\compat">
-      <UniqueIdentifier>{9616C6CD-31FF-42AA-8C61-E025F0C837FF}</UniqueIdentifier>
+      <UniqueIdentifier>{6CB7A3DF-84BF-4B15-A8BE-1D00A885ED8D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\openvpn">
-      <UniqueIdentifier>{79A804B9-52FA-4EB7-B171-91B56A0EE239}</UniqueIdentifier>
+      <UniqueIdentifier>{764C76E2-09EA-438F-B052-E22E965FC9C6}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\openvpnserv">
-      <UniqueIdentifier>{CC09FC5B-0D7E-432C-8662-3D0D0C2B1E57}</UniqueIdentifier>
+      <UniqueIdentifier>{048D5A18-F1A0-4A75-BAEB-812C4912122B}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\plugins">
-      <UniqueIdentifier>{7EEB43E5-4F30-4823-8939-A979598E1B0D}</UniqueIdentifier>
+      <UniqueIdentifier>{986DEA22-9E1B-42A6-B7DF-8F58FAAED50C}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\plugins\auth-pam">
-      <UniqueIdentifier>{14E5F3C2-32AF-443E-9667-31E0128374D2}</UniqueIdentifier>
+      <UniqueIdentifier>{F6BDF479-E4A2-4D41-9258-2ADDAF1B7C57}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\plugins\down-root">
-      <UniqueIdentifier>{323E7A93-960D-442F-BA4A-A5A4E287B3DB}</UniqueIdentifier>
+      <UniqueIdentifier>{4F44255F-B340-4A2F-9F91-8C4574010186}</UniqueIdentifier>
     </Filter>
     <Filter Include="tests">
-      <UniqueIdentifier>{5BFF0261-26A7-459D-975E-B039746E8385}</UniqueIdentifier>
+      <UniqueIdentifier>{859E9187-3012-4C8C-905A-D32332771345}</UniqueIdentifier>
     </Filter>
     <Filter Include="tests\unit_tests">
-      <UniqueIdentifier>{B473A7AD-846C-4823-A803-B19E7423D2EA}</UniqueIdentifier>
+      <UniqueIdentifier>{C2D502A1-7471-412E-BD65-0DCF38079EB2}</UniqueIdentifier>
     </Filter>
     <Filter Include="tests\unit_tests\example_test">
-      <UniqueIdentifier>{58A978B5-6394-44DE-9AC9-1CF727DD57F6}</UniqueIdentifier>
+      <UniqueIdentifier>{28AE5C10-F462-4B8C-99D6-88A0F382B4C3}</UniqueIdentifier>
     </Filter>
     <Filter Include="tests\unit_tests\openvpn">
-      <UniqueIdentifier>{32F4E7AE-F0F2-45DA-A41E-4AC97395193C}</UniqueIdentifier>
+      <UniqueIdentifier>{AD23499C-AB7D-4664-8AE0-ADD0731C54FD}</UniqueIdentifier>
     </Filter>
     <Filter Include="tests\unit_tests\plugins">
-      <UniqueIdentifier>{47DA7DA4-329E-4A35-B975-A85D56E90AE4}</UniqueIdentifier>
+      <UniqueIdentifier>{83032CFC-0645-437C-A4CE-7E8315D7D1B5}</UniqueIdentifier>
     </Filter>
     <Filter Include="tests\unit_tests\plugins\auth-pam">
-      <UniqueIdentifier>{44FAC390-2184-4059-B734-C422C89A77C2}</UniqueIdentifier>
+      <UniqueIdentifier>{AF05AB99-F1A9-4873-9D31-43705CB0FCB3}</UniqueIdentifier>
     </Filter>
     <Filter Include="vendor">
-      <UniqueIdentifier>{602014DC-10D8-40B4-81F2-212375112032}</UniqueIdentifier>
+      <UniqueIdentifier>{1B162421-8E74-46E6-B0F2-073344705777}</UniqueIdentifier>
     </Filter>
+
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\openvpn-msg.h">
@@ -396,8 +412,24 @@
     <ClInclude Include="src\plugins\auth-pam\utils.h">
       <Filter>src\plugins\auth-pam</Filter>
     </ClInclude>
+
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sample\sample-plugins\defer\simple.c">
+      <Filter>sample\sample-plugins\defer</Filter>
+    </ClCompile>
+    <ClCompile Include="sample\sample-plugins\keying-material-exporter-demo\keyingmaterialexporter.c">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </ClCompile>
+    <ClCompile Include="sample\sample-plugins\log\log.c">
+      <Filter>sample\sample-plugins\log</Filter>
+    </ClCompile>
+    <ClCompile Include="sample\sample-plugins\log\log_v3.c">
+      <Filter>sample\sample-plugins\log</Filter>
+    </ClCompile>
+    <ClCompile Include="sample\sample-plugins\simple\simple.c">
+      <Filter>sample\sample-plugins\simple</Filter>
+    </ClCompile>
     <ClCompile Include="src\compat\compat-basename.c">
       <Filter>src\compat</Filter>
     </ClCompile>
@@ -698,11 +730,7 @@
     <ClCompile Include="tests\unit_tests\plugins\auth-pam\test_search_and_replace.c">
       <Filter>tests\unit_tests\plugins\auth-pam</Filter>
     </ClCompile>
-    <ClCompile Include="sample\sample-plugins\defer\simple.c" />
-    <ClCompile Include="sample\sample-plugins\keying-material-exporter-demo\keyingmaterialexporter.c" />
-    <ClCompile Include="sample\sample-plugins\log\log.c" />
-    <ClCompile Include="sample\sample-plugins\log\log_v3.c" />
-    <ClCompile Include="sample\sample-plugins\simple\simple.c" />
+
   </ItemGroup>
   <ItemGroup>
     <None Include="build\msvc\msvc-generate\Makefile.am">
@@ -960,6 +988,54 @@
     <None Include="sample\sample-keys\ta.key">
       <Filter>sample\sample-keys</Filter>
     </None>
+    <None Include="sample\sample-plugins\defer\build">
+      <Filter>sample\sample-plugins\defer</Filter>
+    </None>
+    <None Include="sample\sample-plugins\defer\README">
+      <Filter>sample\sample-plugins\defer</Filter>
+    </None>
+    <None Include="sample\sample-plugins\defer\simple.def">
+      <Filter>sample\sample-plugins\defer</Filter>
+    </None>
+    <None Include="sample\sample-plugins\defer\winbuild">
+      <Filter>sample\sample-plugins\defer</Filter>
+    </None>
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\build">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\client.ovpn">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-client.py">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-server.py">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\README">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="sample\sample-plugins\keying-material-exporter-demo\server.ovpn">
+      <Filter>sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="sample\sample-plugins\log\build">
+      <Filter>sample\sample-plugins\log</Filter>
+    </None>
+    <None Include="sample\sample-plugins\log\winbuild">
+      <Filter>sample\sample-plugins\log</Filter>
+    </None>
+    <None Include="sample\sample-plugins\simple\build">
+      <Filter>sample\sample-plugins\simple</Filter>
+    </None>
+    <None Include="sample\sample-plugins\simple\README">
+      <Filter>sample\sample-plugins\simple</Filter>
+    </None>
+    <None Include="sample\sample-plugins\simple\simple.def">
+      <Filter>sample\sample-plugins\simple</Filter>
+    </None>
+    <None Include="sample\sample-plugins\simple\winbuild">
+      <Filter>sample\sample-plugins\simple</Filter>
+    </None>
     <None Include="sample\sample-scripts\auth-pam.pl">
       <Filter>sample\sample-scripts</Filter>
     </None>
@@ -1125,21 +1201,6 @@
     <None Include="vendor\Makefile.in">
       <Filter>vendor</Filter>
     </None>
-    <None Include="sample\sample-plugins\defer\build" />
-    <None Include="sample\sample-plugins\defer\README" />
-    <None Include="sample\sample-plugins\defer\simple.def" />
-    <None Include="sample\sample-plugins\defer\winbuild" />
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\build" />
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\client.ovpn" />
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-client.py" />
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\http-server.py" />
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\README" />
-    <None Include="sample\sample-plugins\keying-material-exporter-demo\server.ovpn" />
-    <None Include="sample\sample-plugins\log\build" />
-    <None Include="sample\sample-plugins\log\winbuild" />
-    <None Include="sample\sample-plugins\simple\build" />
-    <None Include="sample\sample-plugins\simple\README" />
-    <None Include="sample\sample-plugins\simple\simple.def" />
-    <None Include="sample\sample-plugins\simple\winbuild" />
+
   </ItemGroup>
 </Project>

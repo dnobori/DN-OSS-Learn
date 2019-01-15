@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EC95771D-B0BE-42E1-8914-6023096A656F}</ProjectGuid>
+    <ProjectGuid>{A7AE9933-340E-403A-8325-54BB5E228348}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>openssl-1.1.1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -34,12 +34,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/apps;$(ProjectDir)/crypto;$(ProjectDir)/crypto/aes;$(ProjectDir)/crypto/asn1;$(ProjectDir)/crypto/async;$(ProjectDir)/crypto/async/arch;$(ProjectDir)/crypto/bf;$(ProjectDir)/crypto/bio;$(ProjectDir)/crypto/blake2;$(ProjectDir)/crypto/bn;$(ProjectDir)/crypto/camellia;$(ProjectDir)/crypto/cast;$(ProjectDir)/crypto/cms;$(ProjectDir)/crypto/comp;$(ProjectDir)/crypto/conf;$(ProjectDir)/crypto/ct;$(ProjectDir)/crypto/des;$(ProjectDir)/crypto/dh;$(ProjectDir)/crypto/dsa;$(ProjectDir)/crypto/dso;$(ProjectDir)/crypto/ec;$(ProjectDir)/crypto/ec/curve448;$(ProjectDir)/crypto/ec/curve448/arch_32;$(ProjectDir)/crypto/engine;$(ProjectDir)/crypto/evp;$(ProjectDir)/crypto/hmac;$(ProjectDir)/crypto/idea;$(ProjectDir)/crypto/include/internal;$(ProjectDir)/crypto/lhash;$(ProjectDir)/crypto/md4;$(ProjectDir)/crypto/md5;$(ProjectDir)/crypto/modes;$(ProjectDir)/crypto/objects;$(ProjectDir)/crypto/ocsp;$(ProjectDir)/crypto/pkcs12;$(ProjectDir)/crypto/poly1305;$(ProjectDir)/crypto/rand;$(ProjectDir)/crypto/rc2;$(ProjectDir)/crypto/rc4;$(ProjectDir)/crypto/rc5;$(ProjectDir)/crypto/ripemd;$(ProjectDir)/crypto/rsa;$(ProjectDir)/crypto/seed;$(ProjectDir)/crypto/sha;$(ProjectDir)/crypto/siphash;$(ProjectDir)/crypto/sm3;$(ProjectDir)/crypto/store;$(ProjectDir)/crypto/ts;$(ProjectDir)/crypto/ui;$(ProjectDir)/crypto/whrlpool;$(ProjectDir)/crypto/x509;$(ProjectDir)/crypto/x509v3;$(ProjectDir)/engines;$(ProjectDir)/fuzz;$(ProjectDir)/include/internal;$(ProjectDir)/include/openssl;$(ProjectDir)/ms;$(ProjectDir)/os-dep;$(ProjectDir)/ssl;$(ProjectDir)/ssl/record;$(ProjectDir)/ssl/statem;$(ProjectDir)/test;$(ProjectDir)/test/ossl_shim;$(ProjectDir)/test/ossl_shim/include/openssl;$(ProjectDir)/test/testutil;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

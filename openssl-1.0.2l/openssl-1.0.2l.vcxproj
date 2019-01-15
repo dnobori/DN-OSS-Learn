@@ -8,7 +8,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0F919F1E-FB60-440C-B6FD-0E5F828AAE4E}</ProjectGuid>
+    <ProjectGuid>{A7F505C8-58FC-444D-B61C-18AB8C723C97}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>openssl-1.0.2l</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
@@ -34,12 +34,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/apps;$(ProjectDir)/crypto;$(ProjectDir)/crypto/aes;$(ProjectDir)/crypto/asn1;$(ProjectDir)/crypto/bf;$(ProjectDir)/crypto/bio;$(ProjectDir)/crypto/bn;$(ProjectDir)/crypto/buffer;$(ProjectDir)/crypto/camellia;$(ProjectDir)/crypto/cast;$(ProjectDir)/crypto/cmac;$(ProjectDir)/crypto/cms;$(ProjectDir)/crypto/comp;$(ProjectDir)/crypto/conf;$(ProjectDir)/crypto/des;$(ProjectDir)/crypto/dh;$(ProjectDir)/crypto/dsa;$(ProjectDir)/crypto/dso;$(ProjectDir)/crypto/ec;$(ProjectDir)/crypto/ecdh;$(ProjectDir)/crypto/ecdsa;$(ProjectDir)/crypto/engine;$(ProjectDir)/crypto/err;$(ProjectDir)/crypto/evp;$(ProjectDir)/crypto/hmac;$(ProjectDir)/crypto/idea;$(ProjectDir)/crypto/include/internal;$(ProjectDir)/crypto/jpake;$(ProjectDir)/crypto/krb5;$(ProjectDir)/crypto/lhash;$(ProjectDir)/crypto/md2;$(ProjectDir)/crypto/md4;$(ProjectDir)/crypto/md5;$(ProjectDir)/crypto/mdc2;$(ProjectDir)/crypto/modes;$(ProjectDir)/crypto/objects;$(ProjectDir)/crypto/ocsp;$(ProjectDir)/crypto/pem;$(ProjectDir)/crypto/pkcs12;$(ProjectDir)/crypto/pkcs7;$(ProjectDir)/crypto/pqueue;$(ProjectDir)/crypto/rand;$(ProjectDir)/crypto/rc2;$(ProjectDir)/crypto/rc4;$(ProjectDir)/crypto/rc5;$(ProjectDir)/crypto/ripemd;$(ProjectDir)/crypto/rsa;$(ProjectDir)/crypto/seed;$(ProjectDir)/crypto/sha;$(ProjectDir)/crypto/srp;$(ProjectDir)/crypto/stack;$(ProjectDir)/crypto/store;$(ProjectDir)/crypto/ts;$(ProjectDir)/crypto/txt_db;$(ProjectDir)/crypto/ui;$(ProjectDir)/crypto/whrlpool;$(ProjectDir)/crypto/x509;$(ProjectDir)/crypto/x509v3;$(ProjectDir)/demos/easy_tls;$(ProjectDir)/demos/engines/cluster_labs;$(ProjectDir)/demos/engines/ibmca;$(ProjectDir)/demos/engines/rsaref;$(ProjectDir)/demos/engines/zencod;$(ProjectDir)/demos/tunala;$(ProjectDir)/engines;$(ProjectDir)/engines/ccgost;$(ProjectDir)/engines/vendor_defns;$(ProjectDir)/MacOS;$(ProjectDir)/MacOS/GetHTTPS.src;$(ProjectDir)/ms;$(ProjectDir)/ssl;$(ProjectDir)/test;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -218,6 +219,8 @@
     <ClInclude Include="engines\e_nuron_err.h" />
     <ClInclude Include="engines\e_sureware_err.h" />
     <ClInclude Include="engines\e_ubsec_err.h" />
+    <ClInclude Include="MacOS\GetHTTPS.src\CPStringUtils.hpp" />
+    <ClInclude Include="MacOS\GetHTTPS.src\ErrorHandling.hpp" />
     <ClInclude Include="MacOS\GetHTTPS.src\MacSocket.h" />
     <ClInclude Include="MacOS\_MWERKS_GUSI_prefix.h" />
     <ClInclude Include="MacOS\_MWERKS_prefix.h" />
@@ -1988,8 +1991,6 @@
     <None Include="engines\makeengines.com" />
     <None Include="engines\Makefile" />
     <None Include="engines\vax.opt" />
-    <None Include="MacOS\GetHTTPS.src\CPStringUtils.hpp" />
-    <None Include="MacOS\GetHTTPS.src\ErrorHandling.hpp" />
     <None Include="MacOS\mklinks.as.hqx" />
     <None Include="MacOS\OpenSSL.mcp.hqx" />
     <None Include="MacOS\TODO" />

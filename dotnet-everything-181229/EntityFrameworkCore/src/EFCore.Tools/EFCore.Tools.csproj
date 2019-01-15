@@ -1,0 +1,69 @@
+<Project>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>Microsoft.EntityFrameworkCore.Tools</PackageId>
+    <NuspecFile>$(MSBuildThisFileDirectory)$(MSBuildProjectName).nuspec</NuspecFile>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeSource>false</IncludeSource>
+    <CodeAnalysisRuleSet>..\..\EFCore.ruleset</CodeAnalysisRuleSet>
+    <Description>Entity Framework Core Tools for the NuGet Package Manager Console in Visual Studio.
+
+Enables these commonly used commands:
+Add-Migration
+Drop-Database
+Get-DbContext
+Scaffold-DbContext
+Script-Migrations
+Update-Database
+  </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ef\ef.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <GeneratedContent Include="*.psd1.in" />
+  </ItemGroup>
+
+  <Target Name="SetPackageProperties" BeforeTargets="GenerateNuspec" DependsOnTargets="Build">
+    <PropertyGroup>
+      <!-- Make sure we create a symbols.nupkg -->
+      <IncludeSymbols>true</IncludeSymbols>
+
+      <NuspecProperties>
+        id=$(PackageId);
+        version=$(PackageVersion);
+        configuration=$(Configuration);
+        tags=$(PackageTags.Replace(';',' '));
+        projectUrl=$(PackageProjectUrl);
+        licenseUrl=$(PackageLicenseUrl);
+        iconUrl=$(PackageIconUrl);
+        repositoryUrl=$(RepositoryUrl);
+        repositoryType=$(RepositoryType);
+        repositoryCommit=$(RepositoryCommit);
+        author=$(Authors);
+        copyright=$(Copyright);
+        description=$(Description);
+        targetDir=$(TargetDir);
+      </NuspecProperties>
+    </PropertyGroup>
+  </Target>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+  <Target Name="Compile"
+    Inputs="$(MSBuildAllProjects);@(GeneratedContent)"
+    Outputs="@(GeneratedContent->'$(TargetDir)%(FileName)'">
+    <!-- TODO: Use dotnet/arcade#204 when available -->
+    <WriteLinesToFile Lines="$([System.IO.File]::ReadAllText('%(GeneratedContent.Identity)').Replace('${VersionPrefix}', $(VersionPrefix)))" File="$(TargetDir)%(FileName)" />
+  </Target>
+
+  <Target Name="CopyFilesToOutputDirectory" />
+
+</Project>

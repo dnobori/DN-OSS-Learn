@@ -1065,6 +1065,8 @@ namespace DotNetCoreUtilTestApp
             public StringWriter __INCLUDE_LIST__ = new StringWriter();
             public StringWriter __COMPILE_LIST__ = new StringWriter();
             public StringWriter __NONE_LIST__ = new StringWriter();
+
+            public StringWriter __INCLUDE_DIRS__ = new StringWriter();
         }
 
         public static void vc_project_maker(string base_dir)
@@ -1085,19 +1087,22 @@ namespace DotNetCoreUtilTestApp
                     string relative_dir = file.RelativePath.GetDirectoryName();
                     if (relative_dir.IsFilled())
                     {
-                        dir_list.Add(relative_dir);
+                        if (Str.SearchStrMulti("\\" + relative_dir + "\\", 0, false, out _, out _, @"\.vs\", @"\.git\") == -1)
+                        {
+                            dir_list.Add(relative_dir);
 
-                        if (file.FileName.IsExtensionMatch(".c .cpp .s .asm .inl"))
-                        {
-                            compile_list.Add(file);
-                        }
-                        else if (file.FileName.IsExtensionMatch(".h .hpp"))
-                        {
-                            include_list.Add(file);
-                        }
-                        else
-                        {
-                            none_list.Add(file);
+                            if (file.FileName.IsExtensionMatch(".c .cpp .cxx .s .asm .inl"))
+                            {
+                                compile_list.Add(file);
+                            }
+                            else if (file.FileName.IsExtensionMatch(".h .hpp .hxx .tcc"))
+                            {
+                                include_list.Add(file);
+                            }
+                            else
+                            {
+                                none_list.Add(file);
+                            }
                         }
                     }
                 }
@@ -1109,6 +1114,8 @@ namespace DotNetCoreUtilTestApp
                 __APPNAME__ = base_dir.RemoteLastEnMark().GetFileName(),
             };
 
+            SortedSet<string> include_dir_list = new SortedSet<string>();
+
             foreach (var e in include_list)
             {
                 r.__INCLUDE_FILE_LIST__.WriteLine($"    <ClInclude Include=\"{e.RelativePath}\" />");
@@ -1116,6 +1123,8 @@ namespace DotNetCoreUtilTestApp
                 r.__INCLUDE_LIST__.WriteLine($"    <ClInclude Include=\"{e.RelativePath}\">");
                 r.__INCLUDE_LIST__.WriteLine($"      <Filter>{e.RelativePath.GetDirectoryName()}</Filter>");
                 r.__INCLUDE_LIST__.WriteLine($"    </ClInclude>");
+
+                include_dir_list.Add(e.RelativePath.GetDirectoryName());
             }
 
             foreach (var e in compile_list)
@@ -1136,7 +1145,30 @@ namespace DotNetCoreUtilTestApp
                 r.__NONE_LIST__.WriteLine($"    </None>");
             }
 
+            foreach (string dir in include_dir_list)
+            {
+                r.__INCLUDE_DIRS__.Write("$(ProjectDir)/" + dir.ReplaceStr("\\", "/") + ";");
+            }
+
+            SortedSet<string> dir_list2 = new SortedSet<string>();
+
             foreach (var dir in dir_list)
+            {
+                string[] tokens = dir.Split('\\', StringSplitOptions.RemoveEmptyEntries);
+                List<string> o = new List<string>();
+                for (int i = 0; i < tokens.Length; i++)
+                {
+                    string tmp = Str.CombineStringArray2("\\", tokens.AsSpan(0, i + 1).ToArray());
+                    o.Add(tmp);
+                }
+
+                foreach (string tmp in o)
+                {
+                    dir_list2.Add(tmp);
+                }
+            }
+
+            foreach (var dir in dir_list2)
             {
                 r.__FILTER_LIST__.WriteLine($"    <Filter Include=\"{dir}\">");
                 r.__FILTER_LIST__.WriteLine($"      <UniqueIdentifier>{Str.NewGuid(true)}</UniqueIdentifier>");

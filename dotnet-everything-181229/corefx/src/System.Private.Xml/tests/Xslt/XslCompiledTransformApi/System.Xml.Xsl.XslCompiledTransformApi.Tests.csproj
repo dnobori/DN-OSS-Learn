@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{B01E2AE1-1B52-4518-B32E-016070356A7F}</ProjectGuid>
+    <Configurations>netcoreapp-Debug;netcoreapp-Release;netfx-Debug;netfx-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetGroup)' == 'netcoreapp'">
+    <Compile Include="XslCompiledTransform.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Errata4.cs" />
+    <Compile Include="OutputSettings.cs" />
+    <Compile Include="TempFiles.cs" />
+    <Compile Include="XslCompilerTests.cs" />
+    <Compile Include="XsltApiV2.cs" />
+    <Compile Include="XsltArgumentList.cs" />
+    <Compile Include="XsltArgumentListMultith.cs" />
+    <Compile Include="XslTransformMultith.cs" />
+    <Compile Include="XsltSettings.cs" />
+    <Compile Include="XunitAssemblyAttribute.cs" />
+    <SupplementalTestData Include="..\TestFiles\**\*.*">
+      <Link>TestFiles\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <DestinationDir>TestFiles\%(RecursiveDir)</DestinationDir>
+    </SupplementalTestData>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(CommonTestPath)\System\Xml\ModuleCore\ModuleCore.csproj" />
+    <ProjectReference Include="$(CommonTestPath)\System\Xml\XmlCoreTest\XmlCoreTest.csproj" />
+    <ProjectReference Include="$(CommonTestPath)\System\Xml\XmlDiff\XmlDiff.csproj" />
+    <ProjectReference Include="..\XslTransformApi\System.Xml.Xsl.XslTransformApi.Tests.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\tools\common.props" />
+  <PropertyGroup>
+    <Description>A formatting library for pl-PL</Description>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageTags>pl PL formatting globalization corefxlab</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="locales.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Text.Formatting\System.Text.Formatting.csproj" />
+  </ItemGroup>
+</Project>

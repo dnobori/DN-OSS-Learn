@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{E6592FAD-10B5-4B56-9287-D72DD136992F}</ProjectGuid>
+    <AssemblyName>System.Composition.Convention</AssemblyName>
+    <RootNamespace>
+    </RootNamespace>
+    <!-- CommonStrings needs RootNamespace to be empty -->
+    <Configurations>netstandard-Debug;netstandard-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="System\Composition\Convention\ConventionBuilder.cs" />
+    <Compile Include="System\Composition\Convention\ExportConventionBuilder.cs" />
+    <Compile Include="System\Composition\Convention\ImportConventionBuilder.cs" />
+    <Compile Include="System\Composition\Convention\ParameterImportConventionBuilder.cs" />
+    <Compile Include="System\Composition\Convention\PartConventionBuilder.cs" />
+    <Compile Include="System\Composition\Convention\PartConventionBuilderOfT.cs" />
+    <Compile Include="$(CommonPath)\System\Composition\Diagnostics\CompositionTrace.cs">
+      <Link>Common\System\Composition\Diagnostics\CompositionTrace.cs</Link>
+    </Compile>
+    <Compile Include="$(CommonPath)\System\Composition\Diagnostics\CompositionTraceId.cs">
+      <Link>Common\System\Composition\Diagnostics\CompositionTraceId.cs</Link>
+    </Compile>
+    <Compile Include="$(CommonPath)\System\Composition\Diagnostics\CompositionTraceSource.cs">
+      <Link>Common\System\Composition\Diagnostics\CompositionTraceSource.cs</Link>
+    </Compile>
+    <Compile Include="$(CommonPath)\System\Composition\Diagnostics\DebuggerTraceWriter.cs">
+      <Link>Common\System\Composition\Diagnostics\DebuggerTraceWriter.cs</Link>
+    </Compile>
+    <Compile Include="$(CommonPath)\System\Composition\Diagnostics\TraceWriter.cs">
+      <Link>Common\System\Composition\Diagnostics\TraceWriter.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Composition.AttributedModel\src\System.Composition.AttributedModel.csproj">
+      <Project>{c6257381-c624-494a-a9d9-5586e60856ea}</Project>
+      <Name>System.Composition.AttributedModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
