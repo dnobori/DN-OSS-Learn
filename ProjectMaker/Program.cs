@@ -1091,7 +1091,7 @@ namespace DotNetCoreUtilTestApp
                         {
                             dir_list.Add(relative_dir);
 
-                            if (file.FileName.IsExtensionMatch(".c .cpp .cxx .s .asm .inl"))
+                            if (file.FileName.IsExtensionMatch(".c .cpp .cxx .s .asm .inl .cc .mm"))
                             {
                                 compile_list.Add(file);
                             }
@@ -1099,7 +1099,7 @@ namespace DotNetCoreUtilTestApp
                             {
                                 include_list.Add(file);
                             }
-                            else
+                            else if (file.RelativePath.InStr(";") == false)
                             {
                                 none_list.Add(file);
                             }
@@ -1118,10 +1118,10 @@ namespace DotNetCoreUtilTestApp
 
             foreach (var e in include_list)
             {
-                r.__INCLUDE_FILE_LIST__.WriteLine($"    <ClInclude Include=\"{e.RelativePath}\" />");
+                r.__INCLUDE_FILE_LIST__.WriteLine($"    <ClInclude Include=\"{Escape(e.RelativePath)}\" />");
 
-                r.__INCLUDE_LIST__.WriteLine($"    <ClInclude Include=\"{e.RelativePath}\">");
-                r.__INCLUDE_LIST__.WriteLine($"      <Filter>{e.RelativePath.GetDirectoryName()}</Filter>");
+                r.__INCLUDE_LIST__.WriteLine($"    <ClInclude Include=\"{Escape(e.RelativePath)}\">");
+                r.__INCLUDE_LIST__.WriteLine($"      <Filter>{Escape(e.RelativePath.GetDirectoryName())}</Filter>");
                 r.__INCLUDE_LIST__.WriteLine($"    </ClInclude>");
 
                 include_dir_list.Add(e.RelativePath.GetDirectoryName());
@@ -1129,25 +1129,25 @@ namespace DotNetCoreUtilTestApp
 
             foreach (var e in compile_list)
             {
-                r.__COMPILE_FILE_LIST__.WriteLine($"    <ClCompile Include=\"{e.RelativePath}\" />");
+                r.__COMPILE_FILE_LIST__.WriteLine($"    <ClCompile Include=\"{Escape(e.RelativePath)}\" />");
 
-                r.__COMPILE_LIST__.WriteLine($"    <ClCompile Include=\"{e.RelativePath}\">");
-                r.__COMPILE_LIST__.WriteLine($"      <Filter>{e.RelativePath.GetDirectoryName()}</Filter>");
+                r.__COMPILE_LIST__.WriteLine($"    <ClCompile Include=\"{Escape(e.RelativePath)}\">");
+                r.__COMPILE_LIST__.WriteLine($"      <Filter>{Escape(e.RelativePath.GetDirectoryName())}</Filter>");
                 r.__COMPILE_LIST__.WriteLine($"    </ClCompile>");
             }
 
             foreach (var e in none_list)
             {
-                r.__NONE_FILE_LIST__.WriteLine($"    <None Include=\"{e.RelativePath}\" />");
+                r.__NONE_FILE_LIST__.WriteLine($"    <None Include=\"{Escape(e.RelativePath)}\" />");
 
-                r.__NONE_LIST__.WriteLine($"    <None Include=\"{e.RelativePath}\">");
-                r.__NONE_LIST__.WriteLine($"      <Filter>{e.RelativePath.GetDirectoryName()}</Filter>");
+                r.__NONE_LIST__.WriteLine($"    <None Include=\"{Escape(e.RelativePath)}\">");
+                r.__NONE_LIST__.WriteLine($"      <Filter>{Escape(e.RelativePath.GetDirectoryName())}</Filter>");
                 r.__NONE_LIST__.WriteLine($"    </None>");
             }
 
             foreach (string dir in include_dir_list)
             {
-                r.__INCLUDE_DIRS__.Write("$(ProjectDir)/" + dir.ReplaceStr("\\", "/") + ";");
+                r.__INCLUDE_DIRS__.Write("$(ProjectDir)/" + Escape(dir.ReplaceStr("\\", "/")) + ";");
             }
 
             SortedSet<string> dir_list2 = new SortedSet<string>();
@@ -1180,6 +1180,11 @@ namespace DotNetCoreUtilTestApp
 
             IO.WriteAllTextWithEncoding(base_dir.CombinePath($"{r.__APPNAME__}.vcxproj"), vcxproj, Str.Utf8Encoding, false);
             IO.WriteAllTextWithEncoding(base_dir.CombinePath($"{r.__APPNAME__}.vcxproj.filters"), filters, Str.Utf8Encoding, false);
+        }
+
+        static string Escape(string src)
+        {
+            return src.ReplaceStr("&", "&amp;", true);
         }
 
         static void linux_c_h_add_autoconf_test()
