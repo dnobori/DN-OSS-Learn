@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="asm">
+      <UniqueIdentifier>{EB337641-1F5C-45AD-8FE5-BEDF10DCEF76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{C82E48DA-404D-49D9-8C0E-D9F3A8111624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{7450D0F6-2128-410E-AE80-275A45164C0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{12031340-8704-43C1-A6CD-6829D8FEA535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\VSrules">
+      <UniqueIdentifier>{075C1B1A-904E-4D06-930C-CE67391368BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disasm">
+      <UniqueIdentifier>{EF8FD8F7-4B19-4040-84D6-C88465545774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{73C84DB0-42CC-444B-962A-66FD2C3FDDEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{57332AD3-8037-4278-AE50-6244AFB2AA88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{E6BD9A8B-2B85-4CC8-B00A-4964FA40EC1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="macros">
+      <UniqueIdentifier>{30EAD7F1-3F01-41EB-B33C-8AA389488D3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{92B0CAA7-FFE2-4160-AF46-9EAA623366D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mkfiles">
+      <UniqueIdentifier>{4D8CB5E0-B377-476B-804D-4BDAF6160DF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nasmlib">
+      <UniqueIdentifier>{92E1A137-EED0-4835-AE85-C120863B1520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsis">
+      <UniqueIdentifier>{06FB900F-48A4-4F76-8AEA-C49331D903E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="output">
+      <UniqueIdentifier>{249A8663-9569-41DD-861C-4FB6A8DB8CAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="perllib">
+      <UniqueIdentifier>{462C9D5A-7321-491F-B28C-59E3CB2ADB2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdoff">
+      <UniqueIdentifier>{2E0EA601-C011-40A2-9A7C-B360C27DA3EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdoff\doc">
+      <UniqueIdentifier>{85CC96CF-44F8-4D65-8A9D-9FD5937D5B13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rdoff\test">
+      <UniqueIdentifier>{24B01D0E-A52C-404B-9277-790B9A88DD9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdlib">
+      <UniqueIdentifier>{8AAC74C5-6B2E-4E84-9728-0F6563652964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{72E470B1-0421-487F-BABF-284EBC4CCA6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\perf">
+      <UniqueIdentifier>{CA362A96-5EBF-432B-B7EF-E089417EC1CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{87D8A9CE-F534-4F19-8B68-50399D2A87D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x86">
+      <UniqueIdentifier>{7B0846A7-7F1E-40C0-9A8A-54A846FBDD15}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asm\assemble.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\directiv.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\eval.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\float.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\listing.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\parser.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\pptok.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\preproc.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\quote.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\stdscan.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="asm\tokens.h">
+      <Filter>asm</Filter>
+    </ClInclude>
+    <ClInclude Include="config\msvc.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\unknown.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\watcom.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\disasm.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm\sync.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bytesex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\disp8.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hashtbl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\iflag.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ilog2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\insns.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\labels.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\md5.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nasm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nasmint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nasmlib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opflags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\perfhash.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\raa.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rbtree.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rdoff.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\saa.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\strlist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tables.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="nasmlib\file.h">
+      <Filter>nasmlib</Filter>
+    </ClInclude>
+    <ClInclude Include="output\dwarf.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\elf.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\outelf.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\outform.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\outlib.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\pecoff.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\stabs.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\strtbl.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\collectn.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\hash.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\ldsegs.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\rdfload.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\rdfutils.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\rdlar.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\rdlib.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\segtab.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="rdoff\symtab.h">
+      <Filter>rdoff</Filter>
+    </ClInclude>
+    <ClInclude Include="x86\iflaggen.h">
+      <Filter>x86</Filter>
+    </ClInclude>
+    <ClInclude Include="x86\insnsi.h">
+      <Filter>x86</Filter>
+    </ClInclude>
+    <ClInclude Include="x86\regdis.h">
+      <Filter>x86</Filter>
+    </ClInclude>
+    <ClInclude Include="x86\regs.h">
+      <Filter>x86</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asm\assemble.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\directbl.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\directiv.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\error.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\eval.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\exprdump.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\exprlib.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\float.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\labels.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\listing.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\nasm.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\parser.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\pptok.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\pragma.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\preproc.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\preproc-nop.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\quote.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\rdstrnum.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\segalloc.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\stdscan.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\strfunc.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="asm\tokhash.c">
+      <Filter>asm</Filter>
+    </ClCompile>
+    <ClCompile Include="common\common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\disasm.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\ndisasm.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm\sync.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="macros\macros.c">
+      <Filter>macros</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\crcgen.c">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\omfdump.c">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\xcrcgen.c">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\badenum.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\bsi.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\crc64.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\errfile.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\file.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\filename.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\hashtbl.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\ilog2.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\malloc.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\md5c.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\mmap.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\path.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\perfhash.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\raa.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\rbtree.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\readnum.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\realpath.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\saa.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\srcfile.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\string.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\strlist.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\ver.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nasmlib\zerobuf.c">
+      <Filter>nasmlib</Filter>
+    </ClCompile>
+    <ClCompile Include="output\codeview.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\legacy.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\nulldbg.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\nullout.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outaout.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outas86.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outbin.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outcoff.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outdbg.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outelf.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outform.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outieee.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outlib.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outmacho.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outobj.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\outrdf2.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="output\strtbl.c">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\rdfseg.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\rdfseg2.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\rdftest1.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\rdftest2.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\rdtlib.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\rdtmain.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\test\testlib.asm">
+      <Filter>rdoff\test</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\collectn.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\hash.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\ldrdf.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdf2bin.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdfdump.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdflib.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdfload.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdlar.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdlib.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdoff.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\rdx.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\segtab.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="rdoff\symtab.c">
+      <Filter>rdoff</Filter>
+    </ClCompile>
+    <ClCompile Include="stdlib\snprintf.c">
+      <Filter>stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="stdlib\strlcpy.c">
+      <Filter>stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="stdlib\strnlen.c">
+      <Filter>stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="stdlib\strrchrnul.c">
+      <Filter>stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="stdlib\vsnprintf.c">
+      <Filter>stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="test\_file_.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\_version.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\a32offs.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\absolute.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\addr64x.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\align13.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\align13s.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\alonesym-obj.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\andbyte.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\aoutso.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\aouttest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\aouttest.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx005.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx2.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx512cd.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx512er.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx512f.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\avx512pf.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\bcd.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\binexe.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\bintest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br1879590.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br2003451.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br2030823.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br2148476.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br2222615.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br2496848.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3005117.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3026808.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3028880.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3041451.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3058845.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3066383.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3074517.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3092924.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3104312.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3109604.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3174983.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3187743.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3189064.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3200749.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3385573.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392252.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392259.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392363.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392392.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392396.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392411.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392418.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392439.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392442.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br3392538.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br560575.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br560873.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br890790.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br890790_i.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\br978756.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\changed.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\clzero.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\cofftest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\cofftest.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\crc32.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ctxlocal.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\cv8struc.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\dtbcd.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elf_visibility.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elf64so.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elfso.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elftest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elftest.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elftest64.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\elif.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\expimp.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\far64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\float.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\float8.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\floatb.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\floatexp.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\floatize.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\floattest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\floatx.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\fpu.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\fwdopt.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\fwdoptpp.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\gather.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\gotoff64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\hexfp.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\hle.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ifelse.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ifenv.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ifmacro.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\iftoken.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ilog2.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\imacro.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\imm.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\imm64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\immwarn.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\imul.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\inc1.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\inc2.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\incbin.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\inctest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\insnlbl.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\invlpga.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\jmp64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\lar_lsl.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\larlsl.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\lnxhello.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\local.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\loopoffs.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\lwp.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\macro-defaults.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\macroerr.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\mmxsize.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\movd.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\movd64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\movimm.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\movnti.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\mpx.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\mpx-64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\multisection.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\nasmformat.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\newrdwr.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\nop.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\nullfile.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\objexe.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\objlink.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\objtest.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\optimization.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\org.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\paste.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pcrel.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pextrw.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pinsr16.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pinsr32.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pinsr64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\popcnt.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ppindirect.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pragma.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\prefix66.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ptr.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\pushseg.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\r13.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\radix.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\rdpid.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\reldef.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\relocs.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ret.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\riprel.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\riprel2.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\sha.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\sha-64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\smartalign16.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\smartalign32.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\smartalign64.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\splitea.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\sreg.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\strlen.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\struc.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\subsection.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test67.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\testdos.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\testnos3.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\time.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\times.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\timesneg.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\uscore.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\utf.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\v4.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\vaesenc.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\vex.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\vgather.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\vmread.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\weirdpaste.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\xchg.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\xcrypt.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\xmm0.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\zerobyte.asm">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\disp8.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\iflag.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\insnsa.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\insnsb.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\insnsd.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\insnsn.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\regdis.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\regflags.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\regs.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="x86\regvals.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\directiv.dat">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\phash.pl">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\pptok.dat">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\pptok.ph">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\pptok.pl">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\tokens.dat">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="asm\tokhash.pl">
+      <Filter>asm</Filter>
+    </None>
+    <None Include="config\config.h.in">
+      <Filter>config</Filter>
+    </None>
+    <None Include="contrib\VSrules\nasm.README">
+      <Filter>contrib\VSrules</Filter>
+    </None>
+    <None Include="contrib\VSrules\nasm.rules">
+      <Filter>contrib\VSrules</Filter>
+    </None>
+    <None Include="contrib\MSVC6.txt">
+      <Filter>contrib</Filter>
+    </None>
+    <None Include="doc\afmmetrics.ph">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\changes.src">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\findfont.ph">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\genps.pl">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\head.ps">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\inslist.pl">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\internal.doc">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\local.css">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\Makefile">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\Makefile.in">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\nasmdoc.css">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\nasmdoc.src">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\nasmlogo.eps">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\nasmlogw.png">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\opt_var.txt">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\psfonts.ph">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\pspdf.pl">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\pswidth.ph">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\rdsrc.pl">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\README">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="doc\ttfmetrics.ph">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="headers\c">
+      <Filter>headers</Filter>
+    </None>
+    <None Include="headers\doc">
+      <Filter>headers</Filter>
+    </None>
+    <None Include="headers\mac">
+      <Filter>headers</Filter>
+    </None>
+    <None Include="headers\perl">
+      <Filter>headers</Filter>
+    </None>
+    <None Include="macros\altreg.mac">
+      <Filter>macros</Filter>
+    </None>
+    <None Include="macros\fp.mac">
+      <Filter>macros</Filter>
+    </None>
+    <None Include="macros\ifunc.mac">
+      <Filter>macros</Filter>
+    </None>
+    <None Include="macros\macros.pl">
+      <Filter>macros</Filter>
+    </None>
+    <None Include="macros\smartalign.mac">
+      <Filter>macros</Filter>
+    </None>
+    <None Include="macros\standard.mac">
+      <Filter>macros</Filter>
+    </None>
+    <None Include="misc\c16.mac">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\c32.mac">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\Doxyfile">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\exebin.mac">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\exebin2.mac">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\fmtinsns.pl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\genfma.pl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\hints.txt">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\magic">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\myC32.mac">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\nasm.sl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\nasmstab">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\Nindent">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\pmw.bat">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\proc32.ash">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\README">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="misc\scitech.mac">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="Mkfiles\msvc.mak">
+      <Filter>Mkfiles</Filter>
+    </None>
+    <None Include="Mkfiles\openwcom.mak">
+      <Filter>Mkfiles</Filter>
+    </None>
+    <None Include="Mkfiles\README">
+      <Filter>Mkfiles</Filter>
+    </None>
+    <None Include="nasmlib\perfhash.pl">
+      <Filter>nasmlib</Filter>
+    </None>
+    <None Include="nsis\getpearch.pl">
+      <Filter>nsis</Filter>
+    </None>
+    <None Include="nsis\nasm.ico">
+      <Filter>nsis</Filter>
+    </None>
+    <None Include="nsis\nasm.nsi">
+      <Filter>nsis</Filter>
+    </None>
+    <None Include="nsis\NASMMultiUser.nsh">
+      <Filter>nsis</Filter>
+    </None>
+    <None Include="nsis\nasm-un.ico">
+      <Filter>nsis</Filter>
+    </None>
+    <None Include="nsis\version.nsh">
+      <Filter>nsis</Filter>
+    </None>
+    <None Include="output\outaout.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outas86.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outbin.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outcoff.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outdbg.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outelf.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outmacho.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outobj.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outrdf.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="output\outrdf2.mac">
+      <Filter>output</Filter>
+    </None>
+    <None Include="perllib\crc64.ph">
+      <Filter>perllib</Filter>
+    </None>
+    <None Include="perllib\gensv.pl">
+      <Filter>perllib</Filter>
+    </None>
+    <None Include="perllib\phash.ph">
+      <Filter>perllib</Filter>
+    </None>
+    <None Include="perllib\random_sv_vectors.ph">
+      <Filter>perllib</Filter>
+    </None>
+    <None Include="rdoff\doc\Makefile">
+      <Filter>rdoff\doc</Filter>
+    </None>
+    <None Include="rdoff\doc\rdoff.texi">
+      <Filter>rdoff\doc</Filter>
+    </None>
+    <None Include="rdoff\doc\v1-v2.txt">
+      <Filter>rdoff\doc</Filter>
+    </None>
+    <None Include="rdoff\test\Makefile">
+      <Filter>rdoff\test</Filter>
+    </None>
+    <None Include="rdoff\test\makelib.sh">
+      <Filter>rdoff\test</Filter>
+    </None>
+    <None Include="rdoff\ldrdf.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdf2bin.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdf2com.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdf2ihx.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdf2ith.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdf2srec.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdfdump.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdflib.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\rdx.1">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="rdoff\README">
+      <Filter>rdoff</Filter>
+    </None>
+    <None Include="test\perf\label.pl">
+      <Filter>test\perf</Filter>
+    </None>
+    <None Include="test\perf\macro.pl">
+      <Filter>test\perf</Filter>
+    </None>
+    <None Include="test\perf\token.pl">
+      <Filter>test\perf</Filter>
+    </None>
+    <None Include="test\bisect.sh">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\gas2nasm.py">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\iftoken.pl">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\incbin.data">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\macroerr.inc">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\Makefile">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\new">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\performtest.pl">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\riprel.pl">
+      <Filter>test</Filter>
+    </None>
+    <None Include="test\tmap.nas">
+      <Filter>test</Filter>
+    </None>
+    <None Include="tools\cleanfile">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="tools\cleanpatch">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="tools\mkdep.pl">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="tools\release">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="tools\syncfiles.pl">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="tools\tag-release">
+      <Filter>tools</Filter>
+    </None>
+    <None Include="x86\insns.dat">
+      <Filter>x86</Filter>
+    </None>
+    <None Include="x86\insns.pl">
+      <Filter>x86</Filter>
+    </None>
+    <None Include="x86\insns-iflags.ph">
+      <Filter>x86</Filter>
+    </None>
+    <None Include="x86\regs.dat">
+      <Filter>x86</Filter>
+    </None>
+    <None Include="x86\regs.pl">
+      <Filter>x86</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>

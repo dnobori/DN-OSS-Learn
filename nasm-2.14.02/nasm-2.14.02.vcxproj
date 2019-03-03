@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F2BB7719-0AF9-4411-9BD4-99056931640B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nasm-2.14.02</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/asm;$(ProjectDir)/config;$(ProjectDir)/disasm;$(ProjectDir)/include;$(ProjectDir)/nasmlib;$(ProjectDir)/output;$(ProjectDir)/rdoff;$(ProjectDir)/x86;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="asm\assemble.h" />
+    <ClInclude Include="asm\directiv.h" />
+    <ClInclude Include="asm\eval.h" />
+    <ClInclude Include="asm\float.h" />
+    <ClInclude Include="asm\listing.h" />
+    <ClInclude Include="asm\parser.h" />
+    <ClInclude Include="asm\pptok.h" />
+    <ClInclude Include="asm\preproc.h" />
+    <ClInclude Include="asm\quote.h" />
+    <ClInclude Include="asm\stdscan.h" />
+    <ClInclude Include="asm\tokens.h" />
+    <ClInclude Include="config\msvc.h" />
+    <ClInclude Include="config\unknown.h" />
+    <ClInclude Include="config\watcom.h" />
+    <ClInclude Include="disasm\disasm.h" />
+    <ClInclude Include="disasm\sync.h" />
+    <ClInclude Include="include\bytesex.h" />
+    <ClInclude Include="include\compiler.h" />
+    <ClInclude Include="include\disp8.h" />
+    <ClInclude Include="include\error.h" />
+    <ClInclude Include="include\hashtbl.h" />
+    <ClInclude Include="include\iflag.h" />
+    <ClInclude Include="include\ilog2.h" />
+    <ClInclude Include="include\insns.h" />
+    <ClInclude Include="include\labels.h" />
+    <ClInclude Include="include\md5.h" />
+    <ClInclude Include="include\nasm.h" />
+    <ClInclude Include="include\nasmint.h" />
+    <ClInclude Include="include\nasmlib.h" />
+    <ClInclude Include="include\opflags.h" />
+    <ClInclude Include="include\perfhash.h" />
+    <ClInclude Include="include\raa.h" />
+    <ClInclude Include="include\rbtree.h" />
+    <ClInclude Include="include\rdoff.h" />
+    <ClInclude Include="include\saa.h" />
+    <ClInclude Include="include\strlist.h" />
+    <ClInclude Include="include\tables.h" />
+    <ClInclude Include="include\ver.h" />
+    <ClInclude Include="nasmlib\file.h" />
+    <ClInclude Include="output\dwarf.h" />
+    <ClInclude Include="output\elf.h" />
+    <ClInclude Include="output\outelf.h" />
+    <ClInclude Include="output\outform.h" />
+    <ClInclude Include="output\outlib.h" />
+    <ClInclude Include="output\pecoff.h" />
+    <ClInclude Include="output\stabs.h" />
+    <ClInclude Include="output\strtbl.h" />
+    <ClInclude Include="rdoff\collectn.h" />
+    <ClInclude Include="rdoff\hash.h" />
+    <ClInclude Include="rdoff\ldsegs.h" />
+    <ClInclude Include="rdoff\rdfload.h" />
+    <ClInclude Include="rdoff\rdfutils.h" />
+    <ClInclude Include="rdoff\rdlar.h" />
+    <ClInclude Include="rdoff\rdlib.h" />
+    <ClInclude Include="rdoff\segtab.h" />
+    <ClInclude Include="rdoff\symtab.h" />
+    <ClInclude Include="x86\iflaggen.h" />
+    <ClInclude Include="x86\insnsi.h" />
+    <ClInclude Include="x86\regdis.h" />
+    <ClInclude Include="x86\regs.h" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asm\assemble.c" />
+    <ClCompile Include="asm\directbl.c" />
+    <ClCompile Include="asm\directiv.c" />
+    <ClCompile Include="asm\error.c" />
+    <ClCompile Include="asm\eval.c" />
+    <ClCompile Include="asm\exprdump.c" />
+    <ClCompile Include="asm\exprlib.c" />
+    <ClCompile Include="asm\float.c" />
+    <ClCompile Include="asm\labels.c" />
+    <ClCompile Include="asm\listing.c" />
+    <ClCompile Include="asm\nasm.c" />
+    <ClCompile Include="asm\parser.c" />
+    <ClCompile Include="asm\pptok.c" />
+    <ClCompile Include="asm\pragma.c" />
+    <ClCompile Include="asm\preproc.c" />
+    <ClCompile Include="asm\preproc-nop.c" />
+    <ClCompile Include="asm\quote.c" />
+    <ClCompile Include="asm\rdstrnum.c" />
+    <ClCompile Include="asm\segalloc.c" />
+    <ClCompile Include="asm\stdscan.c" />
+    <ClCompile Include="asm\strfunc.c" />
+    <ClCompile Include="asm\tokhash.c" />
+    <ClCompile Include="common\common.c" />
+    <ClCompile Include="disasm\disasm.c" />
+    <ClCompile Include="disasm\ndisasm.c" />
+    <ClCompile Include="disasm\sync.c" />
+    <ClCompile Include="macros\macros.c" />
+    <ClCompile Include="misc\crcgen.c" />
+    <ClCompile Include="misc\omfdump.c" />
+    <ClCompile Include="misc\xcrcgen.c" />
+    <ClCompile Include="nasmlib\badenum.c" />
+    <ClCompile Include="nasmlib\bsi.c" />
+    <ClCompile Include="nasmlib\crc64.c" />
+    <ClCompile Include="nasmlib\errfile.c" />
+    <ClCompile Include="nasmlib\file.c" />
+    <ClCompile Include="nasmlib\filename.c" />
+    <ClCompile Include="nasmlib\hashtbl.c" />
+    <ClCompile Include="nasmlib\ilog2.c" />
+    <ClCompile Include="nasmlib\malloc.c" />
+    <ClCompile Include="nasmlib\md5c.c" />
+    <ClCompile Include="nasmlib\mmap.c" />
+    <ClCompile Include="nasmlib\path.c" />
+    <ClCompile Include="nasmlib\perfhash.c" />
+    <ClCompile Include="nasmlib\raa.c" />
+    <ClCompile Include="nasmlib\rbtree.c" />
+    <ClCompile Include="nasmlib\readnum.c" />
+    <ClCompile Include="nasmlib\realpath.c" />
+    <ClCompile Include="nasmlib\saa.c" />
+    <ClCompile Include="nasmlib\srcfile.c" />
+    <ClCompile Include="nasmlib\string.c" />
+    <ClCompile Include="nasmlib\strlist.c" />
+    <ClCompile Include="nasmlib\ver.c" />
+    <ClCompile Include="nasmlib\zerobuf.c" />
+    <ClCompile Include="output\codeview.c" />
+    <ClCompile Include="output\legacy.c" />
+    <ClCompile Include="output\nulldbg.c" />
+    <ClCompile Include="output\nullout.c" />
+    <ClCompile Include="output\outaout.c" />
+    <ClCompile Include="output\outas86.c" />
+    <ClCompile Include="output\outbin.c" />
+    <ClCompile Include="output\outcoff.c" />
+    <ClCompile Include="output\outdbg.c" />
+    <ClCompile Include="output\outelf.c" />
+    <ClCompile Include="output\outform.c" />
+    <ClCompile Include="output\outieee.c" />
+    <ClCompile Include="output\outlib.c" />
+    <ClCompile Include="output\outmacho.c" />
+    <ClCompile Include="output\outobj.c" />
+    <ClCompile Include="output\outrdf2.c" />
+    <ClCompile Include="output\strtbl.c" />
+    <ClCompile Include="rdoff\test\rdfseg.asm" />
+    <ClCompile Include="rdoff\test\rdfseg2.asm" />
+    <ClCompile Include="rdoff\test\rdftest1.asm" />
+    <ClCompile Include="rdoff\test\rdftest2.asm" />
+    <ClCompile Include="rdoff\test\rdtlib.asm" />
+    <ClCompile Include="rdoff\test\rdtmain.asm" />
+    <ClCompile Include="rdoff\test\testlib.asm" />
+    <ClCompile Include="rdoff\collectn.c" />
+    <ClCompile Include="rdoff\hash.c" />
+    <ClCompile Include="rdoff\ldrdf.c" />
+    <ClCompile Include="rdoff\rdf2bin.c" />
+    <ClCompile Include="rdoff\rdfdump.c" />
+    <ClCompile Include="rdoff\rdflib.c" />
+    <ClCompile Include="rdoff\rdfload.c" />
+    <ClCompile Include="rdoff\rdlar.c" />
+    <ClCompile Include="rdoff\rdlib.c" />
+    <ClCompile Include="rdoff\rdoff.c" />
+    <ClCompile Include="rdoff\rdx.c" />
+    <ClCompile Include="rdoff\segtab.c" />
+    <ClCompile Include="rdoff\symtab.c" />
+    <ClCompile Include="stdlib\snprintf.c" />
+    <ClCompile Include="stdlib\strlcpy.c" />
+    <ClCompile Include="stdlib\strnlen.c" />
+    <ClCompile Include="stdlib\strrchrnul.c" />
+    <ClCompile Include="stdlib\vsnprintf.c" />
+    <ClCompile Include="test\_file_.asm" />
+    <ClCompile Include="test\_version.asm" />
+    <ClCompile Include="test\a32offs.asm" />
+    <ClCompile Include="test\absolute.asm" />
+    <ClCompile Include="test\addr64x.asm" />
+    <ClCompile Include="test\align13.asm" />
+    <ClCompile Include="test\align13s.asm" />
+    <ClCompile Include="test\alonesym-obj.asm" />
+    <ClCompile Include="test\andbyte.asm" />
+    <ClCompile Include="test\aoutso.asm" />
+    <ClCompile Include="test\aouttest.asm" />
+    <ClCompile Include="test\aouttest.c" />
+    <ClCompile Include="test\avx.asm" />
+    <ClCompile Include="test\avx005.asm" />
+    <ClCompile Include="test\avx2.asm" />
+    <ClCompile Include="test\avx512cd.asm" />
+    <ClCompile Include="test\avx512er.asm" />
+    <ClCompile Include="test\avx512f.asm" />
+    <ClCompile Include="test\avx512pf.asm" />
+    <ClCompile Include="test\bcd.asm" />
+    <ClCompile Include="test\binexe.asm" />
+    <ClCompile Include="test\bintest.asm" />
+    <ClCompile Include="test\br1879590.asm" />
+    <ClCompile Include="test\br2003451.asm" />
+    <ClCompile Include="test\br2030823.asm" />
+    <ClCompile Include="test\br2148476.asm" />
+    <ClCompile Include="test\br2222615.asm" />
+    <ClCompile Include="test\br2496848.asm" />
+    <ClCompile Include="test\br3005117.asm" />
+    <ClCompile Include="test\br3026808.asm" />
+    <ClCompile Include="test\br3028880.asm" />
+    <ClCompile Include="test\br3041451.asm" />
+    <ClCompile Include="test\br3058845.asm" />
+    <ClCompile Include="test\br3066383.asm" />
+    <ClCompile Include="test\br3074517.asm" />
+    <ClCompile Include="test\br3092924.asm" />
+    <ClCompile Include="test\br3104312.asm" />
+    <ClCompile Include="test\br3109604.asm" />
+    <ClCompile Include="test\br3174983.asm" />
+    <ClCompile Include="test\br3187743.asm" />
+    <ClCompile Include="test\br3189064.asm" />
+    <ClCompile Include="test\br3200749.asm" />
+    <ClCompile Include="test\br3385573.asm" />
+    <ClCompile Include="test\br3392252.asm" />
+    <ClCompile Include="test\br3392259.asm" />
+    <ClCompile Include="test\br3392363.asm" />
+    <ClCompile Include="test\br3392392.asm" />
+    <ClCompile Include="test\br3392396.asm" />
+    <ClCompile Include="test\br3392411.asm" />
+    <ClCompile Include="test\br3392418.asm" />
+    <ClCompile Include="test\br3392439.asm" />
+    <ClCompile Include="test\br3392442.asm" />
+    <ClCompile Include="test\br3392538.asm" />
+    <ClCompile Include="test\br560575.asm" />
+    <ClCompile Include="test\br560873.asm" />
+    <ClCompile Include="test\br890790.asm" />
+    <ClCompile Include="test\br890790_i.asm" />
+    <ClCompile Include="test\br978756.asm" />
+    <ClCompile Include="test\changed.asm" />
+    <ClCompile Include="test\clzero.asm" />
+    <ClCompile Include="test\cofftest.asm" />
+    <ClCompile Include="test\cofftest.c" />
+    <ClCompile Include="test\crc32.asm" />
+    <ClCompile Include="test\ctxlocal.asm" />
+    <ClCompile Include="test\cv8struc.asm" />
+    <ClCompile Include="test\dtbcd.asm" />
+    <ClCompile Include="test\elf_visibility.asm" />
+    <ClCompile Include="test\elf64so.asm" />
+    <ClCompile Include="test\elfso.asm" />
+    <ClCompile Include="test\elftest.asm" />
+    <ClCompile Include="test\elftest.c" />
+    <ClCompile Include="test\elftest64.c" />
+    <ClCompile Include="test\elif.asm" />
+    <ClCompile Include="test\expimp.asm" />
+    <ClCompile Include="test\far64.asm" />
+    <ClCompile Include="test\float.asm" />
+    <ClCompile Include="test\float8.asm" />
+    <ClCompile Include="test\floatb.asm" />
+    <ClCompile Include="test\floatexp.asm" />
+    <ClCompile Include="test\floatize.asm" />
+    <ClCompile Include="test\floattest.asm" />
+    <ClCompile Include="test\floatx.asm" />
+    <ClCompile Include="test\fpu.asm" />
+    <ClCompile Include="test\fwdopt.asm" />
+    <ClCompile Include="test\fwdoptpp.asm" />
+    <ClCompile Include="test\gather.asm" />
+    <ClCompile Include="test\gotoff64.asm" />
+    <ClCompile Include="test\hexfp.asm" />
+    <ClCompile Include="test\hle.asm" />
+    <ClCompile Include="test\ifelse.asm" />
+    <ClCompile Include="test\ifenv.asm" />
+    <ClCompile Include="test\ifmacro.asm" />
+    <ClCompile Include="test\iftoken.asm" />
+    <ClCompile Include="test\ilog2.asm" />
+    <ClCompile Include="test\imacro.asm" />
+    <ClCompile Include="test\imm.asm" />
+    <ClCompile Include="test\imm64.asm" />
+    <ClCompile Include="test\immwarn.asm" />
+    <ClCompile Include="test\imul.asm" />
+    <ClCompile Include="test\inc1.asm" />
+    <ClCompile Include="test\inc2.asm" />
+    <ClCompile Include="test\incbin.asm" />
+    <ClCompile Include="test\inctest.asm" />
+    <ClCompile Include="test\insnlbl.asm" />
+    <ClCompile Include="test\invlpga.asm" />
+    <ClCompile Include="test\jmp64.asm" />
+    <ClCompile Include="test\lar_lsl.asm" />
+    <ClCompile Include="test\larlsl.asm" />
+    <ClCompile Include="test\lnxhello.asm" />
+    <ClCompile Include="test\local.asm" />
+    <ClCompile Include="test\loopoffs.asm" />
+    <ClCompile Include="test\lwp.asm" />
+    <ClCompile Include="test\macro-defaults.asm" />
+    <ClCompile Include="test\macroerr.asm" />
+    <ClCompile Include="test\mmxsize.asm" />
+    <ClCompile Include="test\movd.asm" />
+    <ClCompile Include="test\movd64.asm" />
+    <ClCompile Include="test\movimm.asm" />
+    <ClCompile Include="test\movnti.asm" />
+    <ClCompile Include="test\mpx.asm" />
+    <ClCompile Include="test\mpx-64.asm" />
+    <ClCompile Include="test\multisection.asm" />
+    <ClCompile Include="test\nasmformat.asm" />
+    <ClCompile Include="test\newrdwr.asm" />
+    <ClCompile Include="test\nop.asm" />
+    <ClCompile Include="test\nullfile.asm" />
+    <ClCompile Include="test\objexe.asm" />
+    <ClCompile Include="test\objlink.c" />
+    <ClCompile Include="test\objtest.asm" />
+    <ClCompile Include="test\optimization.asm" />
+    <ClCompile Include="test\org.asm" />
+    <ClCompile Include="test\paste.asm" />
+    <ClCompile Include="test\pcrel.asm" />
+    <ClCompile Include="test\pextrw.asm" />
+    <ClCompile Include="test\pinsr16.asm" />
+    <ClCompile Include="test\pinsr32.asm" />
+    <ClCompile Include="test\pinsr64.asm" />
+    <ClCompile Include="test\popcnt.asm" />
+    <ClCompile Include="test\ppindirect.asm" />
+    <ClCompile Include="test\pragma.asm" />
+    <ClCompile Include="test\prefix66.asm" />
+    <ClCompile Include="test\ptr.asm" />
+    <ClCompile Include="test\pushseg.asm" />
+    <ClCompile Include="test\r13.asm" />
+    <ClCompile Include="test\radix.asm" />
+    <ClCompile Include="test\rdpid.asm" />
+    <ClCompile Include="test\reldef.asm" />
+    <ClCompile Include="test\relocs.asm" />
+    <ClCompile Include="test\ret.asm" />
+    <ClCompile Include="test\riprel.asm" />
+    <ClCompile Include="test\riprel2.asm" />
+    <ClCompile Include="test\sha.asm" />
+    <ClCompile Include="test\sha-64.asm" />
+    <ClCompile Include="test\smartalign16.asm" />
+    <ClCompile Include="test\smartalign32.asm" />
+    <ClCompile Include="test\smartalign64.asm" />
+    <ClCompile Include="test\splitea.asm" />
+    <ClCompile Include="test\sreg.asm" />
+    <ClCompile Include="test\strlen.asm" />
+    <ClCompile Include="test\struc.asm" />
+    <ClCompile Include="test\subsection.asm" />
+    <ClCompile Include="test\test67.asm" />
+    <ClCompile Include="test\testdos.asm" />
+    <ClCompile Include="test\testnos3.asm" />
+    <ClCompile Include="test\time.asm" />
+    <ClCompile Include="test\times.asm" />
+    <ClCompile Include="test\timesneg.asm" />
+    <ClCompile Include="test\uscore.asm" />
+    <ClCompile Include="test\utf.asm" />
+    <ClCompile Include="test\v4.asm" />
+    <ClCompile Include="test\vaesenc.asm" />
+    <ClCompile Include="test\vex.asm" />
+    <ClCompile Include="test\vgather.asm" />
+    <ClCompile Include="test\vmread.asm" />
+    <ClCompile Include="test\weirdpaste.asm" />
+    <ClCompile Include="test\xchg.asm" />
+    <ClCompile Include="test\xcrypt.asm" />
+    <ClCompile Include="test\xmm0.asm" />
+    <ClCompile Include="test\zerobyte.asm" />
+    <ClCompile Include="x86\disp8.c" />
+    <ClCompile Include="x86\iflag.c" />
+    <ClCompile Include="x86\insnsa.c" />
+    <ClCompile Include="x86\insnsb.c" />
+    <ClCompile Include="x86\insnsd.c" />
+    <ClCompile Include="x86\insnsn.c" />
+    <ClCompile Include="x86\regdis.c" />
+    <ClCompile Include="x86\regflags.c" />
+    <ClCompile Include="x86\regs.c" />
+    <ClCompile Include="x86\regvals.c" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\directiv.dat" />
+    <None Include="asm\phash.pl" />
+    <None Include="asm\pptok.dat" />
+    <None Include="asm\pptok.ph" />
+    <None Include="asm\pptok.pl" />
+    <None Include="asm\tokens.dat" />
+    <None Include="asm\tokhash.pl" />
+    <None Include="config\config.h.in" />
+    <None Include="contrib\VSrules\nasm.README" />
+    <None Include="contrib\VSrules\nasm.rules" />
+    <None Include="contrib\MSVC6.txt" />
+    <None Include="doc\afmmetrics.ph" />
+    <None Include="doc\changes.src" />
+    <None Include="doc\findfont.ph" />
+    <None Include="doc\genps.pl" />
+    <None Include="doc\head.ps" />
+    <None Include="doc\inslist.pl" />
+    <None Include="doc\internal.doc" />
+    <None Include="doc\local.css" />
+    <None Include="doc\Makefile" />
+    <None Include="doc\Makefile.in" />
+    <None Include="doc\nasmdoc.css" />
+    <None Include="doc\nasmdoc.src" />
+    <None Include="doc\nasmlogo.eps" />
+    <None Include="doc\nasmlogw.png" />
+    <None Include="doc\opt_var.txt" />
+    <None Include="doc\psfonts.ph" />
+    <None Include="doc\pspdf.pl" />
+    <None Include="doc\pswidth.ph" />
+    <None Include="doc\rdsrc.pl" />
+    <None Include="doc\README" />
+    <None Include="doc\ttfmetrics.ph" />
+    <None Include="headers\c" />
+    <None Include="headers\doc" />
+    <None Include="headers\mac" />
+    <None Include="headers\perl" />
+    <None Include="macros\altreg.mac" />
+    <None Include="macros\fp.mac" />
+    <None Include="macros\ifunc.mac" />
+    <None Include="macros\macros.pl" />
+    <None Include="macros\smartalign.mac" />
+    <None Include="macros\standard.mac" />
+    <None Include="misc\c16.mac" />
+    <None Include="misc\c32.mac" />
+    <None Include="misc\Doxyfile" />
+    <None Include="misc\exebin.mac" />
+    <None Include="misc\exebin2.mac" />
+    <None Include="misc\fmtinsns.pl" />
+    <None Include="misc\genfma.pl" />
+    <None Include="misc\hints.txt" />
+    <None Include="misc\magic" />
+    <None Include="misc\myC32.mac" />
+    <None Include="misc\nasm.sl" />
+    <None Include="misc\nasmstab" />
+    <None Include="misc\Nindent" />
+    <None Include="misc\pmw.bat" />
+    <None Include="misc\proc32.ash" />
+    <None Include="misc\README" />
+    <None Include="misc\scitech.mac" />
+    <None Include="Mkfiles\msvc.mak" />
+    <None Include="Mkfiles\openwcom.mak" />
+    <None Include="Mkfiles\README" />
+    <None Include="nasmlib\perfhash.pl" />
+    <None Include="nsis\getpearch.pl" />
+    <None Include="nsis\nasm.ico" />
+    <None Include="nsis\nasm.nsi" />
+    <None Include="nsis\NASMMultiUser.nsh" />
+    <None Include="nsis\nasm-un.ico" />
+    <None Include="nsis\version.nsh" />
+    <None Include="output\outaout.mac" />
+    <None Include="output\outas86.mac" />
+    <None Include="output\outbin.mac" />
+    <None Include="output\outcoff.mac" />
+    <None Include="output\outdbg.mac" />
+    <None Include="output\outelf.mac" />
+    <None Include="output\outmacho.mac" />
+    <None Include="output\outobj.mac" />
+    <None Include="output\outrdf.mac" />
+    <None Include="output\outrdf2.mac" />
+    <None Include="perllib\crc64.ph" />
+    <None Include="perllib\gensv.pl" />
+    <None Include="perllib\phash.ph" />
+    <None Include="perllib\random_sv_vectors.ph" />
+    <None Include="rdoff\doc\Makefile" />
+    <None Include="rdoff\doc\rdoff.texi" />
+    <None Include="rdoff\doc\v1-v2.txt" />
+    <None Include="rdoff\test\Makefile" />
+    <None Include="rdoff\test\makelib.sh" />
+    <None Include="rdoff\ldrdf.1" />
+    <None Include="rdoff\rdf2bin.1" />
+    <None Include="rdoff\rdf2com.1" />
+    <None Include="rdoff\rdf2ihx.1" />
+    <None Include="rdoff\rdf2ith.1" />
+    <None Include="rdoff\rdf2srec.1" />
+    <None Include="rdoff\rdfdump.1" />
+    <None Include="rdoff\rdflib.1" />
+    <None Include="rdoff\rdx.1" />
+    <None Include="rdoff\README" />
+    <None Include="test\perf\label.pl" />
+    <None Include="test\perf\macro.pl" />
+    <None Include="test\perf\token.pl" />
+    <None Include="test\bisect.sh" />
+    <None Include="test\gas2nasm.py" />
+    <None Include="test\iftoken.pl" />
+    <None Include="test\incbin.data" />
+    <None Include="test\macroerr.inc" />
+    <None Include="test\Makefile" />
+    <None Include="test\new" />
+    <None Include="test\performtest.pl" />
+    <None Include="test\riprel.pl" />
+    <None Include="test\tmap.nas" />
+    <None Include="tools\cleanfile" />
+    <None Include="tools\cleanpatch" />
+    <None Include="tools\mkdep.pl" />
+    <None Include="tools\release" />
+    <None Include="tools\syncfiles.pl" />
+    <None Include="tools\tag-release" />
+    <None Include="x86\insns.dat" />
+    <None Include="x86\insns.pl" />
+    <None Include="x86\insns-iflags.ph" />
+    <None Include="x86\regs.dat" />
+    <None Include="x86\regs.pl" />
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
