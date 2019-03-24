@@ -1,0 +1,20 @@
+# -*- makefile -*-
+#
+# arch/riscv64/MCONFIG
+#
+# Special rules for this architecture.  Note that this is actually
+# included from the main Makefile, and that pathnames should be
+# accordingly.
+#
+
+# We should get klibc.so and the executables to agree on what gp
+# should be.  For now, disable gp-relative addressing.
+KLIBCLDFLAGS      = --no-relax
+KLIBCOPTFLAGS	  += -Os -fomit-frame-pointer
+ifeq ($(DEBUG),y)
+KLIBCOPTFLAGS     += -g
+endif
+KLIBCBITSIZE      = 64
+
+# Normal binaries start at 64 KB, so start the libary at 2 MB.
+KLIBCSHAREDFLAGS  =-Ttext-segment 0x00200000

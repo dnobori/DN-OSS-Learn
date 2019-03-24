@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{9A5374D6-B802-4EB1-A741-7A7A107C3C54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="klcc">
+      <UniqueIdentifier>{9E632E21-75E3-47F2-8978-D34E915624E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{0F6F9368-75DD-489F-8FFE-D74236DDE243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts\basic">
+      <UniqueIdentifier>{764F1C09-1A39-4629-B2A3-E73CE3958C99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr">
+      <UniqueIdentifier>{B18CAB01-618B-4631-97D5-1DAD4D6E45EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\dash">
+      <UniqueIdentifier>{62365AB9-745C-43DF-A7DD-033486159E71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\dash\bltin">
+      <UniqueIdentifier>{E10632CF-74FB-4006-80A2-61AE59D0C147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\dash\funcs">
+      <UniqueIdentifier>{D56AB684-3472-4A54-BF8D-27AAC8BA0100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\gzip">
+      <UniqueIdentifier>{023C1CAF-BED5-4B33-80D3-8DDB1F9F2E9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include">
+      <UniqueIdentifier>{503ACB70-B004-4688-91D7-59245644BE17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch">
+      <UniqueIdentifier>{31F695CC-B130-4D21-B2CF-6906FD0CC07C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\alpha">
+      <UniqueIdentifier>{D7391E2A-8A34-49DB-B3FA-453FFBE0ABB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\alpha\klibc">
+      <UniqueIdentifier>{AE518B3D-F2EA-4E0B-968A-F91D50047677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\alpha\machine">
+      <UniqueIdentifier>{4E034046-C03D-4182-B926-4434BD51C0B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\arm">
+      <UniqueIdentifier>{9C91A151-1427-4A12-A299-34B8F9695065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\arm\klibc">
+      <UniqueIdentifier>{DFEEA4A8-5282-436C-B017-CA986288E297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\arm64">
+      <UniqueIdentifier>{DAC50075-6A71-4D2A-9521-78C10A562D9A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\arm64\klibc">
+      <UniqueIdentifier>{3C4C5B95-9ECC-4FDF-9573-D2BE473C6709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\cris">
+      <UniqueIdentifier>{08529D4F-882D-427D-98F3-16BD4C7BD00B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\cris\klibc">
+      <UniqueIdentifier>{08A1A498-BF66-4BEA-9289-8E553FCC7AF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\i386">
+      <UniqueIdentifier>{70AFEA06-C6B9-46D5-88E1-A9DB36289A50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\i386\klibc">
+      <UniqueIdentifier>{0CDF16F3-A396-447C-BDC3-F31D225F4ED9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\i386\sys">
+      <UniqueIdentifier>{15795D07-668A-4B62-8D19-E46C84000DAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\ia64">
+      <UniqueIdentifier>{51D1CDCA-1140-4D7C-9E99-326F4FCCA251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\ia64\klibc">
+      <UniqueIdentifier>{DEA818C6-9297-4F30-8739-4610E04CDA14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\m68k">
+      <UniqueIdentifier>{DC770213-8A3F-4658-B965-0CAE1A95BE9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\m68k\klibc">
+      <UniqueIdentifier>{21227496-9857-4C8A-B9D7-9A3C7C9C1EB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\mips">
+      <UniqueIdentifier>{E37BAE94-3FFC-4B1E-B729-E358B90F82AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\mips\klibc">
+      <UniqueIdentifier>{EB0F97F8-30F3-4B46-BCD8-3687DAEE499B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\mips\machine">
+      <UniqueIdentifier>{DD65A999-9F7C-4E22-AA2F-6EFDF8907711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\mips64">
+      <UniqueIdentifier>{20AE12B3-52D6-4697-BE15-5B46DEA66590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\mips64\klibc">
+      <UniqueIdentifier>{5F05CE4A-B90E-462C-9633-E937B4099220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\mips64\machine">
+      <UniqueIdentifier>{F0E422BD-01C4-4252-9D86-5C371CE6E731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\parisc">
+      <UniqueIdentifier>{7389451A-911D-4EC8-97B4-6B966E0E7AE5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\parisc\klibc">
+      <UniqueIdentifier>{D5C6E08F-2537-47B8-9DBE-258047A4B324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\ppc">
+      <UniqueIdentifier>{9CB8A990-C4AC-4C69-8B64-758F00C0E7BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\ppc\klibc">
+      <UniqueIdentifier>{ED299733-C40A-43ED-B824-24D940DCAE20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\ppc64">
+      <UniqueIdentifier>{D23568CF-A835-4C2A-B020-50A2C846A7C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\ppc64\klibc">
+      <UniqueIdentifier>{E9004D99-E905-402C-A35D-634075AF001C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\riscv64">
+      <UniqueIdentifier>{A0CBBE88-0B09-4C15-AD68-2E2A6D749628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\riscv64\klibc">
+      <UniqueIdentifier>{58048A85-E4CB-4ABD-9EA1-A624F30AD209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\riscv64\machine">
+      <UniqueIdentifier>{A2078EFB-A153-4101-845C-2515693519D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\s390">
+      <UniqueIdentifier>{A79F4589-C131-46D1-9D22-81C644DDAABA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\s390\klibc">
+      <UniqueIdentifier>{A618B5B8-D8CF-4855-8BED-8F8EC60C7AF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sh">
+      <UniqueIdentifier>{378D1FC7-89BC-4535-9AFF-8A274DE811BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sh\klibc">
+      <UniqueIdentifier>{D1917031-7E2C-466E-B175-4894F254373E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sparc">
+      <UniqueIdentifier>{3DD29DC8-C2A6-45C3-A077-1E0F0B590939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sparc\klibc">
+      <UniqueIdentifier>{38E15818-20C4-4C5D-A625-F21D1187A72C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sparc\machine">
+      <UniqueIdentifier>{A890697E-0AEE-43DA-90A5-8EE4DAB855D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sparc64">
+      <UniqueIdentifier>{6A1BC37D-4A4D-4CD1-B78D-3FBF458E1164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sparc64\klibc">
+      <UniqueIdentifier>{39A0853E-7AFA-4ECA-A0AB-63B21898DB9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\sparc64\machine">
+      <UniqueIdentifier>{6B0B0280-6E1B-4ADE-BC9D-A922ADE5DE56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\x86_64">
+      <UniqueIdentifier>{EDE07515-66AC-436E-9F26-64DCF7637131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\x86_64\klibc">
+      <UniqueIdentifier>{BE7E2C99-7898-45A0-A36B-66259C32DE55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arch\x86_64\sys">
+      <UniqueIdentifier>{622949A6-2B58-4766-8F65-2D99940B28A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\arpa">
+      <UniqueIdentifier>{3C7423A3-C425-407C-BC1D-0F84DBE8D229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\bits32">
+      <UniqueIdentifier>{6073B604-D7C5-46AF-8506-FA34107C01B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\bits32\bitsize">
+      <UniqueIdentifier>{E106C8EE-96B3-4507-8AB7-BC2E9ACAE3ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\bits64">
+      <UniqueIdentifier>{9EE9DB6B-42FA-4C77-B87C-0D3EC50D6272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\bits64\bitsize">
+      <UniqueIdentifier>{1261DDB7-A1C3-42F5-8BD2-2D6BF08704D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\klibc">
+      <UniqueIdentifier>{9271D8D9-90AE-4C22-889D-647C7FEE81D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\net">
+      <UniqueIdentifier>{98C5AF9A-EA52-4863-9832-542C8FF91289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\netinet">
+      <UniqueIdentifier>{ED11AEFD-E0F2-445A-81E1-D6539EEA8D68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\netpacket">
+      <UniqueIdentifier>{FD67D08F-CED8-41B4-A024-522D2F225341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\include\sys">
+      <UniqueIdentifier>{1883FCBF-2669-4DA3-A2DC-CEBDC532B12F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\kinit">
+      <UniqueIdentifier>{60ED749D-4113-48C1-9587-01C5A52ADF7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\kinit\fstype">
+      <UniqueIdentifier>{15C8D6D8-472F-4DE5-8F0D-47ADC6A69C3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\kinit\ipconfig">
+      <UniqueIdentifier>{7D885899-4F3E-4E50-9A60-F772695DBE7E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\kinit\nfsmount">
+      <UniqueIdentifier>{11F2A336-9635-4823-B081-06854AC9F8A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\kinit\resume">
+      <UniqueIdentifier>{EDD24214-D06B-44E0-B8F3-3A05C733B36B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\kinit\run-init">
+      <UniqueIdentifier>{B7F36E6C-3827-4DA8-9743-B101346CE1B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc">
+      <UniqueIdentifier>{0202639A-0A9F-4536-83A8-93D07A92A7D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch">
+      <UniqueIdentifier>{5FAF85D3-3FA3-4539-B4FF-8DD750064468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\alpha">
+      <UniqueIdentifier>{D74DAAB9-8BBE-4E0D-99E9-02D60FC55BC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\arm">
+      <UniqueIdentifier>{4DF8FFE7-11C5-4072-807E-7F086B8F71B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\arm64">
+      <UniqueIdentifier>{2ECC00ED-0771-4C20-A161-B80995F6201E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\cris">
+      <UniqueIdentifier>{EE8539E3-B2B2-443A-96DC-FB5F39B879F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\i386">
+      <UniqueIdentifier>{7BD43FB9-5DD3-4EB8-A99B-A58054023867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\i386\libgcc">
+      <UniqueIdentifier>{F631B636-C0C8-4916-9A0F-F92A5E49835C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\ia64">
+      <UniqueIdentifier>{C5481282-66BF-4A7A-85FF-322C3701CDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\m68k">
+      <UniqueIdentifier>{8430CD6A-C178-46A5-9A3F-E9252E8B5DF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\mips">
+      <UniqueIdentifier>{7A53FF3C-B054-4157-AABB-BE29882BD78C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\mips64">
+      <UniqueIdentifier>{FAD5B7E2-3B45-477B-8043-007D896C31AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\parisc">
+      <UniqueIdentifier>{AF461266-5860-4471-A3D5-B8CC94B25D6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\ppc">
+      <UniqueIdentifier>{ECA0BB0C-1EED-4CD1-8456-0E33C39D1432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\ppc64">
+      <UniqueIdentifier>{3B2C9104-B717-4EF5-9770-B91637D0D81C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\riscv64">
+      <UniqueIdentifier>{1A4CDDD0-5040-453E-AB01-F043EFD41A18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\s390">
+      <UniqueIdentifier>{F958C007-2F08-4F0A-9D60-3965D931A4B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\sh">
+      <UniqueIdentifier>{B26D6897-613B-431F-AA50-B95E6140759F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\sparc">
+      <UniqueIdentifier>{7E8E5762-0321-427E-A243-FAA78CB9E91B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\sparc64">
+      <UniqueIdentifier>{88DF0CA2-F6BC-4A0C-8BE3-AC13E90876BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\arch\x86_64">
+      <UniqueIdentifier>{9ECE8A84-C434-4535-A780-31CD76CCBC7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\ctype">
+      <UniqueIdentifier>{65930BB4-BBFA-474D-872A-BF277717E9A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\inet">
+      <UniqueIdentifier>{970C1F00-4A22-4870-A9EF-566F8084D13C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\libgcc">
+      <UniqueIdentifier>{C9D8CCDD-D574-45DE-854B-4C3AD71E57AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\socketcalls">
+      <UniqueIdentifier>{61ECBBAA-9E15-40B4-8F36-09A1C4B9E26C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\stdio">
+      <UniqueIdentifier>{CC12E30D-0201-4283-978D-A64FCF10326F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\syscalls">
+      <UniqueIdentifier>{E55487E1-C4EB-4678-8BA6-A611F4BC10E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\tests">
+      <UniqueIdentifier>{89BC0E8F-BE38-428E-84EB-309643A9D752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\userdb">
+      <UniqueIdentifier>{9DA259A7-A72D-4145-A264-E2DB5D7D7E70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\klibc\zlib">
+      <UniqueIdentifier>{79A51467-4E64-44B2-BE57-A531701CEEE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usr\utils">
+      <UniqueIdentifier>{F58E32ED-F293-4E05-BBDD-18A32A2FF4B3}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="usr\dash\bltin\bltin.h">
+      <Filter>usr\dash\bltin</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\alias.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\arith_yacc.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\cd.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\config.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\error.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\eval.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\exec.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\expand.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\hetio.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\init.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\input.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\jobs.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\machdep.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\mail.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\main.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\memalloc.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\miscbltin.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\myhistedit.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\mystring.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\options.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\output.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\parser.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\redir.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\shell.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\show.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\system.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\trap.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\dash\var.h">
+      <Filter>usr\dash</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\gzip\gzip.h">
+      <Filter>usr\gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\gzip\revision.h">
+      <Filter>usr\gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\gzip\tailor.h">
+      <Filter>usr\gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\alpha\klibc\archconfig.h">
+      <Filter>usr\include\arch\alpha\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\alpha\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\alpha\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\alpha\klibc\archsignal.h">
+      <Filter>usr\include\arch\alpha\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\alpha\klibc\archstat.h">
+      <Filter>usr\include\arch\alpha\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\alpha\machine\asm.h">
+      <Filter>usr\include\arch\alpha\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm\klibc\archconfig.h">
+      <Filter>usr\include\arch\arm\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\arm\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm\klibc\archsignal.h">
+      <Filter>usr\include\arch\arm\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm\klibc\archstat.h">
+      <Filter>usr\include\arch\arm\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm\klibc\asmmacros.h">
+      <Filter>usr\include\arch\arm\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm64\klibc\archconfig.h">
+      <Filter>usr\include\arch\arm64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\arm64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm64\klibc\archsignal.h">
+      <Filter>usr\include\arch\arm64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\arm64\klibc\archstat.h">
+      <Filter>usr\include\arch\arm64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\cris\klibc\archconfig.h">
+      <Filter>usr\include\arch\cris\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\cris\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\cris\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\cris\klibc\archsignal.h">
+      <Filter>usr\include\arch\cris\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\cris\klibc\archstat.h">
+      <Filter>usr\include\arch\cris\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\klibc\archconfig.h">
+      <Filter>usr\include\arch\i386\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\klibc\archinit.h">
+      <Filter>usr\include\arch\i386\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\i386\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\klibc\archsignal.h">
+      <Filter>usr\include\arch\i386\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\klibc\archstat.h">
+      <Filter>usr\include\arch\i386\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\klibc\diverr.h">
+      <Filter>usr\include\arch\i386\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\sys\io.h">
+      <Filter>usr\include\arch\i386\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\i386\sys\vm86.h">
+      <Filter>usr\include\arch\i386\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ia64\klibc\archconfig.h">
+      <Filter>usr\include\arch\ia64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ia64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\ia64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ia64\klibc\archsignal.h">
+      <Filter>usr\include\arch\ia64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ia64\klibc\archstat.h">
+      <Filter>usr\include\arch\ia64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\m68k\klibc\archconfig.h">
+      <Filter>usr\include\arch\m68k\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\m68k\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\m68k\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\m68k\klibc\archsignal.h">
+      <Filter>usr\include\arch\m68k\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\m68k\klibc\archstat.h">
+      <Filter>usr\include\arch\m68k\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\klibc\archconfig.h">
+      <Filter>usr\include\arch\mips\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\klibc\archfcntl.h">
+      <Filter>usr\include\arch\mips\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\mips\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\klibc\archsignal.h">
+      <Filter>usr\include\arch\mips\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\klibc\archsocket.h">
+      <Filter>usr\include\arch\mips\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\klibc\archstat.h">
+      <Filter>usr\include\arch\mips\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\machine\asm.h">
+      <Filter>usr\include\arch\mips\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\sgidefs.h">
+      <Filter>usr\include\arch\mips</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips\spaces.h">
+      <Filter>usr\include\arch\mips</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips64\klibc\archconfig.h">
+      <Filter>usr\include\arch\mips64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\mips64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips64\klibc\archsignal.h">
+      <Filter>usr\include\arch\mips64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips64\klibc\archsocket.h">
+      <Filter>usr\include\arch\mips64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips64\klibc\archstat.h">
+      <Filter>usr\include\arch\mips64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\mips64\machine\asm.h">
+      <Filter>usr\include\arch\mips64\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\parisc\klibc\archconfig.h">
+      <Filter>usr\include\arch\parisc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\parisc\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\parisc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\parisc\klibc\archsignal.h">
+      <Filter>usr\include\arch\parisc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\parisc\klibc\archstat.h">
+      <Filter>usr\include\arch\parisc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc\klibc\archconfig.h">
+      <Filter>usr\include\arch\ppc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\ppc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc\klibc\archsignal.h">
+      <Filter>usr\include\arch\ppc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc\klibc\archstat.h">
+      <Filter>usr\include\arch\ppc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc64\klibc\archconfig.h">
+      <Filter>usr\include\arch\ppc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\ppc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc64\klibc\archsignal.h">
+      <Filter>usr\include\arch\ppc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\ppc64\klibc\archstat.h">
+      <Filter>usr\include\arch\ppc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\riscv64\klibc\archconfig.h">
+      <Filter>usr\include\arch\riscv64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\riscv64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\riscv64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\riscv64\klibc\archsignal.h">
+      <Filter>usr\include\arch\riscv64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\riscv64\klibc\archstat.h">
+      <Filter>usr\include\arch\riscv64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\riscv64\machine\asm.h">
+      <Filter>usr\include\arch\riscv64\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\s390\klibc\archconfig.h">
+      <Filter>usr\include\arch\s390\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\s390\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\s390\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\s390\klibc\archsignal.h">
+      <Filter>usr\include\arch\s390\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\s390\klibc\archstat.h">
+      <Filter>usr\include\arch\s390\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sh\klibc\archconfig.h">
+      <Filter>usr\include\arch\sh\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sh\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\sh\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sh\klibc\archsignal.h">
+      <Filter>usr\include\arch\sh\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sh\klibc\archstat.h">
+      <Filter>usr\include\arch\sh\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\klibc\archconfig.h">
+      <Filter>usr\include\arch\sparc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\sparc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\klibc\archsignal.h">
+      <Filter>usr\include\arch\sparc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\klibc\archstat.h">
+      <Filter>usr\include\arch\sparc\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\machine\asm.h">
+      <Filter>usr\include\arch\sparc\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\machine\frame.h">
+      <Filter>usr\include\arch\sparc\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc\machine\trap.h">
+      <Filter>usr\include\arch\sparc\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc64\klibc\archconfig.h">
+      <Filter>usr\include\arch\sparc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\sparc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc64\klibc\archsignal.h">
+      <Filter>usr\include\arch\sparc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc64\klibc\archstat.h">
+      <Filter>usr\include\arch\sparc64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc64\machine\asm.h">
+      <Filter>usr\include\arch\sparc64\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\sparc64\machine\frame.h">
+      <Filter>usr\include\arch\sparc64\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\x86_64\klibc\archconfig.h">
+      <Filter>usr\include\arch\x86_64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\x86_64\klibc\archsetjmp.h">
+      <Filter>usr\include\arch\x86_64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\x86_64\klibc\archsignal.h">
+      <Filter>usr\include\arch\x86_64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\x86_64\klibc\archstat.h">
+      <Filter>usr\include\arch\x86_64\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arch\x86_64\sys\io.h">
+      <Filter>usr\include\arch\x86_64\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\arpa\inet.h">
+      <Filter>usr\include\arpa</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits32\bitsize\limits.h">
+      <Filter>usr\include\bits32\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits32\bitsize\stdint.h">
+      <Filter>usr\include\bits32\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits32\bitsize\stdintconst.h">
+      <Filter>usr\include\bits32\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits32\bitsize\stdintlimits.h">
+      <Filter>usr\include\bits32\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits32\bitsize.h">
+      <Filter>usr\include\bits32</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits64\bitsize\limits.h">
+      <Filter>usr\include\bits64\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits64\bitsize\stdint.h">
+      <Filter>usr\include\bits64\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits64\bitsize\stdintconst.h">
+      <Filter>usr\include\bits64\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits64\bitsize\stdintlimits.h">
+      <Filter>usr\include\bits64\bitsize</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\bits64\bitsize.h">
+      <Filter>usr\include\bits64</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\compiler.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\diverr.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\endian.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\extern.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\seek.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\stathelp.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\klibc\sysconfig.h">
+      <Filter>usr\include\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\net\if.h">
+      <Filter>usr\include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\net\if_arp.h">
+      <Filter>usr\include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\net\if_packet.h">
+      <Filter>usr\include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\net\route.h">
+      <Filter>usr\include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netinet\if_ether.h">
+      <Filter>usr\include\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netinet\in.h">
+      <Filter>usr\include\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netinet\in6.h">
+      <Filter>usr\include\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netinet\ip.h">
+      <Filter>usr\include\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netinet\tcp.h">
+      <Filter>usr\include\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netinet\udp.h">
+      <Filter>usr\include\netinet</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\netpacket\packet.h">
+      <Filter>usr\include\netpacket</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\auxv.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\capability.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\dirent.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\elf32.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\elf64.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\elfcommon.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\file.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\fsuid.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\inotify.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\ioctl.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\klog.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\md.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\mman.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\mount.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\param.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\poll.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\prctl.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\reboot.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\resource.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\select.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\sendfile.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\socket.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\splice.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\stat.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\statfs.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\syscall.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\sysinfo.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\sysmacros.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\time.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\times.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\types.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\uio.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\un.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\utime.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\utsname.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\vfs.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sys\wait.h">
+      <Filter>usr\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\alloca.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\assert.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\byteswap.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\ctype.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\dirent.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\elf.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\endian.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\errno.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\fcntl.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\fnmatch.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\getopt.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\grp.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\inttypes.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\limits.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\malloc.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\mntent.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\paths.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\poll.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\pwd.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sched.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\setjmp.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\signal.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\stdarg.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\stddef.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\stdint.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\stdio.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\stdlib.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\string.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\sysexits.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\syslog.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\termios.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\time.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\unistd.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\utime.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\zconf.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\include\zlib.h">
+      <Filter>usr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\btrfs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\cramfs_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\ext2_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\ext3_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\fstype.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\gfs2_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\iso9660_sb.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\jfs_superblock.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\luks_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\lvm2_sb.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\minix_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\nilfs_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\ocfs2_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\reiser4_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\reiserfs_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\romfs_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\squashfs_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\swap_fs.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\fstype\xfs_sb.h">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\ipconfig\bootp_packet.h">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\ipconfig\bootp_proto.h">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\ipconfig\dhcp_proto.h">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\ipconfig\ipconfig.h">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\ipconfig\netdev.h">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\ipconfig\packet.h">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\nfsmount\dummypmap.h">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\nfsmount\nfsmount.h">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\nfsmount\sunrpc.h">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\resume\resume.h">
+      <Filter>usr\kinit\resume</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\run-init\run-init.h">
+      <Filter>usr\kinit\run-init</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\capabilities.h">
+      <Filter>usr\kinit</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\do_mounts.h">
+      <Filter>usr\kinit</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\kinit.h">
+      <Filter>usr\kinit</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\kinit\xpio.h">
+      <Filter>usr\kinit</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\ctype\ctypefunc.h">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\socketcalls\socketcommon.h">
+      <Filter>usr\klibc\socketcalls</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\stdio\stdioint.h">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\syscalls\syscommon.h">
+      <Filter>usr\klibc\syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\userdb\userdb.h">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\crc32.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\deflate.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\inffast.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\inffixed.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\inflate.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\inftrees.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\trees.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\zconf.in.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\zlib\zutil.h">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\atexit.h">
+      <Filter>usr\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\env.h">
+      <Filter>usr\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\malloc.h">
+      <Filter>usr\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\klibc\strxspn.h">
+      <Filter>usr\klibc</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\utils\file_mode.h">
+      <Filter>usr\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\utils\loop.h">
+      <Filter>usr\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="usr\utils\mount_opts.h">
+      <Filter>usr\utils</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="scripts\basic\fixdep.c">
+      <Filter>scripts\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\bltin\printf.c">
+      <Filter>usr\dash\bltin</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\bltin\test.c">
+      <Filter>usr\dash\bltin</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\alias.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\arith_yacc.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\arith_yylex.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\cd.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\error.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\eval.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\exec.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\expand.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\hetio.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\histedit.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\input.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\jobs.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\mail.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\main.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\memalloc.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\miscbltin.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\mkinit.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\mknodes.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\mksyntax.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\mystring.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\options.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\output.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\parser.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\redir.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\show.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\system.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\trap.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\dash\var.c">
+      <Filter>usr\dash</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\bits.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\deflate.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\gzip.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\inflate.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\trees.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\unzip.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\util.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\gzip\zip.c">
+      <Filter>usr\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\fstype\fstype.c">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\fstype\main.c">
+      <Filter>usr\kinit\fstype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\ipconfig\bootp_proto.c">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\ipconfig\dhcp_proto.c">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\ipconfig\main.c">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\ipconfig\netdev.c">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\ipconfig\packet.c">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsmount\dummypmap.c">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsmount\dummypmap_test.c">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsmount\main.c">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsmount\mount.c">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsmount\portmap.c">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsmount\sunrpc.c">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\resume\resume.c">
+      <Filter>usr\kinit\resume</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\resume\resumelib.c">
+      <Filter>usr\kinit\resume</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\run-init\run-init.c">
+      <Filter>usr\kinit\run-init</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\run-init\runinitlib.c">
+      <Filter>usr\kinit\run-init</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\capabilities.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\devname.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\do_mounts.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\do_mounts_md.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\do_mounts_mtd.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\getarg.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\getintfile.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\initrd.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\kinit.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\name_to_dev.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\nfsroot.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\ramdisk_load.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\readfile.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\kinit\xpio.c">
+      <Filter>usr\kinit</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\alpha\crt0.S">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\alpha\divide.c">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\alpha\pipe.S">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\alpha\setjmp.S">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\alpha\syscall.S">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\alpha\sysdual.S">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm\__muldi3.c">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm\aeabi_nonsense.S">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm\crt0.S">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm\setjmp.S">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm\syscall.S">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm\vfork.S">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm64\crt0.S">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm64\setjmp.S">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm64\syscall.S">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\arm64\vfork.S">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\cris\__negdi2.S">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\cris\crt0.S">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\cris\divide.c">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\cris\setjmp.S">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\cris\syscall.S">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\cris\vfork.S">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\libgcc\__ashldi3.S">
+      <Filter>usr\klibc\arch\i386\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\libgcc\__ashrdi3.S">
+      <Filter>usr\klibc\arch\i386\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\libgcc\__lshrdi3.S">
+      <Filter>usr\klibc\arch\i386\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\libgcc\__muldi3.S">
+      <Filter>usr\klibc\arch\i386\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\libgcc\__negdi2.S">
+      <Filter>usr\klibc\arch\i386\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\crt0.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\open.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\openat.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\setjmp.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\syscall.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\varsyscall.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\i386\vfork.S">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ia64\crt0.S">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ia64\pipe.S">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ia64\setjmp.S">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ia64\syscall.S">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ia64\vfork.S">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\m68k\crt0.S">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\m68k\open.S">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\m68k\openat.S">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\m68k\setjmp.S">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\m68k\syscall.S">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\m68k\vfork.S">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips\crt0.S">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips\pipe.S">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips\setjmp.S">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips\syscall.S">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips\vfork.S">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips64\crt0.S">
+      <Filter>usr\klibc\arch\mips64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\mips64\setjmp.S">
+      <Filter>usr\klibc\arch\mips64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\parisc\crt0.S">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\parisc\setjmp.S">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\parisc\syscall.S">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\parisc\vfork.S">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ppc\crt0.S">
+      <Filter>usr\klibc\arch\ppc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ppc\setjmp.S">
+      <Filter>usr\klibc\arch\ppc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ppc\syscall.S">
+      <Filter>usr\klibc\arch\ppc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ppc64\crt0.S">
+      <Filter>usr\klibc\arch\ppc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ppc64\setjmp.S">
+      <Filter>usr\klibc\arch\ppc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\ppc64\syscall.c">
+      <Filter>usr\klibc\arch\ppc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\riscv64\crt0.S">
+      <Filter>usr\klibc\arch\riscv64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\riscv64\setjmp.S">
+      <Filter>usr\klibc\arch\riscv64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\riscv64\syscall.S">
+      <Filter>usr\klibc\arch\riscv64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\s390\crt0.S">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\s390\mmap.c">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\s390\setjmp.S">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\s390\syscall.c">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sh\crt0.S">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sh\pipe.S">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sh\setjmp.S">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sh\syscall.S">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\__muldi3.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\crt0.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\crt0i.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\pipe.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\setjmp.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\smul.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\syscall.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\sysfork.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc\umul.S">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc64\crt0.S">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc64\pipe.S">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc64\setjmp.S">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc64\syscall.S">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\sparc64\sysfork.S">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\x86_64\crt0.S">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\x86_64\setjmp.S">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\x86_64\sigreturn.S">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\x86_64\syscall.S">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\arch\x86_64\vfork.S">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isalnum.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isalpha.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isascii.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isblank.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\iscntrl.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isdigit.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isgraph.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\islower.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isprint.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\ispunct.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isspace.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isupper.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\isxdigit.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\tolower.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctype\toupper.c">
+      <Filter>usr\klibc\ctype</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\inet\bindresvport.c">
+      <Filter>usr\klibc\inet</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\inet\inet_addr.c">
+      <Filter>usr\klibc\inet</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\inet\inet_aton.c">
+      <Filter>usr\klibc\inet</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\inet\inet_ntoa.c">
+      <Filter>usr\klibc\inet</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\inet\inet_ntop.c">
+      <Filter>usr\klibc\inet</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\inet\inet_pton.c">
+      <Filter>usr\klibc\inet</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__ashldi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__ashrdi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__clzsi2.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__divdi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__divsi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__lshrdi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__moddi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__modsi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__udivdi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__udivmoddi4.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__udivmodsi4.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__udivsi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__umoddi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libgcc\__umodsi3.c">
+      <Filter>usr\klibc\libgcc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fclose.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fdopen.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\feof.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\ferror.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fflush.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fgetc.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fileno.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fopen.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fread.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fseek.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\ftell.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\fwrite.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\rewind.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stdio\ungetc.c">
+      <Filter>usr\klibc\stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\environ.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\fcntl.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\fnmatch.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\getoptlong.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\getopttest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\getpagesize.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\hello.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\idtest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\lseek.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\malloctest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\malloctest2.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\memstrtest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\microhello.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\minihello.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\mmaptest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\opentest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\pipetest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\rtsig.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\select.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\setenvtest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\setjmptest.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\sigint.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\sig-nodefer.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\socket.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\sscanf.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\stat.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\statfs.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\stdio.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\strlcpycat.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\strtoimax.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\strtotime.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\testrand48.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\testvsnp.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\tests\vfork.c">
+      <Filter>usr\klibc\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\userdb\getgrgid.c">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\userdb\getgrnam.c">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\userdb\getpwnam.c">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\userdb\getpwuid.c">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\userdb\root_group.c">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\userdb\root_user.c">
+      <Filter>usr\klibc\userdb</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\adler32.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\compress.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\crc32.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\deflate.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\gzio.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\infback.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\inffast.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\inflate.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\inftrees.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\trees.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\uncompr.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zlib\zutil.c">
+      <Filter>usr\klibc\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\__put_env.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\__shared_init.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\__signal.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\__static_init.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\abort.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\accept.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\access.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\alarm.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\alphasort.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\asprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\assert.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\atexit.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\atoi.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\atol.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\atoll.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\atox.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\brk.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\bsd_signal.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\bsearch.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\bzero.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\calloc.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\chmod.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\chown.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\clearenv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\closelog.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\creat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ctypes.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\daemon.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\dup2.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\endmntent.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\exec_l.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execl.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execle.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execlp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execlpe.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execvp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\execvpe.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\exit.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fgets.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fnmatch.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fork.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fputc.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fputs.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fread2.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fstatfs.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\fwrite2.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getcwd.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getdomainname.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getenv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\gethostname.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getmntent.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getopt.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getopt_long.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getpgrp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\getpriority.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\globals.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\interp.S">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\isatty.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\jrand48.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\lchown.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\libc_init.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\link.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\lrand48.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\lseek.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\lstat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\malloc.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memccpy.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memchr.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memcmp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memcpy.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memmem.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memmove.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memrchr.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memset.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\memswap.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\mkdir.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\mknod.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\mmap.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\mrand48.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\nice.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\nrand48.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\nullenv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\onexit.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\open.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\openat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\pause.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\perror.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\pipe.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\poll.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\ppoll.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\pread.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\printf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\pselect.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\pty.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\putchar.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\putenv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\puts.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\pwrite.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\qsort.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\raise.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\readdir.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\readlink.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\realloc.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\realpath.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\reboot.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\recv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\remove.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\rename.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\renameat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\rmdir.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sbrk.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\scandir.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\seed48.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\select.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\send.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\setegid.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\setenv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\seteuid.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\setmntent.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\setpgrp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sha1hash.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\shm_open.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\shm_unlink.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sigabbrev.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sigaction.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\siglist.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\siglongjmp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sigpending.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sigprocmask.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sigsuspend.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sleep.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\snprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\srand48.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sscanf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\stat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\statfs.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strcasecmp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strcat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strchr.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strcmp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strcpy.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strcspn.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strdup.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strerror.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strlcat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strlcpy.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strlen.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strncasecmp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strncat.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strncmp.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strncpy.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strndup.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strnlen.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strntoimax.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strntoumax.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strpbrk.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strrchr.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strsep.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strsignal.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strspn.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strstr.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtoimax.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtok.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtok_r.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtol.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtoll.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtotimespec.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtotimeval.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtotimex.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtoul.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtoull.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtoumax.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strtox.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\strxspn.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\symlink.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\syslog.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\system.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\sysv_signal.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\time.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\umount.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\unlink.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\unsetenv.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\usleep.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\utime.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\utimes.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vasprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vfork.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vfprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vsnprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vsprintf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\vsscanf.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\wait.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\wait3.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\waitpid.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\klibc\zalloc.c">
+      <Filter>usr\klibc</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\cat.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\chroot.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\cpio.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\dd.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\dmesg.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\false.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\file_mode.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\halt.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\kill.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\ln.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\losetup.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\ls.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\minips.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\mkdir.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\mkfifo.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\mknod.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\mount_main.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\mount_opts.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\mv.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\nuke.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\pivot_root.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\readlink.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\sleep.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\sync.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\true.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\umount.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="usr\utils\uname.c">
+      <Filter>usr\utils</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="contrib\klibc.m4">
+      <Filter>contrib</Filter>
+    </None>
+    <None Include="klcc\.gitignore">
+      <Filter>klcc</Filter>
+    </None>
+    <None Include="klcc\Kbuild">
+      <Filter>klcc</Filter>
+    </None>
+    <None Include="klcc\klcc.1">
+      <Filter>klcc</Filter>
+    </None>
+    <None Include="klcc\klcc.in">
+      <Filter>klcc</Filter>
+    </None>
+    <None Include="klcc\makeklcc.pl">
+      <Filter>klcc</Filter>
+    </None>
+    <None Include="scripts\basic\.gitignore">
+      <Filter>scripts\basic</Filter>
+    </None>
+    <None Include="scripts\basic\Kbuild">
+      <Filter>scripts\basic</Filter>
+    </None>
+    <None Include="scripts\Kbuild.include">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\Kbuild.install">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\Kbuild.klibc">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\Kbuild.klibc.include">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\Makefile.clean">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="scripts\Makefile.host">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="usr\dash\bltin\echo.1">
+      <Filter>usr\dash\bltin</Filter>
+    </None>
+    <None Include="usr\dash\bltin\printf.1">
+      <Filter>usr\dash\bltin</Filter>
+    </None>
+    <None Include="usr\dash\bltin\test.1">
+      <Filter>usr\dash\bltin</Filter>
+    </None>
+    <None Include="usr\dash\funcs\cmv">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\dirs">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\kill">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\login">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\newgrp">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\popd">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\pushd">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\funcs\suspend">
+      <Filter>usr\dash\funcs</Filter>
+    </None>
+    <None Include="usr\dash\.gitignore">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\builtins.def.in">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\gendeps.pl">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\Kbuild">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\mkbuiltins">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\mktokens">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\nodes.c.pat">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\nodetypes">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\README.dash">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\sh.1">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\dash\TOUR">
+      <Filter>usr\dash</Filter>
+    </None>
+    <None Include="usr\gzip\.gitignore">
+      <Filter>usr\gzip</Filter>
+    </None>
+    <None Include="usr\gzip\COPYING">
+      <Filter>usr\gzip</Filter>
+    </None>
+    <None Include="usr\gzip\Kbuild">
+      <Filter>usr\gzip</Filter>
+    </None>
+    <None Include="usr\gzip\README">
+      <Filter>usr\gzip</Filter>
+    </None>
+    <None Include="usr\include\Kbuild">
+      <Filter>usr\include</Filter>
+    </None>
+    <None Include="usr\kinit\fstype\Kbuild">
+      <Filter>usr\kinit\fstype</Filter>
+    </None>
+    <None Include="usr\kinit\ipconfig\Kbuild">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </None>
+    <None Include="usr\kinit\ipconfig\README.ipconfig">
+      <Filter>usr\kinit\ipconfig</Filter>
+    </None>
+    <None Include="usr\kinit\nfsmount\Kbuild">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </None>
+    <None Include="usr\kinit\nfsmount\README.locking">
+      <Filter>usr\kinit\nfsmount</Filter>
+    </None>
+    <None Include="usr\kinit\resume\Kbuild">
+      <Filter>usr\kinit\resume</Filter>
+    </None>
+    <None Include="usr\kinit\run-init\Kbuild">
+      <Filter>usr\kinit\run-init</Filter>
+    </None>
+    <None Include="usr\kinit\.gitignore">
+      <Filter>usr\kinit</Filter>
+    </None>
+    <None Include="usr\kinit\Kbuild">
+      <Filter>usr\kinit</Filter>
+    </None>
+    <None Include="usr\kinit\README">
+      <Filter>usr\kinit</Filter>
+    </None>
+    <None Include="usr\klibc\arch\alpha\Kbuild">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </None>
+    <None Include="usr\klibc\arch\alpha\MCONFIG">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </None>
+    <None Include="usr\klibc\arch\alpha\README-gcc">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </None>
+    <None Include="usr\klibc\arch\alpha\sysstub.ph">
+      <Filter>usr\klibc\arch\alpha</Filter>
+    </None>
+    <None Include="usr\klibc\arch\arm\Kbuild">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </None>
+    <None Include="usr\klibc\arch\arm\MCONFIG">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </None>
+    <None Include="usr\klibc\arch\arm\sysstub.ph">
+      <Filter>usr\klibc\arch\arm</Filter>
+    </None>
+    <None Include="usr\klibc\arch\arm64\Kbuild">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\arm64\MCONFIG">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\arm64\sysstub.ph">
+      <Filter>usr\klibc\arch\arm64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\cris\Kbuild">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </None>
+    <None Include="usr\klibc\arch\cris\MCONFIG">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </None>
+    <None Include="usr\klibc\arch\cris\sysstub.ph">
+      <Filter>usr\klibc\arch\cris</Filter>
+    </None>
+    <None Include="usr\klibc\arch\i386\Kbuild">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </None>
+    <None Include="usr\klibc\arch\i386\MCONFIG">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </None>
+    <None Include="usr\klibc\arch\i386\sysstub.ph">
+      <Filter>usr\klibc\arch\i386</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ia64\Kbuild">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ia64\klibc.ld">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ia64\MCONFIG">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ia64\sysstub.ph">
+      <Filter>usr\klibc\arch\ia64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\m68k\Kbuild">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </None>
+    <None Include="usr\klibc\arch\m68k\MCONFIG">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </None>
+    <None Include="usr\klibc\arch\m68k\sysstub.ph">
+      <Filter>usr\klibc\arch\m68k</Filter>
+    </None>
+    <None Include="usr\klibc\arch\mips\Kbuild">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </None>
+    <None Include="usr\klibc\arch\mips\MCONFIG">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </None>
+    <None Include="usr\klibc\arch\mips\sysstub.ph">
+      <Filter>usr\klibc\arch\mips</Filter>
+    </None>
+    <None Include="usr\klibc\arch\mips64\Kbuild">
+      <Filter>usr\klibc\arch\mips64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\mips64\MCONFIG">
+      <Filter>usr\klibc\arch\mips64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\mips64\sysstub.ph">
+      <Filter>usr\klibc\arch\mips64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\parisc\Kbuild">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\parisc\MCONFIG">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\parisc\sysstub.ph">
+      <Filter>usr\klibc\arch\parisc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ppc\Kbuild">
+      <Filter>usr\klibc\arch\ppc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ppc\MCONFIG">
+      <Filter>usr\klibc\arch\ppc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ppc\sysstub.ph">
+      <Filter>usr\klibc\arch\ppc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ppc64\Kbuild">
+      <Filter>usr\klibc\arch\ppc64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ppc64\MCONFIG">
+      <Filter>usr\klibc\arch\ppc64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\ppc64\sysstub.ph">
+      <Filter>usr\klibc\arch\ppc64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\riscv64\Kbuild">
+      <Filter>usr\klibc\arch\riscv64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\riscv64\MCONFIG">
+      <Filter>usr\klibc\arch\riscv64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\riscv64\sysstub.ph">
+      <Filter>usr\klibc\arch\riscv64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\s390\Kbuild">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </None>
+    <None Include="usr\klibc\arch\s390\MCONFIG">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </None>
+    <None Include="usr\klibc\arch\s390\sysstub.ph">
+      <Filter>usr\klibc\arch\s390</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sh\Kbuild">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sh\MCONFIG">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sh\sysstub.ph">
+      <Filter>usr\klibc\arch\sh</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc\divrem.m4">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc\Kbuild">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc\MCONFIG">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc\sysstub.ph">
+      <Filter>usr\klibc\arch\sparc</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc64\Kbuild">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc64\MCONFIG">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\sparc64\sysstub.ph">
+      <Filter>usr\klibc\arch\sparc64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\x86_64\Kbuild">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\x86_64\MCONFIG">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\x86_64\sysstub.ph">
+      <Filter>usr\klibc\arch\x86_64</Filter>
+    </None>
+    <None Include="usr\klibc\arch\README.klibc.arch">
+      <Filter>usr\klibc\arch</Filter>
+    </None>
+    <None Include="usr\klibc\socketcalls\.gitignore">
+      <Filter>usr\klibc\socketcalls</Filter>
+    </None>
+    <None Include="usr\klibc\socketcalls\Kbuild">
+      <Filter>usr\klibc\socketcalls</Filter>
+    </None>
+    <None Include="usr\klibc\syscalls\.gitignore">
+      <Filter>usr\klibc\syscalls</Filter>
+    </None>
+    <None Include="usr\klibc\syscalls\Kbuild">
+      <Filter>usr\klibc\syscalls</Filter>
+    </None>
+    <None Include="usr\klibc\tests\Kbuild">
+      <Filter>usr\klibc\tests</Filter>
+    </None>
+    <None Include="usr\klibc\zlib\algorithm.txt">
+      <Filter>usr\klibc\zlib</Filter>
+    </None>
+    <None Include="usr\klibc\zlib\FAQ">
+      <Filter>usr\klibc\zlib</Filter>
+    </None>
+    <None Include="usr\klibc\zlib\INDEX">
+      <Filter>usr\klibc\zlib</Filter>
+    </None>
+    <None Include="usr\klibc\zlib\Kbuild">
+      <Filter>usr\klibc\zlib</Filter>
+    </None>
+    <None Include="usr\klibc\zlib\README">
+      <Filter>usr\klibc\zlib</Filter>
+    </None>
+    <None Include="usr\klibc\zlib\zlib.3">
+      <Filter>usr\klibc\zlib</Filter>
+    </None>
+    <None Include="usr\klibc\.gitignore">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\CAVEATS">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\Kbuild">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\LICENSE">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\makeerrlist.pl">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\README.klibc">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\SOCKETCALLS.def">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\socketcalls.pl">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\SYSCALLS.def">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\syscalls.pl">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\klibc\version">
+      <Filter>usr\klibc</Filter>
+    </None>
+    <None Include="usr\utils\Kbuild">
+      <Filter>usr\utils</Filter>
+    </None>
+    <None Include="usr\.gitignore">
+      <Filter>usr</Filter>
+    </None>
+    <None Include="usr\Kbuild">
+      <Filter>usr</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>
