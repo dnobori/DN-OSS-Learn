@@ -40,7 +40,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/xl2tpd;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/xl2tpd;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -60,7 +60,6 @@
     <ClInclude Include="xl2tpd\misc.h" />
     <ClInclude Include="xl2tpd\osport.h" />
     <ClInclude Include="xl2tpd\scheduler.h" />
-
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="xl2tpd\contrib\system_tray\main.cpp" />
@@ -78,7 +77,6 @@
     <ClCompile Include="xl2tpd\scheduler.c" />
     <ClCompile Include="xl2tpd\xl2tpd.c" />
     <ClCompile Include="xl2tpd\xl2tpd-control.c" />
-
   </ItemGroup>
   <ItemGroup>
     <None Include="xl2tpd\contrib\system_tray\connect.png" />
@@ -89,7 +87,7 @@
     <None Include="xl2tpd\contrib\pfc.1" />
     <None Include="xl2tpd\contrib\pfc.README" />
     <None Include="xl2tpd\contrib\pppol2tp-2.6.23.README" />
-    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch" />
+    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch.c" />
     <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch.README" />
     <None Include="xl2tpd\debian\source\format" />
     <None Include="xl2tpd\debian\source\options" />
@@ -153,7 +151,6 @@
     <None Include="xl2tpd\Makefile.ver" />
     <None Include="xl2tpd\README.md" />
     <None Include="xl2tpd\TODO" />
-
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

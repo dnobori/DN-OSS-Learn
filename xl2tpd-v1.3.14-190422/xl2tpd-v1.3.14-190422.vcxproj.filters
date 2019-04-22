@@ -40,7 +40,6 @@
     <Filter Include="xl2tpd\scripts">
       <UniqueIdentifier>{C1F785B4-D6DC-492B-904D-606DCA35B764}</UniqueIdentifier>
     </Filter>
-
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="xl2tpd\aaa.h">
@@ -79,7 +78,6 @@
     <ClInclude Include="xl2tpd\scheduler.h">
       <Filter>xl2tpd</Filter>
     </ClInclude>
-
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="xl2tpd\contrib\system_tray\main.cpp">
@@ -127,7 +125,6 @@
     <ClCompile Include="xl2tpd\xl2tpd-control.c">
       <Filter>xl2tpd</Filter>
     </ClCompile>
-
   </ItemGroup>
   <ItemGroup>
     <None Include="xl2tpd\contrib\system_tray\connect.png">
@@ -152,9 +149,6 @@
       <Filter>xl2tpd\contrib</Filter>
     </None>
     <None Include="xl2tpd\contrib\pppol2tp-2.6.23.README">
-      <Filter>xl2tpd\contrib</Filter>
-    </None>
-    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch">
       <Filter>xl2tpd\contrib</Filter>
     </None>
     <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch.README">
@@ -346,6 +340,8 @@
     <None Include="xl2tpd\TODO">
       <Filter>xl2tpd</Filter>
     </None>
-
+    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch.c">
+      <Filter>xl2tpd\contrib</Filter>
+    </None>
   </ItemGroup>
 </Project>
