@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4CB65B8A-AC8E-4BFF-9527-FB4140B6A0BD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xl2tpd-v1.3.14-190422</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+	  <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/xl2tpd;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="xl2tpd\aaa.h" />
+    <ClInclude Include="xl2tpd\avp.h" />
+    <ClInclude Include="xl2tpd\call.h" />
+    <ClInclude Include="xl2tpd\common.h" />
+    <ClInclude Include="xl2tpd\control.h" />
+    <ClInclude Include="xl2tpd\file.h" />
+    <ClInclude Include="xl2tpd\ipsecmast.h" />
+    <ClInclude Include="xl2tpd\l2tp.h" />
+    <ClInclude Include="xl2tpd\md5.h" />
+    <ClInclude Include="xl2tpd\misc.h" />
+    <ClInclude Include="xl2tpd\osport.h" />
+    <ClInclude Include="xl2tpd\scheduler.h" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xl2tpd\contrib\system_tray\main.cpp" />
+    <ClCompile Include="xl2tpd\contrib\pfc.c" />
+    <ClCompile Include="xl2tpd\aaa.c" />
+    <ClCompile Include="xl2tpd\avp.c" />
+    <ClCompile Include="xl2tpd\avpsend.c" />
+    <ClCompile Include="xl2tpd\call.c" />
+    <ClCompile Include="xl2tpd\control.c" />
+    <ClCompile Include="xl2tpd\file.c" />
+    <ClCompile Include="xl2tpd\md5.c" />
+    <ClCompile Include="xl2tpd\misc.c" />
+    <ClCompile Include="xl2tpd\network.c" />
+    <ClCompile Include="xl2tpd\pty.c" />
+    <ClCompile Include="xl2tpd\scheduler.c" />
+    <ClCompile Include="xl2tpd\xl2tpd.c" />
+    <ClCompile Include="xl2tpd\xl2tpd-control.c" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xl2tpd\contrib\system_tray\connect.png" />
+    <None Include="xl2tpd\contrib\system_tray\disconnect.png" />
+    <None Include="xl2tpd\contrib\system_tray\offline.png" />
+    <None Include="xl2tpd\contrib\system_tray\online.png" />
+    <None Include="xl2tpd\contrib\system_tray\REAME.txt" />
+    <None Include="xl2tpd\contrib\pfc.1" />
+    <None Include="xl2tpd\contrib\pfc.README" />
+    <None Include="xl2tpd\contrib\pppol2tp-2.6.23.README" />
+    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch" />
+    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch.README" />
+    <None Include="xl2tpd\debian\source\format" />
+    <None Include="xl2tpd\debian\source\options" />
+    <None Include="xl2tpd\debian\changelog" />
+    <None Include="xl2tpd\debian\compat" />
+    <None Include="xl2tpd\debian\control" />
+    <None Include="xl2tpd\debian\copyright" />
+    <None Include="xl2tpd\debian\lintian-overrides" />
+    <None Include="xl2tpd\debian\repack.sh" />
+    <None Include="xl2tpd\debian\rules" />
+    <None Include="xl2tpd\debian\watch" />
+    <None Include="xl2tpd\debian\xl2tpd.default" />
+    <None Include="xl2tpd\debian\xl2tpd.dirs" />
+    <None Include="xl2tpd\debian\xl2tpd.docs" />
+    <None Include="xl2tpd\debian\xl2tpd.examples" />
+    <None Include="xl2tpd\debian\xl2tpd.init" />
+    <None Include="xl2tpd\debian\xl2tpd.postinst" />
+    <None Include="xl2tpd\debian\xl2tpd.postrm" />
+    <None Include="xl2tpd\debian\xl2tpd.prerm" />
+    <None Include="xl2tpd\doc\ipsecsaref.png" />
+    <None Include="xl2tpd\doc\l2tp.png" />
+    <None Include="xl2tpd\doc\l2tp.svg" />
+    <None Include="xl2tpd\doc\l2tpd.conf.sample" />
+    <None Include="xl2tpd\doc\l2tpd-RPM.README" />
+    <None Include="xl2tpd\doc\l2tp-secrets.5" />
+    <None Include="xl2tpd\doc\l2tp-secrets.sample" />
+    <None Include="xl2tpd\doc\origREADME" />
+    <None Include="xl2tpd\doc\README.passwordfd" />
+    <None Include="xl2tpd\doc\README.patents" />
+    <None Include="xl2tpd\doc\xl2tpd.8" />
+    <None Include="xl2tpd\doc\xl2tpd.conf.5" />
+    <None Include="xl2tpd\doc\xl2tpd-control.8" />
+    <None Include="xl2tpd\examples\chapsecrets.sample" />
+    <None Include="xl2tpd\examples\ppp-options.xl2tpd" />
+    <None Include="xl2tpd\examples\README" />
+    <None Include="xl2tpd\examples\xl2tpd.conf" />
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-CERT.conf" />
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-CERT-orgWIN2KXP.conf" />
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-PSK.conf" />
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-PSK-orgWIN2KXP.conf" />
+    <None Include="xl2tpd\packaging\fedora\xl2tpd.init" />
+    <None Include="xl2tpd\packaging\fedora\xl2tpd.spec" />
+    <None Include="xl2tpd\packaging\openwrt\ipkg\xl2tpd.conffiles" />
+    <None Include="xl2tpd\packaging\openwrt\ipkg\xl2tpd.control" />
+    <None Include="xl2tpd\packaging\openwrt\Config.in" />
+    <None Include="xl2tpd\packaging\openwrt\Makefile" />
+    <None Include="xl2tpd\packaging\openwrt\README" />
+    <None Include="xl2tpd\packaging\openwrt\xl2tpd.init" />
+    <None Include="xl2tpd\packaging\suse\README" />
+    <None Include="xl2tpd\packaging\suse\sles10.spec" />
+    <None Include="xl2tpd\packaging\suse\xl2tpd.init" />
+    <None Include="xl2tpd\packaging\suse\xl2tpd.spec" />
+    <None Include="xl2tpd\scripts\init.suse" />
+    <None Include="xl2tpd\.gitignore" />
+    <None Include="xl2tpd\.travis.yml" />
+    <None Include="xl2tpd\BUGS" />
+    <None Include="xl2tpd\CHANGES" />
+    <None Include="xl2tpd\CREDITS" />
+    <None Include="xl2tpd\LICENSE" />
+    <None Include="xl2tpd\Makefile" />
+    <None Include="xl2tpd\Makefile.ver" />
+    <None Include="xl2tpd\README.md" />
+    <None Include="xl2tpd\TODO" />
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

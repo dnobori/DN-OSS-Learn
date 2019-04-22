@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xl2tpd">
+      <UniqueIdentifier>{3C92F2DC-45A5-4E3C-A7EC-FFBB73B945E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\contrib">
+      <UniqueIdentifier>{ADCD3837-5EE7-48C2-9450-20EF14C82756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\contrib\system_tray">
+      <UniqueIdentifier>{0ADA62D3-8E6C-4731-BD31-C9B3031B3172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\debian">
+      <UniqueIdentifier>{6FBD03DB-0014-4549-BC3C-D8C0726E655A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\debian\source">
+      <UniqueIdentifier>{C322F0FF-7F3A-4723-BC91-6D09981A1C4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\doc">
+      <UniqueIdentifier>{E2FF07EB-08B0-4C65-BE45-EA50ADCB6EF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\examples">
+      <UniqueIdentifier>{D086A7D3-C2E3-448A-987A-A98C62A10553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\packaging">
+      <UniqueIdentifier>{18F3B1C0-F537-4507-BAC8-4BCDA55AB884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\packaging\fedora">
+      <UniqueIdentifier>{ACBC9731-398F-4244-AC7E-02BC0FB60673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\packaging\openwrt">
+      <UniqueIdentifier>{58CBAC06-189E-4EEA-B666-7FAB7599DF33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\packaging\openwrt\ipkg">
+      <UniqueIdentifier>{E4E25D6D-15AA-47B2-AA75-07FE8DC0EE7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\packaging\suse">
+      <UniqueIdentifier>{1680591A-3FC4-4C40-8F76-1B0A363D9A3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xl2tpd\scripts">
+      <UniqueIdentifier>{C1F785B4-D6DC-492B-904D-606DCA35B764}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xl2tpd\aaa.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\avp.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\call.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\common.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\control.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\file.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\ipsecmast.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\l2tp.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\md5.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\misc.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\osport.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+    <ClInclude Include="xl2tpd\scheduler.h">
+      <Filter>xl2tpd</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xl2tpd\contrib\system_tray\main.cpp">
+      <Filter>xl2tpd\contrib\system_tray</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\contrib\pfc.c">
+      <Filter>xl2tpd\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\aaa.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\avp.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\avpsend.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\call.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\control.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\file.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\md5.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\misc.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\network.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\pty.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\scheduler.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\xl2tpd.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+    <ClCompile Include="xl2tpd\xl2tpd-control.c">
+      <Filter>xl2tpd</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xl2tpd\contrib\system_tray\connect.png">
+      <Filter>xl2tpd\contrib\system_tray</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\system_tray\disconnect.png">
+      <Filter>xl2tpd\contrib\system_tray</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\system_tray\offline.png">
+      <Filter>xl2tpd\contrib\system_tray</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\system_tray\online.png">
+      <Filter>xl2tpd\contrib\system_tray</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\system_tray\REAME.txt">
+      <Filter>xl2tpd\contrib\system_tray</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\pfc.1">
+      <Filter>xl2tpd\contrib</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\pfc.README">
+      <Filter>xl2tpd\contrib</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\pppol2tp-2.6.23.README">
+      <Filter>xl2tpd\contrib</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch">
+      <Filter>xl2tpd\contrib</Filter>
+    </None>
+    <None Include="xl2tpd\contrib\pppol2tp-linux-2.4.27.patch.README">
+      <Filter>xl2tpd\contrib</Filter>
+    </None>
+    <None Include="xl2tpd\debian\source\format">
+      <Filter>xl2tpd\debian\source</Filter>
+    </None>
+    <None Include="xl2tpd\debian\source\options">
+      <Filter>xl2tpd\debian\source</Filter>
+    </None>
+    <None Include="xl2tpd\debian\changelog">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\compat">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\control">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\copyright">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\lintian-overrides">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\repack.sh">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\rules">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\watch">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.default">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.dirs">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.docs">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.examples">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.init">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.postinst">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.postrm">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\debian\xl2tpd.prerm">
+      <Filter>xl2tpd\debian</Filter>
+    </None>
+    <None Include="xl2tpd\doc\ipsecsaref.png">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\l2tp.png">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\l2tp.svg">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\l2tpd.conf.sample">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\l2tpd-RPM.README">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\l2tp-secrets.5">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\l2tp-secrets.sample">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\origREADME">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\README.passwordfd">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\README.patents">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\xl2tpd.8">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\xl2tpd.conf.5">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\doc\xl2tpd-control.8">
+      <Filter>xl2tpd\doc</Filter>
+    </None>
+    <None Include="xl2tpd\examples\chapsecrets.sample">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\ppp-options.xl2tpd">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\README">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\xl2tpd.conf">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-CERT.conf">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-CERT-orgWIN2KXP.conf">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-PSK.conf">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\examples\xl2tpd-L2TP-PSK-orgWIN2KXP.conf">
+      <Filter>xl2tpd\examples</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\fedora\xl2tpd.init">
+      <Filter>xl2tpd\packaging\fedora</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\fedora\xl2tpd.spec">
+      <Filter>xl2tpd\packaging\fedora</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\openwrt\ipkg\xl2tpd.conffiles">
+      <Filter>xl2tpd\packaging\openwrt\ipkg</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\openwrt\ipkg\xl2tpd.control">
+      <Filter>xl2tpd\packaging\openwrt\ipkg</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\openwrt\Config.in">
+      <Filter>xl2tpd\packaging\openwrt</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\openwrt\Makefile">
+      <Filter>xl2tpd\packaging\openwrt</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\openwrt\README">
+      <Filter>xl2tpd\packaging\openwrt</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\openwrt\xl2tpd.init">
+      <Filter>xl2tpd\packaging\openwrt</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\suse\README">
+      <Filter>xl2tpd\packaging\suse</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\suse\sles10.spec">
+      <Filter>xl2tpd\packaging\suse</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\suse\xl2tpd.init">
+      <Filter>xl2tpd\packaging\suse</Filter>
+    </None>
+    <None Include="xl2tpd\packaging\suse\xl2tpd.spec">
+      <Filter>xl2tpd\packaging\suse</Filter>
+    </None>
+    <None Include="xl2tpd\scripts\init.suse">
+      <Filter>xl2tpd\scripts</Filter>
+    </None>
+    <None Include="xl2tpd\.gitignore">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\.travis.yml">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\BUGS">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\CHANGES">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\CREDITS">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\LICENSE">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\Makefile">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\Makefile.ver">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\README.md">
+      <Filter>xl2tpd</Filter>
+    </None>
+    <None Include="xl2tpd\TODO">
+      <Filter>xl2tpd</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>
