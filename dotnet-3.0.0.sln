@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dotnet-3.0.0", "dotnet-3.0.0\dotnet-3.0.0.vcxproj", "{25BF21A7-ADD9-4360-AF58-128A7B8E9108}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25BF21A7-ADD9-4360-AF58-128A7B8E9108}.Debug|x86.ActiveCfg = Debug|Win32
+		{25BF21A7-ADD9-4360-AF58-128A7B8E9108}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ED1095A-A777-42DB-A8C5-F3A380D2FD8C}
+	EndGlobalSection
+EndGlobal

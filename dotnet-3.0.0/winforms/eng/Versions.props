@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VersionPrefix>4.8.0</VersionPrefix>
+    <!-- version in our package name #.#.#-below.#####.## -->
+    <PreReleaseVersionLabel>rc2</PreReleaseVersionLabel>
+    <!-- Use the compiler in the CLI instead of in the sdk, since the sdk one doesn't work with netcoreapp3.0 yet -->
+    <UsingToolMicrosoftNetCompilers>false</UsingToolMicrosoftNetCompilers>
+  </PropertyGroup>
+  <!-- Below have corresponding entries in Versions.Details.XML because they are updated via Maestro -->
+  <!-- Core Setup for coherency -->
+  <PropertyGroup>
+    <MicrosoftNETCoreAppPackageVersion>3.0.0-rc2-19460-02</MicrosoftNETCoreAppPackageVersion>
+  </PropertyGroup>
+  <!-- CoreFX via Core Setup -->
+  <PropertyGroup>
+    <MicrosoftNETCorePlatformsPackageVersion>3.0.0-rc2.19460.1</MicrosoftNETCorePlatformsPackageVersion>
+    <MicrosoftWin32RegistryPackageVersion>4.6.0-rc2.19460.1</MicrosoftWin32RegistryPackageVersion>
+    <MicrosoftWin32SystemEventsPackageVersion>4.6.0-rc2.19460.1</MicrosoftWin32SystemEventsPackageVersion>
+    <SystemCodeDomPackageVersion>4.6.0-rc2.19460.1</SystemCodeDomPackageVersion>
+    <SystemConfigurationConfigurationManagerPackageVersion>4.6.0-rc2.19460.1</SystemConfigurationConfigurationManagerPackageVersion>
+    <SystemDrawingCommonPackageVersion>4.6.0-rc2.19460.1</SystemDrawingCommonPackageVersion>
+    <SystemResourcesExtensionsPackageVersion>4.6.0-rc2.19460.1</SystemResourcesExtensionsPackageVersion>
+    <SystemSecurityCryptographyCngPackageVersion>4.6.0-rc2.19460.1</SystemSecurityCryptographyCngPackageVersion>
+    <SystemSecurityPermissionsPackageVersion>4.6.0-rc2.19460.1</SystemSecurityPermissionsPackageVersion>
+    <SystemWindowsExtensionsPackageVersion>4.6.0-rc2.19460.1</SystemWindowsExtensionsPackageVersion>
+  </PropertyGroup>
+  <!-- CoreCLR via Core Setup -->
+  <PropertyGroup>
+    <MicrosoftNETCoreILPackageVersion>3.0.0-preview5-27616-73</MicrosoftNETCoreILPackageVersion>
+    <MicrosoftNETCoreILAsmPackageVersion>3.0.0-rc2.19459.3</MicrosoftNETCoreILAsmPackageVersion>
+  </PropertyGroup>
+  <!-- Arcade -->
+  <PropertyGroup>
+    <MicrosoftDotNetGenFacadesPackageVersion>1.0.0-beta.19461.7</MicrosoftDotNetGenFacadesPackageVersion>
+    <MicrosoftDotNetXUnitExtensionsPackageVersion>2.4.1-beta.19461.7</MicrosoftDotNetXUnitExtensionsPackageVersion>
+  </PropertyGroup>
+  <!-- Below have no corresponding entries in Versions.Details.XML because they are not updated via Maestro -->
+  <!-- XUnit-related (not extensions) -->
+  <PropertyGroup>
+    <XUnitVersion>2.4.1</XUnitVersion>
+    <XUnitAssertVersion>$(XUnitVersion)</XUnitAssertVersion>
+    <XUnitRunnerConsoleVersion>$(XUnitVersion)</XUnitRunnerConsoleVersion>
+    <XUnitRunnerVisualStudioVersion>$(XUnitVersion)</XUnitRunnerVisualStudioVersion>
+    <XUnitExtensibilityExecutionVersion>$(XUnitVersion)</XUnitExtensibilityExecutionVersion>
+    <XUnitStaFactPackageVersion>0.3.18</XUnitStaFactPackageVersion>
+  </PropertyGroup>
+  <!-- Code Coverage -->
+  <PropertyGroup>
+    <CoverletMSBuildPackageVersion>2.6.3</CoverletMSBuildPackageVersion>
+    <CodecovVersion>1.1.1</CodecovVersion>
+    <ReportGeneratorVersion>4.0.9</ReportGeneratorVersion>
+  </PropertyGroup>
+  <!-- Additional unchanging dependencies -->
+  <PropertyGroup>
+    <MoqPackageVersion>4.10.0</MoqPackageVersion>
+    <MicrosoftTargetingPackNETFrameworkv472PackageVersion>1.0.0</MicrosoftTargetingPackNETFrameworkv472PackageVersion>
+    <NewtonsoftJsonVersion>9.0.1</NewtonsoftJsonVersion>
+  </PropertyGroup>
+</Project>

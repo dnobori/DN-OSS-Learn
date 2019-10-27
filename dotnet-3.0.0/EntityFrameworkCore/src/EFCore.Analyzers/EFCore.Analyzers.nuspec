@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    $CommonMetadataElements$
+    <dependencies>
+      <group targetFramework=".NETStandard1.3" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="$OutputBinary$" target="analyzers\dotnet\cs\" />
+    <file src="$OutputSymbol$" target="analyzers\dotnet\cs\" />
+  </files>
+</package>

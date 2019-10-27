@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Branding information -->
+  <PropertyGroup>
+    <VersionPrefix>4.8.0</VersionPrefix>
+    <PreReleaseVersionLabel>rc2</PreReleaseVersionLabel>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <!--
+        When StabilizePackageVersion is set to 'true', this branch will produce stable outputs for 'Shipping' packages
+    -->
+    <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == ''">true</StabilizePackageVersion>                                                                                             
+    <DotNetFinalVersionKind Condition="'$(StabilizePackageVersion)' == 'true'">release</DotNetFinalVersionKind>
+  </PropertyGroup>
+  
+  <!-- NuGet Package Versions -->
+  <PropertyGroup>
+    <MicrosoftPrivateWinformsVersion>4.8.0-rc2.19462.10</MicrosoftPrivateWinformsVersion>
+  </PropertyGroup>
+  <!-- Packages that come from https://github.com/dotnet/coreclr -->
+  <PropertyGroup>
+    <MicrosoftNETCoreRuntimeCoreCLRVersion>3.0.0-rc2.19459.3</MicrosoftNETCoreRuntimeCoreCLRVersion>
+    <MicrosoftNETCoreILDAsmVersion>3.0.0-rc2.19459.3</MicrosoftNETCoreILDAsmVersion>
+    <MicrosoftNETCoreILAsmVersion>3.0.0-rc2.19459.3</MicrosoftNETCoreILAsmVersion>
+  </PropertyGroup>
+  <!-- Packages that come from https://github.com/dotnet/core-setup -->
+  <PropertyGroup>
+    <MicrosoftNETCoreAppVersion>3.0.0-rc2-19460-02</MicrosoftNETCoreAppVersion>
+    <MicrosoftNETCorePlatformsVersion>3.0.0-rc2.19460.1</MicrosoftNETCorePlatformsVersion>
+    <SystemDrawingCommonVersion>4.6.0-rc2.19460.1</SystemDrawingCommonVersion>
+    <SystemDirectoryServicesVersion>4.6.0-rc2.19460.1</SystemDirectoryServicesVersion>
+    <SystemReflectionMetadataLoadContextVersion>4.6.0-rc2.19460.1</SystemReflectionMetadataLoadContextVersion>
+  </PropertyGroup>
+  <!-- Packages that come from https://github.com/dotnet/corefx via core-setup coherency parent dependency -->
+  <PropertyGroup>
+    <MicrosoftWin32RegistryPackageVersion>4.6.0-rc2.19460.1</MicrosoftWin32RegistryPackageVersion>
+    <SystemCodeDomPackageVersion>4.6.0-rc2.19460.1</SystemCodeDomPackageVersion>
+    <SystemConfigurationConfigurationManagerPackageVersion>4.6.0-rc2.19460.1</SystemConfigurationConfigurationManagerPackageVersion>
+    <SystemDiagnosticsEventLogPackageVersion>4.6.0-rc2.19460.1</SystemDiagnosticsEventLogPackageVersion>
+    <SystemIOPackagingVersion>4.6.0-rc2.19460.1</SystemIOPackagingVersion>
+    <SystemReflectionEmitPackageVersion>4.6.0-rc2.19460.1</SystemReflectionEmitPackageVersion>
+    <SystemReflectionTypeExtensionsPackageVersion>4.6.0-preview4.19176.11</SystemReflectionTypeExtensionsPackageVersion>
+    <SystemSecurityAccessControlPackageVersion>4.6.0-rc2.19460.1</SystemSecurityAccessControlPackageVersion>
+    <SystemSecurityCryptographyXmlPackageVersion>4.6.0-rc2.19460.1</SystemSecurityCryptographyXmlPackageVersion>
+    <SystemSecurityPermissionsPackageVersion>4.6.0-rc2.19460.1</SystemSecurityPermissionsPackageVersion>
+    <SystemSecurityPrincipalWindowsPackageVersion>4.6.0-rc2.19460.1</SystemSecurityPrincipalWindowsPackageVersion>
+    <SystemWindowsExtensionsPackageVersion>4.6.0-rc2.19460.1</SystemWindowsExtensionsPackageVersion>
+  </PropertyGroup>
+  <!-- Packages that come from https://github.com/dotnet/arcade -->
+  <PropertyGroup>
+    <MicrosoftDotNetApiCompatVersion>1.0.0-beta.19461.7</MicrosoftDotNetApiCompatVersion>
+    <MicrosoftDotNetCodeAnalysisPackageVersion>1.0.0-beta.19461.7</MicrosoftDotNetCodeAnalysisPackageVersion>
+    <MicrosoftDotNetGenAPIVersion>1.0.0-beta.19461.7</MicrosoftDotNetGenAPIVersion>
+  </PropertyGroup>
+  <!-- Packages that come from https://github.com/dotnet/corefxlab -->
+  <PropertyGroup>
+    <SystemReflectionTypeLoaderPackageVersion>0.1.0-preview2-181205-2</SystemReflectionTypeLoaderPackageVersion>
+  </PropertyGroup>
+  <!-- Maintain System.CodeDom PackageVersion at 4.4.0. See https://github.com/Microsoft/msbuild/issues/3627 -->
+  <PropertyGroup>
+    <SystemCodeDomPackageVersionForPresentationBuildTasks>4.4.0</SystemCodeDomPackageVersionForPresentationBuildTasks>
+  </PropertyGroup>
+  <!-- Other Packages that require manual updating-->
+  <PropertyGroup>
+    <MicrosoftBuildFrameworkPackageVersion>15.9.20</MicrosoftBuildFrameworkPackageVersion>
+    <MicrosoftBuildUtilitiesCorePackageVersion>15.9.20</MicrosoftBuildUtilitiesCorePackageVersion>
+    <XUnitVersion>2.4.0</XUnitVersion>
+    <XUnitRunnerConsoleVersion>$(XUnitVersion)</XUnitRunnerConsoleVersion>
+    <XUnitRunnerVisualStudioVersion>$(XUnitVersion)</XUnitRunnerVisualStudioVersion>
+    <!-- 
+        Also in global.json 
+        Used in Wpf.Cpp.PrivateTools.props/targets 
+    -->
+    <MsvcurtC1xxVersion>0.0.0.8</MsvcurtC1xxVersion>
+    <!--
+    This is the version of the test infrastructure package is compiled against. This should be
+    removed as part of https://github.com/dotnet/wpf/issues/816 
+    -->
+    <MicrosoftDotNetWpfTestPackageVersion>1.0.0-beta.19263.1</MicrosoftDotNetWpfTestPackageVersion>
+    <!-- These versions are specified in global.json -->
+    <StrawberryPerlVersion>5.28.1.1-1</StrawberryPerlVersion>
+    <NetFramework48RefAssembliesVersion>0.0.0.1</NetFramework48RefAssembliesVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreSources>
+      $(RestoreSources);
+      https://dotnet.myget.org/F/dotnet-corefxlab/api/v3/index.json;
+      https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json;
+      https://dotnetfeed.blob.core.windows.net/dotnet-coreclr/index.json;
+      https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json;
+    </RestoreSources>
+  </PropertyGroup>
+  <!--Package names-->
+  <PropertyGroup>
+    <SystemReflectionMetadataLoadContextPackage>System.Reflection.MetadataLoadContext</SystemReflectionMetadataLoadContextPackage>
+    <MicrosoftPrivateWinformsPackage>Microsoft.Private.Winforms</MicrosoftPrivateWinformsPackage>
+    <SystemDrawingCommonPackage>System.Drawing.Common</SystemDrawingCommonPackage>
+    <SystemDirectoryServicesPackage>System.DirectoryServices</SystemDirectoryServicesPackage>
+    <MicrosoftDotNetWpfDncEngPackage>Microsoft.DotNet.Wpf.DncEng</MicrosoftDotNetWpfDncEngPackage>
+    <SystemIOPackagingPackage>System.IO.Packaging</SystemIOPackagingPackage>
+    <SystemReflectionMetadataLoadContextPackage>System.Reflection.MetadataLoadContext</SystemReflectionMetadataLoadContextPackage>
+  </PropertyGroup>
+  <!-- 
+    This is a toolset dependency added for use *only* by tests 
+    
+      !!!This dependency creates a cycle in the dependency-graph, but only in the 'toolset' portion of the graph. !!!
+
+      Note: Also see [Dependency graph](https://github.com/dotnet/arcade/blob/master/Documentation/Darc.md#viewing-the-dependency-graph)
+
+     - https://dev.azure.com/dnceng/internal/_git/dotnet-wpf-int consumes Microsoft.DotNet.Wpf.GitHub published by dotnet/wpf (this repo)
+     - https://dev.azure.com/dnceng/internal/_git/dotnet-wpf-int produces Microsoft.DotNet.Wpf.DncEng
+       - Microsoft.DotNet.Wpf.DncEng should, normally, be passed further along (and be consumed back by dotnet/wpf)
+     - Many WPF tests are non-trivial integration tests which require references to the whole WPF stack. 
+     - In order to satisfy these references, we consume Microsoft.DotNet.Wpf.DncEng for tests-only. 
+     - This is added as a DARC subscription that 
+       - (a) Updates EveryDay
+       - (b) Updates *only* in ".NET Core 3 Dev" channel
+       - (c) Does not update in ".NET Core 3 Release" channel
+
+      It is worth reiterating that this package *should not* be consumed to build the product.
+  -->
+  <PropertyGroup>
+    <MicrosoftDotNetWpfDncEngVersion>4.8.0-rc2.19461.43</MicrosoftDotNetWpfDncEngVersion>
+  </PropertyGroup>
+</Project>
