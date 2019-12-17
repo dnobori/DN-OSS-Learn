@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>CSharp Analyzers for Entity Framework Core.</Description>
+    <MinClientVersion>3.6</MinClientVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Microsoft.EntityFrameworkCore.Analyzers</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <CodeAnalysisRuleSet>..\..\EFCore.ruleset</CodeAnalysisRuleSet>
+    <NuspecFile>$(MSBuildProjectName).nuspec</NuspecFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Shared\CodeAnnotations.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="$(MicrosoftCodeAnalysisCSharpWorkspacesPackageVersion)" PrivateAssets="all" />
+    <PackageReference Update="NETStandard.Library" PrivateAssets="all" />
+  </ItemGroup>
+
+  <Target Name="SetPackageProperties" BeforeTargets="InitializeStandardNuspecProperties" DependsOnTargets="Build">
+    <PropertyGroup>
+      <!-- Make sure we create a symbols.nupkg. -->
+      <IncludeSymbols>true</IncludeSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <NuspecProperty Include="targetFramework=$(TargetFramework)" />
+      <NuspecProperty Include="OutputBinary=$(OutputPath)$(AssemblyName).dll" />
+      <NuspecProperty Include="OutputSymbol=$(OutputPath)$(AssemblyName).pdb" />
+      <NuspecProperty Include="PackageIcon=$(PackageIconFullPath)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

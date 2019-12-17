@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- version in our package name Ver.sion.Prefix-PreReleaseVersionLabel.#####.## -->
+    <!-- where #####. come from the date and .## is the build-per-day -->
+    <VersionPrefix>4.8.1</VersionPrefix>
+    <PreReleaseVersionLabel>rtm</PreReleaseVersionLabel>
+    <!-- Set to true to produce shipping version strings in non-official builds, instead of fixed values like 42.42.42.42 for AssemblyVersion -->
+    <DotNetUseShippingVersions>true</DotNetUseShippingVersions>
+    <!-- Use the compiler in the CLI instead of in the sdk, since the sdk one doesn't work with netcoreapp3.0 yet -->
+    <UsingToolMicrosoftNetCompilers>false</UsingToolMicrosoftNetCompilers>
+  </PropertyGroup>
+  <!-- Below have corresponding entries in Versions.Details.XML because they are updated via Maestro -->
+  <!-- Core Setup for coherency -->
+  <PropertyGroup>
+    <MicrosoftNETCoreAppPackageVersion>3.1.0-preview3.19551.4</MicrosoftNETCoreAppPackageVersion>
+  </PropertyGroup>
+  <!-- CoreFX via Core Setup -->
+  <PropertyGroup>
+    <MicrosoftNETCorePlatformsPackageVersion>3.1.0-preview3.19551.2</MicrosoftNETCorePlatformsPackageVersion>
+    <MicrosoftWin32RegistryPackageVersion>4.7.0-preview3.19551.2</MicrosoftWin32RegistryPackageVersion>
+    <MicrosoftWin32SystemEventsPackageVersion>4.7.0-preview3.19551.2</MicrosoftWin32SystemEventsPackageVersion>
+    <SystemCodeDomPackageVersion>4.7.0-preview3.19551.2</SystemCodeDomPackageVersion>
+    <SystemConfigurationConfigurationManagerPackageVersion>4.7.0-preview3.19551.2</SystemConfigurationConfigurationManagerPackageVersion>
+    <SystemDrawingCommonPackageVersion>4.7.0-preview3.19551.2</SystemDrawingCommonPackageVersion>
+    <SystemResourcesExtensionsPackageVersion>4.7.0-preview3.19551.2</SystemResourcesExtensionsPackageVersion>
+    <SystemSecurityCryptographyCngPackageVersion>4.7.0-preview3.19551.2</SystemSecurityCryptographyCngPackageVersion>
+    <SystemSecurityPermissionsPackageVersion>4.7.0-preview3.19551.2</SystemSecurityPermissionsPackageVersion>
+    <SystemWindowsExtensionsPackageVersion>4.7.0-preview3.19551.2</SystemWindowsExtensionsPackageVersion>
+  </PropertyGroup>
+  <!-- CoreCLR via Core Setup -->
+  <PropertyGroup>
+    <MicrosoftNETCoreILPackageVersion>3.0.0-preview5-27616-73</MicrosoftNETCoreILPackageVersion>
+    <MicrosoftNETCoreILAsmPackageVersion>3.1.0-preview3.19531.2</MicrosoftNETCoreILAsmPackageVersion>
+  </PropertyGroup>
+  <!-- Arcade -->
+  <PropertyGroup>
+    <MicrosoftDotNetGenFacadesPackageVersion>1.0.0-beta.19461.7</MicrosoftDotNetGenFacadesPackageVersion>
+    <MicrosoftDotNetXUnitExtensionsPackageVersion>2.4.1-beta.19461.7</MicrosoftDotNetXUnitExtensionsPackageVersion>
+  </PropertyGroup>
+  <!-- Below have no corresponding entries in Versions.Details.XML because they are not updated via Maestro -->
+  <!-- XUnit-related (not extensions) -->
+  <PropertyGroup>
+    <XUnitVersion>2.4.1</XUnitVersion>
+    <XUnitAssertVersion>$(XUnitVersion)</XUnitAssertVersion>
+    <XUnitRunnerConsoleVersion>$(XUnitVersion)</XUnitRunnerConsoleVersion>
+    <XUnitRunnerVisualStudioVersion>$(XUnitVersion)</XUnitRunnerVisualStudioVersion>
+    <XUnitExtensibilityExecutionVersion>$(XUnitVersion)</XUnitExtensibilityExecutionVersion>
+    <XUnitStaFactPackageVersion>0.3.18</XUnitStaFactPackageVersion>
+  </PropertyGroup>
+  <!-- Code Coverage -->
+  <PropertyGroup>
+    <CoverletMSBuildPackageVersion>2.6.3</CoverletMSBuildPackageVersion>
+    <CodecovVersion>1.1.1</CodecovVersion>
+    <ReportGeneratorVersion>4.0.9</ReportGeneratorVersion>
+  </PropertyGroup>
+  <!-- Additional unchanging dependencies -->
+  <PropertyGroup>
+    <MoqPackageVersion>4.10.0</MoqPackageVersion>
+    <MicrosoftTargetingPackNETFrameworkv472PackageVersion>1.0.0</MicrosoftTargetingPackNETFrameworkv472PackageVersion>
+    <NewtonsoftJsonVersion>9.0.1</NewtonsoftJsonVersion>
+  </PropertyGroup>
+</Project>

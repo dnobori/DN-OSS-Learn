@@ -1,0 +1,17 @@
+<linker>
+  <assembly fullname="System.Diagnostics.DiagnosticSource">
+    <type fullname="System.Diagnostics.DiagnosticSourceEventSource" />
+    <type fullname="System.Diagnostics.DiagnosticSourceEventSource/TransformSpec/PropertySpec/PropertyFetch/RefTypedFetchProperty`2">
+      <!-- Instantiated via reflection -->
+      <method name=".ctor" />
+    </type>
+    <type fullname="System.Diagnostics.DiagnosticSourceEventSource/TransformSpec/PropertySpec/PropertyFetch/ValueTypedFetchProperty`2">
+      <!-- Instantiated via reflection -->
+      <method name=".ctor" />
+    </type>
+    <type fullname="System.Diagnostics.DiagnosticSourceEventSource/TransformSpec/PropertySpec/PropertyFetch/EnumeratePropertyFetch`1">
+      <!-- Instantiated via reflection -->
+      <method name=".ctor" />
+    </type>
+  </assembly>
+</linker>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dotnet-everything-181229", "dotnet-everything-181229\dotnet-everything-181229.vcxproj", "{2005412E-608C-4EEE-A854-35B1E07C79E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2005412E-608C-4EEE-A854-35B1E07C79E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{2005412E-608C-4EEE-A854-35B1E07C79E0}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {008B2F6A-29DC-4EEB-8049-CF7E2C5B8ED2}
+	EndGlobalSection
+EndGlobal

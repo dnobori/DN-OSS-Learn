@@ -1,0 +1,1 @@
+ls | awk '{ print "unzip " $1 } ' | bash

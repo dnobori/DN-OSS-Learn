@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{89701565-F68B-46D9-BD78-95B0F052C50B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>XmlCoreTest</AssemblyName>
+    <RootNamespace>XmlCoreTest.Common</RootNamespace>
+    <Configurations>netcoreapp-Debug;netcoreapp-Release;uap-Debug;uap-Release</Configurations>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AsyncUtil.cs" />
+    <Compile Include="CustomWriter.cs" />
+    <Compile Include="FilePathUtil.cs" />
+    <Compile Include="ManagedNodeWriter.cs" />
+    <Compile Include="MiscUtil.cs" />
+    <Compile Include="ReaderCreateUtil.cs" />
+    <Compile Include="ReaderUtil.cs" />
+    <Compile Include="UnicodeCharHelper.cs" />
+    <Compile Include="WriterFactory.cs" />
+    <Compile Include="TestData.g.cs" />
+    <Compile Include="$(CommonPath)\System\Diagnostics\CodeAnalysis\ExcludeFromCodeCoverageAssemblyAttribute.cs">
+      <Link>Common\System\Diagnostics\CodeAnalysis\ExcludeFromCodeCoverageAssemblyAttribute.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModuleCore\ModuleCore.csproj" />
+    <ProjectReference Include="..\XmlDiff\XmlDiff.csproj" />
+  </ItemGroup>
+</Project>

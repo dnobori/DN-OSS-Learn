@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="fr" original="../SR.resx">
+    <body>
+      <trans-unit id="AnchorEditorAccName">
+        <source>Anchor Editor</source>
+        <target state="translated">Éditeur d'ancres</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="AnchorEditorBottomAccName">
+        <source>Bottom</source>
+        <target state="translated">Bas</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="AnchorEditorLeftAccName">
+        <source>Left</source>
+        <target state="translated">Gauche</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="AnchorEditorRightAccName">
+        <source>Right</source>
+        <target state="translated">Droite</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="AnchorEditorTopAccName">
+        <source>Top</source>
+        <target state="translated">Haut</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogCustomFormat">
+        <source>Custo&amp;m format</source>
+        <target state="translated">For&amp;mat personnalisé</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogCustomFormatAccessibleDescription">
+        <source>Custom format</source>
+        <target state="translated">Format personnalisé</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogDecimalPlaces">
+        <source>&amp;Decimal places</source>
+        <target state="translated">Nb de &amp;décimales</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeCurrency">
+        <source>Currency</source>
+        <target state="translated">Devise</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeCurrencyExplanation">
+        <source>Specify the format for monetary values.</source>
+        <target state="translated">Spécifiez le format des valeurs monétaires.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeCustom">
+        <source>Custom</source>
+        <target state="translated">Personnalisé</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeCustomExplanation">
+        <source>Type a custom format string. A custom string may require extra handling unless it is a read-only value.</source>
+        <target state="translated">Tapez une chaîne de format personnalisée. Une chaîne personnalisée peut exiger un traitement supplémentaire sauf s'il s'agit d'une valeur en lecture seule.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeCustomInvalidFormat">
+        <source>Invalid format</source>
+        <target state="translated">Format non valide</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeDateTime">
+        <source>Date Time</source>
+        <target state="translated">Date/heure</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeDateTimeExplanation">
+        <source>Specify the format for date and time values.</source>
+        <target state="translated">Spécifie le format des valeurs de date et d'heure.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeNoFormatting">
+        <source>No Formatting</source>
+        <target state="translated">Aucune mise en forme</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeNoFormattingExplanation">
+        <source>Use no formatting to display the value from the source without adornment.</source>
+        <target state="translated">N'utilise aucune mise en forme pour afficher la valeur de la source sans fioriture.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeNumeric">
+        <source>Numeric</source>
+        <target state="translated">Numérique</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeNumericExplanation">
+        <source>Specify the format for numbers. Note that the Currency format type offers specialized formatting for monetary values.</source>
+        <target state="translated">Spécifie le format des nombres. Notez que le type de format Monnaie propose une mise en forme spécialisée pour les valeurs monétaires.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeScientific">
+        <source>Scientific</source>
+        <target state="translated">Scientifique</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogFormatTypeScientificExplanation">
+        <source>Specify the format for values that use scientific notation.</source>
+        <target state="translated">Spécifie le format des valeurs qui utilisent une notation scientifique.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogNullValue">
+        <source>&amp;Null value:</source>
+        <target state="translated">&amp;Valeur null :</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="BindingFormattingDialogType">
+        <source>&amp;Type</source>
+        <target state="translated">&amp;Type</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorCantRemoveItem">
+        <source>The item '{0}' cannot be removed.</source>
+        <target state="translated">L'élément '{0}' ne peut pas être supprimé.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorCaption">
+        <source>{0} Collection Editor</source>
+        <target state="translated">Éditeur de collections {0}</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorInheritedReadOnlySelection">
+        <source>Read-only component(s) selected.</source>
+        <target state="translated">Composants en lecture seule sélectionnés.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorProperties">
+        <source>{0} &amp;properties:</source>
+        <target state="translated">&amp;Propriétés {0} :</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorPropertiesMultiSelect">
+        <source>Multi-Select &amp;Properties:</source>
+        <target state="translated">&amp;Sélectionner plusieurs propriétés :</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorPropertiesNone">
+        <source>&amp;Properties:</source>
+        <target state="translated">&amp;Propriétés :</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="CollectionEditorUndoBatchDesc">
+        <source>Add or remove {0} objects</source>
+        <target state="translated">Ajouter ou supprimer des objets {0}</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ColorEditorAccName">
+        <source>Color Picker</source>
+        <target state="translated">Sélecteur de couleurs</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ColorEditorPaletteTab">
+        <source>Custom</source>
+        <target state="translated">Personnalisé</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ColorEditorStandardTab">
+        <source>Web</source>
+        <target state="translated">Web</target>
+        <note>{Locked="Web"}</note>
+      </trans-unit>
+      <trans-unit id="ColorEditorSystemTab">
+        <source>System</source>
+        <target state="translated">Système</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorAccName">
+        <source>Alignment Picker</source>
+        <target state="translated">Sélecteur d'alignement</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorBottomCenterAccName">
+        <source>Bottom Middle</source>
+        <target state="translated">En bas au milieu</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorBottomLeftAccName">
+        <source>Bottom Left</source>
+        <target state="translated">En bas à gauche</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorBottomRightAccName">
+        <source>Bottom Right</source>
+        <target state="translated">Inférieur droit</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorMiddleCenterAccName">
+        <source>Middle Center</source>
+        <target state="translated">Milieu centre</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorMiddleLeftAccName">
+        <source>Middle Left</source>
+        <target state="translated">Milieu gauche</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorMiddleRightAccName">
+        <source>Middle Right</source>
+        <target state="translated">Milieu droit</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorTopCenterAccName">
+        <source>Top Center</source>
+        <target state="translated">Supérieur centre</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorTopLeftAccName">
+        <source>Top Left</source>
+        <target state="translated">En haut à gauche</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ContentAlignmentEditorTopRightAccName">
+        <source>Top Right</source>
+        <target state="translated">Supérieur droit</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DataGridView_Cancel">
+        <source>Cancel</source>
+        <target state="translated">Annuler</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DataGridView_OK">
+        <source>OK</source>
+        <target state="translated">OK</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DataSourceLocksItems">
+        <source>Items collection cannot be modified when the DataSource property is set.</source>
+        <target state="translated">Impossible de modifier la collection d'éléments lorsque la propriété DataSource est définie.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorAccName">
+        <source>Dock Picker</source>
+        <target state="translated">Sélecteur de Dock</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorBottomAccName">
+        <source>Bottom</source>
+        <target state="translated">Bas</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorFillAccName">
+        <source>Fill</source>
+        <target state="translated">Remplir</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorLeftAccName">
+        <source>Left</source>
+        <target state="translated">Gauche</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorNoneAccName">
+        <source>None</source>
+        <target state="translated">Aucun</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorRightAccName">
+        <source>Right</source>
+        <target state="translated">Droite</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="DockEditorTopAccName">
+        <source>Top</source>
+        <target state="translated">Haut</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="FormatStringDialogTitle">
+        <source>Format String Dialog</source>
+        <target state="translated">Boîte de dialogue Chaîne de format</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="GenericFileFilter">
+        <source>All Files(*.*)|*.*</source>
+        <target state="translated">Tous les fichiers(*.*)|*.*</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="GenericOpenFile">
+        <source>Open File</source>
+        <target state="translated">Ouvrir un fichier</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="HelpProviderEditorFilter">
+        <source>All Help Files(*.chm,*.col,*.htm,*.html)|*.chm;*.col;*.htm;*.html|Compressed HTML Files(*.chm)|*.chm|Help Collection Files(*.col)|*.col|HTML Files(*.htm,*.html)|*.htm;*.html|All Files(*.*)|*.*</source>
+        <target state="translated">Tous les fichiers d'aide(*.chm,*.col,*.htm,*.html)|*.chm;*.col;*.htm;*.html|Fichiers HTML compressés(*.chm)|*.chm|Fichiers de collection d'aide(*.col)|*.col|Fichiers HTML(*.htm,*.html)|*.htm;*.html|Tous les fichiers(*.*)|*.*</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="HelpProviderEditorTitle">
+        <source>Open Help File</source>
+        <target state="translated">Ouvrir le fichier d'aide</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ImageCollectionEditorFormText">
+        <source>Images Collection Editor</source>
+        <target state="translated">Éditeur de collections Images</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="LinkAreaEditorCancel">
+        <source>Cancel</source>
+        <target state="translated">Annuler</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="LinkAreaEditorCaption">
+        <source>LinkArea Editor</source>
+        <target state="translated">Éditeur LinkArea</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="LinkAreaEditorDescription">
+        <source>Select a &amp;range of text to make your link:</source>
+        <target state="translated">Sélectionnez une plage de texte pour vot&amp;re lien :</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="LinkAreaEditorOK">
+        <source>OK</source>
+        <target state="translated">OK</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ListViewSubItemBaseName">
+        <source>ListViewSubItem</source>
+        <target state="translated">ListViewSubItem</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="MultilineStringEditorWatermark">
+        <source>Press Enter to begin a new line.
+Press Ctrl+Enter to accept Text.</source>
+        <target state="translated">Appuyez sur Entrée pour commencer une nouvelle ligne.
+Appuyez sur Ctrl+Entrée pour valider le texte.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="PlatformNotSupported_WinformsDesigner">
+        <source>Winforms Designer is not supported on this platform.</source>
+        <target state="translated">Le concepteur WinForms n'est pas pris en charge sur cette plateforme.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="RTL">
+        <source>RTL_False</source>
+        <target state="translated">RTL_False</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="SelectedPathEditorLabel">
+        <source>Select the path to the folder that will initially be selected in the FolderBrowserDialog.</source>
+        <target state="translated">Sélectionnez le chemin du dossier qui sera sélectionné initialement dans FolderBrowserDialog.</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="ShortcutKeys_InvalidKey">
+        <source>(Unknown)</source>
+        <target state="translated">(Inconnu)</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="bitmapFileDescription">
+        <source>Bitmap files</source>
+        <target state="translated">Fichiers bitmap</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="iconFileDescription">
+        <source>Icon files</source>
+        <target state="translated">Fichiers icône</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="imageFileDescription">
+        <source>All image files</source>
+        <target state="translated">Tous les fichiers image</target>
+        <note />
+      </trans-unit>
+      <trans-unit id="metafileFileDescription">
+        <source>Metafiles</source>
+        <target state="translated">Métafichiers</target>
+        <note />
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
