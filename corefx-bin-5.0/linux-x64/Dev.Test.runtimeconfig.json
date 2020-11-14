@@ -1,0 +1,23 @@
+{
+  "runtimeOptions": {
+    "tfm": "net5.0",
+    "includedFrameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "5.0.0"
+      },
+      {
+        "name": "Microsoft.AspNetCore.App",
+        "version": "5.0.0"
+      }
+    ],
+    "configProperties": {
+      "System.Globalization.Invariant": true,
+      "System.GC.Concurrent": false,
+      "System.GC.Server": false,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "System.Runtime.TieredCompilation": false,
+      "System.Runtime.TieredCompilation.QuickJit": false
+    }
+  }
+}

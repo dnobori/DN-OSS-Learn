@@ -1,0 +1,12 @@
+dn-lxd-vm2-test1
+root
+
+
+cd ~/ && rm -fr ~/DotNetTemp1/ && mkdir -p ~/DotNetTemp1/ && cd ~/DotNetTemp1/ && git clone --recursive git@github.com:IPA-CyberLab/IPA-DN-Cores.git && cd ~/DotNetTemp1/IPA-DN-Cores/Cores.NET/Dev.Test/ && dotnet build -c Release -r linux-x64 && dotnet build -c Release -r win-x64
+
+
+\\lxd-vm2.lab.coe.ad.jp\vmdata1\containers\dn-lxd-vm2-test1\rootfs\root\DotNetTemp1\IPA-DN-Cores\Cores.NET\Dev.Test\bin\Release\netcoreapp3.0\
+
+を開いてコピー
+
+
