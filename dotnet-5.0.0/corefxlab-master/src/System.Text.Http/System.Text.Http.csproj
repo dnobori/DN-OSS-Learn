@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Non-allocating HTTP parser</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTags>HTTP parser parsing .NET non-allocating corefxlab</PackageTags>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Buffers.ReaderWriter\System.Buffers.ReaderWriter.csproj" />
+    <ProjectReference Include="..\System.Text.Formatting\System.Text.Formatting.csproj" />
+  </ItemGroup>
+</Project>

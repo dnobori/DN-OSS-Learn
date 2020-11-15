@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.DotNet.Arcade.Sdk" />
+  <Import Project="$(RepositoryEngineeringDir)CodeStyle.props" />  
+  <Import Project="$(RepositoryEngineeringDir)FacadeAssemblies.props" />
+  <Import Project="$(RepositoryEngineeringDir)ApiCompatibility\PublicApiAnalyzer.props" />
+
+  <PropertyGroup>
+    <TargetFrameworkName>netcoreapp</TargetFrameworkName>
+    <TargetFrameworkVersion>5.0</TargetFrameworkVersion>
+    <TargetFramework>$(TargetFrameworkName)$(TargetFrameworkVersion)</TargetFramework>
+    <Product>Microsoft&#xAE; .NET</Product>
+    <Copyright>$(CopyrightNetFoundation)</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <!-- SDK flipped to 'true' by default https://github.com/dotnet/sdk/pull/12720 -->
+  <PropertyGroup>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <!-- Allow SourceLink to work for strongly types resource files (SR) by embeddeding generated files into the PDBs -->
+  <PropertyGroup>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <!-- For the purposes of generating code coverage as part of the build -->
+  <PropertyGroup Condition="'$(Coverage)' == 'true'">
+    <!-- Coverlet's PDB check cannot handle deterministic source paths https://github.com/tonerdo/coverlet/issues/363 -->
+    <DeterministicSourcePaths>false</DeterministicSourcePaths>
+
+    <!-- Note: CoverletOutput references $(TargetDir) so it is set in Directory.Build.targets -->
+
+    <!-- https://github.com/tonerdo/coverlet/issues/618 -->
+    <IncludeTestAssembly>true</IncludeTestAssembly>
+
+    <CollectCoverage>true</CollectCoverage>
+    <SingleHit>true</SingleHit>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <CoverletOutputFormat>opencover</CoverletOutputFormat>
+    <Include>[System.Windows.*]*</Include>
+    <!-- Exclude dependencies that embed their symbol information -->
+    <Exclude>[Microsoft.DotNet.XUnitExtensions]*,[InternalUtilitiesForTests*]*,[xunit*]*</Exclude>
+    <!-- Exclude anything tagged with Obsolete or with ExcludeFromCodeCoverage !!Avoid using this!! -->
+    <ExcludeByAttribute>Obsolete,ExcludeFromCodeCoverage</ExcludeByAttribute>
+    <ExcludeByFile />
+  </PropertyGroup>
+
+  <!-- workaround for package downgrade in Microsoft.NetCore.Platforms -->
+  <PropertyGroup>
+    <DisableImplicitNETCorePlatformsReference>true</DisableImplicitNETCorePlatformsReference>
+  </PropertyGroup>
+
+</Project>

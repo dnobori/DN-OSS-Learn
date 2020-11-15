@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>System.Windows.Forms.Design.Tests</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\telescope_01.wmf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="$(MoqPackageVersion)" />
+    <PackageReference Include="xunit.stafact" Version="$(XUnitStaFactPackageVersion)" />
+    <PackageReference Include="coverlet.msbuild" Version="$(CoverletMSBuildPackageVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\System.Windows.Forms\tests\TestUtilities\System.Windows.Forms.TestUtilities.csproj" />
+    <ProjectReference Include="..\..\src\System.Windows.Forms.Design.csproj" />
+    <ProjectReference Include="..\..\..\System.Design\src\System.Design.Facade.csproj" />
+    <ProjectReference Include="..\..\..\System.Drawing.Design\src\System.Drawing.Design.Facade.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\telescope_01.wmf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\16x16.bmp">
+      <LogicalName>System.Drawing.Design.Tests.16x16.bmp</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\24x16.bmp">
+      <LogicalName>System.Drawing.Design.Tests.24x16.bmp</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\16x24.bmp">
+      <LogicalName>System.Drawing.Design.Tests.16x24.bmp</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

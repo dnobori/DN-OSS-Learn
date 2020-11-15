@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>.NET Core Metadata Reader</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTags>.NET metadata reader corefxlab</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.Metadata" Version="1.6.0" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="$(CoreFxStableVersion)" />
+  </ItemGroup>
+</Project>

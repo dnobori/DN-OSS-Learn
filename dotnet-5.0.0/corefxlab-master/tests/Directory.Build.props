@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <Import Project="..\Directory.Build.props" />
+  <PropertyGroup>
+    <CodeAnalysisRuleset>$(RepositoryEngineeringDir)Tests.ruleset</CodeAnalysisRuleset>
+  </PropertyGroup>
+</Project>

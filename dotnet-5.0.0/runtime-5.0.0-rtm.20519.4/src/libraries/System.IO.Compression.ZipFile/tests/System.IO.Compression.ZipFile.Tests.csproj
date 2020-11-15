@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>$(NetCoreAppCurrent)</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ZipFile.Create.cs" />
+    <Compile Include="ZipFile.Extract.cs" />
+    <Compile Include="ZipFileExtensions.ZipArchive.Create.cs" />
+    <Compile Include="ZipFileExtensions.ZipArchiveEntry.Extract.cs" />
+    <Compile Include="ZipFileExtensions.ZipArchive.Extract.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\TempFile.cs"
+             Link="Common\System\IO\TempFile.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\TempDirectory.cs"
+             Link="Common\System\IO\TempDirectory.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\Compression\CRC.cs"
+             Link="Common\System\IO\Compression\CRC.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\Compression\FileData.cs"
+             Link="Common\System\IO\Compression\FileData.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\Compression\LocalMemoryStream.cs"
+             Link="Common\System\IO\Compression\LocalMemoryStream.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\Compression\StreamHelpers.cs"
+             Link="Common\System\IO\Compression\StreamHelpers.cs" />
+    <Compile Include="$(CommonTestPath)System\IO\Compression\ZipTestHelper.cs"
+             Link="Common\System\IO\Compression\ZipTestHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO.Compression.TestData" Version="$(SystemIOCompressionTestDataVersion)" />
+  </ItemGroup>
+</Project>

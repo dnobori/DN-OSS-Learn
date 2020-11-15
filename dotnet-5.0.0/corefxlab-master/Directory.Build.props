@@ -1,0 +1,37 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.DotNet.Arcade.Sdk" />
+  <PropertyGroup>
+    <UsingToolXliff>false</UsingToolXliff>
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+    <VersionSuffix Condition="$(VersionSuffix) == ''">$([System.DateTime]::Now.ToString(preview2-yyMMdd-1))</VersionSuffix>
+    <Copyright>&#169; Microsoft Corporation. All rights reserved.</Copyright>
+    <Authors>Microsoft</Authors>
+    <PackageReleaseNotes>Pre-release package, for testing only</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/dotnet/corefxlab</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <SignAssembly>true</SignAssembly>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <AssemblyOriginatorKeyFile>$(RepoRoot)\tools\Key.snk</AssemblyOriginatorKeyFile>
+    <LangVersion>latest</LangVersion>
+    <!-- We are usually using a preview SDK -->
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <PackagesPath Condition="'$(PackagesPath)' == ''">$(RepoRoot)packages</PackagesPath>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://github.com/dotnet/corefxlab</RepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IsPackable>false</IsPackable>
+    <IsPackable Condition="($(MSBuildProjectName.StartsWith('System')) Or $(MSBuildProjectName.StartsWith('Microsoft'))) And '$(IsTestProject)' != 'true'">true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="$(RepoRoot)THIRD-PARTY-NOTICES.TXT" Pack="true" PackagePath="\" />
+    <Content Include="$(RepoRoot)LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <SuppressFinalPackageVersion>true</SuppressFinalPackageVersion>
+    <!-- Turn off end of life target framework checks as we intentionally build older .NETCoreApp configurations. -->
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  </PropertyGroup>
+</Project>

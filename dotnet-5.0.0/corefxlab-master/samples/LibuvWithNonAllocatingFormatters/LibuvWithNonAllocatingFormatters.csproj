@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\System.Text.Utf8String\System.Text.Utf8String.csproj" />
+    <ProjectReference Include="..\..\src\System.Text.Formatting\System.Text.Formatting.csproj" />
+  </ItemGroup>
+</Project>
