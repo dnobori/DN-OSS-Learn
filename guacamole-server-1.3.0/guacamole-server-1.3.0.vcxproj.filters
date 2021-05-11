@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bin">
+      <UniqueIdentifier>{F5DA0794-9B85-4B87-99D1-EB656A977F59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-aux">
+      <UniqueIdentifier>{2CE16B9A-507A-4C18-BE44-C212E0527F31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{DBAF1493-64C5-4970-8683-5A8C0988F51B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="m4">
+      <UniqueIdentifier>{8D3BDCB9-9930-40A1-9DF0-C4D178F94B22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3877271D-E0A5-41EA-9E75-5B2C7A784A87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{B1BB1713-AD77-4BD6-A8A0-3850B5960A29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\common">
+      <UniqueIdentifier>{5AC8536B-7F6C-4A40-8C61-9C528EDEA2A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tests">
+      <UniqueIdentifier>{869E115A-D11F-4D33-80E4-4B3A7251BE47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tests\iconv">
+      <UniqueIdentifier>{83D3E495-97A3-4975-BD94-FCE71A12CE0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tests\rect">
+      <UniqueIdentifier>{B06468B2-54E3-498D-9E2F-0DA927A02F2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tests\string">
+      <UniqueIdentifier>{D9EDF8A7-4136-4251-979E-1EA74551FAF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common-ssh">
+      <UniqueIdentifier>{DF0B3085-F418-4A62-88E4-385131EE0CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common-ssh\common-ssh">
+      <UniqueIdentifier>{133326A0-CB74-463D-8CE4-D7C7F2BE744C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common-ssh\tests">
+      <UniqueIdentifier>{EE4684CE-6F94-40CB-917B-57A3850B0E5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common-ssh\tests\sftp">
+      <UniqueIdentifier>{1B2EE091-8D27-4A30-A0F8-B0BF128FCF0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacd">
+      <UniqueIdentifier>{DBBE0815-D894-4F59-A43A-A82F5044914A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacd\init.d">
+      <UniqueIdentifier>{75EA63E3-8CF2-42F6-8530-3A1DEB8AF315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacd\man">
+      <UniqueIdentifier>{A9E10E7C-2850-4C2B-8FF8-8B25FC450F0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacd\systemd">
+      <UniqueIdentifier>{B8DABEEE-69B2-47D8-AEB9-C180D8BCD06C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacd-docker">
+      <UniqueIdentifier>{5C86B37F-352B-4A6C-A2A1-A982FF3DC0CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacd-docker\bin">
+      <UniqueIdentifier>{0C216F9A-6F0E-4292-A609-7DA6D9A309CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacenc">
+      <UniqueIdentifier>{1BAF1675-DE86-4644-8ACF-83F68A48A577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guacenc\man">
+      <UniqueIdentifier>{773E3807-E18F-4E49-BA18-BCEA9140245B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guaclog">
+      <UniqueIdentifier>{FABCEF73-8881-4108-904F-339154BB7EF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guaclog\man">
+      <UniqueIdentifier>{436BB7D3-8ECB-4F52-A5F4-E2E417246306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac">
+      <UniqueIdentifier>{508827CA-F637-43F2-8427-CEEF71D7DF63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\guacamole">
+      <UniqueIdentifier>{102FF7FB-5C13-45EE-AB10-2365754B6EB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests">
+      <UniqueIdentifier>{A25D8969-C911-4733-B8E9-9E81A14E7447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\client">
+      <UniqueIdentifier>{0511A84F-DCC9-4D05-89B0-A1DD00B6D9FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\parser">
+      <UniqueIdentifier>{B728A9C5-A78D-40FF-BE4E-C8F23079E9A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\pool">
+      <UniqueIdentifier>{20566D83-3D1A-4FCA-9A46-495D2F217D57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\protocol">
+      <UniqueIdentifier>{6DE81E1A-CDDC-4BF5-83C1-4DC2DFF3347B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\socket">
+      <UniqueIdentifier>{528F8C89-6A10-4E8B-A830-0AD4C4A6DE22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\string">
+      <UniqueIdentifier>{54CEB51D-2214-4EA8-B6A5-B91576F2C473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libguac\tests\unicode">
+      <UniqueIdentifier>{64B3ACFE-C8B5-48E4-B92E-DE791389DC5C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols">
+      <UniqueIdentifier>{971A2BEB-AA44-4C0F-BACD-07D5592C7CF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\kubernetes">
+      <UniqueIdentifier>{E618FC9A-56BB-41DF-B9AB-EB39760BDD9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp">
+      <UniqueIdentifier>{6DAE8CDE-C77C-4EC9-B9FF-CC96C80BA64A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\channels">
+      <UniqueIdentifier>{5A5F37DC-7B4C-4187-84F5-8065B51136E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\channels\audio-input">
+      <UniqueIdentifier>{A401E9E7-7C06-4674-A675-26C0A17D7874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\channels\rdpdr">
+      <UniqueIdentifier>{F66123C0-8288-4CE8-87CC-F61364711C51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\channels\rdpsnd">
+      <UniqueIdentifier>{EA95B748-82E7-4FE7-A8DD-E6458166D24E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\keymaps">
+      <UniqueIdentifier>{BDB748DA-C575-4713-A6B0-894535E72A2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\plugins">
+      <UniqueIdentifier>{843ACB78-154F-49EE-8B30-ACB4082F0581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\plugins\guacai">
+      <UniqueIdentifier>{491BC469-8B10-4421-A665-D57D280F6FC9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\plugins\guac-common-svc">
+      <UniqueIdentifier>{4B207007-A0E1-419F-8E03-B1A72A2FE108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\tests">
+      <UniqueIdentifier>{B5A76724-368A-4DBC-BE4C-06701B536CA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\rdp\tests\fs">
+      <UniqueIdentifier>{C7A34C9E-B125-4AA5-8267-E4361676CF06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\ssh">
+      <UniqueIdentifier>{E317C107-0739-458C-BC0A-9AB6498B74F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\telnet">
+      <UniqueIdentifier>{DA43202C-BFDC-4656-B02A-A66579D8253C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\protocols\vnc">
+      <UniqueIdentifier>{D113AE90-24B5-4762-A4BF-533BD3944F37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pulse">
+      <UniqueIdentifier>{3CE12F5A-035E-457A-BAA5-0618B309637B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pulse\pulse">
+      <UniqueIdentifier>{28317F7D-3578-4D03-9D55-AE8C154F100A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\terminal">
+      <UniqueIdentifier>{B8B907EB-F97D-46FB-953A-68A6BC00F1B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\terminal\terminal">
+      <UniqueIdentifier>{096F5D68-B646-4AC3-B01B-127ED7E1A369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{8EAF17D7-D983-4479-B983-EA7DF508DE29}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\common\blank_cursor.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\clipboard.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\cursor.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\defaults.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\display.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\dot_cursor.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\ibar_cursor.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\iconv.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\io.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\json.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\list.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\pointer_cursor.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\recording.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\rect.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\string.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common\surface.h">
+      <Filter>src\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\buffer.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\dsa-compat.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\key.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\rsa-compat.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\sftp.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\ssh.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common-ssh\common-ssh\user.h">
+      <Filter>src\common-ssh\common-ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\conf.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\conf-args.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\conf-file.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\conf-parse.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\connection.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\log.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\move-fd.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\proc.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacd\proc-map.h">
+      <Filter>src\guacd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\buffer.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\cursor.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\display.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\encode.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\ffmpeg-compat.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\guacenc.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\image-stream.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\instructions.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\jpeg.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\layer.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\log.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\parse.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\png.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\video.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guacenc\webp.h">
+      <Filter>src\guacenc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guaclog\guaclog.h">
+      <Filter>src\guaclog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guaclog\instructions.h">
+      <Filter>src\guaclog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guaclog\interpret.h">
+      <Filter>src\guaclog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guaclog\keydef.h">
+      <Filter>src\guaclog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guaclog\log.h">
+      <Filter>src\guaclog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\guaclog\state.h">
+      <Filter>src\guaclog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\argv.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\argv-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\argv-fntypes.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\audio.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\audio-fntypes.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\audio-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\client.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\client-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\client-fntypes.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\client-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\error.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\error-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\hash.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\layer.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\layer-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\object.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\object-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\parser.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\parser-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\parser-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\plugin.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\plugin-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\pool.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\pool-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\protocol.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\protocol-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\protocol-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\socket.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\socket-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\socket-fntypes.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\socket-ssl.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\socket-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\socket-wsa.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\stream.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\stream-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\string.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\timestamp.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\timestamp-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\unicode.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\user.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\user-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\user-fntypes.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\user-types.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\wol.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\guacamole\wol-constants.h">
+      <Filter>src\libguac\guacamole</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\encode-jpeg.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\encode-png.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\encode-webp.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\id.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\palette.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\raw_encoder.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\user-handlers.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libguac\wait-fd.h">
+      <Filter>src\libguac</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\argv.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\client.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\clipboard.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\input.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\io.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\kubernetes.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\pipe.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\settings.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\ssl.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\url.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\kubernetes\user.h">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\audio-input\audio-buffer.h">
+      <Filter>src\protocols\rdp\channels\audio-input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\audio-input\audio-input.h">
+      <Filter>src\protocols\rdp\channels\audio-input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages-dir-info.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages-file-info.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages-vol-info.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-messages.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpdr\rdpdr-printer.h">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpsnd\rdpsnd.h">
+      <Filter>src\protocols\rdp\channels\rdpsnd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rdpsnd\rdpsnd-messages.h">
+      <Filter>src\protocols\rdp\channels\rdpsnd</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\cliprdr.h">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\common-svc.h">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\disp.h">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\pipe-svc.h">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\channels\rail.h">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\plugins\guacai\guacai.h">
+      <Filter>src\protocols\rdp\plugins\guacai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\plugins\guacai\guacai-messages.h">
+      <Filter>src\protocols\rdp\plugins\guacai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\plugins\channels.h">
+      <Filter>src\protocols\rdp\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\plugins\ptr-string.h">
+      <Filter>src\protocols\rdp\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\argv.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\beep.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\bitmap.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\client.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\color.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\decompose.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\download.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\error.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\fs.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\gdi.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\glyph.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\input.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\keyboard.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\keymap.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\log.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\ls.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\pointer.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\print-job.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\rdp.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\resolution.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\settings.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\sftp.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\unicode.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\upload.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\rdp\user.h">
+      <Filter>src\protocols\rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\argv.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\client.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\clipboard.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\input.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\pipe.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\settings.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\sftp.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\ssh.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\ssh_agent.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\ttymode.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\ssh\user.h">
+      <Filter>src\protocols\ssh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\argv.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\client.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\clipboard.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\input.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\pipe.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\settings.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\telnet.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\telnet\user.h">
+      <Filter>src\protocols\telnet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\argv.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\auth.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\client.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\clipboard.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\cursor.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\display.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\input.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\log.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\settings.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\sftp.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\user.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\vnc\vnc.h">
+      <Filter>src\protocols\vnc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pulse\pulse\pulse.h">
+      <Filter>src\pulse\pulse</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\buffer.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\char_mappings.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\color-scheme.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\common.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\display.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\named-colors.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\palette.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\scrollbar.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\select.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\terminal.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\terminal_handlers.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\types.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\typescript.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\terminal\terminal\xparsecolor.h">
+      <Filter>src\terminal\terminal</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\tests\iconv\convert.c">
+      <Filter>src\common\tests\iconv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\rect\clip_and_split.c">
+      <Filter>src\common\tests\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\rect\constrain.c">
+      <Filter>src\common\tests\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\rect\expand_to_grid.c">
+      <Filter>src\common\tests\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\rect\extend.c">
+      <Filter>src\common\tests\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\rect\init.c">
+      <Filter>src\common\tests\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\rect\intersects.c">
+      <Filter>src\common\tests\rect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\string\count_occurrences.c">
+      <Filter>src\common\tests\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tests\string\split.c">
+      <Filter>src\common\tests\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\blank_cursor.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\clipboard.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\cursor.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\display.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dot_cursor.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ibar_cursor.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\iconv.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\io.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\json.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\list.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\pointer_cursor.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\recording.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\rect.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\string.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\surface.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\tests\sftp\normalize_path.c">
+      <Filter>src\common-ssh\tests\sftp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\buffer.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\dsa-compat.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\key.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\rsa-compat.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\sftp.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\ssh.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common-ssh\user.c">
+      <Filter>src\common-ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\conf-args.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\conf-file.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\conf-parse.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\connection.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\daemon.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\log.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\move-fd.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\proc.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacd\proc-map.c">
+      <Filter>src\guacd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\buffer.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\cursor.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\display.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\display-buffers.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\display-flatten.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\display-image-streams.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\display-layers.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\display-sync.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\encode.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\ffmpeg-compat.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\guacenc.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\image-stream.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-blob.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-cfill.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-copy.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-cursor.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-dispose.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-end.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-img.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-mouse.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-move.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-rect.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instructions.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-shade.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-size.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-sync.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\instruction-transfer.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\jpeg.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\layer.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\log.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\parse.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\png.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\video.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guacenc\webp.c">
+      <Filter>src\guacenc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\guaclog.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\instruction-key.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\instructions.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\interpret.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\keydef.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\log.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guaclog\state.c">
+      <Filter>src\guaclog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\client\buffer_pool.c">
+      <Filter>src\libguac\tests\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\client\layer_pool.c">
+      <Filter>src\libguac\tests\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\parser\append.c">
+      <Filter>src\libguac\tests\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\parser\read.c">
+      <Filter>src\libguac\tests\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\pool\next_free.c">
+      <Filter>src\libguac\tests\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\protocol\base64_decode.c">
+      <Filter>src\libguac\tests\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\protocol\guac_protocol_version.c">
+      <Filter>src\libguac\tests\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\socket\fd_send_instruction.c">
+      <Filter>src\libguac\tests\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\socket\nested_send_instruction.c">
+      <Filter>src\libguac\tests\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\string\strdup.c">
+      <Filter>src\libguac\tests\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\string\strlcat.c">
+      <Filter>src\libguac\tests\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\string\strlcpy.c">
+      <Filter>src\libguac\tests\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\string\strljoin.c">
+      <Filter>src\libguac\tests\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\unicode\charsize.c">
+      <Filter>src\libguac\tests\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\unicode\read.c">
+      <Filter>src\libguac\tests\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\unicode\strlen.c">
+      <Filter>src\libguac\tests\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\tests\unicode\write.c">
+      <Filter>src\libguac\tests\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\argv.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\audio.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\client.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\encode-jpeg.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\encode-png.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\encode-webp.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\error.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\hash.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\id.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\palette.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\parser.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\pool.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\protocol.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\raw_encoder.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket-broadcast.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket-fd.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket-nest.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket-ssl.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket-tee.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\socket-wsa.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\string.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\timestamp.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\unicode.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\user.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\user-handlers.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\user-handshake.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\wait-fd.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libguac\wol.c">
+      <Filter>src\libguac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\argv.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\client.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\clipboard.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\input.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\io.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\kubernetes.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\pipe.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\settings.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\ssl.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\url.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\kubernetes\user.c">
+      <Filter>src\protocols\kubernetes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\audio-input\audio-buffer.c">
+      <Filter>src\protocols\rdp\channels\audio-input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\audio-input\audio-input.c">
+      <Filter>src\protocols\rdp\channels\audio-input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages-dir-info.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages-file-info.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-fs-messages-vol-info.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-messages.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpdr\rdpdr-printer.c">
+      <Filter>src\protocols\rdp\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpsnd\rdpsnd.c">
+      <Filter>src\protocols\rdp\channels\rdpsnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rdpsnd\rdpsnd-messages.c">
+      <Filter>src\protocols\rdp\channels\rdpsnd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\cliprdr.c">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\common-svc.c">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\disp.c">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\pipe-svc.c">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\channels\rail.c">
+      <Filter>src\protocols\rdp\channels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\plugins\guacai\guacai.c">
+      <Filter>src\protocols\rdp\plugins\guacai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\plugins\guacai\guacai-messages.c">
+      <Filter>src\protocols\rdp\plugins\guacai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\plugins\guac-common-svc\guac-common-svc.c">
+      <Filter>src\protocols\rdp\plugins\guac-common-svc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\plugins\channels.c">
+      <Filter>src\protocols\rdp\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\plugins\ptr-string.c">
+      <Filter>src\protocols\rdp\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\tests\fs\basename.c">
+      <Filter>src\protocols\rdp\tests\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\tests\fs\normalize_path.c">
+      <Filter>src\protocols\rdp\tests\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\argv.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\beep.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\bitmap.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\client.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\color.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\decompose.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\download.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\error.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\fs.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\gdi.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\glyph.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\input.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\keyboard.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\keymap.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\log.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\ls.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\pointer.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\print-job.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\rdp.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\resolution.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\settings.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\sftp.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\unicode.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\upload.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\rdp\user.c">
+      <Filter>src\protocols\rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\argv.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\client.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\clipboard.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\input.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\pipe.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\settings.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\sftp.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\ssh.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\ssh_agent.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\ttymode.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\ssh\user.c">
+      <Filter>src\protocols\ssh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\argv.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\client.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\clipboard.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\input.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\pipe.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\settings.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\telnet.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\telnet\user.c">
+      <Filter>src\protocols\telnet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\argv.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\auth.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\client.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\clipboard.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\cursor.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\display.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\input.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\log.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\settings.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\sftp.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\user.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\vnc\vnc.c">
+      <Filter>src\protocols\vnc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pulse\pulse.c">
+      <Filter>src\pulse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\buffer.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\char_mappings.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\color-scheme.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\common.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\display.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\named-colors.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\palette.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\scrollbar.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\select.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\terminal.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\terminal_handlers.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\terminal-stdin-stream.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\typescript.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\terminal\xparsecolor.c">
+      <Filter>src\terminal</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\guacctl">
+      <Filter>bin</Filter>
+    </None>
+    <None Include="build-aux\compile">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\config.guess">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\config.sub">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\depcomp">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\install-sh">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\ltmain.sh">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\missing">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\tap-driver.sh">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="build-aux\test-driver">
+      <Filter>build-aux</Filter>
+    </None>
+    <None Include="doc\Doxyfile.in">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="m4\libtool.m4">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="m4\lt~obsolete.m4">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="m4\ltoptions.m4">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="m4\ltsugar.m4">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="m4\ltversion.m4">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="src\common\tests\Makefile.am">
+      <Filter>src\common\tests</Filter>
+    </None>
+    <None Include="src\common\tests\Makefile.in">
+      <Filter>src\common\tests</Filter>
+    </None>
+    <None Include="src\common\Makefile.am">
+      <Filter>src\common</Filter>
+    </None>
+    <None Include="src\common\Makefile.in">
+      <Filter>src\common</Filter>
+    </None>
+    <None Include="src\common-ssh\tests\Makefile.am">
+      <Filter>src\common-ssh\tests</Filter>
+    </None>
+    <None Include="src\common-ssh\tests\Makefile.in">
+      <Filter>src\common-ssh\tests</Filter>
+    </None>
+    <None Include="src\common-ssh\Makefile.am">
+      <Filter>src\common-ssh</Filter>
+    </None>
+    <None Include="src\common-ssh\Makefile.in">
+      <Filter>src\common-ssh</Filter>
+    </None>
+    <None Include="src\guacd\init.d\guacd.in">
+      <Filter>src\guacd\init.d</Filter>
+    </None>
+    <None Include="src\guacd\man\guacd.8.in">
+      <Filter>src\guacd\man</Filter>
+    </None>
+    <None Include="src\guacd\man\guacd.conf.5.in">
+      <Filter>src\guacd\man</Filter>
+    </None>
+    <None Include="src\guacd\systemd\guacd.service.in">
+      <Filter>src\guacd\systemd</Filter>
+    </None>
+    <None Include="src\guacd\Makefile.am">
+      <Filter>src\guacd</Filter>
+    </None>
+    <None Include="src\guacd\Makefile.in">
+      <Filter>src\guacd</Filter>
+    </None>
+    <None Include="src\guacd-docker\bin\build-guacd.sh">
+      <Filter>src\guacd-docker\bin</Filter>
+    </None>
+    <None Include="src\guacd-docker\bin\link-freerdp-plugins.sh">
+      <Filter>src\guacd-docker\bin</Filter>
+    </None>
+    <None Include="src\guacd-docker\bin\list-dependencies.sh">
+      <Filter>src\guacd-docker\bin</Filter>
+    </None>
+    <None Include="src\guacd-docker\README.md">
+      <Filter>src\guacd-docker</Filter>
+    </None>
+    <None Include="src\guacenc\man\guacenc.1.in">
+      <Filter>src\guacenc\man</Filter>
+    </None>
+    <None Include="src\guacenc\Makefile.am">
+      <Filter>src\guacenc</Filter>
+    </None>
+    <None Include="src\guacenc\Makefile.in">
+      <Filter>src\guacenc</Filter>
+    </None>
+    <None Include="src\guaclog\man\guaclog.1.in">
+      <Filter>src\guaclog\man</Filter>
+    </None>
+    <None Include="src\guaclog\Makefile.am">
+      <Filter>src\guaclog</Filter>
+    </None>
+    <None Include="src\guaclog\Makefile.in">
+      <Filter>src\guaclog</Filter>
+    </None>
+    <None Include="src\libguac\tests\Makefile.am">
+      <Filter>src\libguac\tests</Filter>
+    </None>
+    <None Include="src\libguac\tests\Makefile.in">
+      <Filter>src\libguac\tests</Filter>
+    </None>
+    <None Include="src\libguac\Makefile.am">
+      <Filter>src\libguac</Filter>
+    </None>
+    <None Include="src\libguac\Makefile.in">
+      <Filter>src\libguac</Filter>
+    </None>
+    <None Include="src\protocols\kubernetes\Makefile.am">
+      <Filter>src\protocols\kubernetes</Filter>
+    </None>
+    <None Include="src\protocols\kubernetes\Makefile.in">
+      <Filter>src\protocols\kubernetes</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\base.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\da_dk_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\de_ch_qwertz.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\de_de_qwertz.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\en_gb_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\en_us_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\es_es_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\es_latam_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\failsafe.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\fr_be_azerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\fr_ch_qwertz.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\fr_fr_azerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\generate.pl">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\hu_hu_qwertz.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\it_it_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\ja_jp_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\pt_br_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\sv_se_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\keymaps\tr_tr_qwerty.keymap">
+      <Filter>src\protocols\rdp\keymaps</Filter>
+    </None>
+    <None Include="src\protocols\rdp\plugins\generate-entry-wrappers.pl">
+      <Filter>src\protocols\rdp\plugins</Filter>
+    </None>
+    <None Include="src\protocols\rdp\tests\Makefile.am">
+      <Filter>src\protocols\rdp\tests</Filter>
+    </None>
+    <None Include="src\protocols\rdp\tests\Makefile.in">
+      <Filter>src\protocols\rdp\tests</Filter>
+    </None>
+    <None Include="src\protocols\rdp\Makefile.am">
+      <Filter>src\protocols\rdp</Filter>
+    </None>
+    <None Include="src\protocols\rdp\Makefile.in">
+      <Filter>src\protocols\rdp</Filter>
+    </None>
+    <None Include="src\protocols\ssh\Makefile.am">
+      <Filter>src\protocols\ssh</Filter>
+    </None>
+    <None Include="src\protocols\ssh\Makefile.in">
+      <Filter>src\protocols\ssh</Filter>
+    </None>
+    <None Include="src\protocols\telnet\Makefile.am">
+      <Filter>src\protocols\telnet</Filter>
+    </None>
+    <None Include="src\protocols\telnet\Makefile.in">
+      <Filter>src\protocols\telnet</Filter>
+    </None>
+    <None Include="src\protocols\vnc\Makefile.am">
+      <Filter>src\protocols\vnc</Filter>
+    </None>
+    <None Include="src\protocols\vnc\Makefile.in">
+      <Filter>src\protocols\vnc</Filter>
+    </None>
+    <None Include="src\pulse\Makefile.am">
+      <Filter>src\pulse</Filter>
+    </None>
+    <None Include="src\pulse\Makefile.in">
+      <Filter>src\pulse</Filter>
+    </None>
+    <None Include="src\terminal\Makefile.am">
+      <Filter>src\terminal</Filter>
+    </None>
+    <None Include="src\terminal\Makefile.in">
+      <Filter>src\terminal</Filter>
+    </None>
+    <None Include="util\generate-test-runner.pl">
+      <Filter>util</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>
