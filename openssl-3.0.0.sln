@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl-3.0.0", "openssl-3.0.0\openssl-3.0.0.vcxproj", "{5FDA910F-B2F7-4480-A733-8EA542351AC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FDA910F-B2F7-4480-A733-8EA542351AC7}.Debug|x86.ActiveCfg = Debug|Win32
+		{5FDA910F-B2F7-4480-A733-8EA542351AC7}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3E25297-1335-4F4B-AF9E-B7E1A5EAE08D}
+	EndGlobalSection
+EndGlobal
