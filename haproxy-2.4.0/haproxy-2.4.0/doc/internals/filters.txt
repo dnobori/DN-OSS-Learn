@@ -1,0 +1,1186 @@
+                   -----------------------------------------
+                          Filters Guide - version 2.4
+                          ( Last update: 2021-02-24 )
+                   ------------------------------------------
+                          Author : Christopher Faulet
+              Contact : christopher dot faulet at capflam dot org
+
+
+ABSTRACT
+--------
+
+The filters support is a new feature of HAProxy 1.7. It is a way to extend
+HAProxy without touching its core code and, in certain extent, without knowing
+its internals. This feature will ease contributions, reducing impact of
+changes. Another advantage will be to simplify HAProxy by replacing some parts
+by filters. As we will see, and as an example, the HTTP compression is the first
+feature moved in a filter.
+
+This document describes how to write a filter and what to keep in mind to do
+so. It also talks about the known limits and the pitfalls to avoid.
+
+As said, filters are quite new for now. The API is not freezed and will be
+updated/modified/improved/extended as needed.
+
+
+
+SUMMARY
+-------
+
+  1.    Filters introduction
+  2.    How to use filters
+  3.    How to write a new filter
+  3.1.      API Overview
+  3.2.      Defining the filter name and its configuration
+  3.3.      Managing the filter lifecycle
+  3.3.1.        Dealing with threads
+  3.4.      Handling the streams activity
+  3.5.      Analyzing the channels activity
+  3.6.      Filtering the data exchanged
+  4.    FAQ
+
+
+
+1. FILTERS INTRODUCTION
+-----------------------
+
+First of all, to fully understand how filters work and how to create one, it is
+best to know, at least from a distance, what is a proxy (frontend/backend), a
+stream and a channel in HAProxy and how these entities are linked to each other.
+doc/internals/entities.pdf is a good overview.
+
+Then, to support filters, many callbacks has been added to HAProxy at different
+places, mainly around channel analyzers. Their purpose is to allow filters to
+be involved in the data processing, from the stream creation/destruction to
+the data forwarding. Depending of what it should do, a filter can implement all
+or part of these callbacks. For now, existing callbacks are focused on
+streams. But future improvements could enlarge filters scope. For instance, it
+could be useful to handle events at the connection level.
+
+In HAProxy configuration file, a filter is declared in a proxy section, except
+default. So the configuration corresponding to a filter declaration is attached
+to a specific proxy, and will be shared by all its instances. it is opaque from
+the HAProxy point of view, this is the filter responsibility to manage it. For
+each filter declaration matches a uniq configuration. Several declarations of
+the same filter in the same proxy will be handle as different filters by
+HAProxy.
+
+A filter instance is represented by a partially opaque context (or a state)
+attached to a stream and passed as arguments to callbacks. Through this context,
+filter instances are stateful. Depending the filter is declared in a frontend or
+a backend section, its instances will be created, respectively, when a stream is
+created or when a backend is selected. Their behaviors will also be
+different. Only instances of filters declared in a frontend section will be
+aware of the creation and the destruction of the stream, and will take part in
+the channels analyzing before the backend is defined.
+
+It is important to remember the configuration of a filter is shared by all its
+instances, while the context of an instance is owned by a uniq stream.
+
+Filters are designed to be chained. It is possible to declare several filters in
+the same proxy section. The declaration order is important because filters will
+be called one after the other respecting this order. Frontend and backend
+filters are also chained, frontend ones called first. Even if the filters
+processing is serialized, each filter will bahave as it was alone (unless it was
+developed to be aware of other filters). For all that, some constraints are
+imposed to filters, especially when data exchanged between the client and the
+server are processed. We will discuss again these constraints when we will tackle
+the subject of writing a filter.
+
+
+
+2. HOW TO USE FILTERS
+---------------------
+
+To use a filter, the parameter 'filter' should be used, followed by the filter
+name and, optionally, its configuration in the desired listen, frontend or
+backend section. For instance :
+
+    listen test
+        ...
+        filter trace name TST
+        ...
+
+
+See doc/configuration.txt for a formal definition of the parameter 'filter'.
+Note that additional parameters on the filter line must be parsed by the filter
+itself.
+
+The list of available filters is reported by 'haproxy -vv' :
+
+    $> haproxy -vv
+    HAProxy version 1.7-dev2-3a1d4a-33 2016/03/21
+    Copyright 2000-2016 Willy Tarreau <willy@haproxy.org>
+
+    [...]
+
+    Available filters :
+            [COMP] compression
+            [TRACE] trace
+
+
+Multiple filter lines can be used in a proxy section to chain filters. Filters
+will be called in the declaration order.
+
+Some filters can support implicit declarations in certain circumstances
+(without the filter line). This is not recommended for new features but are
+useful for existing ones moved in a filter, for backward compatibility
+reasons. Implicit declarations are supported when there is only one filter used
+on a proxy. When several filters are used, explicit declarations are mandatory.
+The HTTP compression filter is one of these filters. Alone, using 'compression'
+keywords is enough to use it. But when at least a second filter is used, a
+filter line must be added.
+
+    # filter line is optional
+    listen t1
+        bind *:80
+        compression algo gzip
+        compression offload
+        server srv x.x.x.x:80
+
+    # filter line is mandatory for the compression filter
+    listen t2
+        bind *:81
+        filter trace name T2
+        filter compression
+        compression algo gzip
+        compression offload
+        server srv x.x.x.x:80
+
+
+
+
+3. HOW TO WRITE A NEW FILTER
+----------------------------
+
+To write a filter, there are 2 header files to explore :
+
+  * include/haproxy/filters-t.h : This is the main header file, containing all
+                                  important structures to use. It represents the
+                                  filter API.
+
+  * include/haproxy/filters.h : This header file contains helper functions that
+                                may be used. It also contains the internal API
+                                used by HAProxy to handle filters.
+
+To ease the filters integration, it is better to follow some conventions :
+
+  * Use 'flt_' prefix to name the filter (e.g flt_http_comp or flt_trace).
+
+  * Keep everything related to the filter in a same file.
+
+The filter 'trace' can be used as a template to write new filter. It is a good
+start to see how filters really work.
+
+3.1 API OVERVIEW
+----------------
+
+Writing a filter can be summarized to write functions and attach them to the
+existing callbacks. Available callbacks are listed in the following structure :
+
+    struct flt_ops {
+        /*
+         * Callbacks to manage the filter lifecycle
+         */
+        int  (*init)             (struct proxy *p, struct flt_conf *fconf);
+        void (*deinit)           (struct proxy *p, struct flt_conf *fconf);
+        int  (*check)            (struct proxy *p, struct flt_conf *fconf);
+        int  (*init_per_thread)  (struct proxy *p, struct flt_conf *fconf);
+        void (*deinit_per_thread)(struct proxy *p, struct flt_conf *fconf);
+
+        /*
+         * Stream callbacks
+         */
+        int  (*attach)            (struct stream *s, struct filter *f);
+        int  (*stream_start)      (struct stream *s, struct filter *f);
+        int  (*stream_set_backend)(struct stream *s, struct filter *f, struct proxy *be);
+        void (*stream_stop)       (struct stream *s, struct filter *f);
+        void (*detach)            (struct stream *s, struct filter *f);
+        void (*check_timeouts)    (struct stream *s, struct filter *f);
+
+        /*
+         * Channel callbacks
+         */
+        int  (*channel_start_analyze)(struct stream *s, struct filter *f,
+                                      struct channel *chn);
+        int  (*channel_pre_analyze)  (struct stream *s, struct filter *f,
+                                      struct channel *chn,
+                                      unsigned int an_bit);
+        int  (*channel_post_analyze) (struct stream *s, struct filter *f,
+                                      struct channel *chn,
+                                      unsigned int an_bit);
+        int  (*channel_end_analyze)  (struct stream *s, struct filter *f,
+                                      struct channel *chn);
+
+        /*
+         * HTTP callbacks
+         */
+        int  (*http_headers)       (struct stream *s, struct filter *f,
+                                    struct http_msg *msg);
+        int  (*http_payload)       (struct stream *s, struct filter *f,
+                                    struct http_msg *msg, unsigned int offset,
+                                    unsigned int len);
+        int  (*http_end)           (struct stream *s, struct filter *f,
+                                    struct http_msg *msg);
+
+        void (*http_reset)         (struct stream *s, struct filter *f,
+                                    struct http_msg *msg);
+        void (*http_reply)         (struct stream *s, struct filter *f,
+                                    short status,
+                                    const struct buffer *msg);
+
+        /*
+         * TCP callbacks
+         */
+        int  (*tcp_payload)     (struct stream *s, struct filter *f,
+                                 struct channel *chn, unsigned int offset,
+                                 unsigned int len);
+    };
+
+
+We will explain in following parts when these callbacks are called and what they
+should do.
+
+Filters are declared in proxy sections. So each proxy have an ordered list of
+filters, possibly empty if no filter is used. When the configuration of a proxy
+is parsed, each filter line represents an entry in this list. In the structure
+'proxy', the filters configurations are stored in the field 'filter_configs',
+each one of type 'struct flt_conf *' :
+
+    /*
+     * Structure representing the filter configuration, attached to a proxy and
+     * accessible from a filter when instantiated in a stream
+     */
+    struct flt_conf {
+        const char     *id;   /* The filter id */
+        struct flt_ops *ops;  /* The filter callbacks */
+        void           *conf; /* The filter configuration */
+        struct list     list; /* Next filter for the same proxy */
+        unsigned int    flags; /* FLT_CFG_FL_* */
+    };
+
+  * 'flt_conf.id' is an identifier, defined by the filter. It can be
+    NULL. HAProxy does not use this field. Filters can use it in log messages or
+    as a uniq identifier to check multiple declarations. It is the filter
+    responsibility to free it, if necessary.
+
+  * 'flt_conf.conf' is opaque. It is the internal configuration of a filter,
+    generally allocated and filled by its parsing function (See § 3.2). It is
+    the filter responsibility to free it.
+
+  * 'flt_conf.ops' references the callbacks implemented by the filter. This
+    field must be set during the parsing phase (See § 3.2) and can be refine
+    during the initialization phase (See § 3.3). If it is dynamically allocated,
+    it is the filter responsibility to free it.
+
+  * 'flt_conf.flags' is a bitfield to specify the filter capabilities. For now,
+    only FLT_CFG_FL_HTX may be set when a filter is able to process HTX
+    streams. If not set, the filter is excluded from the HTTP filtering.
+
+
+The filter configuration is global and shared by all its instances. A filter
+instance is created in the context of a stream and attached to this stream. in
+the structure 'stream', the field 'strm_flt' is the state of all filter
+instances attached to a stream :
+
+    /*
+     * Structure representing the "global" state of filters attached to a
+     * stream.
+     */
+    struct strm_flt {
+        struct list    filters;             /* List of filters attached to a stream */
+        struct filter *current[2];          /* From which filter resume processing, for a specific channel.
+                                             * This is used for resumable callbacks only,
+                                             * If NULL, we start from the first filter.
+                                             * 0: request channel, 1: response channel */
+        unsigned short flags;               /* STRM_FL_* */
+        unsigned char  nb_req_data_filters; /* Number of data filters registered on the request channel */
+        unsigned char  nb_rsp_data_filters; /* Number of data filters registered on the response channel */
+        unsigned long long offset[2];       /* gloal offset of input data already filtered for a specific channel
+                                             * 0: request channel, 1: response channel */
+    };
+
+
+Filter instances attached to a stream are stored in the field
+'strm_flt.filters', each instance is of type 'struct filter *' :
+
+    /*
+     * Structure representing a filter instance attached to a stream
+     *
+     * 2D-Array fields are used to store info per channel. The first index
+     * stands for the request channel, and the second one for the response
+     * channel.  Especially, <next> and <fwd> are offsets representing amount of
+     * data that the filter are, respectively, parsed and forwarded on a
+     * channel. Filters can access these values using FLT_NXT and FLT_FWD
+     * macros.
+     */
+    struct filter {
+        struct flt_conf *config; /* the filter's configuration */
+        void           *ctx;     /* The filter context (opaque) */
+        unsigned short  flags;   /* FLT_FL_* */
+        unsigned long long offset[2];   /* Offset of input data already filtered for a specific channel
+                                         * 0: request channel, 1: response channel */
+        unsigned int    pre_analyzers;  /* bit field indicating analyzers to
+                                         * pre-process */
+        unsigned int    post_analyzers; /* bit field indicating analyzers to
+                                         * post-process */
+        struct list     list;    /* Next filter for the same proxy/stream */
+    };
+
+  * 'filter.config' is the filter configuration previously described. All
+    instances of a filter share it.
+
+  * 'filter.ctx' is an opaque context. It is managed by the filter, so it is its
+    responsibility to free it.
+
+  * 'filter.pre_analyzers and 'filter.post_analyzers will be described later
+    (See § 3.5).
+
+  * 'filter.offset' will be described later (See § 3.6).
+
+
+3.2. DEFINING THE FILTER NAME AND ITS CONFIGURATION
+---------------------------------------------------
+
+During the filter development, the first thing to do is to add it in the
+supported filters. To do so, its name must be registered as a valid keyword on
+the filter line :
+
+    /* Declare the filter parser for "my_filter" keyword */
+    static struct flt_kw_list flt_kws = { "MY_FILTER_SCOPE", { }, {
+            { "my_filter", parse_my_filter_cfg, NULL /* private data */ },
+            { NULL, NULL, NULL },
+        }
+    };
+    INITCALL1(STG_REGISTER, flt_register_keywords, &flt_kws);
+
+
+Then the filter internal configuration must be defined. For instance :
+
+    struct my_filter_config {
+        struct proxy *proxy;
+        char         *name;
+        /* ... */
+    };
+
+
+All callbacks implemented by the filter must then be declared. Here, a global
+variable is used :
+
+    struct flt_ops my_filter_ops {
+        .init   = my_filter_init,
+        .deinit = my_filter_deinit,
+        .check  = my_filter_config_check,
+
+        /* ... */
+     };
+
+
+Finally, the function to parse the filter configuration must be written, here
+'parse_my_filter_cfg'. This function must parse all remaining keywords on the
+filter line :
+
+    /* Return -1 on error, else 0 */
+    static int
+    parse_my_filter_cfg(char **args, int *cur_arg, struct proxy *px,
+                        struct flt_conf *flt_conf, char **err, void *private)
+    {
+        struct my_filter_config *my_conf;
+        int pos = *cur_arg;
+
+        /* Allocate the internal configuration used by the filter */
+        my_conf = calloc(1, sizeof(*my_conf));
+        if (!my_conf) {
+            memprintf(err, "%s : out of memory", args[*cur_arg]);
+            return -1;
+        }
+        my_conf->proxy = px;
+
+        /* ... */
+
+        /* Parse all keywords supported by the filter and fill the internal
+         * configuration */
+        pos++; /* Skip the filter name */
+        while (*args[pos]) {
+            if (!strcmp(args[pos], "name")) {
+                if (!*args[pos + 1]) {
+                    memprintf(err, "'%s' : '%s' option without value",
+                              args[*cur_arg], args[pos]);
+                              goto error;
+                }
+                my_conf->name = strdup(args[pos + 1]);
+                if (!my_conf->name) {
+                    memprintf(err, "%s : out of memory", args[*cur_arg]);
+                    goto error;
+                }
+                pos += 2;
+            }
+
+            /* ... parse other keywords ... */
+        }
+        *cur_arg = pos;
+
+        /* Set callbacks supported by the filter */
+        flt_conf->ops  = &my_filter_ops;
+
+        /* Last, save the internal configuration */
+        flt_conf->conf = my_conf;
+        return 0;
+
+      error:
+         if (my_conf->name)
+            free(my_conf->name);
+        free(my_conf);
+        return -1;
+    }
+
+
+WARNING : In this parsing function, 'flt_conf->ops' must be initialized. All
+          arguments of the filter line must also be parsed. This is mandatory.
+
+In the previous example, the filter lne should be read as follows :
+
+    filter my_filter name MY_NAME ...
+
+
+Optionally, by implementing the 'flt_ops.check' callback, an extra set is added
+to check the internal configuration of the filter after the parsing phase, when
+the HAProxy configuration is fully defined. For instance :
+
+    /* Check configuration of a trace filter for a specified proxy.
+     * Return 1 on error, else 0. */
+    static int
+    my_filter_config_check(struct proxy *px, struct flt_conf *my_conf)
+    {
+        if (px->mode != PR_MODE_HTTP) {
+            Alert("The filter 'my_filter' cannot be used in non-HTTP mode.\n");
+            return 1;
+        }
+
+        /* ... */
+
+        return 0;
+    }
+
+
+
+3.3. MANAGING THE FILTER LIFECYCLE
+----------------------------------
+
+Once the configuration parsed and checked, filters are ready to by used. There
+are two main callbacks to manage the filter lifecycle :
+
+  * 'flt_ops.init' : It initializes the filter for a proxy. This callback may be
+                     defined to finish the filter configuration.
+
+  * 'flt_ops.deinit' : It cleans up what the parsing function and the init
+                       callback have done. This callback is useful to release
+                       memory allocated for the filter configuration.
+
+Here is an example :
+
+    /* Initialize the filter. Returns -1 on error, else 0. */
+    static int
+    my_filter_init(struct proxy *px, struct flt_conf *fconf)
+    {
+        struct my_filter_config *my_conf = fconf->conf;
+
+        /* ... */
+
+        return 0;
+    }
+
+    /* Free resources allocated by the trace filter. */
+    static void
+    my_filter_deinit(struct proxy *px, struct flt_conf *fconf)
+    {
+        struct my_filter_config *my_conf = fconf->conf;
+
+        if (my_conf) {
+            free(my_conf->name);
+            /* ... */
+            free(my_conf);
+        }
+        fconf->conf = NULL;
+    }
+
+
+3.3.1 DEALING WITH THREADS
+--------------------------
+
+When HAProxy is compiled with the threads support and started with more that one
+thread (global.nbthread > 1), then it is possible to manage the filter per
+thread with following callbacks :
+
+  * 'flt_ops.init_per_thread': It initializes the filter for each thread. It
+                               works the same way than 'flt_ops.init' but in the
+                               context of a thread. This callback is called
+                               after the thread creation.
+
+  * 'flt_ops.deinit_per_thread': It cleans up what the init_per_thread callback
+                                 have done. It is called in the context of a
+                                 thread, before exiting it.
+
+It is the filter responsibility to deal with concurrency. check, init and deinit
+callbacks are called on the main thread. All others are called on a "worker"
+thread (not always the same). It is also the filter responsibility to know if
+HAProxy is started with more than one thread. If it is started with one thread
+(or compiled without the threads support), these callbacks will be silently
+ignored (in this case, global.nbthread will be always equal to one).
+
+
+3.4. HANDLING THE STREAMS ACTIVITY
+-----------------------------------
+
+It may be interesting to handle streams activity. For now, there is three
+callbacks that should define to do so :
+
+  * 'flt_ops.stream_start' : It is called when a stream is started. This
+                             callback can fail by returning a negative value. It
+                             will be considered as a critical error by HAProxy
+                             which disabled the listener for a short time.
+
+  * 'flt_ops.stream_set_backend' : It is called when a backend is set for a
+                                   stream. This callbacks will be called for all
+                                   filters attached to a stream (frontend and
+                                   backend). Note this callback is not called if
+                                   the frontend and the backend are the same.
+
+  * 'flt_ops.stream_stop' : It is called when a stream is stopped. This callback
+                            always succeed. Anyway, it is too late to return an
+                            error.
+
+For instance :
+
+    /* Called when a stream is created. Returns -1 on error, else 0. */
+    static int
+    my_filter_stream_start(struct stream *s, struct filter *filter)
+    {
+         struct my_filter_config *my_conf = FLT_CONF(filter);
+
+         /* ... */
+
+         return 0;
+    }
+
+    /* Called when a backend is set for a stream */
+    static int
+    my_filter_stream_set_backend(struct stream *s, struct filter *filter,
+                                 struct proxy *be)
+    {
+         struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        /* ... */
+
+        return 0;
+    }
+
+    /* Called when a stream is destroyed */
+    static void
+    my_filter_stream_stop(struct stream *s, struct filter *filter)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+         /* ... */
+    }
+
+
+WARNING : Handling the streams creation and destruction is only possible for
+          filters defined on proxies with the frontend capability.
+
+In addition, it is possible to handle creation and destruction of filter
+instances using following callbacks:
+
+  * 'flt_ops.attach' : It is called after a filter instance creation, when it is
+                       attached to a stream. This happens when the stream is
+                       started for filters defined on the stream's frontend and
+                       when the backend is set for filters declared on the
+                       stream's backend. It is possible to ignore the filter, if
+                       needed, by returning 0. This could be useful to have
+                       conditional filtering.
+
+  * 'flt_ops.detach' : It is called when a filter instance is detached from a
+                       stream, before its destruction. This happens when the
+                       stream is stopped for filters defined on the stream's
+                       frontend and when the analyze ends for filters defined on
+                       the stream's backend.
+
+For instance :
+
+    /* Called when a filter instance is created and attach to a stream */
+    static int
+    my_filter_attach(struct stream *s, struct filter *filter)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        if (/* ... */)
+            return 0; /* Ignore the filter here */
+        return 1;
+    }
+
+    /* Called when a filter instance is detach from a stream, just before its
+     * destruction */
+    static void
+    my_filter_detach(struct stream *s, struct filter *filter)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        /* ... */
+    }
+
+Finally, it may be interesting to notify the filter when the stream is woken up
+because of an expired timer. This could let a chance to check some internal
+timeouts, if any. To do so the following callback must be used :
+
+  * 'flt_opt.check_timeouts' : It is called when a stream is woken up because of
+                               an expired timer.
+
+For instance :
+
+    /* Called when a stream is woken up because of an expired timer */
+    static void
+    my_filter_check_timeouts(struct stream *s, struct filter *filter)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        /* ... */
+    }
+
+
+3.5. ANALYZING THE CHANNELS ACTIVITY
+------------------------------------
+
+The main purpose of filters is to take part in the channels analyzing. To do so,
+there is 2 callbacks, 'flt_ops.channel_pre_analyze' and
+'flt_ops.channel_post_analyze', called respectively before and after each
+analyzer attached to a channel, except analyzers responsible for the data
+forwarding (TCP or HTTP). Concretely, on the request channel, these callbacks
+could be called before following analyzers :
+
+  * tcp_inspect_request        (AN_REQ_INSPECT_FE and AN_REQ_INSPECT_BE)
+  * http_wait_for_request      (AN_REQ_WAIT_HTTP)
+  * http_wait_for_request_body (AN_REQ_HTTP_BODY)
+  * http_process_req_common    (AN_REQ_HTTP_PROCESS_FE)
+  * process_switching_rules    (AN_REQ_SWITCHING_RULES)
+  * http_process_req_ common   (AN_REQ_HTTP_PROCESS_BE)
+  * http_process_tarpit        (AN_REQ_HTTP_TARPIT)
+  * process_server_rules       (AN_REQ_SRV_RULES)
+  * http_process_request       (AN_REQ_HTTP_INNER)
+  * tcp_persist_rdp_cookie     (AN_REQ_PRST_RDP_COOKIE)
+  * process_sticking_rules     (AN_REQ_STICKING_RULES)
+
+And on the response channel :
+
+  * tcp_inspect_response     (AN_RES_INSPECT)
+  * http_wait_for_response   (AN_RES_WAIT_HTTP)
+  * process_store_rules      (AN_RES_STORE_RULES)
+  * http_process_res_common  (AN_RES_HTTP_PROCESS_BE)
+
+Unlike the other callbacks previously seen before, 'flt_ops.channel_pre_analyze'
+can interrupt the stream processing. So a filter can decide to not execute the
+analyzer that follows and wait the next iteration. If there are more than one
+filter, following ones are skipped. On the next iteration, the filtering resumes
+where it was stopped, i.e. on the filter that has previously stopped the
+processing. So it is possible for a filter to stop the stream processing on a
+specific analyzer for a while before continuing. Moreover, this callback can be
+called many times for the same analyzer, until it finishes its processing. For
+instance :
+
+    /* Called before a processing happens on a given channel.
+     * Returns a negative value if an error occurs, 0 if it needs to wait,
+     * any other value otherwise. */
+    static int
+    my_filter_chn_pre_analyze(struct stream *s, struct filter *filter,
+                              struct channel *chn, unsigned an_bit)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        switch (an_bit) {
+            case AN_REQ_WAIT_HTTP:
+                if (/* wait that a condition is verified before continuing */)
+                    return 0;
+                break;
+            /* ... * /
+        }
+        return 1;
+    }
+
+  * 'an_bit' is the analyzer id. All analyzers are listed in
+    'include/haproxy/channels-t.h'.
+
+  * 'chn' is the channel on which the analyzing is done. It is possible to
+    determine if it is the request or the response channel by testing if
+    CF_ISRESP flag is set :
+
+      │ ((chn->flags & CF_ISRESP) == CF_ISRESP)
+
+
+In previous example, the stream processing is blocked before receipt of the HTTP
+request until a condition is verified.
+
+'flt_ops.channel_post_analyze', for its part, is not resumable. It returns a
+negative value if an error occurs, any other value otherwise. It is called when
+a filterable analyzer finishes its processing, so once for the same analyzer.
+For instance :
+
+    /* Called after a processing happens on a given channel.
+     * Returns a negative value if an error occurs, any other
+     * value otherwise. */
+    static int
+    my_filter_chn_post_analyze(struct stream *s, struct filter *filter,
+                               struct channel *chn, unsigned an_bit)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+        struct http_msg         *msg;
+
+        switch (an_bit) {
+            case AN_REQ_WAIT_HTTP:
+                if (/* A test on received headers before any other treatment */) {
+                    msg = ((chn->flags & CF_ISRESP) ? &s->txn->rsp : &s->txn->req);
+                    txn->status = 400;
+                    msg->msg_state = HTTP_MSG_ERROR;
+                    http_reply_and_close(s, s->txn->status, http_error_message(s));
+                    return -1; /* This is an error ! */
+                }
+                break;
+            /* ... * /
+        }
+        return 1;
+    }
+
+
+Pre and post analyzer callbacks of a filter are not automatically called. They
+must be regiesterd explicitly on analyzers, updating the value of
+'filter.pre_analyzers' and 'filter.post_analyzers' bit fields. All analyzer bits
+are listed in 'include/types/channels.h'. Here is an example :
+
+    static int
+    my_filter_stream_start(struct stream *s, struct filter *filter)
+    {
+        /* ... * /
+
+        /* Register the pre analyzer callback on all request and response
+         * analyzers */
+        filter->pre_analyzers |= (AN_REQ_ALL | AN_RES_ALL)
+
+        /* Register the post analyzer callback of only on AN_REQ_WAIT_HTTP and
+         * AN_RES_WAIT_HTTP analyzers */
+         filter->post_analyzers |= (AN_REQ_WAIT_HTTP | AN_RES_WAIT_HTTP)
+
+        /* ... * /
+        return 0;
+    }
+
+
+To surround activity of a filter during the channel analyzing, two new analyzers
+has been added :
+
+  * 'flt_start_analyze' (AN_REQ/RES_FLT_START_FE/AN_REQ_RES_FLT_START_BE) : For
+    a specific filter, this analyzer is called before any call to the
+    'channel_analyze' callback. From the filter point of view, it calls the
+    'flt_ops.channel_start_analyze' callback.
+
+  * 'flt_end_analyze' (AN_REQ/RES_FLT_END) : For a specific filter, this
+    analyzer is called when all other analyzers have finished their
+    processing. From the filter point of view, it calls the
+    'flt_ops.channel_end_analyze' callback.
+
+These analyzers are called only once per streams.
+
+'flt_ops.channel_start_analyze' and 'flt_ops.channel_end_analyze' callbacks can
+interrupt the stream processing, as 'flt_ops.channel_analyze'. Here is an
+example :
+
+    /* Called when analyze starts for a given channel
+     * Returns a negative value if an error occurs, 0 if it needs to wait,
+     * any other value otherwise. */
+    static int
+    my_filter_chn_start_analyze(struct stream *s, struct filter *filter,
+                                struct channel *chn)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        /* ... TODO ... */
+
+        return 1;
+    }
+
+    /* Called when analyze ends for a given channel
+     * Returns a negative value if an error occurs, 0 if it needs to wait,
+     * any other value otherwise. */
+    static int
+    my_filter_chn_end_analyze(struct stream *s, struct filter *filter,
+                              struct channel *chn)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        /* ... TODO ... */
+
+        return 1;
+    }
+
+
+Workflow on channels can be summarized as following :
+
+   FE: Called for filters defined on the stream's frontend
+   BE: Called for filters defined on the stream's backend
+
+                                          +------->---------+
+                |                         |                 |
+    +----------------------+              |      +----------------------+
+    |  flt_ops.attach (FE) |              |      |  flt_ops.attach (BE) |
+    +----------------------+              |      +----------------------+
+                |                         |                  |
+                V                         |                  V
+  +--------------------------+            | +------------------------------------+
+  | flt_ops.stream_start (FE)|            | | flt_ops.stream_set_backend (FE+BE) |
+  +--------------------------+            | +------------------------------------+
+                |                         |                  |
+               ...                        |                 ...
+                |                         |                  |
+                |                         ^                  |
+                |                 --+     |                  |                 --+
+                +------<----------+ |     |                  +--------<--------+ |
+                |                 | |     |                  |                 | |
+                V                 | |     |                  V                 | |
++-------------------------------+ | |     |  +-------------------------------+ | |
+|      flt_start_analyze (FE)   +-+ |     |  |      flt_start_analyze (BE)   +-+ |
+|(flt_ops.channel_start_analyze)|   | F   |  |(flt_ops.channel_start_analyze)|   |
++---------------+---------------+   | R   |  +-------------------------------+   |
+                |                   | O   |                  |                   |
+                +------<---------+  | N   ^                  +--------<-------+  | B
+                |                |  | T   |                  |                |  | A
++---------------|------------+   |  | E   |  +---------------|------------+   |  | C
+|+--------------V-------------+  |  | N   |  |+--------------V-------------+  |  | K
+||+----------------------------+ |  | D   |  ||+----------------------------+ |  | E
+|||flt_ops.channel_pre_analyze | |  |     |  |||flt_ops.channel_pre_analyze | |  | N
+|||             V              | |  |     |  |||             V              | |  | D
+|||        analyzer (FE)       +-+  |     |  |||     analyzer (FE+BE)       +-+  |
++||             V              |    |     |  +||             V              |    |
+ +|flt_ops.channel_post_analyze|    |     |   +|flt_ops.channel_post_analyze|    |
+  +----------------------------+    |     |    +----------------------------+    |
+                |                 --+     |                  |                   |
+                +------------>------------+                 ...                  |
+                                                             |                   |
+                                                 [ data filtering (see below) ]  |
+                                                             |                   |
+                                                            ...                  |
+                                                             |                   |
+                                                             +--------<--------+ |
+                                                             |                 | |
+                                                             V                 | |
+                                             +-------------------------------+ | |
+                                             |    flt_end_analyze (FE+BE)    +-+ |
+                                             | (flt_ops.channel_end_analyze) |   |
+                                             +---------------+---------------+   |
+                                                             |                 --+
+                                                             V
+                                                  +----------------------+
+                                                  |  flt_ops.detach (BE) |
+                                                  +----------------------+
+                                                             |
+                                                             V
+                                                +--------------------------+
+                                                | flt_ops.stream_stop (FE) |
+                                                +--------------------------+
+                                                             |
+                                                             V
+                                                  +----------------------+
+                                                  |  flt_ops.detach (FE) |
+                                                  +----------------------+
+                                                             |
+                                                             V
+
+By zooming on an analyzer box we have:
+
+                     ...
+                      |
+                      V
+                      |
+                      +-----------<-----------+
+                      |                       |
+    +-----------------+--------------------+  |
+    |                 |                    |  |
+    |                 +--------<---------+ |  |
+    |                 |                  | |  |
+    |                 V                  | |  |
+    |     flt_ops.channel_pre_analyze ->-+ |  ^
+    |                 |                    |  |
+    |                 |                    |  |
+    |                 V                    |  |
+    |              analyzer --------->-----+--+
+    |                 |                    |
+    |                 |                    |
+    |                 V                    |
+    |     flt_ops.channel_post_analyze     |
+    |                 |                    |
+    |                 |                    |
+    +-----------------+--------------------+
+                      |
+                      V
+                     ...
+
+
+ 3.6. FILTERING THE DATA EXCHANGED
+-----------------------------------
+
+WARNING : To fully understand this part, it is important to be aware on how the
+          buffers work in HAProxy. For the HTTP part, it is also important to
+          understand how data are parsed and structured, and how the internal
+          representation, called HTX, works. See doc/internals/buffer-api.txt
+          and doc/internals/htx-api.txt for details.
+
+An extended feature of the filters is the data filtering. By default a filter
+does not look into data exchanged between the client and the server because it
+is expensive. Indeed, instead of forwarding data without any processing, each
+byte need to be buffered.
+
+So, to enable the data filtering on a channel, at any time, in one of previous
+callbacks, 'register_data_filter' function must be called. And conversely, to
+disable it, 'unregister_data_filter' function must be called. For instance :
+
+    my_filter_http_headers(struct stream *s, struct filter *filter,
+                           struct http_msg *msg)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+
+        /* 'chn' must be the request channel */
+        if (!(msg->chn->flags & CF_ISRESP)) {
+            struct htx *htx;
+            struct ist hdr;
+            struct http_hdr_ctx ctx;
+
+            htx = htxbuf(msg->chn->buf);
+
+            /* Enable the data filtering for the request if 'X-Filter' header
+             * is set to 'true'. */
+            hdr = ist("X-Filter);
+            ctx.blk = NULL;
+            if (http_find_header(htx, hdr, &ctx, 0) &&
+                ctx.value.len >= 4 && memcmp(ctx.value.ptr, "true", 4) == 0)
+                register_data_filter(s, chn, filter);
+        }
+
+        return 1;
+    }
+
+Here, the data filtering is enabled if the HTTP header 'X-Filter' is found and
+set to 'true'.
+
+If several filters are declared, the evaluation order remains the same,
+regardless the order of the registrations to the data filtering. Data
+registrations must be performed before the data forwarding step. However, a
+filter may be unregistered from the data filtering at any time.
+
+Depending on the stream type, TCP or HTTP, the way to handle data filtering is
+different. HTTP data are structured while TCP data are raw. And there are more
+callbacks for HTTP streams to fully handle all steps of an HTTP transaction. But
+the main part is the same. The data filtering is performed in one callback,
+called in loop on input data starting at a specific offset for a given
+length. Data analyzed by a filter are considered as forwarded from its point of
+view. Because filters are chained, a filter never analyzes more data than its
+predecessors. Thus only data analyzed by the last filter are effectively
+forwarded. This means, at any time, any filter may choose to not analyze all
+available data (available from its point of view), blocking the data forwarding.
+
+Internally, filters own 2 offsets representing the number of bytes already
+analyzed in the available input data, one per channel. There is also an offset
+couple at the stream level, in the strm_flt object, representing the total
+number of bytes already forwarded. These offsets may be retrieved and updated
+using following macros :
+
+  * FLT_OFF(flt, chn)
+
+  * FLT_STRM_OFF(s, chn)
+
+where 'flt' is the 'struct filter' passed as argument in all callbacks, 's' the
+filtered stream and 'chn' is the considered channel. However, there is no reason
+for a filter to use these macros or take care of these offsets.
+
+
+3.6.1 FILTERING DATA ON TCP STREAMS
+-----------------------------------
+
+The TCP data filtering for TCP streams is the easy case, because HAProxy do not
+parse these data. Data are stored in raw in the buffer. So there is only one
+callback to consider:
+
+  * 'flt_ops.tcp_payload : This callback is called when input data are
+    available. If not defined, all available data will be considered as analyzed
+    and forwarded from the filter point of view.
+
+This callback is called only if the filter is registered to analyze TCP
+data. Here is an example :
+
+    /* Returns a negative value if an error occurs, else the number of
+     * consumed bytes. */
+    static int
+    my_filter_tcp_payload(struct stream *s, struct filter *filter,
+                          struct channel *chn, unsigned int offset,
+                          unsigned int len)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+        int ret = len;
+
+        /* Do not parse more than 'my_conf->max_parse' bytes at a time */
+        if (my_conf->max_parse != 0 && ret > my_conf->max_parse)
+            ret = my_conf->max_parse;
+
+        /* if available data are not completely parsed, wake up the stream to
+         * be sure to not freeze it. The best is probably to set a
+         * chn->analyse_exp timer */
+        if (ret != len)
+            task_wakeup(s->task, TASK_WOKEN_MSG);
+        return ret;
+    }
+
+But it is important to note that tunnelled data of an HTTP stream may also be
+filtered via this callback. Tunnelled data are data exchange after an HTTP tunnel
+is established between the client and the server, via an HTTP CONNECT or via a
+protocol upgrade. In this case, the data are structured. Of course, to do so,
+the filter must be able to parse HTX data and must have the FLT_CFG_FL_HTX flag
+set. At any time, the IS_HTX_STRM() macros may be used on the stream to know if
+it is an HTX stream or a TCP stream.
+
+
+3.6.2 FILTERING DATA ON HTTP STREAMS
+------------------------------------
+
+The HTTP data filtering is a bit more complex because HAProxy data are
+structutred and represented to an internal format, called HTX. So basically
+there is the HTTP counterpart to the previous callback :
+
+  * 'flt_ops.http_payload' : This callback is called when input data are
+    available. If not defined, all available data will be considered as analyzed
+    and forwarded for the filter.
+
+But the prototype for this callbacks is slightly different. Instead of having
+the channel as parameter, we have the HTTP message (struct http_msg). This
+callback is called only if the filter is registered to analyze TCP data. Here is
+an example :
+
+    /* Returns a negative value if an error occurs, else the number of
+     * consumed bytes. */
+    static int
+    my_filter_http_payload(struct stream *s, struct filter *filter,
+                           struct http_msg *msg, unsigned int offset,
+                           unsigned int len)
+    {
+        struct my_filter_config *my_conf = FLT_CONF(filter);
+        struct htx *htx = htxbuf(&msg->chn->buf);
+        struct htx_ret htxret = htx_find_offset(htx, offset);
+        struct htx_blk *blk;
+
+        blk = htxret.blk;
+        offset = htxret.ret;
+        for (; blk; blk = htx_get_next_blk(blk, htx)) {
+            enum htx_blk_type type = htx_get_blk_type(blk);
+
+            if (type == HTX_BLK_UNUSED)
+                continue;
+            else if (type == HTX_BLK_DATA) {
+                /* filter data */
+            }
+            else
+                break;
+        }
+
+        return len;
+    }
+
+In addition, there are two others callbacks :
+
+  * 'flt_ops.http_headers' : This callback is called just before the HTTP body
+    forwarding and after any processing on the request/response HTTP
+    headers. When defined, this callback is always called for HTTP streams
+    (i.e. without needs of a registration on data filtering).
+    Here is an example :
+
+
+        /* Returns a negative value if an error occurs, 0 if it needs to wait,
+         * any other value otherwise. */
+         static int
+         my_filter_http_headers(struct stream *s, struct filter *filter,
+                                struct http_msg *msg)
+        {
+            struct my_filter_config *my_conf = FLT_CONF(filter);
+            struct htx *htx = htxbuf(&msg->chn->buf);
+            struct htx_sl *sl = http_get_stline(htx);
+            int32_t pos;
+
+            for (pos = htx_get_first(htx); pos != -1; pos = htx_get_next(htx, pos)) {
+                struct htx_blk *blk = htx_get_blk(htx, pos);
+                enum htx_blk_type type = htx_get_blk_type(blk);
+                struct ist n, v;
+
+                if (type == HTX_BLK_EOH)
+                        break;
+                if (type != HTX_BLK_HDR)
+                        continue;
+
+                n = htx_get_blk_name(htx, blk);
+                v = htx_get_blk_value(htx, blk);
+		/* Do something on the header name/value */
+            }
+
+            return 1;
+        }
+
+  * 'flt_ops.http_end' : This callback is called when the whole HTTP message was
+    processed. It may interrupt the stream processing. So, it could be used to
+    synchronize the HTTP request with the HTTP response, for instance :
+
+        /* Returns a negative value if an error occurs, 0 if it needs to wait,
+         * any other value otherwise. */
+         static int
+         my_filter_http_end(struct stream *s, struct filter *filter,
+                            struct http_msg *msg)
+         {
+             struct my_filter_ctx *my_ctx = filter->ctx;
+
+
+            if (!(msg->chn->flags & CF_ISRESP)) /* The request */
+                my_ctx->end_of_req = 1;
+            else /* The response */
+                my_ctx->end_of_rsp = 1;
+
+            /* Both the request and the response are finished */
+            if (my_ctx->end_of_req == 1 && my_ctx->end_of_rsp == 1)
+                return 1;
+
+            /* Wait */
+            return 0;
+        }
+
+Then, to finish, there are 2 informational callbacks :
+
+  * 'flt_ops.http_reset' : This callback is called when an HTTP message is
+    reset. This happens either when a 1xx informational response is received, or
+    if we're retrying to send the request to the server after it failed. It
+    could be useful to reset the filter context before receiving the true
+    response.
+    By checking s->txn->status, it is possible to know why this callback is
+    called. If it's a 1xx, we're called because of an informational
+    message. Otherwise, it is a L7 retry.
+
+  * 'flt_ops.http_reply' : This callback is called when, at any time, HAProxy
+    decides to stop the processing on a HTTP message and to send an internal
+    response to the client. This mainly happens when an error or a redirect
+    occurs.
+
+
+3.6.3 REWRITING DATA
+--------------------
+
+The last part, and the trickiest one about the data filtering, is about the data
+rewriting. For now, the filter API does not offer a lot of functions to handle
+it. There are only functions to notify HAProxy that the data size has changed to
+let it update internal state of filters. This is the developer responsibility to
+update data itself, i.e. the buffer offsets, using following function :
+
+  * 'flt_update_offsets()' : This function must be called when a filter alter
+    incoming data. It updates offsets of the stream and of all filters
+    preceding the calling one. Do not call this function when a filter change
+    the size of incoming data leads to an undefined behavior.
+
+A good example of filter changing the data size is the HTTP compression filter.

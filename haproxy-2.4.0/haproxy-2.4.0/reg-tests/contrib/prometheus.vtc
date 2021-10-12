@@ -1,0 +1,112 @@
+varnishtest "prometheus exporter test"
+
+#REQUIRE_VERSION=2.4
+#REQUIRE_SERVICES=prometheus-exporter
+
+feature ignore_unknown_macro
+
+server s1 {
+	rxreq
+	txresp
+} -repeat 2 -start
+
+server s2 {
+	rxreq
+	txresp
+} -repeat 2 -start
+
+haproxy h1 -conf {
+    defaults
+	mode http
+	timeout connect 1s
+	timeout client  1s
+	timeout server  1s
+	option socket-stats
+
+    listen stats
+	bind "fd@${stats}"
+        http-request use-service prometheus-exporter if { path /metrics }
+
+    frontend fe
+	bind "fd@${fe}"
+	default_backend be
+
+    backend be
+	stick-table type ip size 1m expire 10s store http_req_rate(10s)
+	server s1 ${s1_addr}:${s1_port}
+	server s2 ${s2_addr}:${s2_port} check maxqueue 10 maxconn 12 pool-max-conn 42
+} -start
+
+client c1 -connect ${h1_stats_sock} {
+	txreq -url "/metrics"
+	rxresp
+	# test general metrics
+	expect resp.status == 200
+	expect resp.body ~ ".*haproxy_process.*"
+	expect resp.body ~ ".*haproxy_frontend.*"
+	expect resp.body ~ ".*haproxy_listener.*"
+	expect resp.body ~ ".*haproxy_backend.*"
+	expect resp.body ~ ".*haproxy_server.*"
+	expect resp.body ~ ".*haproxy_sticktable.*"
+
+	# test expected NaN values
+	expect resp.body ~ ".*haproxy_server_check_failures_total{proxy=\"be\",server=\"s1\"} NaN.*"
+	expect resp.body ~ ".*haproxy_server_check_up_down_total{proxy=\"be\",server=\"s1\"} NaN.*"
+	expect resp.body ~ ".*haproxy_server_check_failures_total{proxy=\"be\",server=\"s2\"} 0.*"
+	expect resp.body ~ ".*haproxy_server_check_up_down_total{proxy=\"be\",server=\"s2\"} 0.*"
+
+	expect resp.body ~ ".*haproxy_server_queue_limit{proxy=\"be\",server=\"s1\"} NaN.*"
+	expect resp.body ~ ".*haproxy_server_queue_limit{proxy=\"be\",server=\"s2\"} 10.*"
+
+	expect resp.body ~ ".*haproxy_server_limit_sessions{proxy=\"be\",server=\"s1\"} NaN.*"
+	expect resp.body ~ ".*haproxy_server_limit_sessions{proxy=\"be\",server=\"s2\"} 12.*"
+
+	expect resp.body ~ ".*haproxy_backend_downtime_seconds_total{proxy=\"stats\"} NaN.*"
+	expect resp.body ~ ".*haproxy_backend_downtime_seconds_total{proxy=\"be\"} 0.*"
+	expect resp.body ~ ".*haproxy_server_downtime_seconds_total{proxy=\"be\",server=\"s1\"} NaN.*"
+	expect resp.body ~ ".*haproxy_server_downtime_seconds_total{proxy=\"be\",server=\"s2\"} 0.*"
+
+	expect resp.body ~ ".*haproxy_server_current_throttle{proxy=\"be\",server=\"s1\"} NaN.*"
+
+	expect resp.body ~ ".*haproxy_server_idle_connections_limit{proxy=\"be\",server=\"s1\"} NaN.*"
+	expect resp.body ~ ".*haproxy_server_idle_connections_limit{proxy=\"be\",server=\"s2\"} 42.*"
+
+	# test well known labels presence
+	expect resp.body ~ ".*haproxy_process_build_info{version=\".*\"} 1.*"
+	expect resp.body ~ ".*haproxy_frontend_http_responses_total{proxy=\"stats\",code=\"4xx\"} 0.*"
+	expect resp.body ~ ".*haproxy_frontend_status{proxy=\"fe\",state=\"UP\"} 1.*"
+	expect resp.body ~ ".*haproxy_listener_status{proxy=\"stats\",listener=\"sock-1\",state=\"WAITING\"} 0.*"
+	expect resp.body ~ ".*haproxy_backend_status{proxy=\"be\",state=\"UP\"} 1.*"
+	expect resp.body ~ ".*haproxy_server_status{proxy=\"be\",server=\"s1\",state=\"DOWN\"} 0.*"
+	expect resp.body ~ ".*haproxy_server_check_status{proxy=\"be\",server=\"s2\",state=\"HANA\"} 0.*"
+
+	# test scope
+	txreq -url "/metrics?scope="
+	rxresp
+	expect resp.status == 200
+	expect resp.bodylen == 0
+
+	txreq -url "/metrics?scope=server"
+	rxresp
+	expect resp.status == 200
+	expect resp.body !~ ".*haproxy_process.*"
+	expect resp.body !~ ".*haproxy_frontend.*"
+	expect resp.body !~ ".*haproxy_listener.*"
+	expect resp.body !~ ".*haproxy_backend.*"
+	expect resp.body ~ ".*haproxy_server.*"
+	expect resp.body !~ ".*haproxy_sticktable.*"
+
+	txreq -url "/metrics?scope=frontend&scope=backend"
+	rxresp
+	expect resp.status == 200
+	expect resp.body !~ ".*haproxy_process.*"
+	expect resp.body ~ ".*haproxy_frontend.*"
+	expect resp.body !~ ".*haproxy_listener.*"
+	expect resp.body ~ ".*haproxy_backend.*"
+	expect resp.body !~ ".*haproxy_server.*"
+	expect resp.body !~ ".*haproxy_sticktable.*"
+
+	txreq -url "/metrics?scope"
+	rxresp
+	expect resp.status == 400
+} -run

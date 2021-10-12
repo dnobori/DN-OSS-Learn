@@ -1,0 +1,56 @@
+dist: focal
+
+language: c
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - FLAGS="USE_LUA=1 USE_OPENSSL=1 USE_PCRE=1 USE_PCRE_JIT=1 USE_SYSTEMD=1 USE_ZLIB=1"
+    - TMPDIR=/tmp
+
+addons:
+  apt:
+    update: true
+    packages: [ liblua5.3-dev, libsystemd-dev, libpcre2-dev, socat, libpcre3-dev ]
+
+matrix:
+  include:
+  - os: linux
+    arch: ppc64le
+    compiler: gcc
+    if: type == cron
+  - os: linux
+    arch: arm64
+    compiler: gcc
+    if: type == cron
+  - os: linux
+    arch: arm64-graviton2
+    group: edge
+    virt: vm
+    compiler: gcc
+    if: type == cron
+  - os: linux
+    arch: s390x
+    compiler: gcc
+    if: type == cron
+
+install:
+  - git clone https://github.com/VTest/VTest.git ../vtest
+  # Special flags due to: https://github.com/vtest/VTest/issues/12
+  - make -C ../vtest FLAGS="-O2 -s -Wall"
+
+script:
+  - make -j$(nproc) ERR=1 TARGET=linux-glibc CC=$CC DEBUG=-DDEBUG_STRICT=1 $FLAGS
+  - ./haproxy -vv
+  - ldd haproxy
+  - make reg-tests VTEST_PROGRAM=../vtest/vtest REGTESTS_TYPES=default,bug,devel
+
+after_failure:
+  - |
+    for folder in ${TMPDIR}/*regtest*/vtc.*; do
+      cat $folder/INFO
+      cat $folder/LOG
+    done

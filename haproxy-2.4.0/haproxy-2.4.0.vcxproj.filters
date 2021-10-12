@@ -1,0 +1,3102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="haproxy-2.4.0">
+      <UniqueIdentifier>{BBD224BE-D8DD-4688-80B6-F5E60FC3B9E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\.github">
+      <UniqueIdentifier>{5E215E54-8417-4EC3-AD08-ACA3BDB9BB03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\.github\ISSUE_TEMPLATE">
+      <UniqueIdentifier>{4D17B053-3AD3-4E93-9704-D3E9D6A25D75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\.github\workflows">
+      <UniqueIdentifier>{46B0187E-D755-4F24-B15F-397F71791CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons">
+      <UniqueIdentifier>{B205687C-D3EE-4CA4-8559-CCA38E1C928D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\51degrees">
+      <UniqueIdentifier>{4403AF89-8DAB-4972-84E4-CFD0293B8169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\51degrees\dummy">
+      <UniqueIdentifier>{5C168C50-DF8E-4D6E-9558-29DE4C235412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\51degrees\dummy\cityhash">
+      <UniqueIdentifier>{025AD0BF-AF00-4CA7-93FC-D4C833EDB42B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\51degrees\dummy\pattern">
+      <UniqueIdentifier>{E9969AE2-7F94-41BE-921E-BB9EEB77D772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\51degrees\dummy\trie">
+      <UniqueIdentifier>{D4B53DF6-1364-47CB-A1FB-07701EF73E64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\deviceatlas">
+      <UniqueIdentifier>{AA2BA8AA-5A4C-4CC7-8A45-BD12BF0A9759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\deviceatlas\dummy">
+      <UniqueIdentifier>{E03CDE64-7D54-4E59-BD9B-296A5F1C9705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot">
+      <UniqueIdentifier>{74970522-AC4B-4810-8B50-8059EC137AEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\include">
+      <UniqueIdentifier>{DFD8897E-E45B-4FAA-8B80-A81C0EAE8609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\src">
+      <UniqueIdentifier>{4AE44CB1-154A-4B4E-ACD6-F969C84FA7BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test">
+      <UniqueIdentifier>{25095709-9F4E-48CE-AA27-BEC454B4E6B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test\be">
+      <UniqueIdentifier>{2F0744AA-FF7E-4518-9DD1-4D4776B56060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test\cmp">
+      <UniqueIdentifier>{B481ABF9-AE58-4101-A49A-12685B6EECD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test\ctx">
+      <UniqueIdentifier>{EBFA9861-7DAE-4F6B-9858-16A0367C0706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test\empty">
+      <UniqueIdentifier>{B8E5DC0A-7460-4E41-B288-A7403ECD3513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test\fe">
+      <UniqueIdentifier>{3B65D308-3E1A-4027-B72B-9C22DEC7F264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\ot\test\sa">
+      <UniqueIdentifier>{F9F745F1-D34C-4E1E-A4B7-4B699311784D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\promex">
+      <UniqueIdentifier>{8DD65082-C73A-47FB-8697-E64602BDEF24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\wurfl">
+      <UniqueIdentifier>{A74816A9-7FD4-4DE5-826E-8C38ECA62FCA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\wurfl\dummy">
+      <UniqueIdentifier>{5F149228-38BF-4415-A215-98E28C54E963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\addons\wurfl\dummy\wurfl">
+      <UniqueIdentifier>{D9B0A692-7C65-4411-88D8-962FF456F8F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin">
+      <UniqueIdentifier>{DC15D834-520E-48B0-8D88-D2F684C9DB07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\halog">
+      <UniqueIdentifier>{4FD41F5B-8D8C-4A4F-998E-473730DB607D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\iprange">
+      <UniqueIdentifier>{D281A5FB-4DE2-49A1-9338-2EDFD84FCD7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\netsnmp-perl">
+      <UniqueIdentifier>{C0784F27-4CFF-408F-9883-DEDEAF38ED88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\release-estimator">
+      <UniqueIdentifier>{6F4E49EE-F26B-4A69-9C17-9883BB6D9A8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\selinux">
+      <UniqueIdentifier>{26673F4A-520E-46BA-98CA-D88757E30EC4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\syntax-highlight">
+      <UniqueIdentifier>{165F60BF-7B65-4FB4-9DC5-87DDFEE2AE61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\systemd">
+      <UniqueIdentifier>{1B0137D3-2F89-4649-8007-266B45F64F05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\wireshark-dissectors">
+      <UniqueIdentifier>{159AD86F-CADE-4CBA-AA05-ACABA53537A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\admin\wireshark-dissectors\peers">
+      <UniqueIdentifier>{E0BD2B3C-6CEE-430F-953D-1D7D4F558634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev">
+      <UniqueIdentifier>{6DD616A4-58CE-479E-8F8E-05F95F539B78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\base64">
+      <UniqueIdentifier>{47C77C41-DAB1-4A3B-89F4-D191AE133302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\flags">
+      <UniqueIdentifier>{A73AA86B-AB8F-469D-8890-10542791ACA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\hpack">
+      <UniqueIdentifier>{E02A0190-9786-45DF-803F-BC8004E6F0A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\plug_qdisc">
+      <UniqueIdentifier>{2E26A79D-2441-4E91-99CC-2E8D8225EAAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\poll">
+      <UniqueIdentifier>{C3BF5E79-7AB8-4D31-AAA2-64DBBF44C8A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\tcploop">
+      <UniqueIdentifier>{D712D723-964A-4FE5-A727-5BADA2E766A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\dev\trace">
+      <UniqueIdentifier>{81DD1A39-960F-4A82-BF02-A1559F5A278C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\doc">
+      <UniqueIdentifier>{C7230E18-1816-463A-A823-89A49E1CEEF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\doc\design-thoughts">
+      <UniqueIdentifier>{4B8E51C3-1B9B-4592-BBC3-BB2ED1C3627B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\doc\internals">
+      <UniqueIdentifier>{10E36D2C-4D50-4404-92C8-BDA460D9E903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\doc\lua-api">
+      <UniqueIdentifier>{E659C4CD-3A9B-4873-A7A7-A329B3944416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\doc\lua-api\_static">
+      <UniqueIdentifier>{9467739F-CA29-49F9-906D-C055C1881109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\examples">
+      <UniqueIdentifier>{024FB00D-1E2B-4657-B43F-5BFAE909CAD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\examples\errorfiles">
+      <UniqueIdentifier>{18435384-4E2A-46B9-B9BD-FADEF614472C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\include">
+      <UniqueIdentifier>{27BE1FB7-67BF-48C7-8FE1-529EFFEACB10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\include\haproxy">
+      <UniqueIdentifier>{1E560C20-5CA8-4632-8677-6570AD771FC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\include\import">
+      <UniqueIdentifier>{80938502-1AA9-412B-AB1C-27E44E497F6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests">
+      <UniqueIdentifier>{F531F2C5-E17A-453C-ACD3-66E778EB37FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\balance">
+      <UniqueIdentifier>{2AF9F712-8594-4F63-9CFA-AB76DD72F5B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\cache">
+      <UniqueIdentifier>{D2CD2EBF-E757-4ADB-95AB-6D0282920608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\checks">
+      <UniqueIdentifier>{0B137E68-471B-4DD2-BA2F-5B74979ACD04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\compression">
+      <UniqueIdentifier>{AEC5C6E8-A937-4B86-BF26-B9A9CC805806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\connection">
+      <UniqueIdentifier>{564285C2-B700-41DE-895C-D5D2E9F28CAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\contrib">
+      <UniqueIdentifier>{14193E30-9A8A-4141-8B04-6D365494F374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\converter">
+      <UniqueIdentifier>{E61CB6C2-5BAA-4DFD-BE15-D6B682E67E52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\filters">
+      <UniqueIdentifier>{00296558-C838-4693-A2AF-756ABB4374C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-capture">
+      <UniqueIdentifier>{53CF5576-94B6-44C0-892E-86E82D3CF9BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-cookies">
+      <UniqueIdentifier>{DC31D85D-CD74-480C-A63E-286F11E488F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-errorfiles">
+      <UniqueIdentifier>{48823860-F6EF-4F75-A50E-072C8ED3CD7E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors">
+      <UniqueIdentifier>{B8F87A90-B1A7-4382-8D13-D9BC9A0AC6DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-messaging">
+      <UniqueIdentifier>{406D43C2-669C-4D01-B7A5-61D5E101B273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-rules">
+      <UniqueIdentifier>{4ABE7240-F28F-4355-8ADF-8DDA11E82661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\http-set-timeout">
+      <UniqueIdentifier>{D47E96B4-C21E-42C6-88A8-2AA9E3701076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\log">
+      <UniqueIdentifier>{BBDE287D-71EA-4E6B-9D5B-7348EAA89FEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\lua">
+      <UniqueIdentifier>{05BADD26-3A7C-41A8-A913-E98C3180D19C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\mailers">
+      <UniqueIdentifier>{111426B3-4791-4CFC-B526-F356635B1D76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\mcli">
+      <UniqueIdentifier>{FCD6E077-339A-44D1-9542-B6DF4D2B7915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\peers">
+      <UniqueIdentifier>{A033E7F0-5340-4F1D-8DC4-3B7F4CA68024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\sample_fetches">
+      <UniqueIdentifier>{51F358B5-87C6-449F-AFDD-6E2D58780506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\seamless-reload">
+      <UniqueIdentifier>{683C3B3F-A405-45B7-A3C3-9A442373F104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\server">
+      <UniqueIdentifier>{AC13CA2F-A198-49D9-A663-9213ACD90B23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\spoe">
+      <UniqueIdentifier>{755D9EEB-D54F-4E61-9EE2-DBAA51A3EC4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\ssl">
+      <UniqueIdentifier>{23047D4C-0612-490A-8A88-5DFFE5B02168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\stickiness">
+      <UniqueIdentifier>{82D00344-2A63-47B9-A538-E3D1B343B859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\stick-table">
+      <UniqueIdentifier>{33D2A5B4-A896-4DA8-A9F2-B427D0F26288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\stream">
+      <UniqueIdentifier>{2929FB00-909B-4425-B692-E2C08B586A1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\reg-tests\webstats">
+      <UniqueIdentifier>{C542046C-1B93-4C21-8169-6C8170731CE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\scripts">
+      <UniqueIdentifier>{984E9CB9-D840-4932-B465-FA34E8126F8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\src">
+      <UniqueIdentifier>{5A7D519B-A0D7-4713-811F-AFEA35FB32B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\tests">
+      <UniqueIdentifier>{D8BAF0B5-0A27-437E-8B28-12AB01F0200C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\tests\conf">
+      <UniqueIdentifier>{1441A1CB-59D7-4BD7-B8B7-BFA333780990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\tests\exp">
+      <UniqueIdentifier>{22DF2B32-41E5-48EE-BB34-D28AA6DCF5B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="haproxy-2.4.0\tests\unit">
+      <UniqueIdentifier>{D6029D61-7FC2-4959-A203-5F87F823EDD4}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="haproxy-2.4.0\addons\51degrees\dummy\pattern\51Degrees.h">
+      <Filter>haproxy-2.4.0\addons\51degrees\dummy\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\51degrees\dummy\trie\51Degrees.h">
+      <Filter>haproxy-2.4.0\addons\51degrees\dummy\trie</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\deviceatlas\dummy\dac.h">
+      <Filter>haproxy-2.4.0\addons\deviceatlas\dummy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\cli.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\conf.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\config.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\debug.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\define.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\event.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\filter.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\group.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\http.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\include.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\opentracing.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\parser.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\pool.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\scope.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\util.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\ot\include\vars.h">
+      <Filter>haproxy-2.4.0\addons\ot\include</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\addons\wurfl\dummy\wurfl\wurfl.h">
+      <Filter>haproxy-2.4.0\addons\wurfl\dummy\wurfl</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\acl.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\acl-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\action.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\action-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\activity.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\activity-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\api.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\api-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\applet.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\applet-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\arg.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\arg-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\atomic.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\auth.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\auth-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\backend.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\backend-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\base64.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\buf.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\buf-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\bug.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\capture.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\capture-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\cfgdiag.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\cfgparse.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\channel.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\channel-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\check.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\check-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\chunk.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\cli.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\cli-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\compat.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\compiler.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\compression.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\compression-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\connection.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\connection-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\counters-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\cpuset.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\cpuset-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\debug.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\defaults.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dgram.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dgram-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dict.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dict-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dns.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dns-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dynbuf.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\dynbuf-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\errors.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\extcheck.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fcgi.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fcgi-app.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fcgi-app-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fd.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fd-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\filters.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\filters-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fix.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\fix-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\flt_http_comp.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\freq_ctr.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\freq_ctr-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\frontend.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\global.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\global-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\h1.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\h1_htx.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\h2.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hash.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hlua.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hlua_fcn.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hlua-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hpack-dec.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hpack-enc.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hpack-huff.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hpack-tbl.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\hpack-tbl-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http_ana.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http_ana-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http_fetch.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http_htx.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http_htx-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http_rules.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http-hdr.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http-hdr-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\http-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\htx.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\htx-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\init.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\initcall.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\init-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\intops.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\istbuf.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_chash.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_chash-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_fas.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_fas-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_fwlc.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_fwlc-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_fwrr.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_fwrr-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_map.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\lb_map-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\list.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\listener.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\listener-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\list-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\log.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\log-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\mailers.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\mailers-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\map.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\map-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\mqtt.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\mqtt-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\mworker.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\mworker-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\namespace.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\namespace-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\net_helper.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\obj_type.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\obj_type-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\openssl-compat.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pattern.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pattern-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\payload.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\peers.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\peers-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pipe.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pipe-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pool.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pool-os.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\pool-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\port_range.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\port_range-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proto_quic.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proto_sockpair.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proto_tcp.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proto_udp.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proto_uxst.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\protobuf.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\protobuf-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\protocol.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\protocol-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proxy.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\proxy-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\qpack-tbl-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\queue.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\queue-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_cc.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_cc-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_frame.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_frame-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_loss.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_loss-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_sock.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_tls.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\quic_tls-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\receiver-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\regex.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\regex-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\resolvers.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\resolvers-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ring.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ring-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sample.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sample_data-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sample-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\server.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\server-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\session.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\session-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\shctx.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\shctx-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\signal.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\signal-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sink.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sink-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sock.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sock_inet.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sock_unix.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\sock-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\spoe.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\spoe-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_ckch.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_ckch-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_crtlist.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_crtlist-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_sock.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_sock-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ssl_utils.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stats.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stats-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stick_table.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stick_table-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stream.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stream_interface.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stream_interface-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\stream-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\task.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\task-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tcp_rules.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tcpcheck.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tcpcheck-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\thread.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\thread-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\ticks.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\time.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tinfo.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tinfo-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tools.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\tools-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\trace.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\trace-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\uri_auth.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\uri_auth-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\uri_normalizer.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\uri_normalizer-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\vars.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\vars-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\version.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\xprt_quic.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\xprt_quic-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\xref.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\haproxy\xref-t.h">
+      <Filter>haproxy-2.4.0\include\haproxy</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\atomic-ops.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\eb32sctree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\eb32tree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\eb64tree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ebimtree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ebistree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ebmbtree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ebpttree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ebsttree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ebtree.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\ist.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\lru.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\mjson.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\plock.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\sha1.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\slz.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\slz-tables.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+    <ClInclude Include="haproxy-2.4.0\include\import\xxhash.h">
+      <Filter>haproxy-2.4.0\include\import</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="haproxy-2.4.0\addons\51degrees\dummy\cityhash\city.c">
+      <Filter>haproxy-2.4.0\addons\51degrees\dummy\cityhash</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\51degrees\dummy\pattern\51Degrees.c">
+      <Filter>haproxy-2.4.0\addons\51degrees\dummy\pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\51degrees\dummy\trie\51Degrees.c">
+      <Filter>haproxy-2.4.0\addons\51degrees\dummy\trie</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\51degrees\dummy\threading.c">
+      <Filter>haproxy-2.4.0\addons\51degrees\dummy</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\51degrees\51d.c">
+      <Filter>haproxy-2.4.0\addons\51degrees</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\deviceatlas\dummy\dac.c">
+      <Filter>haproxy-2.4.0\addons\deviceatlas\dummy</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\deviceatlas\dummy\json.c">
+      <Filter>haproxy-2.4.0\addons\deviceatlas\dummy</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\deviceatlas\da.c">
+      <Filter>haproxy-2.4.0\addons\deviceatlas</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\cli.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\conf.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\event.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\filter.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\group.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\http.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\opentracing.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\parser.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\pool.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\scope.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\util.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\ot\src\vars.c">
+      <Filter>haproxy-2.4.0\addons\ot\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\promex\service-prometheus.c">
+      <Filter>haproxy-2.4.0\addons\promex</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\wurfl\dummy\dummy-wurfl.c">
+      <Filter>haproxy-2.4.0\addons\wurfl\dummy</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\addons\wurfl\wurfl.c">
+      <Filter>haproxy-2.4.0\addons\wurfl</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\admin\halog\fgets2.c">
+      <Filter>haproxy-2.4.0\admin\halog</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\admin\halog\halog.c">
+      <Filter>haproxy-2.4.0\admin\halog</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\admin\iprange\ip6range.c">
+      <Filter>haproxy-2.4.0\admin\iprange</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\admin\iprange\iprange.c">
+      <Filter>haproxy-2.4.0\admin\iprange</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\admin\wireshark-dissectors\peers\packet-happp.c">
+      <Filter>haproxy-2.4.0\admin\wireshark-dissectors\peers</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\base64\base64rev-gen.c">
+      <Filter>haproxy-2.4.0\dev\base64</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\flags\flags.c">
+      <Filter>haproxy-2.4.0\dev\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\hpack\decode.c">
+      <Filter>haproxy-2.4.0\dev\hpack</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\hpack\gen-enc.c">
+      <Filter>haproxy-2.4.0\dev\hpack</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\hpack\gen-rht.c">
+      <Filter>haproxy-2.4.0\dev\hpack</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\plug_qdisc\plug_qdisc.c">
+      <Filter>haproxy-2.4.0\dev\plug_qdisc</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\poll\poll.c">
+      <Filter>haproxy-2.4.0\dev\poll</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\dev\tcploop\tcploop.c">
+      <Filter>haproxy-2.4.0\dev\tcploop</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\acl.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\action.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\activity.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\applet.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\arg.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\auth.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\backend.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\base64.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cache.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\calltrace.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgdiag.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgparse.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgparse-global.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgparse-listen.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgparse-ssl.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgparse-tcp.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cfgparse-unix.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\channel.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\check.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\chunk.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cli.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\compression.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\connection.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\cpuset.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\debug.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\dgram.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\dict.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\dns.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\dynbuf.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\eb32sctree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\eb32tree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\eb64tree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ebimtree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ebistree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ebmbtree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ebpttree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ebsttree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ebtree.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ev_epoll.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ev_evports.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ev_kqueue.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ev_poll.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ev_select.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\extcheck.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\fcgi.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\fcgi-app.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\fd.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\filters.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\fix.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\flt_http_comp.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\flt_spoe.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\flt_trace.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\freq_ctr.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\frontend.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\h1.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\h1_htx.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\h2.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\haproxy.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hash.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hlua.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hlua_fcn.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hpack-dec.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hpack-enc.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hpack-huff.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\hpack-tbl.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_acl.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_act.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_ana.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_conv.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_fetch.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_htx.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\http_rules.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\htx.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\init.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\lb_chash.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\lb_fas.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\lb_fwlc.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\lb_fwrr.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\lb_map.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\listener.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\log.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\lru.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mailers.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\map.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mjson.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mqtt.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mux_fcgi.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mux_h1.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mux_h2.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mux_pt.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mworker.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\mworker-prog.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\namespace.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\pattern.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\payload.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\peers.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\pipe.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\pool.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proto_quic.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proto_sockpair.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proto_tcp.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proto_udp.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proto_uxdg.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proto_uxst.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\protocol.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\proxy.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\qpack-tbl.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\queue.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\quic_cc.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\quic_cc_newreno.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\quic_frame.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\quic_sock.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\quic_tls.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\raw_sock.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\regex.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\resolvers.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ring.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\sample.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\server.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\server_state.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\session.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\sha1.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\shctx.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\signal.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\sink.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\slz.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\sock.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\sock_inet.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\sock_unix.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ssl_ckch.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ssl_crtlist.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ssl_sample.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ssl_sock.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\ssl_utils.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\stats.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\stick_table.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\stream.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\stream_interface.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\task.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\tcp_act.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\tcp_rules.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\tcp_sample.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\tcpcheck.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\thread.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\time.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\tools.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\trace.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\uri_auth.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\uri_normalizer.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\vars.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\version.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\wdt.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\xprt_handshake.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\src\xprt_quic.c">
+      <Filter>haproxy-2.4.0\src</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\exp\blocksig.c">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\exp\filltab25.c">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\exp\ip-hash.c">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\exp\test_hashes.c">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\exp\testinet.c">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\exp\uri_hash.c">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\unit\ist.c">
+      <Filter>haproxy-2.4.0\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\unit\test-arg.c">
+      <Filter>haproxy-2.4.0\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="haproxy-2.4.0\tests\unit\test-list.c">
+      <Filter>haproxy-2.4.0\tests\unit</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="haproxy-2.4.0\.github\ISSUE_TEMPLATE\Bug.md">
+      <Filter>haproxy-2.4.0\.github\ISSUE_TEMPLATE</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\ISSUE_TEMPLATE\Code-Report.md">
+      <Filter>haproxy-2.4.0\.github\ISSUE_TEMPLATE</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\ISSUE_TEMPLATE\config.yml">
+      <Filter>haproxy-2.4.0\.github\ISSUE_TEMPLATE</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\ISSUE_TEMPLATE\Feature.md">
+      <Filter>haproxy-2.4.0\.github\ISSUE_TEMPLATE</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\ISSUE_TEMPLATE\Question.md">
+      <Filter>haproxy-2.4.0\.github\ISSUE_TEMPLATE</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\codespell.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\compliance.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\contrib.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\coverity.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\openssl-nodeprecated.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\vtest.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\workflows\windows.yml">
+      <Filter>haproxy-2.4.0\.github\workflows</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\errorfile">
+      <Filter>haproxy-2.4.0\.github</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\h2spec.config">
+      <Filter>haproxy-2.4.0\.github</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\matrix.py">
+      <Filter>haproxy-2.4.0\.github</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.github\vtest.json">
+      <Filter>haproxy-2.4.0\.github</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\deviceatlas\dummy\Makefile">
+      <Filter>haproxy-2.4.0\addons\deviceatlas\dummy</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\be\cfg-dd.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\be</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\be\cfg-jaeger.yml">
+      <Filter>haproxy-2.4.0\addons\ot\test\be</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\be\cfg-zipkin.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\be</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\be\haproxy.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\be</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\be\ot.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\be</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\cmp\cfg-dd.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\cmp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\cmp\cfg-jaeger.yml">
+      <Filter>haproxy-2.4.0\addons\ot\test\cmp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\cmp\cfg-zipkin.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\cmp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\cmp\haproxy.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\cmp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\cmp\ot.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\cmp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\ctx\cfg-dd.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\ctx</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\ctx\cfg-jaeger.yml">
+      <Filter>haproxy-2.4.0\addons\ot\test\ctx</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\ctx\cfg-zipkin.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\ctx</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\ctx\haproxy.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\ctx</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\ctx\ot.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\ctx</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\empty\cfg-dd.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\empty</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\empty\cfg-jaeger.yml">
+      <Filter>haproxy-2.4.0\addons\ot\test\empty</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\empty\cfg-zipkin.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\empty</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\empty\haproxy.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\empty</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\empty\ot.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\empty</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\fe\cfg-dd.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\fe</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\fe\cfg-jaeger.yml">
+      <Filter>haproxy-2.4.0\addons\ot\test\fe</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\fe\cfg-zipkin.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\fe</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\fe\haproxy.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\fe</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\fe\ot.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\fe</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\sa\cfg-dd.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\sa</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\sa\cfg-jaeger.yml">
+      <Filter>haproxy-2.4.0\addons\ot\test\sa</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\sa\cfg-zipkin.json">
+      <Filter>haproxy-2.4.0\addons\ot\test\sa</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\sa\haproxy.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\sa</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\sa\ot.cfg">
+      <Filter>haproxy-2.4.0\addons\ot\test\sa</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\func-stat.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\get-opentracing-plugins.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\index.html">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\README-speed-cmp">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\README-speed-ctx">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\README-speed-fe-be">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\README-speed-sa">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\run-cmp.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\run-ctx.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\run-fe-be.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\run-sa.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\test\test-speed.sh">
+      <Filter>haproxy-2.4.0\addons\ot\test</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\AUTHORS">
+      <Filter>haproxy-2.4.0\addons\ot</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\MAINTAINERS">
+      <Filter>haproxy-2.4.0\addons\ot</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\Makefile">
+      <Filter>haproxy-2.4.0\addons\ot</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\README">
+      <Filter>haproxy-2.4.0\addons\ot</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\README-func">
+      <Filter>haproxy-2.4.0\addons\ot</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\ot\README-pool">
+      <Filter>haproxy-2.4.0\addons\ot</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\promex\README">
+      <Filter>haproxy-2.4.0\addons\promex</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\addons\wurfl\dummy\Makefile">
+      <Filter>haproxy-2.4.0\addons\wurfl\dummy</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\halog\README">
+      <Filter>haproxy-2.4.0\admin\halog</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\iprange\Makefile">
+      <Filter>haproxy-2.4.0\admin\iprange</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\cacti_data_query_haproxy_backends.xml">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\cacti_data_query_haproxy_frontends.xml">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\haproxy.pl">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\haproxy_backend.xml">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\haproxy_frontend.xml">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\haproxy_socket.xml">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\netsnmp-perl\README">
+      <Filter>haproxy-2.4.0\admin\netsnmp-perl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\release-estimator\README.md">
+      <Filter>haproxy-2.4.0\admin\release-estimator</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\release-estimator\release-estimator.py">
+      <Filter>haproxy-2.4.0\admin\release-estimator</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\selinux\haproxy.fc">
+      <Filter>haproxy-2.4.0\admin\selinux</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\selinux\haproxy.if">
+      <Filter>haproxy-2.4.0\admin\selinux</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\selinux\haproxy.te">
+      <Filter>haproxy-2.4.0\admin\selinux</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\selinux\README">
+      <Filter>haproxy-2.4.0\admin\selinux</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\syntax-highlight\haproxy.vim">
+      <Filter>haproxy-2.4.0\admin\syntax-highlight</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\systemd\haproxy.service.in">
+      <Filter>haproxy-2.4.0\admin\systemd</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\systemd\Makefile">
+      <Filter>haproxy-2.4.0\admin\systemd</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\wireshark-dissectors\peers\Makefile">
+      <Filter>haproxy-2.4.0\admin\wireshark-dissectors\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\wireshark-dissectors\peers\README">
+      <Filter>haproxy-2.4.0\admin\wireshark-dissectors\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\admin\wireshark-dissectors\peers\wireshark.happp.dissector.patch">
+      <Filter>haproxy-2.4.0\admin\wireshark-dissectors\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\flags\README">
+      <Filter>haproxy-2.4.0\dev\flags</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\flags\show-fd-to-flags.sh">
+      <Filter>haproxy-2.4.0\dev\flags</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\hpack\README">
+      <Filter>haproxy-2.4.0\dev\hpack</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\plug_qdisc\README">
+      <Filter>haproxy-2.4.0\dev\plug_qdisc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\poll\Makefile">
+      <Filter>haproxy-2.4.0\dev\poll</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\tcploop\Makefile">
+      <Filter>haproxy-2.4.0\dev\tcploop</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\dev\trace\trace.awk">
+      <Filter>haproxy-2.4.0\dev\trace</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\backends.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\backends-v0.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\be-fe-changes.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\binding-possibilities.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\config-language.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\connection-reuse.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\connection-sharing.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\dynamic-buffers.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\entities-v2.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\how-it-works.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\http_load_time.url">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\http2.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\rate-shaping.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\design-thoughts\sess_par_sec.txt">
+      <Filter>haproxy-2.4.0\doc\design-thoughts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\acl.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\body-parsing.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\buffer-api.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\connection-header.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\connection-scale.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\connect-status.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\entities.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\entities.pdf">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\entities.svg">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\entities.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\entities-v2.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\filters.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\hashing.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\header-parser-speed.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\header-tree.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\http-cookies.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\http-docs.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\http-parsing.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\htx-api.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\initcalls.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\list.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\list.png">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\listener-states.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\listener-states.png">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\lua_socket.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\lua_socket.pdf">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\muxes.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\muxes.pdf">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\muxes.png">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\muxes.svg">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\naming.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\notes-layers.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\pattern.dia">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\pattern.pdf">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\polling-states.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\repartition-be-fe-fi.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\sched.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\sched.pdf">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\sched.png">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\sched.svg">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\sequence.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\ssl_cert.dia">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\stats-v2.txt">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\internals\stream-sock-states.fig">
+      <Filter>haproxy-2.4.0\doc\internals</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lua-api\_static\channel.fig">
+      <Filter>haproxy-2.4.0\doc\lua-api\_static</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lua-api\_static\channel.png">
+      <Filter>haproxy-2.4.0\doc\lua-api\_static</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lua-api\conf.py">
+      <Filter>haproxy-2.4.0\doc\lua-api</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lua-api\index.rst">
+      <Filter>haproxy-2.4.0\doc\lua-api</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lua-api\Makefile">
+      <Filter>haproxy-2.4.0\doc\lua-api</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\51Degrees-device-detection.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\acl.fig">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\architecture.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\close-options.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\coding-style.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\configuration.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\cookie-options.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\DeviceAtlas-device-detection.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\gpl.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\haproxy.1">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\intro.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lgpl.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\linux-syn-cookies.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\lua.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\management.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\netscaler-client-ip-insertion-protocol.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\network-namespaces.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\peers.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\peers-v2.0.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\proxy-protocol.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\queuing.fig">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\regression-testing.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\seamless_reload.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\SOCKS4.protocol.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\SPOE.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\doc\WURFL-device-detection.txt">
+      <Filter>haproxy-2.4.0\doc</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\400.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\403.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\408.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\500.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\502.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\503.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\504.http">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\errorfiles\README">
+      <Filter>haproxy-2.4.0\examples\errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\acl-content-sw.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\basic-config-edge.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\content-sw-sample.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\haproxy.init">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\option-http_proxy.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\quick-test.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\socks4.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\transparent_proxy.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\examples\wurfl-example.cfg">
+      <Filter>haproxy-2.4.0\examples</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\balance\balance-rr.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\balance</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\balance\balance-uri.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\balance</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\balance\balance-uri-path-only.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\balance</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\basic.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\caching_rules.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\expires.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\if-modified-since.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\if-none-match.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\post_on_entry.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\sample_fetches.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\vary.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\cache\vary_accept_encoding.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\cache</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\1be_40srv_odd_health_checks.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\40be_2srv_odd_health_checks.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\4be_1srv_health_checks.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\4be_1srv_smtpchk_httpchk_layer47errors.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\agent-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\common.pem">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\http-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\http-check-expect.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\http-check-send.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\http-monitor-uri.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\ldap-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\mysql-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\pgsql-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\redis-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\smtp-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\spop-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\ssl-hello-check.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\tcp-check_min-recv.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\tcp-check_multiple_ports.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\tcp-check-ssl.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\tcp-checks-socks4.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\checks\tls_health_checks.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\checks</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\compression\basic.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\compression</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\compression\common.pem">
+      <Filter>haproxy-2.4.0\reg-tests\compression</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\compression\etags_conversion.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\compression</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\compression\lua_validation.lua">
+      <Filter>haproxy-2.4.0\reg-tests\compression</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\compression\lua_validation.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\compression</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\compression\vary.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\compression</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\common.pem">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\dispatch.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_aggressive.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_always.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_be_transparent.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_conn_hash.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_dispatch.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_never.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\http_reuse_safe.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\proxy_protocol_random_fail.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\proxy_protocol_send_unique_id.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\proxy_protocol_send_unique_id_alpn.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\proxy_protocol_tlv_validation.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\connection\tcp_to_http_upgrade.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\connection</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\contrib\prometheus.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\contrib</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\digest.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\field.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\fix.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\hmac.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\iif.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\json.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\json_query.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\mqtt.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\secure_memcmp.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\sha2.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\url_dec.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\converter\url_enc.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\converter</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\filters\random-forwarding.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\filters</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-capture\multiple_headers.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-capture</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-cookies\cookie_insert_indirect.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-cookies</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\400.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\400-1.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\400-2.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\400-3.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\403.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\403-1.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\403-2.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\404.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\404-1.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\404-2.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\404-3.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\500.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\500-1.http">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errors\lf-403.txt">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles\errors</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\errorfiles.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\http_deny_errors.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\http_errors.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\http_return.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-errorfiles\http-error.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-errorfiles</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\h1_to_h1.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\h2_to_h1.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\http_abortonclose.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\http_bodyless_response.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\http_msg_full_on_eom.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\http_request_buffer.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\http_wait_for_body.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\protocol_upgrade.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-messaging\websocket.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-messaging</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\1k.txt">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\acl_cli_spaces.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\agents.acl">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\converters_ipmask_concat_strcmp_field_word.map">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\converters_ipmask_concat_strcmp_field_word.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\del_header.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\except-forwardfor-originalto.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\h1_to_h1c.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\h1or2_to_h1c.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\http_after_response.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\http_return.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\lf-file.txt">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\map_redirect.map">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\map_redirect.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\map_redirect-be.map">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\map_regm_with_backref.map">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\map_regm_with_backref.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\normalize_uri.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\path_and_pathq.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-rules\strict_rw_mode.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-rules</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\http-set-timeout\set_timeout.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\http-set-timeout</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\log\load_balancing.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\log</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\log\log_uri.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\log</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\log\wrong_ip_port_logging.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\log</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\bad_http_clt_req_duration.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\bad_http_clt_req_duration.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\close_wait_lf.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\close_wait_lf.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\common.pem">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\h_txn_get_priv.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\h_txn_get_priv.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\lua_socket.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\lua_socket.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\set_var.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\set_var.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\txn_get_priv.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\txn_get_priv.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\txn_get_priv-print_r.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\txn_get_priv-thread.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\wrong_types_usage.lua">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\lua\wrong_types_usage.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\lua</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\mailers\healthcheckmail.lua">
+      <Filter>haproxy-2.4.0\reg-tests\mailers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\mailers\healthcheckmail.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\mailers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\mcli\mcli_show_info.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\mcli</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\mcli\mcli_start_progs.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\mcli</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\peers\basic_sync.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\peers\basic_sync_wo_stkt_backend.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\peers\common.pem">
+      <Filter>haproxy-2.4.0\reg-tests\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\peers\tls_basic_sync.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\peers\tls_basic_sync_wo_stkt_backend.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\peers</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\sample_fetches\cook.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\sample_fetches</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\sample_fetches\hashes.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\sample_fetches</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\sample_fetches\so_name.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\sample_fetches</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\sample_fetches\srv_name.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\sample_fetches</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\sample_fetches\ubase64.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\sample_fetches</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\sample_fetches\vars.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\sample_fetches</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\seamless-reload\abns_socket.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\seamless-reload</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\server\cli_add_server.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\server</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\server\cli_delete_server.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\server</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\server\cli_set_fdqn.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\server</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\server\cli_set_ssl.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\server</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\spoe\wrong_init.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\spoe</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\add_ssl_crt-list.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ca-auth.crt">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\cert1-example.com.pem.ecdsa">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\cert1-example.com.pem.rsa">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\cert2-example.com.pem.ecdsa">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\cert2-example.com.pem.rsa">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\client1.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\client2_expired.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\client3_revoked.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\common.crt">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\common.key">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\common.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\crl-auth.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\del_ssl_crt-list.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ecdsa.crt">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ecdsa.key">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ecdsa.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\filters.crt-list">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\localhost.crt-list">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\README">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\set_default_cert.crt-list">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\set_default_cert.pem">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\set_ssl_cert.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\set_ssl_cert_bundle.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\set_ssl_cert_noext.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\set_ssl_server_cert.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\simple.crt-list">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ssl_client_auth.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ssl_client_samples.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ssl_crt-list_filters.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ssl_frontend_samples.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ssl_server_samples.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\ssl_simple_crt-list.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\ssl\wrong_ctx_storage.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\ssl</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stickiness\lb-services.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stickiness</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stickiness\srvkey-addr.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stickiness</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stick-table\converteers_ref_cnt_never_dec.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stick-table</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stick-table\src_conn_rate.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stick-table</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stick-table\unknown_key.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stick-table</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stream\unique-id.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stream</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\stream\unique-id-from-proxy.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\stream</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\webstats\webstats-scope-and-post-change.vtc">
+      <Filter>haproxy-2.4.0\reg-tests\webstats</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\reg-tests\README">
+      <Filter>haproxy-2.4.0\reg-tests</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\announce-release">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\backport">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\build-ssl.sh">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\create-release">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\git-show-backports">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\publish-release">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\scripts\run-regtests.sh">
+      <Filter>haproxy-2.4.0\scripts</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\basic-check.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\ext-check.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\ports.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\setstatus.lua">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\tcp-check.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-acl-args.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-address-syntax.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-backlog.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-check-expect.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-connection.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-cookie-indirect.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-cookie-insert.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-cookie-passive.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-cookie-prefix.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-cookie-rewrite.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-disable-404.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-fsm.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-fwlc.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-fwrr.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-handshakes.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-handshakes-chk.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-http-send-name-hdr.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-http-set-status.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-http-set-status-lua.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-inspect-smtp.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-inspect-ssl.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-map-ports.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-param-hash.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-pollers.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-redirect.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-sample-fetch-args.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-sample-fetch-conv.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-sql.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-srv-verify.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-stats.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-str2sa.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-time.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-timeout.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-url-hash.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\conf\test-valid-names.cfg">
+      <Filter>haproxy-2.4.0\tests\conf</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\exp\hash_results.txt">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\exp\hashing-results.txt">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\exp\io_limits.txt">
+      <Filter>haproxy-2.4.0\tests\exp</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\unit\test-inherited-fd.py">
+      <Filter>haproxy-2.4.0\tests\unit</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\tests\unit\test-sockpair.py">
+      <Filter>haproxy-2.4.0\tests\unit</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.cirrus.yml">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.gitattributes">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.gitignore">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\.travis.yml">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\BRANCHES">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\CHANGELOG">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\CONTRIBUTING">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\INSTALL">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\LICENSE">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\MAINTAINERS">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\Makefile">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\README">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\ROADMAP">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\SUBVERS">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\VERDATE">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+    <None Include="haproxy-2.4.0\VERSION">
+      <Filter>haproxy-2.4.0</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>

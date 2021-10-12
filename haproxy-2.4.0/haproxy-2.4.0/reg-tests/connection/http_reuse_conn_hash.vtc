@@ -1,0 +1,163 @@
+varnishtest "Test the http-reuse with special connection parameters"
+#REQUIRE_VERSION=2.4
+#REQUIRE_OPTIONS=OPENSSL
+
+feature ignore_unknown_macro
+
+haproxy h1 -conf {
+	defaults
+		mode http
+
+	# sni
+	listen sender-sni
+		bind "fd@${feS_sni}"
+		server srv2 ${h1_feR_ssl_addr}:${h1_feR_ssl_port} ssl sni "req.hdr(x-sni)" verify none pool-low-conn 2
+
+	# set-dst
+	# specify dst1_addr for server, which should be identical to dst2_addr
+	# port is specified by the client in header x-dst-port
+	listen sender-set-dst
+		bind "fd@${feS_dst}"
+		http-request set-dst-port hdr(x-dst-port)
+		server srv2 ${h1_feR_dst1_addr}:0 pool-low-conn 2
+
+	# proxy protocol
+	# must use reuse always as consecutive requests are from different client
+	listen sender-proxy
+		bind "fd@${feS_proxy}" accept-proxy
+		http-reuse always
+		server srv2 ${h1_feR_proxy_addr}:${h1_feR_proxy_port} send-proxy pool-low-conn 2
+
+	listen receiver
+		bind "fd@${feR_ssl}" ssl crt ${testdir}/common.pem
+		bind "fd@${feR_proxy}" accept-proxy
+		http-request return status 200
+		http-after-response set-header http_first_request %[http_first_req]
+
+	listen receiver-dst1
+		bind "fd@${feR_dst1}"
+		http-request return status 200 hdr "x-dst" "dst1"
+		http-after-response set-header http_first_request %[http_first_req]
+
+	listen receiver-dst2
+		bind "fd@${feR_dst2}"
+		http-request return status 200 hdr "x-dst" "dst2"
+		http-after-response set-header http_first_request %[http_first_req]
+} -start
+
+# http-reuse with sni parameters
+client c_sni -connect ${h1_feS_sni_sock} {
+	# first request
+	txreq \
+	  -hdr "x-sni: www.custom.com"
+	rxresp
+	expect resp.http.http_first_request == "1"
+
+	# second request with same sni, connection must be reused
+	txreq \
+	  -hdr "x-sni: www.custom.com"
+	rxresp
+	expect resp.http.http_first_request == "0"
+
+	# third request with a different sni, a new connection must be used
+	txreq \
+	  -hdr "x-sni: www.custom2.com"
+	rxresp
+	expect resp.http.http_first_request == "1"
+
+	# fourth request, reuse sni2
+	txreq \
+	  -hdr "x-sni: www.custom2.com"
+	rxresp
+	expect resp.http.http_first_request == "0"
+} -run
+
+# http-reuse with destination address
+client c_dst1 -connect ${h1_feS_dst_sock} {
+	txreq \
+	  -hdr "x-dst-port: ${h1_feR_dst1_port}"
+	rxresp
+	expect resp.status == 200
+	expect resp.http.x-dst == "dst1"
+	expect resp.http.http_first_request == "1"
+
+	txreq \
+	  -hdr "x-dst-port: ${h1_feR_dst1_port}"
+	rxresp
+	expect resp.status == 200
+	expect resp.http.x-dst == "dst1"
+	expect resp.http.http_first_request == "0"
+
+	txreq \
+	  -hdr "x-dst-port: ${h1_feR_dst2_port}"
+	rxresp
+	expect resp.status == 200
+	expect resp.http.x-dst == "dst2"
+	expect resp.http.http_first_request == "1"
+
+	txreq \
+	  -hdr "x-dst-port: ${h1_feR_dst1_port}"
+	rxresp
+	expect resp.status == 200
+	expect resp.http.x-dst == "dst1"
+	expect resp.http.http_first_request == "0"
+
+	txreq \
+	  -hdr "x-dst-port: ${h1_feR_dst2_port}"
+	rxresp
+	expect resp.status == 200
+	expect resp.http.x-dst == "dst2"
+	expect resp.http.http_first_request == "0"
+} -run
+
+## first request with proxy protocol
+client c_proxy -connect ${h1_feS_proxy_sock} -proxy1 "127.0.0.1:40000 ${h1_feS_proxy_addr}:${h1_feS_proxy_port}" {
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "1"
+
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "0"
+} -run
+
+## second request with different proxy protocol
+# this have the nice effect to fill the server pool to 2 connection
+# (pool-low-conn value) to allow takeover on multi thread run
+client c_proxy -connect ${h1_feS_proxy_sock} -proxy1 "127.0.0.1:50000 ${h1_feS_proxy_addr}:${h1_feS_proxy_port}" {
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "1"
+} -run
+
+## third request, reuse same proxy protocol entry
+client c_proxy -connect ${h1_feS_proxy_sock} -proxy1 "127.0.0.1:40000 ${h1_feS_proxy_addr}:${h1_feS_proxy_port}" {
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "0"
+} -run
+
+## fourth request with different proxy protocol entry, no reuse
+client c_proxy -connect ${h1_feS_proxy_sock} -proxy1 "127.0.0.1:60000 ${h1_feS_proxy_addr}:${h1_feS_proxy_port}" {
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "1"
+} -run
+
+## fifth request, reuse proxy protocol
+client c_proxy -connect ${h1_feS_proxy_sock} -proxy1 "127.0.0.1:50000 ${h1_feS_proxy_addr}:${h1_feS_proxy_port}" {
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "0"
+
+	txreq
+	rxresp
+	expect resp.status == 200
+	expect resp.http.http_first_request == "0"
+} -run

@@ -1,0 +1,354 @@
+PROMEX: A Prometheus exporter for HAProxy
+-------------------------------------------
+
+Prometheus is a monitoring and alerting system. More and more people use it to
+monitor their environment (this is written February 2019). It collects metrics
+from monitored targets by scraping metrics HTTP endpoints on these targets. For
+HAProxy, The Prometheus team officially supports an exporter written in Go
+(https://github.com/prometheus/haproxy_exporter). But it requires an extra
+software to deploy and monitor. PROMEX, on its side, is a built-in Prometheus
+exporter for HAProxy. It was developed as a service and is directly available in
+HAProxy, like the stats applet.
+
+However, PROMEX is not built by default with HAProxy. It is provided as an extra
+component for everyone want to use it. So you need to explicitly build HAProxy
+with the PROMEX service, setting the Makefile variable "USE_PROMEX" to "1". For
+instance:
+
+    > make TARGET=linux-glibc USE_PROMEX=1
+
+if HAProxy provides the PROMEX service, the following build option will be
+reported by the command "haproxy -vv":
+
+    Built with the Prometheus exporter as a service
+
+To be used, it must be enabled in the configuration with an "http-request" rule
+and the corresponding HTTP proxy must enable the HTX support. For instance:
+
+    frontend test
+        mode http
+        ...
+        http-request use-service prometheus-exporter if { path /metrics }
+        ...
+
+
+This service has been developed as a third-party component because it could
+become obsolete, depending on how much time Prometheus will remain heavily
+used. This is said with no ulterior motive of course. Prometheus is a great
+software and I hope all the well for it. But we involve in a environment moving
+quickly and a solution may be obvious today could be deprecated the next
+year. And because PROMEX is not integrated by default into the HAProxy codebase,
+it will need some interest to be actively supported. All contribution of any
+kind are welcome.
+
+You must also be careful if you use with huge configurations. Unlike the stats
+applet, all metrics are not grouped by service (proxy, listener or server). With
+PROMEX, all lines for a given metric are provided as one single group. So
+instead of collecting all metrics for a proxy before moving to the next one, we
+must loop on all proxies for each metric. Same for the servers. Thus, it will
+spend much more resources to produce the Prometheus metrics than the CSV export
+through the stats page. To give a comparison order, quick benchmarks shown that
+a PROMEX dump is 5x slower and 20x more verbose than a CSV export.
+
+
+metrics filtering
+-------------------
+
+It is possible to dynamically select the metrics to export if you don't use all
+of them passing parameters in the query-string.
+
+* Filtering on scopes
+
+The metrics may be filtered by scopes. Multiple parameters with "scope" as name
+may be passed in the query-string to filter exported metrics, with one of those
+values: global, frontend, backend, server or '*' (means all). A scope parameter
+with no value means to filter out all scopes (nothing is returned). The scope
+parameters are parsed in their appearance order in the query-string. So an empty
+scope will reset all scopes already parsed. But it can be overridden by
+following scope parameters in the query-string. By default everything is
+exported. Here are examples:
+
+  /metrics?scope=server                 # ==> server metrics will be exported
+  /metrics?scope=frontend&scope=backend # ==> Frontend and backend metrics will be exported
+  /metrics?scope=listener               # ==> listener metrics will be exported
+  /metrics?scope=*&scope=               # ==> no metrics will be exported
+  /metrics?scope=&scope=global          # ==> global metrics will be exported
+  /metrics?scope=sticktable             # ==> stick tables metrics will be exported
+
+* How do I prevent my prometheus instance to explode?
+
+** Filtering on servers state
+
+It is possible to exclude from returned metrics all servers in maintenance mode
+passing the parameter "no-maint" in the query-string. This parameter may help to
+solve performance issues of configuration that use the server templates to
+manage dynamic provisionning. Note there is no consistency check on the servers
+state. So, if the state of a server changes while the exporter is running, only
+a part of the metrics for this server will be dumped.
+
+prometheus example config:
+
+For server-template users:
+- <job>
+  params:
+    no-maint:
+    - empty
+
+** Scrap server health checks only
+
+All health checks status are dump through `state` label values. If you want to
+scrap server health check status but prevent all server metrics to be saved,
+except the server_check_status, you may configure prometheus that way:
+
+- <job>
+   metric_relabel_configs:
+   - source_labels: ['__name__']
+      regex: 'haproxy_(process_|frontend_|listener_|backend_|server_check_status).*'
+      action: keep
+
+Exported metrics
+------------------
+
+See prometheus export for the description of each field.
+
+* Globals metrics
+
++------------------------------------------------+
+|    Metric name                                 |
++------------------------------------------------+
+| haproxy_process_nbthread                       |
+| haproxy_process_nbproc                         |
+| haproxy_process_relative_process_id            |
+| haproxy_process_uptime_seconds                 |
+| haproxy_process_pool_failures_total            |
+| haproxy_process_max_fds                        |
+| haproxy_process_max_sockets                    |
+| haproxy_process_max_connections                |
+| haproxy_process_hard_max_connections           |
+| haproxy_process_current_connections            |
+| haproxy_process_connections_total              |
+| haproxy_process_requests_total                 |
+| haproxy_process_max_ssl_connections            |
+| haproxy_process_current_ssl_connections        |
+| haproxy_process_ssl_connections_total          |
+| haproxy_process_max_pipes                      |
+| haproxy_process_pipes_used_total               |
+| haproxy_process_pipes_free_total               |
+| haproxy_process_current_connection_rate        |
+| haproxy_process_limit_connection_rate          |
+| haproxy_process_max_connection_rate            |
+| haproxy_process_current_session_rate           |
+| haproxy_process_limit_session_rate             |
+| haproxy_process_max_session_rate               |
+| haproxy_process_current_ssl_rate               |
+| haproxy_process_limit_ssl_rate                 |
+| haproxy_process_max_ssl_rate                   |
+| haproxy_process_current_frontend_ssl_key_rate  |
+| haproxy_process_max_frontend_ssl_key_rate      |
+| haproxy_process_frontend_ssl_reuse             |
+| haproxy_process_current_backend_ssl_key_rate   |
+| haproxy_process_max_backend_ssl_key_rate       |
+| haproxy_process_ssl_cache_lookups_total        |
+| haproxy_process_ssl_cache_misses_total         |
+| haproxy_process_http_comp_bytes_in_total       |
+| haproxy_process_http_comp_bytes_out_total      |
+| haproxy_process_limit_http_comp                |
+| haproxy_process_current_zlib_memory            |
+| haproxy_process_max_zlib_memory                |
+| haproxy_process_current_tasks                  |
+| haproxy_process_current_run_queue              |
+| haproxy_process_idle_time_percent              |
+| haproxy_process_stopping                       |
+| haproxy_process_jobs                           |
+| haproxy_process_unstoppable_jobs               |
+| haproxy_process_listeners                      |
+| haproxy_process_active_peers                   |
+| haproxy_process_connected_peers                |
+| haproxy_process_dropped_logs_total             |
+| haproxy_process_busy_polling_enabled           |
+| haproxy_process_failed_resolutions             |
+| haproxy_process_bytes_out_total                |
+| haproxy_process_spliced_bytes_out_total        |
+| haproxy_process_bytes_out_rate                 |
+| haproxy_process_recv_logs_total                |
+| haproxy_process_build_info                     |
+| haproxy_process_max_memory_bytes               |
+| haproxy_process_pool_allocated_bytes           |
+| haproxy_process_pool_used_bytes                |
+| haproxy_process_start_time_seconds             |
++------------------------------------------------+
+
+* Frontend metrics
+
++-------------------------------------------------+
+|    Metric name                                  |
++-------------------------------------------------+
+| haproxy_frontend_current_sessions               |
+| haproxy_frontend_max_sessions                   |
+| haproxy_frontend_limit_sessions                 |
+| haproxy_frontend_sessions_total                 |
+| haproxy_frontend_bytes_in_total                 |
+| haproxy_frontend_bytes_out_total                |
+| haproxy_frontend_requests_denied_total          |
+| haproxy_frontend_responses_denied_total         |
+| haproxy_frontend_request_errors_total           |
+| haproxy_frontend_status                         |
+| haproxy_frontend_limit_session_rate             |
+| haproxy_frontend_max_session_rate               |
+| haproxy_frontend_http_responses_total           |
+| haproxy_frontend_http_requests_rate_max         |
+| haproxy_frontend_http_requests_total            |
+| haproxy_frontend_http_comp_bytes_in_total       |
+| haproxy_frontend_http_comp_bytes_out_total      |
+| haproxy_frontend_http_comp_bytes_bypassed_total |
+| haproxy_frontend_http_comp_responses_total      |
+| haproxy_frontend_connections_rate_max           |
+| haproxy_frontend_connections_total              |
+| haproxy_frontend_intercepted_requests_total     |
+| haproxy_frontend_denied_connections_total       |
+| haproxy_frontend_denied_sessions_total          |
+| haproxy_frontend_failed_header_rewriting_total  |
+| haproxy_frontend_http_cache_lookups_total       |
+| haproxy_frontend_http_cache_hits_total          |
+| haproxy_frontend_internal_errors_total          |
++-------------------------------------------------+
+
+* Listener metrics
+
++-------------------------------------------------+
+|    Metric name                                  |
++-------------------------------------------------+
+| haproxy_listener_current_sessions               |
+| haproxy_listener_max_sessions                   |
+| haproxy_listener_limit_sessions                 |
+| haproxy_listener_sessions_total                 |
+| haproxy_listener_bytes_in_total                 |
+| haproxy_listener_bytes_out_total                |
+| haproxy_listener_requests_denied_total          |
+| haproxy_listener_responses_denied_total         |
+| haproxy_listener_request_errors_total           |
+| haproxy_listener_status                         |
+| haproxy_listener_denied_connections_total       |
+| haproxy_listener_denied_sessions_total          |
+| haproxy_listener_failed_header_rewriting_total  |
+| haproxy_listener_internal_errors_total          |
++-------------------------------------------------+
+
+* Backend metrics
+
++-----------------------------------------------------+
+|    Metric name                                      |
++-----------------------------------------------------+
+| haproxy_backend_current_queue                       |
+| haproxy_backend_max_queue                           |
+| haproxy_backend_current_sessions                    |
+| haproxy_backend_max_sessions                        |
+| haproxy_backend_limit_sessions                      |
+| haproxy_backend_sessions_total                      |
+| haproxy_backend_bytes_in_total                      |
+| haproxy_backend_bytes_out_total                     |
+| haproxy_backend_requests_denied_total               |
+| haproxy_backend_responses_denied_total              |
+| haproxy_backend_connection_errors_total             |
+| haproxy_backend_response_errors_total               |
+| haproxy_backend_retry_warnings_total                |
+| haproxy_backend_redispatch_warnings_total           |
+| haproxy_backend_status                              |
+| haproxy_backend_weight                              |
+| haproxy_backend_active_servers                      |
+| haproxy_backend_backup_servers                      |
+| haproxy_backend_check_up_down_total                 |
+| haproxy_backend_check_last_change_seconds           |
+| haproxy_backend_downtime_seconds_total              |
+| haproxy_backend_loadbalanced_total                  |
+| haproxy_backend_max_session_rate                    |
+| haproxy_backend_http_responses_total                |
+| haproxy_backend_http_requests_total                 |
+| haproxy_backend_client_aborts_total                 |
+| haproxy_backend_server_aborts_total                 |
+| haproxy_backend_http_comp_bytes_in_total            |
+| haproxy_backend_http_comp_bytes_out_total           |
+| haproxy_backend_http_comp_bytes_bypassed_total      |
+| haproxy_backend_http_comp_responses_total           |
+| haproxy_backend_last_session_seconds                |
+| haproxy_backend_queue_time_average_seconds          |
+| haproxy_backend_connect_time_average_seconds        |
+| haproxy_backend_response_time_average_seconds       |
+| haproxy_backend_total_time_average_seconds          |
+| haproxy_backend_failed_header_rewriting_total       |
+| haproxy_backend_connection_attempts_total           |
+| haproxy_backend_connection_reuses_total             |
+| haproxy_backend_http_cache_lookups_total            |
+| haproxy_backend_http_cache_hits_total               |
+| haproxy_backend_max_queue_time_seconds              |
+| haproxy_backend_max_connect_time_seconds            |
+| haproxy_backend_max_response_time_seconds           |
+| haproxy_backend_max_total_time_seconds              |
+| haproxy_backend_internal_errors_total               |
+| haproxy_backend_uweight                             |
++-----------------------------------------------------+
+
+* Server metrics
+
++----------------------------------------------------+
+|    Metric name                                     |
++----------------------------------------------------+
+| haproxy_server_current_queue                       |
+| haproxy_server_max_queue                           |
+| haproxy_server_current_sessions                    |
+| haproxy_server_max_sessions                        |
+| haproxy_server_limit_sessions                      |
+| haproxy_server_sessions_total                      |
+| haproxy_server_bytes_in_total                      |
+| haproxy_server_bytes_out_total                     |
+| haproxy_server_responses_denied_total              |
+| haproxy_server_connection_errors_total             |
+| haproxy_server_response_errors_total               |
+| haproxy_server_retry_warnings_total                |
+| haproxy_server_redispatch_warnings_total           |
+| haproxy_server_status                              |
+| haproxy_server_weight                              |
+| haproxy_server_check_failures_total                |
+| haproxy_server_check_up_down_total                 |
+| haproxy_server_check_last_change_seconds           |
+| haproxy_server_downtime_seconds_total              |
+| haproxy_server_queue_limit                         |
+| haproxy_server_current_throttle                    |
+| haproxy_server_loadbalanced_total                  |
+| haproxy_server_max_session_rate                    |
+| haproxy_server_check_status                        |
+| haproxy_server_check_code                          |
+| haproxy_server_check_duration_seconds              |
+| haproxy_server_http_responses_total                |
+| haproxy_server_client_aborts_total                 |
+| haproxy_server_server_aborts_total                 |
+| haproxy_server_last_session_seconds                |
+| haproxy_server_queue_time_average_seconds          |
+| haproxy_server_connect_time_average_seconds        |
+| haproxy_server_response_time_average_seconds       |
+| haproxy_server_total_time_average_seconds          |
+| haproxy_server_failed_header_rewriting_total       |
+| haproxy_server_connection_attempts_total           |
+| haproxy_server_connection_reuses_total             |
+| haproxy_server_idle_connections_current            |
+| haproxy_server_idle_connections_limit              |
+| haproxy_server_max_queue_time_seconds              |
+| haproxy_server_max_connect_time_seconds            |
+| haproxy_server_max_response_time_seconds           |
+| haproxy_server_max_total_time_seconds              |
+| haproxy_server_internal_errors_total               |
+| haproxy_server_unsafe_idle_connections_current     |
+| haproxy_server_safe_idle_connections_current       |
+| haproxy_server_used_connections_current            |
+| haproxy_server_need_connections_current            |
+| haproxy_server_uweight                             |
++----------------------------------------------------+
+
+* Stick table metrics
+
++----------------------------------------------------+
+|    Metric name                                     |
++----------------------------------------------------+
+| haproxy_sticktable_size                            |
+| haproxy_sticktable_used                            |
++----------------------------------------------------+

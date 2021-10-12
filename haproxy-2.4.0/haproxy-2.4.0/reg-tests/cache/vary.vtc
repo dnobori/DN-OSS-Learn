@@ -1,0 +1,364 @@
+varnishtest "Vary support"
+
+#REQUIRE_VERSION=2.4
+
+feature ignore_unknown_macro
+
+server s1 {
+       # Response varying on "accept-encoding" with
+       # an unacceptable content-encoding
+       rxreq
+       expect req.url == "/accept-encoding"
+       txresp -hdr "Content-Encoding: gzip" \
+               -hdr "Vary: accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 45
+
+       # Response varying on "accept-encoding"
+       rxreq
+       expect req.url == "/accept-encoding"
+       txresp -hdr "Content-Encoding: gzip" \
+               -hdr "Vary: accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 45
+
+       # Response varying on "accept-encoding" with
+       # no content-encoding
+       rxreq
+       expect req.url == "/accept-encoding"
+       txresp -hdr "Content-Type: text/plain" \
+               -hdr "Vary: accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 48
+
+       # Response varying on "accept-encoding" but having two different encodings
+       rxreq
+       expect req.url == "/accept-encoding-multiple"
+       txresp -hdr "Vary: accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 51
+
+
+       # Unmanaged vary
+       rxreq
+       expect req.url == "/unmanaged"
+       txresp -hdr "Vary: accept-encoding,unmanaged" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 51
+
+
+       rxreq
+       expect req.url == "/unmanaged"
+       txresp -hdr "Vary: accept-encoding,unmanaged" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 51
+
+
+
+       # Mixed Vary (Accept-Encoding + Referer)
+       rxreq
+       expect req.url == "/referer-accept-encoding"
+       txresp -hdr "Vary: accept-encoding,referer" \
+               -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: gzip" \
+               -bodylen 51
+
+       rxreq
+       expect req.url == "/referer-accept-encoding"
+       txresp -hdr "Vary: referer,accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: br" \
+               -bodylen 54
+
+       rxreq
+       expect req.url == "/referer-accept-encoding"
+       txresp -hdr "Vary: referer,accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: gzip" \
+               -bodylen 57
+
+       # Multiple Accept-Encoding headers
+       rxreq
+       expect req.url == "/multiple_headers"
+       txresp -hdr "Vary: accept-encoding" \
+              -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: br" \
+              -bodylen 155
+
+       rxreq
+       expect req.url == "/multiple_headers"
+       txresp -hdr "Vary: accept-encoding" \
+              -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: br" \
+              -bodylen 166
+
+
+       # Too many Accept-Encoding values (we will not cache responses with more than 16 encodings)
+       rxreq
+       expect req.url == "/too_many_encodings"
+       txresp -hdr "Vary: accept-encoding" \
+              -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: gzip" \
+              -bodylen 177
+
+       rxreq
+       expect req.url == "/too_many_encodings"
+       txresp -hdr "Vary: accept-encoding" \
+              -hdr "Cache-Control: max-age=5" \
+               -hdr "Content-Encoding: gzip" \
+              -bodylen 188
+
+
+} -start
+
+server s2 {
+       # Responses that should not be cached
+       rxreq
+       expect req.url == "/no_vary_support"
+       txresp -hdr "Vary: accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 57
+
+       rxreq
+       expect req.url == "/no_vary_support"
+       txresp -hdr "Vary: accept-encoding" \
+               -hdr "Cache-Control: max-age=5" \
+               -bodylen 57
+} -start
+
+haproxy h1 -conf {
+       global
+               # WT: limit false-positives causing "HTTP header incomplete" due to
+               # idle server connections being randomly used and randomly expiring
+               # under us.
+               tune.idle-pool.shared off
+
+       defaults
+               mode http
+               ${no-htx} option http-use-htx
+               timeout connect 1s
+               timeout client  1s
+               timeout server  1s
+
+       frontend fe
+               bind "fd@${fe}"
+               use_backend no_vary_be if { path_beg /no_vary_support }
+               default_backend test
+
+       backend test
+               http-request cache-use my_cache
+               server www ${s1_addr}:${s1_port}
+               http-response cache-store my_cache
+               http-response set-header X-Cache-Hit %[res.cache_hit]
+
+        backend no_vary_be
+               http-request cache-use no_vary_cache
+               server www ${s2_addr}:${s2_port}
+               http-response cache-store no_vary_cache
+               http-response set-header X-Cache-Hit %[res.cache_hit]
+
+       cache my_cache
+               total-max-size 3
+               max-age 20
+               max-object-size 3072
+               process-vary on
+
+       cache no_vary_cache
+               total-max-size 3
+               max-age 20
+               max-object-size 3072
+               process-vary off
+} -start
+
+
+client c1 -connect ${h1_fe_sock} {
+       # Accept-Encoding Vary
+       txreq -url "/accept-encoding" -hdr "Accept-Encoding: first_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.http.content-encoding == "gzip"
+       expect resp.bodylen == 45
+
+       # The response for the first request had an unacceptable `content-encoding`
+       # which might happen if that's the only thing the server supports, but
+       # we must not cache that and instead defer to the server.
+       txreq -url "/accept-encoding" -hdr "Accept-Encoding: first_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.http.content-encoding == "gzip"
+       expect resp.bodylen == 45
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/accept-encoding" -hdr "Accept-Encoding: second_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 48
+       expect resp.http.content-type == "text/plain"
+       expect resp.http.X-Cache-Hit == 0
+
+       # This request matches the cache entry for the request above, despite
+       # matching the `accept-encoding` of the first request because the
+       # request above only has the `identity` encoding which is implicitly
+       # added, unless explicitly forbidden.
+       txreq -url "/accept-encoding" -hdr "Accept-Encoding: first_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 48
+       expect resp.http.content-type == "text/plain"
+       expect resp.http.X-Cache-Hit == 1
+
+       txreq -url "/accept-encoding" -hdr "Accept-Encoding: second_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 48
+       expect resp.http.content-type == "text/plain"
+       expect resp.http.X-Cache-Hit == 1
+
+       # The accept-encoding normalizer function converts the header values
+       # to lower case then calculates the hash of every sub part before
+       # sorting the hashes and xor'ing them (while removing duplicates).
+       txreq -url "/accept-encoding-multiple" -hdr "Accept-Encoding: first,second"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/accept-encoding-multiple" -hdr "Accept-Encoding: first,second"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 1
+
+       txreq -url "/accept-encoding-multiple" -hdr "Accept-Encoding: second,first"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 1
+
+       txreq -url "/accept-encoding-multiple" -hdr "Accept-Encoding: FirsT,SECOND,first"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 1
+
+       # Unmanaged vary
+       txreq -url "/unmanaged" -hdr "Accept-Encoding: first_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/unmanaged" -hdr "Accept-Encoding: first_value"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 0
+
+
+       # Mixed Vary (Accept-Encoding + Referer)
+       txreq -url "/referer-accept-encoding" \
+               -hdr "Accept-Encoding: br, gzip" \
+               -hdr "Referer: referer"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/referer-accept-encoding" \
+               -hdr "Accept-Encoding: br" \
+               -hdr "Referer: other-referer"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 54
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/referer-accept-encoding" \
+               -hdr "Accept-Encoding: gzip" \
+               -hdr "Referer: other-referer"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 57
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/referer-accept-encoding" \
+               -hdr "Referer: referer" \
+               -hdr "Accept-Encoding: gzip, br"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 51
+       expect resp.http.X-Cache-Hit == 1
+
+       txreq -url "/referer-accept-encoding" \
+               -hdr "Accept-Encoding: br" \
+               -hdr "Referer: other-referer"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 54
+       expect resp.http.X-Cache-Hit == 1
+
+       txreq -url "/referer-accept-encoding" \
+               -hdr "Accept-Encoding: gzip" \
+               -hdr "Referer: other-referer"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 57
+       expect resp.http.X-Cache-Hit == 1
+
+
+       # Multiple Accept-encoding headers
+       txreq -url "/multiple_headers" \
+               -hdr "Accept-Encoding: gzip" \
+               -hdr "Accept-Encoding: br, deflate"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 155
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/multiple_headers" \
+               -hdr "Accept-Encoding: deflate" \
+               -hdr "Accept-Encoding: br,gzip"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 155
+       expect resp.http.X-Cache-Hit == 1
+
+       # Should not match a cache entry
+       txreq -url "/multiple_headers" \
+               -hdr "Accept-Encoding: first_encoding"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 166
+       expect resp.http.X-Cache-Hit == 0
+
+       # Too many accept encodings
+       txreq -url "/too_many_encodings" \
+               -hdr "Accept-Encoding: a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 177
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/too_many_encodings" \
+               -hdr "Accept-Encoding: a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 188
+       expect resp.http.X-Cache-Hit == 0
+
+
+       # The following requests are treated by a backend that does not cache
+       # responses containing a Vary header
+       txreq -url "/no_vary_support"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 57
+       expect resp.http.X-Cache-Hit == 0
+
+       txreq -url "/no_vary_support"
+       rxresp
+       expect resp.status == 200
+       expect resp.bodylen == 57
+       expect resp.http.X-Cache-Hit == 0
+
+
+} -run
