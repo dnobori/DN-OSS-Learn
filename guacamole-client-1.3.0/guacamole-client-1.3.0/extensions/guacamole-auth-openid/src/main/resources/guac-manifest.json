@@ -1,0 +1,25 @@
+{
+
+    "guacamoleVersion" : "1.3.0",
+
+    "name"      : "OpenID Authentication Extension",
+    "namespace" : "guac-openid",
+
+    "authProviders" : [
+        "org.apache.guacamole.auth.openid.OpenIDAuthenticationProvider"
+    ],
+
+    "translations" : [
+        "translations/ca.json",
+        "translations/de.json",
+        "translations/en.json",
+        "translations/ja.json",
+        "translations/ru.json",
+        "translations/zh.json"
+    ],
+
+    "js" : [
+        "openid.min.js"
+    ]
+
+}

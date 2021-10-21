@@ -1,0 +1,20 @@
+{
+
+    "guacamoleVersion" : "1.3.0",
+
+    "name"      : "CAS Authentication Extension",
+    "namespace" : "guac-cas",
+
+    "authProviders" : [
+        "org.apache.guacamole.auth.cas.CASAuthenticationProvider"
+    ],
+
+    "translations" : [
+        "translations/ca.json",
+        "translations/de.json",
+        "translations/en.json",
+        "translations/ja.json",
+        "translations/ru.json",
+        "translations/zh.json"
+    ]
+}

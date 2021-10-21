@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.apache.guacamole</groupId>
+    <artifactId>guacamole-client</artifactId>
+    <packaging>pom</packaging>
+    <version>1.3.0</version>
+    <name>guacamole-client</name>
+    <url>http://guacamole.apache.org/</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+
+        <!-- Guacamole web application -->
+        <module>guacamole</module>
+
+        <!-- Guacamole Java API -->
+        <module>guacamole-common</module>
+
+        <!-- Guacamole webapp extension API -->
+        <module>guacamole-ext</module>
+
+        <!-- Guacamole JavaScript API -->
+        <module>guacamole-common-js</module>
+
+        <!-- Authentication extensions -->
+        <module>extensions/guacamole-auth-cas</module>
+        <module>extensions/guacamole-auth-duo</module>
+        <module>extensions/guacamole-auth-header</module>
+        <module>extensions/guacamole-auth-jdbc</module>
+        <module>extensions/guacamole-auth-ldap</module>
+        <module>extensions/guacamole-auth-openid</module>
+        <module>extensions/guacamole-auth-quickconnect</module>
+        <module>extensions/guacamole-auth-saml</module>
+        <module>extensions/guacamole-auth-totp</module>
+
+        <!-- Example web applications using the Guacamole APIs -->
+        <module>doc/guacamole-example</module>
+        <module>doc/guacamole-playback-example</module>
+
+    </modules>
+
+    <profiles>
+        <profile>
+            <id>lgpl-extensions</id>
+            <modules>
+                <module>extensions/guacamole-auth-radius</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+
+            <!-- Assembly plugin - for easy distribution -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.3</version>
+
+                <!-- Build project archive -->
+                <configuration>
+                    <finalName>${project.artifactId}-${project.version}</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <tarLongFileMode>gnu</tarLongFileMode>
+                    <descriptors>
+                        <descriptor>project-assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+
+                <!-- Bind archive build to package phase -->
+                <executions>
+                    <execution>
+                        <id>make-source-archive</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+            </plugin>
+
+            <!-- Verify format using Apache RAT -->
+            <plugin>
+                <groupId>org.apache.rat</groupId>
+                <artifactId>apache-rat-plugin</artifactId>
+                <version>0.12</version>
+
+                <configuration>
+                    <excludes>
+                        <exclude>.dockerignore</exclude>
+                        <exclude>CONTRIBUTING</exclude>
+                        <exclude>**/README.md</exclude>
+                        <exclude>extensions/**/*</exclude>
+                    </excludes>
+                </configuration>
+
+                <!-- Bind RAT to validate phase -->
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
