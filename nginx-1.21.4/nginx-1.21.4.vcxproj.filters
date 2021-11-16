@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nginx-1.21.4">
+      <UniqueIdentifier>{1A17FCF6-AD06-4D94-B060-1F8D1E722379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto">
+      <UniqueIdentifier>{E774BE81-86BF-40C1-857B-63AC8EEF4563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\cc">
+      <UniqueIdentifier>{FCA6F2BB-AB64-43A6-89DE-4A28D55C33DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib">
+      <UniqueIdentifier>{44029CD0-340A-4043-9968-708BF6A0CCF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\geoip">
+      <UniqueIdentifier>{D01F1A80-073F-47C6-99EA-82E182F48F3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\google-perftools">
+      <UniqueIdentifier>{013BAF31-89D8-42B1-A36E-32A5C781DD89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\libatomic">
+      <UniqueIdentifier>{7F066FE8-A57C-4AE0-BDA9-939EF5E8F314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\libgd">
+      <UniqueIdentifier>{8117ABD9-211D-4C79-ABA1-C75FE1577DFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\libxslt">
+      <UniqueIdentifier>{6CAF14C3-7B73-4324-B2DE-6FC9A090F840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\openssl">
+      <UniqueIdentifier>{84B5CB07-7634-4A27-897A-90A1477224DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\pcre">
+      <UniqueIdentifier>{364F4FF8-2862-44F1-900F-D3DD84D7E4FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\perl">
+      <UniqueIdentifier>{59E0CE5F-B4E0-461B-B3BB-5EB6EBFE11C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\lib\zlib">
+      <UniqueIdentifier>{B544469A-35A3-4048-9F3E-6BA67262D38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\os">
+      <UniqueIdentifier>{0646126A-0ED3-4214-9505-A830174E8563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\auto\types">
+      <UniqueIdentifier>{8A8CBC90-CE83-4F8A-B247-22A610066A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\conf">
+      <UniqueIdentifier>{17981261-84AC-4091-832A-7C38C3A4F63B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib">
+      <UniqueIdentifier>{63B42A27-2797-4C7F-960D-0228720E8C9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib\unicode2nginx">
+      <UniqueIdentifier>{4865DBF5-326B-430B-ADE2-434B1AEA4BC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib\vim">
+      <UniqueIdentifier>{0411253C-4ACC-4B9B-9EA1-98235BD1D878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib\vim\ftdetect">
+      <UniqueIdentifier>{A88FDC8F-2FAB-4EC9-919C-675F5171D5C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib\vim\ftplugin">
+      <UniqueIdentifier>{C23342C0-CB5B-423D-8B2C-119342C671C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib\vim\indent">
+      <UniqueIdentifier>{64039B0A-EA96-4717-B84B-88F8AB2ADF2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\contrib\vim\syntax">
+      <UniqueIdentifier>{9DAFFB99-FA11-4F11-AC29-E928B8AC6DFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\html">
+      <UniqueIdentifier>{B2FEE6F3-F3BC-4604-B5CA-52B3EC49C810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\man">
+      <UniqueIdentifier>{8F0BB0D5-334A-4248-92BC-3BAE1022B520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src">
+      <UniqueIdentifier>{7C231467-5C1D-43DD-BA45-F85F263BFD9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\core">
+      <UniqueIdentifier>{A48ABF32-E58D-4B85-9A6E-07729035386D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\event">
+      <UniqueIdentifier>{3715A957-C269-4434-8096-AD49F44DBCBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\event\modules">
+      <UniqueIdentifier>{7487F1B3-8315-41FD-A85F-3EB4E529A414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\http">
+      <UniqueIdentifier>{A9C4E1DF-4AEF-4665-9693-76E6614F36F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\http\modules">
+      <UniqueIdentifier>{84BA6345-7F2D-401D-ACDB-C283A257D4C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\http\modules\perl">
+      <UniqueIdentifier>{A34C844E-95A1-4A19-BAB2-8FA0C8AA55CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\http\v2">
+      <UniqueIdentifier>{1E7509AA-91F3-4FF7-9857-92846333D13E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\mail">
+      <UniqueIdentifier>{9DE3D04F-91D5-4F10-9418-D6A807F1E245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\misc">
+      <UniqueIdentifier>{33037602-2F89-4658-93AC-C03A3EC3F09A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\os">
+      <UniqueIdentifier>{7DD01B09-C1EC-4CD3-9A0D-9509CF0B77CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\os\unix">
+      <UniqueIdentifier>{53634A98-BE0D-472E-850D-EC76F321A159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nginx-1.21.4\src\stream">
+      <UniqueIdentifier>{DF470D53-B20D-4DAC-A4AF-A1ABA10306AF}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nginx-1.21.4\src\core\nginx.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_array.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_buf.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_conf_file.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_config.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_connection.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_core.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_crc.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_crc32.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_crypt.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_cycle.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_file.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_hash.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_inet.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_list.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_log.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_md5.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_module.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_murmurhash.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_open_file_cache.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_palloc.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_parse.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_parse_time.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_proxy_protocol.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_queue.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_radix_tree.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_rbtree.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_regex.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_resolver.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_rwlock.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_sha1.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_shmtx.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_slab.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_string.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_syslog.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_thread_pool.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\core\ngx_times.h">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\event\ngx_event.h">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\event\ngx_event_connect.h">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\event\ngx_event_openssl.h">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\event\ngx_event_pipe.h">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\event\ngx_event_posted.h">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\event\ngx_event_timer.h">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\modules\perl\ngx_http_perl_module.h">
+      <Filter>nginx-1.21.4\src\http\modules\perl</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\modules\ngx_http_ssi_filter_module.h">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\modules\ngx_http_ssl_module.h">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\v2\ngx_http_v2.h">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\v2\ngx_http_v2_module.h">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_cache.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_config.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_core_module.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_request.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_script.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_upstream.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_upstream_round_robin.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\http\ngx_http_variables.h">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\mail\ngx_mail.h">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\mail\ngx_mail_imap_module.h">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\mail\ngx_mail_pop3_module.h">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\mail\ngx_mail_smtp_module.h">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\mail\ngx_mail_ssl_module.h">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_alloc.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_atomic.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_channel.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_darwin.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_darwin_config.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_dlopen.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_errno.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_files.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_freebsd.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_freebsd_config.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_gcc_atomic_amd64.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_gcc_atomic_ppc.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_gcc_atomic_sparc64.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_gcc_atomic_x86.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_linux.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_linux_config.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_os.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_posix_config.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_process.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_process_cycle.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_setaffinity.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_setproctitle.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_shmem.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_socket.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_solaris.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_solaris_config.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_sunpro_atomic_sparc64.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_thread.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_time.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\os\unix\ngx_user.h">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\stream\ngx_stream.h">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\stream\ngx_stream_script.h">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\stream\ngx_stream_ssl_module.h">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\stream\ngx_stream_upstream.h">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\stream\ngx_stream_upstream_round_robin.h">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="nginx-1.21.4\src\stream\ngx_stream_variables.h">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nginx-1.21.4\src\core\nginx.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_array.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_buf.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_conf_file.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_connection.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_cpuinfo.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_crc32.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_crypt.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_cycle.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_file.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_hash.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_inet.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_list.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_log.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_md5.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_module.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_murmurhash.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_open_file_cache.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_output_chain.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_palloc.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_parse.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_parse_time.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_proxy_protocol.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_queue.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_radix_tree.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_rbtree.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_regex.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_resolver.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_rwlock.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_sha1.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_shmtx.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_slab.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_spinlock.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_string.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_syslog.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_thread_pool.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\core\ngx_times.c">
+      <Filter>nginx-1.21.4\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_devpoll_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_epoll_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_eventport_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_kqueue_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_poll_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_select_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_win32_poll_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\modules\ngx_win32_select_module.c">
+      <Filter>nginx-1.21.4\src\event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_accept.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_connect.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_openssl.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_openssl_stapling.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_pipe.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_posted.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_timer.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\event\ngx_event_udp.c">
+      <Filter>nginx-1.21.4\src\event</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\perl\ngx_http_perl_module.c">
+      <Filter>nginx-1.21.4\src\http\modules\perl</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_access_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_addition_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_auth_basic_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_auth_request_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_autoindex_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_browser_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_charset_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_chunked_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_dav_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_degradation_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_empty_gif_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_fastcgi_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_flv_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_geo_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_geoip_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_grpc_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_gunzip_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_gzip_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_gzip_static_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_headers_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_image_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_index_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_limit_conn_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_limit_req_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_log_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_map_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_memcached_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_mirror_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_mp4_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_not_modified_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_proxy_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_random_index_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_range_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_realip_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_referer_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_rewrite_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_scgi_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_secure_link_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_slice_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_split_clients_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_ssi_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_ssl_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_static_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_stub_status_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_sub_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_try_files_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_upstream_hash_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_upstream_ip_hash_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_upstream_keepalive_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_upstream_least_conn_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_upstream_random_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_upstream_zone_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_userid_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_uwsgi_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\modules\ngx_http_xslt_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2_encode.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2_filter_module.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2_huff_decode.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2_huff_encode.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2_module.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\v2\ngx_http_v2_table.c">
+      <Filter>nginx-1.21.4\src\http\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_copy_filter_module.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_core_module.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_file_cache.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_header_filter_module.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_parse.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_postpone_filter_module.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_request.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_request_body.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_script.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_special_response.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_upstream.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_upstream_round_robin.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_variables.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\http\ngx_http_write_filter_module.c">
+      <Filter>nginx-1.21.4\src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_auth_http_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_core_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_handler.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_imap_handler.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_imap_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_parse.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_pop3_handler.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_pop3_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_proxy_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_realip_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_smtp_handler.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_smtp_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\mail\ngx_mail_ssl_module.c">
+      <Filter>nginx-1.21.4\src\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\misc\ngx_cpp_test_module.cpp">
+      <Filter>nginx-1.21.4\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\misc\ngx_google_perftools_module.c">
+      <Filter>nginx-1.21.4\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_alloc.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_channel.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_daemon.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_darwin_init.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_darwin_sendfile_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_dlopen.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_errno.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_file_aio_read.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_files.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_freebsd_init.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_freebsd_sendfile_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_linux_aio_read.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_linux_init.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_linux_sendfile_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_posix_init.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_process.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_process_cycle.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_readv_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_recv.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_send.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_setaffinity.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_setproctitle.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_shmem.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_socket.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_solaris_init.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_solaris_sendfilev_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_thread_cond.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_thread_id.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_thread_mutex.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_time.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_udp_recv.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_udp_send.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_udp_sendmsg_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_user.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\os\unix\ngx_writev_chain.c">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_access_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_core_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_geo_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_geoip_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_handler.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_limit_conn_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_log_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_map_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_proxy_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_realip_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_return_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_script.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_set_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_split_clients_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_ssl_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_ssl_preread_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_upstream.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_upstream_hash_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_upstream_least_conn_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_upstream_random_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_upstream_round_robin.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_upstream_zone_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_variables.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="nginx-1.21.4\src\stream\ngx_stream_write_filter_module.c">
+      <Filter>nginx-1.21.4\src\stream</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nginx-1.21.4\auto\cc\acc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\bcc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\ccc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\clang">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\conf">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\gcc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\icc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\msvc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\name">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\owc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\cc\sunc">
+      <Filter>nginx-1.21.4\auto\cc</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\geoip\conf">
+      <Filter>nginx-1.21.4\auto\lib\geoip</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\google-perftools\conf">
+      <Filter>nginx-1.21.4\auto\lib\google-perftools</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\libatomic\conf">
+      <Filter>nginx-1.21.4\auto\lib\libatomic</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\libatomic\make">
+      <Filter>nginx-1.21.4\auto\lib\libatomic</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\libgd\conf">
+      <Filter>nginx-1.21.4\auto\lib\libgd</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\libxslt\conf">
+      <Filter>nginx-1.21.4\auto\lib\libxslt</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\openssl\conf">
+      <Filter>nginx-1.21.4\auto\lib\openssl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\openssl\make">
+      <Filter>nginx-1.21.4\auto\lib\openssl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\openssl\makefile.bcc">
+      <Filter>nginx-1.21.4\auto\lib\openssl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\openssl\makefile.msvc">
+      <Filter>nginx-1.21.4\auto\lib\openssl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\pcre\conf">
+      <Filter>nginx-1.21.4\auto\lib\pcre</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\pcre\make">
+      <Filter>nginx-1.21.4\auto\lib\pcre</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\pcre\makefile.bcc">
+      <Filter>nginx-1.21.4\auto\lib\pcre</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\pcre\makefile.msvc">
+      <Filter>nginx-1.21.4\auto\lib\pcre</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\pcre\makefile.owc">
+      <Filter>nginx-1.21.4\auto\lib\pcre</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\perl\conf">
+      <Filter>nginx-1.21.4\auto\lib\perl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\perl\make">
+      <Filter>nginx-1.21.4\auto\lib\perl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\zlib\conf">
+      <Filter>nginx-1.21.4\auto\lib\zlib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\zlib\make">
+      <Filter>nginx-1.21.4\auto\lib\zlib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\zlib\makefile.bcc">
+      <Filter>nginx-1.21.4\auto\lib\zlib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\zlib\makefile.msvc">
+      <Filter>nginx-1.21.4\auto\lib\zlib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\zlib\makefile.owc">
+      <Filter>nginx-1.21.4\auto\lib\zlib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\conf">
+      <Filter>nginx-1.21.4\auto\lib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\lib\make">
+      <Filter>nginx-1.21.4\auto\lib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\os\conf">
+      <Filter>nginx-1.21.4\auto\os</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\os\darwin">
+      <Filter>nginx-1.21.4\auto\os</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\os\freebsd">
+      <Filter>nginx-1.21.4\auto\os</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\os\linux">
+      <Filter>nginx-1.21.4\auto\os</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\os\solaris">
+      <Filter>nginx-1.21.4\auto\os</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\os\win32">
+      <Filter>nginx-1.21.4\auto\os</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\types\sizeof">
+      <Filter>nginx-1.21.4\auto\types</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\types\typedef">
+      <Filter>nginx-1.21.4\auto\types</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\types\uintptr_t">
+      <Filter>nginx-1.21.4\auto\types</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\types\value">
+      <Filter>nginx-1.21.4\auto\types</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\define">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\endianness">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\feature">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\have">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\have_headers">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\headers">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\include">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\init">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\install">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\make">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\module">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\modules">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\nohave">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\options">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\sources">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\stubs">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\summary">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\threads">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\auto\unix">
+      <Filter>nginx-1.21.4\auto</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\fastcgi.conf">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\fastcgi_params">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\koi-utf">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\koi-win">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\mime.types">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\nginx.conf">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\scgi_params">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\uwsgi_params">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\conf\win-utf">
+      <Filter>nginx-1.21.4\conf</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\unicode2nginx\koi-utf">
+      <Filter>nginx-1.21.4\contrib\unicode2nginx</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\unicode2nginx\unicode-to-nginx.pl">
+      <Filter>nginx-1.21.4\contrib\unicode2nginx</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\unicode2nginx\win-utf">
+      <Filter>nginx-1.21.4\contrib\unicode2nginx</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\vim\ftdetect\nginx.vim">
+      <Filter>nginx-1.21.4\contrib\vim\ftdetect</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\vim\ftplugin\nginx.vim">
+      <Filter>nginx-1.21.4\contrib\vim\ftplugin</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\vim\indent\nginx.vim">
+      <Filter>nginx-1.21.4\contrib\vim\indent</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\vim\syntax\nginx.vim">
+      <Filter>nginx-1.21.4\contrib\vim\syntax</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\geo2nginx.pl">
+      <Filter>nginx-1.21.4\contrib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\contrib\README">
+      <Filter>nginx-1.21.4\contrib</Filter>
+    </None>
+    <None Include="nginx-1.21.4\html\50x.html">
+      <Filter>nginx-1.21.4\html</Filter>
+    </None>
+    <None Include="nginx-1.21.4\html\index.html">
+      <Filter>nginx-1.21.4\html</Filter>
+    </None>
+    <None Include="nginx-1.21.4\man\nginx.8">
+      <Filter>nginx-1.21.4\man</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\http\modules\perl\Makefile.PL">
+      <Filter>nginx-1.21.4\src\http\modules\perl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\http\modules\perl\nginx.pm">
+      <Filter>nginx-1.21.4\src\http\modules\perl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\http\modules\perl\nginx.xs">
+      <Filter>nginx-1.21.4\src\http\modules\perl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\http\modules\perl\typemap">
+      <Filter>nginx-1.21.4\src\http\modules\perl</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\os\unix\ngx_sunpro_amd64.il">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\os\unix\ngx_sunpro_sparc64.il">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </None>
+    <None Include="nginx-1.21.4\src\os\unix\ngx_sunpro_x86.il">
+      <Filter>nginx-1.21.4\src\os\unix</Filter>
+    </None>
+    <None Include="nginx-1.21.4\CHANGES">
+      <Filter>nginx-1.21.4</Filter>
+    </None>
+    <None Include="nginx-1.21.4\CHANGES.ru">
+      <Filter>nginx-1.21.4</Filter>
+    </None>
+    <None Include="nginx-1.21.4\configure">
+      <Filter>nginx-1.21.4</Filter>
+    </None>
+    <None Include="nginx-1.21.4\LICENSE">
+      <Filter>nginx-1.21.4</Filter>
+    </None>
+    <None Include="nginx-1.21.4\README">
+      <Filter>nginx-1.21.4</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>
