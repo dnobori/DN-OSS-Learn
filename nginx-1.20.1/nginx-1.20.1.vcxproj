@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{5F092817-4918-46B3-818C-2F26986A9A8A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nginx-1.20.1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/nginx-1.20.1/src/core;$(ProjectDir)/nginx-1.20.1/src/event;$(ProjectDir)/nginx-1.20.1/src/http;$(ProjectDir)/nginx-1.20.1/src/http/modules;$(ProjectDir)/nginx-1.20.1/src/http/modules/perl;$(ProjectDir)/nginx-1.20.1/src/http/v2;$(ProjectDir)/nginx-1.20.1/src/mail;$(ProjectDir)/nginx-1.20.1/src/os/unix;$(ProjectDir)/nginx-1.20.1/src/stream;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="nginx-1.20.1\src\core\nginx.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_array.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_buf.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_conf_file.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_connection.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_core.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_crc.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_crc32.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_crypt.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_cycle.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_file.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_hash.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_inet.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_list.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_log.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_md5.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_murmurhash.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_open_file_cache.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_palloc.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_parse.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_parse_time.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_proxy_protocol.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_queue.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_radix_tree.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_rbtree.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_regex.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_resolver.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_rwlock.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_sha1.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_shmtx.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_slab.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_string.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_syslog.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_thread_pool.h" />
+    <ClInclude Include="nginx-1.20.1\src\core\ngx_times.h" />
+    <ClInclude Include="nginx-1.20.1\src\event\ngx_event.h" />
+    <ClInclude Include="nginx-1.20.1\src\event\ngx_event_connect.h" />
+    <ClInclude Include="nginx-1.20.1\src\event\ngx_event_openssl.h" />
+    <ClInclude Include="nginx-1.20.1\src\event\ngx_event_pipe.h" />
+    <ClInclude Include="nginx-1.20.1\src\event\ngx_event_posted.h" />
+    <ClInclude Include="nginx-1.20.1\src\event\ngx_event_timer.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\modules\perl\ngx_http_perl_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\modules\ngx_http_ssi_filter_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\modules\ngx_http_ssl_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\v2\ngx_http_v2.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\v2\ngx_http_v2_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_cache.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_core_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_request.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_script.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_upstream.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_upstream_round_robin.h" />
+    <ClInclude Include="nginx-1.20.1\src\http\ngx_http_variables.h" />
+    <ClInclude Include="nginx-1.20.1\src\mail\ngx_mail.h" />
+    <ClInclude Include="nginx-1.20.1\src\mail\ngx_mail_imap_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\mail\ngx_mail_pop3_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\mail\ngx_mail_smtp_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\mail\ngx_mail_ssl_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_alloc.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_atomic.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_channel.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_darwin.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_darwin_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_dlopen.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_errno.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_files.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_freebsd.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_freebsd_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_gcc_atomic_amd64.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_gcc_atomic_ppc.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_gcc_atomic_sparc64.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_gcc_atomic_x86.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_linux.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_linux_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_os.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_posix_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_process.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_process_cycle.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_setaffinity.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_setproctitle.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_shmem.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_socket.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_solaris.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_solaris_config.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_sunpro_atomic_sparc64.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_thread.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_time.h" />
+    <ClInclude Include="nginx-1.20.1\src\os\unix\ngx_user.h" />
+    <ClInclude Include="nginx-1.20.1\src\stream\ngx_stream.h" />
+    <ClInclude Include="nginx-1.20.1\src\stream\ngx_stream_script.h" />
+    <ClInclude Include="nginx-1.20.1\src\stream\ngx_stream_ssl_module.h" />
+    <ClInclude Include="nginx-1.20.1\src\stream\ngx_stream_upstream.h" />
+    <ClInclude Include="nginx-1.20.1\src\stream\ngx_stream_upstream_round_robin.h" />
+    <ClInclude Include="nginx-1.20.1\src\stream\ngx_stream_variables.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nginx-1.20.1\src\core\nginx.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_array.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_buf.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_conf_file.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_connection.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_cpuinfo.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_crc32.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_crypt.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_cycle.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_file.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_hash.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_inet.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_list.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_log.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_md5.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_murmurhash.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_open_file_cache.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_output_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_palloc.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_parse.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_parse_time.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_proxy_protocol.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_queue.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_radix_tree.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_rbtree.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_regex.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_resolver.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_rwlock.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_sha1.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_shmtx.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_slab.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_spinlock.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_string.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_syslog.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_thread_pool.c" />
+    <ClCompile Include="nginx-1.20.1\src\core\ngx_times.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_devpoll_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_epoll_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_eventport_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_kqueue_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_poll_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_select_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_win32_poll_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\modules\ngx_win32_select_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_accept.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_connect.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_openssl.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_openssl_stapling.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_pipe.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_posted.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_timer.c" />
+    <ClCompile Include="nginx-1.20.1\src\event\ngx_event_udp.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\perl\ngx_http_perl_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_access_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_addition_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_auth_basic_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_auth_request_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_autoindex_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_browser_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_charset_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_chunked_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_dav_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_degradation_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_empty_gif_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_fastcgi_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_flv_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_geo_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_geoip_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_grpc_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_gunzip_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_gzip_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_gzip_static_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_headers_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_image_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_index_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_limit_conn_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_limit_req_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_log_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_map_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_memcached_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_mirror_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_mp4_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_not_modified_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_proxy_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_random_index_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_range_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_realip_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_referer_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_rewrite_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_scgi_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_secure_link_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_slice_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_split_clients_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_ssi_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_ssl_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_static_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_stub_status_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_sub_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_try_files_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_upstream_hash_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_upstream_ip_hash_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_upstream_keepalive_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_upstream_least_conn_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_upstream_random_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_upstream_zone_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_userid_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_uwsgi_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\modules\ngx_http_xslt_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2_encode.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2_huff_decode.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2_huff_encode.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\v2\ngx_http_v2_table.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_copy_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_core_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_file_cache.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_header_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_parse.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_postpone_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_request.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_request_body.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_script.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_special_response.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_upstream.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_upstream_round_robin.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_variables.c" />
+    <ClCompile Include="nginx-1.20.1\src\http\ngx_http_write_filter_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_auth_http_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_core_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_handler.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_imap_handler.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_imap_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_parse.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_pop3_handler.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_pop3_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_proxy_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_realip_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_smtp_handler.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_smtp_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\mail\ngx_mail_ssl_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\misc\ngx_cpp_test_module.cpp" />
+    <ClCompile Include="nginx-1.20.1\src\misc\ngx_google_perftools_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_alloc.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_channel.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_daemon.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_darwin_init.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_darwin_sendfile_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_dlopen.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_errno.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_file_aio_read.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_files.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_freebsd_init.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_freebsd_sendfile_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_linux_aio_read.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_linux_init.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_linux_sendfile_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_posix_init.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_process.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_process_cycle.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_readv_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_recv.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_send.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_setaffinity.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_setproctitle.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_shmem.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_socket.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_solaris_init.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_solaris_sendfilev_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_thread_cond.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_thread_id.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_thread_mutex.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_time.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_udp_recv.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_udp_send.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_udp_sendmsg_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_user.c" />
+    <ClCompile Include="nginx-1.20.1\src\os\unix\ngx_writev_chain.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_access_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_core_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_geo_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_geoip_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_handler.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_limit_conn_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_log_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_map_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_proxy_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_realip_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_return_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_script.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_set_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_split_clients_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_ssl_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_ssl_preread_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_upstream.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_upstream_hash_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_upstream_least_conn_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_upstream_random_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_upstream_round_robin.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_upstream_zone_module.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_variables.c" />
+    <ClCompile Include="nginx-1.20.1\src\stream\ngx_stream_write_filter_module.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nginx-1.20.1\auto\cc\acc" />
+    <None Include="nginx-1.20.1\auto\cc\bcc" />
+    <None Include="nginx-1.20.1\auto\cc\ccc" />
+    <None Include="nginx-1.20.1\auto\cc\clang" />
+    <None Include="nginx-1.20.1\auto\cc\conf" />
+    <None Include="nginx-1.20.1\auto\cc\gcc" />
+    <None Include="nginx-1.20.1\auto\cc\icc" />
+    <None Include="nginx-1.20.1\auto\cc\msvc" />
+    <None Include="nginx-1.20.1\auto\cc\name" />
+    <None Include="nginx-1.20.1\auto\cc\owc" />
+    <None Include="nginx-1.20.1\auto\cc\sunc" />
+    <None Include="nginx-1.20.1\auto\lib\geoip\conf" />
+    <None Include="nginx-1.20.1\auto\lib\google-perftools\conf" />
+    <None Include="nginx-1.20.1\auto\lib\libatomic\conf" />
+    <None Include="nginx-1.20.1\auto\lib\libatomic\make" />
+    <None Include="nginx-1.20.1\auto\lib\libgd\conf" />
+    <None Include="nginx-1.20.1\auto\lib\libxslt\conf" />
+    <None Include="nginx-1.20.1\auto\lib\openssl\conf" />
+    <None Include="nginx-1.20.1\auto\lib\openssl\make" />
+    <None Include="nginx-1.20.1\auto\lib\openssl\makefile.bcc" />
+    <None Include="nginx-1.20.1\auto\lib\openssl\makefile.msvc" />
+    <None Include="nginx-1.20.1\auto\lib\pcre\conf" />
+    <None Include="nginx-1.20.1\auto\lib\pcre\make" />
+    <None Include="nginx-1.20.1\auto\lib\pcre\makefile.bcc" />
+    <None Include="nginx-1.20.1\auto\lib\pcre\makefile.msvc" />
+    <None Include="nginx-1.20.1\auto\lib\pcre\makefile.owc" />
+    <None Include="nginx-1.20.1\auto\lib\perl\conf" />
+    <None Include="nginx-1.20.1\auto\lib\perl\make" />
+    <None Include="nginx-1.20.1\auto\lib\zlib\conf" />
+    <None Include="nginx-1.20.1\auto\lib\zlib\make" />
+    <None Include="nginx-1.20.1\auto\lib\zlib\makefile.bcc" />
+    <None Include="nginx-1.20.1\auto\lib\zlib\makefile.msvc" />
+    <None Include="nginx-1.20.1\auto\lib\zlib\makefile.owc" />
+    <None Include="nginx-1.20.1\auto\lib\conf" />
+    <None Include="nginx-1.20.1\auto\lib\make" />
+    <None Include="nginx-1.20.1\auto\os\conf" />
+    <None Include="nginx-1.20.1\auto\os\darwin" />
+    <None Include="nginx-1.20.1\auto\os\freebsd" />
+    <None Include="nginx-1.20.1\auto\os\linux" />
+    <None Include="nginx-1.20.1\auto\os\solaris" />
+    <None Include="nginx-1.20.1\auto\os\win32" />
+    <None Include="nginx-1.20.1\auto\types\sizeof" />
+    <None Include="nginx-1.20.1\auto\types\typedef" />
+    <None Include="nginx-1.20.1\auto\types\uintptr_t" />
+    <None Include="nginx-1.20.1\auto\types\value" />
+    <None Include="nginx-1.20.1\auto\define" />
+    <None Include="nginx-1.20.1\auto\endianness" />
+    <None Include="nginx-1.20.1\auto\feature" />
+    <None Include="nginx-1.20.1\auto\have" />
+    <None Include="nginx-1.20.1\auto\have_headers" />
+    <None Include="nginx-1.20.1\auto\headers" />
+    <None Include="nginx-1.20.1\auto\include" />
+    <None Include="nginx-1.20.1\auto\init" />
+    <None Include="nginx-1.20.1\auto\install" />
+    <None Include="nginx-1.20.1\auto\make" />
+    <None Include="nginx-1.20.1\auto\module" />
+    <None Include="nginx-1.20.1\auto\modules" />
+    <None Include="nginx-1.20.1\auto\nohave" />
+    <None Include="nginx-1.20.1\auto\options" />
+    <None Include="nginx-1.20.1\auto\sources" />
+    <None Include="nginx-1.20.1\auto\stubs" />
+    <None Include="nginx-1.20.1\auto\summary" />
+    <None Include="nginx-1.20.1\auto\threads" />
+    <None Include="nginx-1.20.1\auto\unix" />
+    <None Include="nginx-1.20.1\conf\fastcgi.conf" />
+    <None Include="nginx-1.20.1\conf\fastcgi_params" />
+    <None Include="nginx-1.20.1\conf\koi-utf" />
+    <None Include="nginx-1.20.1\conf\koi-win" />
+    <None Include="nginx-1.20.1\conf\mime.types" />
+    <None Include="nginx-1.20.1\conf\nginx.conf" />
+    <None Include="nginx-1.20.1\conf\scgi_params" />
+    <None Include="nginx-1.20.1\conf\uwsgi_params" />
+    <None Include="nginx-1.20.1\conf\win-utf" />
+    <None Include="nginx-1.20.1\contrib\unicode2nginx\koi-utf" />
+    <None Include="nginx-1.20.1\contrib\unicode2nginx\unicode-to-nginx.pl" />
+    <None Include="nginx-1.20.1\contrib\unicode2nginx\win-utf" />
+    <None Include="nginx-1.20.1\contrib\vim\ftdetect\nginx.vim" />
+    <None Include="nginx-1.20.1\contrib\vim\ftplugin\nginx.vim" />
+    <None Include="nginx-1.20.1\contrib\vim\indent\nginx.vim" />
+    <None Include="nginx-1.20.1\contrib\vim\syntax\nginx.vim" />
+    <None Include="nginx-1.20.1\contrib\geo2nginx.pl" />
+    <None Include="nginx-1.20.1\contrib\README" />
+    <None Include="nginx-1.20.1\html\50x.html" />
+    <None Include="nginx-1.20.1\html\index.html" />
+    <None Include="nginx-1.20.1\man\nginx.8" />
+    <None Include="nginx-1.20.1\src\http\modules\perl\Makefile.PL" />
+    <None Include="nginx-1.20.1\src\http\modules\perl\nginx.pm" />
+    <None Include="nginx-1.20.1\src\http\modules\perl\nginx.xs" />
+    <None Include="nginx-1.20.1\src\http\modules\perl\typemap" />
+    <None Include="nginx-1.20.1\src\os\unix\ngx_sunpro_amd64.il" />
+    <None Include="nginx-1.20.1\src\os\unix\ngx_sunpro_sparc64.il" />
+    <None Include="nginx-1.20.1\src\os\unix\ngx_sunpro_x86.il" />
+    <None Include="nginx-1.20.1\CHANGES" />
+    <None Include="nginx-1.20.1\CHANGES.ru" />
+    <None Include="nginx-1.20.1\configure" />
+    <None Include="nginx-1.20.1\LICENSE" />
+    <None Include="nginx-1.20.1\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
